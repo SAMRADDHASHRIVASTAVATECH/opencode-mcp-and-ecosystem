@@ -1,0 +1,13 @@
+[build-system]
+requires=["setuptools>=75"]
+build-backend="setuptools.build_meta"
+[project]
+name="audio-workstation-mcp"
+version="1.0.0"
+description="Local real-time audio workstation and MCP control plane"
+requires-python=">=3.11"
+dependencies=["mcp>=1.28,<2","numpy>=2.0","scipy>=1.14","sounddevice>=0.5","soundfile>=0.13","psutil>=6","pydantic>=2.10"]
+[project.scripts]
+audio-workstation-mcp="audio_workstation.server:main"
+[tool.setuptools.packages.find]
+where=["src"]

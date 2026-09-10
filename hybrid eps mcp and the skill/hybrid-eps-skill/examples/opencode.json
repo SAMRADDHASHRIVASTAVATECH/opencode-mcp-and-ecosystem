@@ -1,0 +1,1 @@
+{"mcp":{"hybrid-eps":{"type":"local","command":["python","-m","hybrid_eps.server"],"environment":{"HYBRID_EPS_ROOT":"/absolute/image/workspace"}}}}

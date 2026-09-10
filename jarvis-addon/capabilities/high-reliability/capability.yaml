@@ -1,0 +1,33 @@
+capability_id: high-reliability
+name: High Reliability
+version: 1.0.0
+description: Universal pre/post/verification/evidence/confidence/failure/recovery/audit;
+  success requires verified evidence.
+area: high-reliability
+skills:
+- verification
+- failure-detection
+- tool-selection
+- tool-fallback
+- tool-discovery
+- rollback
+policies:
+- reliability-policy
+- security-policy
+schemas:
+- verification
+- recovery
+- result
+contracts:
+- verification-contract
+- result-contract
+events:
+- VERIFICATION_FAILED
+- TOOL_FAILED
+agents:
+- verifier
+- security-agent
+- policy-agent
+authorization:
+  auth_level: SAFE_EXECUTE
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

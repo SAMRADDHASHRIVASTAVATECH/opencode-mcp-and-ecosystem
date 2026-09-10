@@ -1,0 +1,35 @@
+skill_id: mcp-registration
+name: Mcp Registration
+version: 1.0.0
+description: Register a validated MCP with the host.
+purpose: Register a validated MCP with the host.
+inputs: &id001
+- mcp
+outputs: &id002
+- entry
+preconditions:
+- validated
+postconditions:
+- registered
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- registry-register
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - readback
+failure_contract:
+  failure_modes:
+  - collision
+recovery_contract:
+  strategies:
+  - map
+examples: []
+tests: []
+status: validated

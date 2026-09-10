@@ -1,0 +1,22 @@
+kind: capability
+entries:
+- capability-creation
+- decision-support
+- digital-world-model
+- failure-recovery
+- general-reasoning
+- high-reliability
+- knowledge-updating
+- long-horizon-autonomy
+- multi-agent-coordination
+- multimodal-fusion
+- persistent-goals
+- predictive-assistance
+- proactive-assistance
+- project-management
+- real-time-conversation
+- self-evaluation
+- self-improvement
+- self-maintenance
+- universal-digital-agency
+- universal-gui

@@ -1,0 +1,15 @@
+policy_id: multimodal-policy
+name: Multimodal Processing Policy
+version: 1.0.0
+domain: multimodal-fusion
+action: ALLOW_WITH_CONDITIONS
+auth_level: SAFE_EXECUTE
+scope:
+  domain: multimodal-fusion
+conditions:
+- capture requires observe permission
+- retention limited
+- screen/voice treated as sensitive
+when: {}
+reason: Multimodal capture is sensitive; needs observe permission + retention rules.
+non_override: true

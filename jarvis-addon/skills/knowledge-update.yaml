@@ -1,0 +1,35 @@
+skill_id: knowledge-update
+name: Knowledge Update
+version: 1.0.0
+description: Update knowledge with provenance + versioning.
+purpose: Update knowledge with provenance + versioning.
+inputs: &id001
+- item
+outputs: &id002
+- versioned item
+preconditions:
+- item validated
+postconditions:
+- old version retained
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- knowledge-updating
+tools:
+- knowledge-store
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - history retained
+failure_contract:
+  failure_modes:
+  - write conflict
+recovery_contract:
+  strategies:
+  - merge
+examples: []
+tests: []
+status: validated

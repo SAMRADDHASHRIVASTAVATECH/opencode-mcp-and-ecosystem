@@ -1,0 +1,24 @@
+agent_id: skill-creator
+name: Skill Creator
+version: 1.0.0
+role: skill-creator
+purpose: Author/version skills.
+responsibilities:
+- Author/version skills.
+allowed_skills:
+- skill-creation
+- skill-validation
+- skill-versioning
+- skill-registration
+required_capabilities:
+- capability-creation
+expected_inputs:
+- skill-creator task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

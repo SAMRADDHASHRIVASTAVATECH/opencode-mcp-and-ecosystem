@@ -1,0 +1,1 @@
+{"operation":"video","url":"https://example.invalid/playlist","playlist":true,"max_height":1080,"container":"mp4","archive":"C:/Users/Example/Downloads/yt-dlp-archive.txt","output_dir":"C:/Users/Example/Downloads","subtitles":true,"subtitle_languages":"en.*,en","embed_subtitles":true,"embed_metadata":true,"retries":10,"fragment_retries":10}

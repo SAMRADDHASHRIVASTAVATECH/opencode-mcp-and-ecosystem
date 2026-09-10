@@ -1,0 +1,14 @@
+tool_id: checkpoint-store
+name: checkpoint-store
+version: 1.0.0
+description: persist/load checkpoints
+inputs: []
+outputs: []
+permissions:
+  auth_level: SAFE_EXECUTE
+provider: host-adapter
+verification:
+  needs_evidence: true
+failure_behavior: typed failure
+health:
+  checkable: true

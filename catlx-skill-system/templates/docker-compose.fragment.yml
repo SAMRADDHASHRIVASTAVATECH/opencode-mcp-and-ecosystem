@@ -1,0 +1,28 @@
+# Docker Compose fragment for a containerized CATLX module (SILEXIS module packaging, PART III §3.2.4).
+# Source: PART XIV §14.2-14.4. Volume mount points are relative to CATLX_ROOT (portable).
+# Merge this fragment with /docker/docker-compose.yml. Use docker-compose.override.yml for per-machine changes.
+
+services:
+  catlx-llm-server:
+    image: catlx/llm-server:latest
+    build:
+      context: ./docker/services/llm-server
+    environment:
+      CATLX_ROOT: ${CATLX_ROOT}
+      QUANT: Q4_K_M
+    volumes:
+      - ${CATLX_ROOT}/models/llm:/models/llm:ro
+      - ${CATLX_ROOT}/data/telemetry:/data/telemetry
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/v1/models"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped

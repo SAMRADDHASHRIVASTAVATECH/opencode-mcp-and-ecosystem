@@ -1,0 +1,35 @@
+skill_id: maintenance
+name: Maintenance
+version: 1.0.0
+description: Run scheduled health checks and repairs across components.
+purpose: Run scheduled health checks and repairs across components.
+inputs: &id001
+- scope
+outputs: &id002
+- report
+preconditions:
+- read-write within authorized scope
+postconditions:
+- components verified or flagged
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- self-maintenance
+tools:
+- health-monitor
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - all scoped components reported
+failure_contract:
+  failure_modes:
+  - scope denied
+recovery_contract:
+  strategies:
+  - narrow scope
+examples: []
+tests: []
+status: validated

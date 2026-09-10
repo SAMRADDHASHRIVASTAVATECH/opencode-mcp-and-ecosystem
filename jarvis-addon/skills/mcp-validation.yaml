@@ -1,0 +1,34 @@
+skill_id: mcp-validation
+name: Mcp Validation
+version: 1.0.0
+description: 'Validate an MCP definition: schema, tools, resources, permissions, health.'
+purpose: 'Validate an MCP definition: schema, tools, resources, permissions, health.'
+inputs: &id001
+- mcp
+outputs: &id002
+- verdict
+preconditions: []
+postconditions:
+- read-only
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- schema-validate
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - all valid
+failure_contract:
+  failure_modes:
+  - invalid tool contract
+recovery_contract:
+  strategies:
+  - report
+examples: []
+tests: []
+status: validated

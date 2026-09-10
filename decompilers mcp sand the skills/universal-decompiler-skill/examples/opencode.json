@@ -1,0 +1,1 @@
+{"mcp":{"universal-decompiler":{"type":"local","command":["python","-m","universal_decompiler.server"],"environment":{"DECOMPILER_TARGET_ROOT":"/absolute/targets","DECOMPILER_ANALYSIS_ROOT":"/absolute/analysis","DECOMPILER_TOOL_ROOT":"/absolute/tool-cache"}}}}

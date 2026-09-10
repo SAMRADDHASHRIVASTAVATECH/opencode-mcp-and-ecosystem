@@ -1,0 +1,110 @@
+# Glossary (A.1) — 120 terms
+
+See also the source dump: `knowledge/system/appendix.md`.
+
+- **3-point lighting** — key + fill + rim system (D108).
+- **180° rule** — camera stays on one side of the action line (D103).
+- **AOV** — arbitrary output variable; custom render pass (D116).
+- **AgX** — Blender 4.x default view transform; filmic HDR rolloff (D112).
+- **Albedo** — base color without lighting (D26).
+- **Animatic** — timed storyboard cut to audio (D10).
+- **Anticipation** — wind-up before action (D65).
+- **Armature** — Blender's skeleton object (D48).
+- **Asset Browser** — library for reusable assets (D84/D122).
+- **BBone (Bendy Bone)** — bone with segments that curves (D50).
+- **Blendshape / Shape key** — stored mesh deformation (D59/D60).
+- **Blocking** — stepped key pose stage (D64).
+- **Blockout** — proxy geometry layout (D16).
+- **Boolean** — add/subtract mesh operation (D18).
+- **Bounce** — light reflection limit in render (D114).
+- **BVH** — ray acceleration structure (D114).
+- **Cache** — stored simulation results (D88).
+- **Cell Fracture** — built-in fracture add-on (D97).
+- **Child Of** — constraint; animatable parenting (D53).
+- **Cloth** — fabric simulation modifier (D39/D91).
+- **Collection** — grouping system (D15).
+- **Color management** — view transform/exposure pipeline (D112).
+- **Compositor** — node-based post-processing (D117).
+- **Constraint** — rule linking objects/bones (D53).
+- **Contact shadow** — darkening where objects touch (D109).
+- **Control rig** — animator-facing layer of the rig (D48/D55).
+- **Corrective shape** — pose-fix blendshape (D59).
+- **Cryptomatte** — automatic object/material masks (D115).
+- **Custom shape** — controller visual (D55).
+- **Cycles** — raytraced render engine (D113).
+- **Deform bone** — bone that moves mesh (D48/D50).
+- **Denoise** — noise removal post-process (D114).
+- **Displacement** — geometric offset from a map (D26/D80).
+- **Dope Sheet** — keyframe list (D64).
+- **Driver** — value computed from another value (D54).
+- **Dyntopo** — dynamic topology sculpting (D22).
+- **EEVEE** — real-time render engine (D113).
+- **Edge flow** — loop direction in topology (D24).
+- **Emissive** — self-luminous material (D30).
+- **Envelope** — bone influence without weights (D56).
+- **EXR** — OpenEXR float image format (D112/D115).
+- **F-curve** — animation curve in Graph Editor (D64).
+- **Falloff** — brush/force influence curve (D22/D88).
+- **Field** — geometry-nodes attribute computation (D85).
+- **FK** — forward kinematics (D52).
+- **Force field** — physics influence (wind, turbulence) (D88).
+- **Fracture** — pre-breaking geometry for destruction (D97).
+- **Fresnel** — view-angle reflectance (edge glow) (D101).
+- **Gimbal lock** — rotation axis collapse (D49).
+- **GN (Geometry Nodes)** — node-based procedural system (D85).
+- **Graph Editor** — curve editing for animation (D64).
+- **Grooming** — styling hair/fur guides (D46).
+- **HDRI** — high-dynamic-range environment image (D108).
+- **Hair curves** — modern strand-based hair (D43).
+- **Holdout** — hide from render (D15).
+- **IK** — inverse kinematics (D51).
+- **Instancing** — repeated objects without copies (D85).
+- **IOR** — index of refraction (D30).
+- **Island** — connected UV region (D25).
+- **Library override** — local edits to linked data (D122).
+- **Light linking** — light affects chosen objects (D108).
+- **LOD** — level of detail variants (D24).
+- **Mantaflow** — Blender's fluid/smoke/fire solver (D93/D95/D96).
+- **Mask** — value region selection (D26/D29).
+- **Matcap** — viewport material capture shading (D13).
+- **Mist pass** — camera-distance gradient (D110/D115).
+- **Modifier** — non-destructive geometry operation (D18/D24).
+- **Multires** — multiresolution sculpting (D22).
+- **NLA** — non-linear animation strips (D64).
+- **Node group** — reusable node subgraph (D29/D86).
+- **Non-manifold** — geometry error (D24).
+- **Normal map** — fake-relief texture (D26).
+- **Ocean modifier** — wave displacement generator (D94).
+- **Overlap** — parts moving at different times (D65/D77).
+- **PBR** — physically-based rendering (D30).
+- **Pinning** — fixed cloth vertices (D38/D39).
+- **Pole** — 3/5-edge topology junction (D24).
+- **Pole vector/target** — IK bend-direction control (D51).
+- **Pose library** — stored poses (D64).
+- **Principled BSDF** — universal PBR shader (D30).
+- **Rig** — control system (D48).
+- **Rigid body** — hard-object physics (D89).
+- **Roll** — bone's axial orientation (D49).
+- **Saccade** — quick eye jump (D63).
+- **Seam** — UV cut (D25).
+- **Sewing spring** — cloth seam force (D38).
+- **Shape language** — design shapes conveying personality (D04).
+- **Shrinkwrap** — surface-conforming projection (D18/D23).
+- **Silhouette** — outline readability (D04).
+- **Skinning** — mesh-to-skeleton binding (D57).
+- **Soft body** — deformable-object physics (D90).
+- **Spacing** — distribution of motion over time (D65).
+- **Spline** — smooth interpolation (D64).
+- **SSS** — subsurface scattering (D32).
+- **Subdiv** — subdivision surface (D17/D24).
+- **Texel density** — texture resolution per surface (D25).
+- **Topology** — edge/vertex arrangement (D24).
+- **Transmission** — light passing through (D30/D33).
+- **UDIM** — multi-tile UVs (D25).
+- **UV** — texture coordinates (D25).
+- **Vertex group** — weighted vertex set (D56).
+- **View layer** — render subset of a scene (D15/D115).
+- **Viseme** — mouth shape for a phoneme (D62).
+- **Voxel remesh** — uniform-density remeshing (D22).
+- **Weights** — vertex-bone influence values (D56).
+- **Z-buffer/Z-pass** — depth map (D115).

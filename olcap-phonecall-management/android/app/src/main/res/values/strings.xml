@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OLCAP Phone Management</string>
+    <string name="status_phone">PHONE</string>
+    <string name="status_mcp">MCP</string>
+    <string name="status_telephony">Telephony</string>
+    <string name="status_voice">AI Voice</string>
+    <string name="status_active_call">ACTIVE CALL</string>
+    <string name="status_auto_answer">AUTONOMOUS ANSWERING</string>
+    <string name="btn_start">Start service</string>
+    <string name="btn_stop">Stop service</string>
+    <string name="btn_estop">Emergency Stop</string>
+    <string name="active_label">OLCAP Phone Management: ACTIVE</string>
+</resources>

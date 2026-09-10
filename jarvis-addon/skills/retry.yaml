@@ -1,0 +1,35 @@
+skill_id: retry
+name: Retry
+version: 1.0.0
+description: Retry a transient operation with backoff.
+purpose: Retry a transient operation with backoff.
+inputs: &id001
+- operation
+outputs: &id002
+- result
+preconditions:
+- transient class + under retry limit
+postconditions:
+- result or escalate
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- failure-recovery
+tools:
+- recovery-run
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - bounded
+failure_contract:
+  failure_modes:
+  - limit reached
+recovery_contract:
+  strategies:
+  - alternative
+examples: []
+tests: []
+status: validated

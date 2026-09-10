@@ -1,0 +1,15 @@
+workflow: task-execution-loop
+version: 1.0.0
+loop:
+- decompose task
+- select tool/skill
+- execute
+- verify postconditions
+- record evidence
+- if failure -> classify -> recover -> reverify
+- else complete
+bounds:
+- retry limit
+- timeout
+- escalation on auth/security
+rollback: on unrecoverable, restore checkpoint

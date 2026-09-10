@@ -1,0 +1,17 @@
+kind: mcp
+entries:
+- coordination-mcp
+- goals-mcp
+- gui-mcp
+- knowledge-mcp
+- maintenance-mcp
+- policy-mcp
+- project-mcp
+- registry-mcp
+- verification-mcp
+- world-model-mcp
+- database-sql-mcp
+- office-documents-mcp
+- windows-system-mcp
+- android-development-mcp
+- software-engineering-mcp

@@ -1,0 +1,25 @@
+contract: observation
+version: 1.0.0
+schema: schemas/observation.schema.json
+summary: Common observation envelope across all modalities for deep multimodal fusion.
+modalities:
+- text
+- voice
+- image
+- screenshot
+- video
+- audio
+- document
+- application_state
+- filesystem_state
+- browser_state
+- api_state
+fields:
+- observation_id
+- modality
+- content
+- source
+- timestamp
+- confidence
+- verification
+- entity_refs

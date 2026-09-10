@@ -1,0 +1,36 @@
+skill_id: resume
+name: Resume
+version: 1.0.0
+description: Continue a paused/interrupted task from its last checkpoint.
+purpose: Continue a paused/interrupted task from its last checkpoint.
+inputs: &id001
+- task id
+outputs: &id002
+- continued task
+preconditions:
+- checkpoint exists
+postconditions:
+- task advances
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- long-horizon-autonomy
+tools:
+- checkpoint-load
+- goal-store
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - no lost work beyond checkpoint
+failure_contract:
+  failure_modes:
+  - no checkpoint
+recovery_contract:
+  strategies:
+  - restart from start
+examples: []
+tests: []
+status: validated

@@ -1,0 +1,22 @@
+mcp_id: knowledge-mcp
+name: knowledge-mcp
+version: 1.0.0
+description: knowledge + research
+capabilities:
+- knowledge-updating
+tools:
+- web-search
+- source-compare
+- knowledge-store
+- knowledge-validate
+resources:
+- knowledge://*
+- sources://*
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: knowledge-mcp.health
+  interval_s: 60
+dependencies: []
+tests: []

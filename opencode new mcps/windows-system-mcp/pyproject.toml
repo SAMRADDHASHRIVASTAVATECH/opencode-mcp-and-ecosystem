@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "windows-system-mcp"
+version = "1.0.0"
+description = "Standalone MCP server for Windows administration, printers, drivers, and diagnostics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["mcp>=1.2.0"]
+
+[project.optional-dependencies]
+winrm = ["pywinrm>=0.4.3"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+windows-system-mcp = "windows_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

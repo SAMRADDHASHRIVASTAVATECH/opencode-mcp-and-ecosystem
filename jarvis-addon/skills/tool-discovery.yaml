@@ -1,0 +1,35 @@
+skill_id: tool-discovery
+name: Tool Discovery
+version: 1.0.0
+description: Enumerate available tools and their health.
+purpose: Enumerate available tools and their health.
+inputs: &id001
+- filters
+outputs: &id002
+- tool list with health
+preconditions:
+- read-only
+postconditions:
+- none
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- high-reliability
+tools:
+- tool-health
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - health field present
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - empty
+examples: []
+tests: []
+status: validated

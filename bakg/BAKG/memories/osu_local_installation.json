@@ -1,0 +1,17 @@
+{
+  "id": "osu_local_installation_001",
+  "kind": "episodic",
+  "title": "osu! local installation",
+  "text": "osu! installed at C:\\\\Users\\\\HP\\\\AppData\\\\Local\\\\osulazer\\\\current\\\\osu!.exe. Launched via direct executable. Steam protocol not applicable - standalone installation.",
+  "salience": 0.7,
+  "timestamp": "2026-09-07T00:00:00Z",
+  "meta": {
+    "source": "system_init",
+    "exe_path": "C:\\\\Users\\\\HP\\\\AppData\\\\Local\\\\osulazer\\\\current\\\\osu!.exe",
+    "game": "osu!",
+    "install_type": "local",
+    "category": "game_installation"
+  },
+  "embedding": [0.0] * 1536,
+  "tags": ["osu!", "local", "windows", "game"]
+}

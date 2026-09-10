@@ -1,0 +1,16 @@
+policy_id: long-horizon-policy
+name: Long-Horizon Autonomy Policy
+version: 1.0.0
+domain: long-horizon-autonomy
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: long-horizon-autonomy
+conditions:
+- goal must be authorized
+- checkpoints required at milestones
+- respect stop & escalation conditions
+- notify on state transitions
+when: {}
+reason: Long tasks may run autonomously only with explicit authorization and checkpoints.
+non_override: true

@@ -1,0 +1,24 @@
+contract: universal-result
+version: 1.0.0
+schema: schemas/result.schema.json
+summary: Every operation returns this envelope. A tool returning is NOT success; success
+  requires the verification field to pass.
+fields:
+  status: success|partial|failed|blocked
+  result: {}
+  artifacts: []
+  verification:
+    expected_state: {}
+    observed_state: {}
+    method: ''
+    passed: false
+    evidence: []
+  evidence: []
+  warnings: []
+  errors: []
+  next_action: null
+  timestamp: ''
+rules:
+- status is derived from verification+evidence, never from tool return alone
+- artifacts list every produced file/resource
+- errors carry typed codes

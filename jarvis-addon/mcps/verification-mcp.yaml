@@ -1,0 +1,25 @@
+mcp_id: verification-mcp
+name: verification-mcp
+version: 1.0.0
+description: verification, evidence, failure, recovery
+capabilities:
+- high-reliability
+- failure-recovery
+tools:
+- verify-postcondition
+- state-observe
+- failure-classifier
+- recovery-run
+- rollback
+- state-restore
+resources:
+- evidence://*
+- recovery://*
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: verification-mcp.health
+  interval_s: 60
+dependencies: []
+tests: []

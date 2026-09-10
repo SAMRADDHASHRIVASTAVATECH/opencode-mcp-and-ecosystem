@@ -1,0 +1,15 @@
+contract: verification
+version: 1.0.0
+schema: schemas/verification.schema.json
+summary: Compare expected vs observed state with a method and evidence.
+fields:
+- expected_state
+- observed_state
+- method
+- result(passed|failed|partial)
+- evidence
+- confidence
+- timestamp
+rules:
+- never declare success without observed_state matching expected_state
+- evidence must be independently inspectable

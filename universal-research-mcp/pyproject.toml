@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-research-mcp"
+version = "1.0.0"
+description = "Universal Web Research + Autonomous Deep Research MCP & Skill System"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Universal Research System" }]
+keywords = ["mcp", "research", "deep-research", "web-search", "agent", "opencode"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP",
+  "Framework :: AnyIO",
+]
+dependencies = [
+  "httpx>=0.24",
+  "beautifulsoup4>=4.11",
+  "lxml>=4.9",
+  "pypdf>=3.0",
+  "python-docx>=1.0",
+  "openpyxl>=3.1",
+  "python-pptx>=0.6",
+]
+
+[project.scripts]
+universal-research-mcp = "universal_research.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

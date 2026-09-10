@@ -1,0 +1,10 @@
+[
+  {"type":"cover","title":"INVOICE #1042","subtitle":"ACME Corp","author":"Billing","date":"2026-09-06","organization":"Finance"},
+  {"type":"para","text":"Bill to: Example Client Ltd, Indore."},
+  {"type":"heading","text":"Line items","level":1},
+  {"type":"table","rows":[["Item","Qty","Unit Price","Total"],["Consulting","8","125.00","1000.00"],["Licence","1","240.00","240.00"],["Support","1","80.00","80.00"]]},
+  {"type":"heading","text":"Totals","level":2},
+  {"type":"table","rows":[["Subtotal","1320.00"],["Tax (18%)","237.60"],["GRAND TOTAL","1557.60"]]},
+  {"type":"spacer","height":12},
+  {"type":"para","text":"Payment due within 30 days."}
+]

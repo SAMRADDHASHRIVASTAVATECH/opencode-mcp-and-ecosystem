@@ -1,0 +1,15 @@
+policy_id: rollback-policy
+name: Rollback Policy
+version: 1.0.0
+domain: high-reliability
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: high-reliability
+conditions:
+- rollback recorded
+- post-rollback verification
+- never roll back unrelated components
+when: {}
+reason: Rollback restores last known-good state.
+non_override: true

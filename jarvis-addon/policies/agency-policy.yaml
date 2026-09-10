@@ -1,0 +1,16 @@
+policy_id: agency-policy
+name: Universal Digital Agency Policy
+version: 1.0.0
+domain: universal-digital-agency
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: universal-digital-agency
+conditions:
+- every capability enabled + validated before composition
+- effective authorization = most restrictive of parts
+- result verified at each stage
+- no fabrication
+when: {}
+reason: Composition runs under the most restrictive policy of any composed capability.
+non_override: true

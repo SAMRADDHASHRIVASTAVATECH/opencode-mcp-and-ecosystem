@@ -1,0 +1,35 @@
+skill_id: capability-registration
+name: Capability Registration
+version: 1.0.0
+description: Register a validated capability into the registry with versioning.
+purpose: Register a validated capability into the registry with versioning.
+inputs: &id001
+- capability + version
+outputs: &id002
+- registration record
+preconditions:
+- capability VALIDATED
+postconditions:
+- registry updated atomically
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- registry-register
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - readback returns registered record
+failure_contract:
+  failure_modes:
+  - id collision
+recovery_contract:
+  strategies:
+  - detect/compare/reuse-or-map per import rules
+examples: []
+tests: []
+status: validated

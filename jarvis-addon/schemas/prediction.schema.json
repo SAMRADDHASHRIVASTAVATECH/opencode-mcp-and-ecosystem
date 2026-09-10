@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Prediction",
+  "type": "object",
+  "required": [
+    "prediction",
+    "confidence",
+    "evidence",
+    "timestamp",
+    "expiration",
+    "kind"
+  ],
+  "properties": {
+    "prediction": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "evidence": {
+      "type": "array"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "expiration": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "const": "prediction"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+skill_id: prediction
+name: Prediction
+version: 1.0.0
+description: Form a time-bound prediction clearly separated from fact.
+purpose: Form a time-bound prediction clearly separated from fact.
+inputs: &id001
+- hypothesis
+outputs: &id002
+- prediction object
+preconditions:
+- read-only historical data
+postconditions:
+- marked predicted not factual
+permissions:
+  auth_level: RECOMMEND
+dependencies: []
+required_capabilities:
+- predictive-assistance
+tools:
+- metrics-read
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - expiration + confidence present
+failure_contract:
+  failure_modes:
+  - insufficient evidence
+recovery_contract:
+  strategies:
+  - state low confidence
+examples: []
+tests: []
+status: validated

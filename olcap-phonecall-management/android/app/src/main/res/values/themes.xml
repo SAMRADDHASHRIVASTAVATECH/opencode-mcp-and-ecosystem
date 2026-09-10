@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.Olcap" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#0B2545</item>
+    </style>
+</resources>

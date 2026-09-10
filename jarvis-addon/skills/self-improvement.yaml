@@ -1,0 +1,37 @@
+skill_id: self-improvement
+name: Self Improvement
+version: 1.0.0
+description: Run controlled improvement loop observe->test->compare->version->promote/rollback.
+purpose: Run controlled improvement loop observe->test->compare->version->promote/rollback.
+inputs: &id001
+- weakness signal
+outputs: &id002
+- promoted or rolled back change
+preconditions:
+- change isolated from security policy
+postconditions:
+- A/B compared + versioned
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- self-improvement
+tools:
+- metrics-read
+- version-bump
+- rollback
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - promoted only if better/equal under test
+failure_contract:
+  failure_modes:
+  - regression
+recovery_contract:
+  strategies:
+  - rollback
+examples: []
+tests: []
+status: validated

@@ -1,0 +1,35 @@
+skill_id: skill-validation
+name: Skill Validation
+version: 1.0.0
+description: 'Validate a skill: schema, policy, referenced tools, tests.'
+purpose: 'Validate a skill: schema, policy, referenced tools, tests.'
+inputs: &id001
+- skill
+outputs: &id002
+- verdict
+preconditions: []
+postconditions:
+- read-only
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- schema-validate
+- policy-check
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - all gates green
+failure_contract:
+  failure_modes:
+  - tool reference missing
+recovery_contract:
+  strategies:
+  - flag missing tool
+examples: []
+tests: []
+status: validated

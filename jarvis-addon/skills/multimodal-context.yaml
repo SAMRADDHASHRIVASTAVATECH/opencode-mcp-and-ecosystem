@@ -1,0 +1,35 @@
+skill_id: multimodal-context
+name: Multimodal Context
+version: 1.0.0
+description: Assemble a unified observation from multiple modalities.
+purpose: Assemble a unified observation from multiple modalities.
+inputs: &id001
+- modality items
+outputs: &id002
+- unified observation
+preconditions:
+- each item has source/timestamp
+postconditions:
+- merged representation
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- multimodal-fusion
+tools:
+- observation-fuse
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - all modalities represented
+failure_contract:
+  failure_modes:
+  - modality unavailable
+recovery_contract:
+  strategies:
+  - partial with gap note
+examples: []
+tests: []
+status: validated

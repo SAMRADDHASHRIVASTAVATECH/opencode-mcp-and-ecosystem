@@ -1,0 +1,35 @@
+skill_id: skill-registration
+name: Skill Registration
+version: 1.0.0
+description: Register a validated skill into the skill registry.
+purpose: Register a validated skill into the skill registry.
+inputs: &id001
+- skill
+outputs: &id002
+- registry entry
+preconditions:
+- validated
+postconditions:
+- registered
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- registry-register
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - readback
+failure_contract:
+  failure_modes:
+  - collision
+recovery_contract:
+  strategies:
+  - compare/reuse/map
+examples: []
+tests: []
+status: validated

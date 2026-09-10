@@ -1,0 +1,17 @@
+kind: contract
+entries:
+- authorization-contract.yaml.yaml
+- context-contract.yaml.yaml
+- conversation-contract.yaml.yaml
+- coordination-contract.yaml.yaml
+- event-contract.yaml.yaml
+- goal-contract.yaml.yaml
+- memory-contract.yaml.yaml
+- observation-contract.yaml.yaml
+- prediction-contract.yaml.yaml
+- recovery-contract.yaml.yaml
+- result-contract.yaml.yaml
+- skill-contract.yaml.yaml
+- tool-contract.yaml.yaml
+- verification-contract.yaml.yaml
+- world-model-contract.yaml.yaml

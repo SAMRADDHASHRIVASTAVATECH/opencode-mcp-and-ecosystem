@@ -1,0 +1,21 @@
+{
+  "$comment": "Optional runtime overrides. Environment variables UPPDF_* also apply and take precedence (e.g. UPPDF_LLM_CONTEXT_CHARS). Regenerate skills with `python scripts/generate_skills.py`.",
+  "runtime": {
+    "llm_context_chars": 16000,
+    "llm_context_tokens": 4000,
+    "page_batch_size": 20,
+    "chunk_chars": 1500,
+    "chunk_overlap_chars": 150
+  },
+  "capabilities": {
+    "vision": false,
+    "ocr": false
+  },
+  "optimize_profiles": {
+    "maximum_quality": {"image_dpi": 0, "image_quality": 95, "use_garbage": 1, "deflate": false},
+    "balanced": {"image_dpi": 0, "image_quality": 75, "use_garbage": 3, "deflate": true},
+    "small_size": {"image_dpi": 120, "image_quality": 55, "use_garbage": 4, "deflate": true},
+    "web_optimized": {"image_dpi": 110, "image_quality": 60, "use_garbage": 3, "deflate": true},
+    "archive_optimized": {"image_dpi": 0, "image_quality": 85, "use_garbage": 3, "deflate": true}
+  }
+}

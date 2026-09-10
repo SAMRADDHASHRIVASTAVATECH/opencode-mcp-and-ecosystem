@@ -1,0 +1,5085 @@
+{
+  "primary_categories": [
+    "General Purpose (Systems / Performance Focus)",
+    "Red (core)",
+    "x86 Assembly",
+    "General Purpose (Managed / Productivity Focus)",
+    "V",
+    "Web Development (Frontend, Backend, Fullstack, UI)",
+    "ELM",
+    "Red (scripting part)",
+    "PowerShell",
+    "Power Query M Formula Language",
+    "GRAPHQL",
+    "Build Systems & Infrastructure as Code (IaC)",
+    "Rego",
+    "Functional Programming (Primarily)",
+    "Alice (Functional)",
+    "F#",
+    "Cairo",
+    "CHISEL",
+    "GRAPHQL (schema definition part)",
+    "Mercury",
+    "Idris",
+    "Alice (3D Programming Environment)",
+    "JSX",
+    "LOLCODE",
+    ".NET Ecosystem (Platform/Related Frameworks)"
+  ],
+  "categorized_languages": {
+    "General Purpose (Systems / Performance Focus)": [
+      "C",
+      "C++",
+      "Rust",
+      "Go",
+      "Zig",
+      "Nim",
+      "Crystal"
+    ],
+    "Red (core)": [
+      "Ada",
+      "D",
+      "Embedded C",
+      "ARM Assembly",
+      "MIPS Assembly"
+    ],
+    "x86 Assembly": [],
+    "General Purpose (Managed / Productivity Focus)": [
+      "C#",
+      "Java",
+      "Python",
+      "Swift",
+      "Kotlin",
+      "Scala",
+      "Pony",
+      "COBOL",
+      "Pascal",
+      "OCaml",
+      "Lisp"
+    ],
+    "V": [],
+    "Web Development (Frontend, Backend, Fullstack, UI)": [
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "React",
+      "JSX",
+      "PHP",
+      "RAILS",
+      "APEXNET",
+      "Elixir",
+      "ERLANG",
+      "Dart",
+      "PureScript"
+    ],
+    "ELM": [
+      "Scripting & Automation",
+      "Python",
+      "Perl",
+      "Ruby",
+      "PHP",
+      "Lua",
+      "TCL",
+      "BASH",
+      "ZSH",
+      "Tcsh",
+      "FISH",
+      "AWK",
+      "SED",
+      "EXPECT",
+      "AUTOHOTKEY",
+      "VBSCRIPT",
+      "AppleScript",
+      "BATCH"
+    ],
+    "Red (scripting part)": [],
+    "PowerShell": [
+      "Data Analysis & Scientific Computing",
+      "R",
+      "Python",
+      "JULIA",
+      "MATLAB",
+      "FORTRAN",
+      "SAS",
+      "Stata",
+      "SPSS"
+    ],
+    "Power Query M Formula Language": [
+      "Database Interaction & Query Languages",
+      "SQL",
+      "PL AND SQL",
+      "T-SQL",
+      "MongoDB"
+    ],
+    "GRAPHQL": [],
+    "Build Systems & Infrastructure as Code (IaC)": [
+      "Makefile",
+      "CMake",
+      "Bazel",
+      "Ninja",
+      "Ant",
+      "GRADLE",
+      "Ansible",
+      "Chef",
+      "Puppet",
+      "Terraform",
+      "Dockerfile",
+      "Kubernetes YAML",
+      "HCL"
+    ],
+    "Rego": [],
+    "Functional Programming (Primarily)": [
+      "HASKELL",
+      "ELM",
+      "PURESCRIPT",
+      "Futhark",
+      "SCHEME",
+      "RACKET"
+    ],
+    "Alice (Functional)": [],
+    "F#": [
+      "Smart Contract Development",
+      "Solidity",
+      "Vyper",
+      "Move",
+      "Cadence",
+      "LIGO"
+    ],
+    "Cairo": [
+      "Hardware Description & Synthesis",
+      "VERILOG",
+      "VHDL",
+      "SystemVerilog"
+    ],
+    "CHISEL": [
+      "Data Description / Serialization / Markup",
+      "JSON",
+      "XML",
+      "YAML",
+      "TOML",
+      "INI",
+      "HCL"
+    ],
+    "GRAPHQL (schema definition part)": [
+      "Logic Programming",
+      "PROLOG"
+    ],
+    "Mercury": [
+      "Proof Assistants & Dependent Types",
+      "Coq",
+      "Agda"
+    ],
+    "Idris": [
+      "Visual & Educational Programming",
+      "Scratch",
+      "Blockly",
+      "Logo"
+    ],
+    "Alice (3D Programming Environment)": [
+      "Templating Languages",
+      "Handlebars",
+      "JINJA",
+      "LIQUID",
+      "SMARTY",
+      "EJS",
+      "HAML",
+      "Pug"
+    ],
+    "JSX": [
+      "Esoteric Languages",
+      "Befunge",
+      "Brainfuck",
+      "Whitespace",
+      "Piet"
+    ],
+    "LOLCODE": [],
+    ".NET Ecosystem (Platform/Related Frameworks)": [
+      "DOTNET",
+      "C#",
+      "F#",
+      "APEXNET"
+    ]
+  },
+  "tag_mapping": {
+    "General Purpose (Systems / Performance Focus)": [
+      "Systems",
+      "Performance",
+      "Low-Level Potential",
+      "Manual Memory Management Focus"
+    ],
+    "General Purpose (Managed / Productivity Focus)": [
+      "Managed",
+      "Productivity",
+      "OOP",
+      "Garbage Collection"
+    ],
+    "Web Development (Frontend, Backend, Fullstack, UI)": [
+      "Web Development",
+      "Frontend",
+      "Backend",
+      "Fullstack",
+      "UI"
+    ],
+    "Scripting & Automation": [
+      "Scripting",
+      "Automation",
+      "CLI Tools"
+    ],
+    "Data Analysis & Scientific Computing": [
+      "Data Science",
+      "Scientific Computing",
+      "Data Analysis",
+      "Mathematics"
+    ],
+    "Database Interaction & Query Languages": [
+      "Database",
+      "Query Language",
+      "Data Interaction"
+    ],
+    "Build Systems & Infrastructure as Code (IaC)": [
+      "Build Systems",
+      "IaC",
+      "Automation",
+      "Configuration"
+    ],
+    "Functional Programming (Primarily)": [
+      "Functional",
+      "Declarative",
+      "Academic"
+    ],
+    "Smart Contract Development": [
+      "Blockchain",
+      "Smart Contracts",
+      "Web3"
+    ],
+    "Hardware Description & Synthesis": [
+      "Hardware",
+      "HDL",
+      "Embedded"
+    ],
+    "Data Description / Serialization / Markup": [
+      "Data Description",
+      "Markup",
+      "Serialization",
+      "Configuration"
+    ],
+    "Logic Programming": [
+      "Logic Programming",
+      "AI",
+      "Declarative"
+    ],
+    "Proof Assistants & Dependent Types": [
+      "Formal Verification",
+      "Dependent Types",
+      "Academic"
+    ],
+    "Visual & Educational Programming": [
+      "Educational",
+      "Visual Programming",
+      "Beginner-Friendly"
+    ],
+    "Templating Languages": [
+      "Templating",
+      "Web Development"
+    ],
+    "Esoteric Languages": [
+      "Esoteric",
+      "Experimental",
+      "Conceptual"
+    ],
+    ".NET Ecosystem (Platform/Related Frameworks)": [
+      "DotNet",
+      "Managed",
+      "Enterprise"
+    ]
+  },
+  "language_specific_tags": {
+    "C": [
+      "Procedural",
+      "Manual Memory Management"
+    ],
+    "C++": [
+      "OOP",
+      "Generic",
+      "Game Development",
+      "Manual Memory Management"
+    ],
+    "Rust": [
+      "Concurrency",
+      "Growing Ecosystem",
+      "Static Typing",
+      "Strong Community",
+      "Manual Memory Management (Borrow Checking)"
+    ],
+    "Go": [
+      "Concurrency",
+      "Static Typing",
+      "Garbage Collection",
+      "Networking"
+    ],
+    "Zig": [
+      "Systems",
+      "Manual Memory Management",
+      "Low-Level"
+    ],
+    "Nim": [
+      "Systems",
+      "Scripting-like Syntax",
+      "Performance",
+      "Garbage Collection"
+    ],
+    "Crystal": [
+      "Scripting-like Syntax",
+      "Performance",
+      "Garbage Collection"
+    ],
+    "Red (core)": [
+      "Systems",
+      "Low-Level"
+    ],
+    "Ada": [
+      "Systems",
+      "High Integrity"
+    ],
+    "D": [
+      "Systems",
+      "Garbage Collection",
+      "Manual Memory Management (Optional)"
+    ],
+    "Embedded C": [
+      "Systems",
+      "Embedded",
+      "Manual Memory Management",
+      "Low-Level"
+    ],
+    "ARM Assembly": [
+      "Assembly",
+      "Low-Level",
+      "Embedded",
+      "Performance"
+    ],
+    "MIPS Assembly": [
+      "Assembly",
+      "Low-Level",
+      "Performance"
+    ],
+    "x86 Assembly": [
+      "Assembly",
+      "Low-Level",
+      "Performance"
+    ],
+    "COBOL": [
+      "Business",
+      "Legacy"
+    ],
+    "Pascal": [
+      "Educational",
+      "Structured"
+    ],
+    "OCaml": [
+      "Functional",
+      "Systems"
+    ],
+    "Lisp": [
+      "Functional",
+      "Metaprogramming",
+      "Symbolic"
+    ],
+    "V": [
+      "Systems",
+      "Simplicity",
+      "Compilation"
+    ],
+    "C#": [
+      "Static Typing",
+      "Strong Community",
+      "Large Ecosystem",
+      "OOP",
+      "Game Development (Unity)",
+      "Web Backend (ASP.NET)",
+      "Windows Development"
+    ],
+    "Java": [
+      "Static Typing",
+      "Strong Community",
+      "Large Ecosystem",
+      "OOP",
+      "Mobile Development (Android)",
+      "Web Backend",
+      "Enterprise Applications"
+    ],
+    "Python": [
+      "Dynamic Typing",
+      "Strong Community",
+      "Large Ecosystem",
+      "Scripting",
+      "Data Science",
+      "OOP",
+      "Functional",
+      "AI/ML"
+    ],
+    "Swift": [
+      "Static Typing",
+      "Strong Community",
+      "Large Ecosystem",
+      "OOP",
+      "Functional",
+      "Mobile Development (iOS)",
+      "Desktop Development"
+    ],
+    "Kotlin": [
+      "Static Typing",
+      "Strong Community",
+      "Large Ecosystem",
+      "OOP",
+      "Functional",
+      "Mobile Development (Android)",
+      "Cross-Platform"
+    ],
+    "Scala": [
+      "Static Typing",
+      "JVM",
+      "Functional",
+      "OOP"
+    ],
+    "Pony": [
+      "Concurrency",
+      "Actor Model",
+      "Reference Capabilities"
+    ],
+    "JavaScript": [
+      "Dynamic Typing",
+      "Strong Community",
+      "Large Ecosystem",
+      "Scripting",
+      "Frontend",
+      "Backend",
+      "OOP (Prototype)",
+      "Functional",
+      "Runtime (Node.js, Browser)"
+    ],
+    "TypeScript": [
+      "Static Typing",
+      "JavaScript Superset",
+      "Frontend",
+      "Backend",
+      "Large Projects"
+    ],
+    "HTML": [
+      "Markup",
+      "Frontend",
+      "Structure",
+      "Web Standard"
+    ],
+    "CSS": [
+      "Styling",
+      "Frontend",
+      "Web Standard"
+    ],
+    "React": [
+      "JavaScript",
+      "Frontend",
+      "UI Framework",
+      "Component-Based"
+    ],
+    "JSX": [
+      "React",
+      "Templating"
+    ],
+    "PHP": [
+      "Scripting",
+      "Backend",
+      "Large Ecosystem",
+      "Web Development"
+    ],
+    "RAILS": [
+      "Ruby",
+      "Web Framework",
+      "Backend",
+      "Convention over Configuration"
+    ],
+    "APEXNET": [
+      ".NET",
+      "Salesforce",
+      "Enterprise"
+    ],
+    "Elixir": [
+      "Functional",
+      "Concurrency",
+      "Backend",
+      "Erlang VM",
+      "Web Development (Phoenix)"
+    ],
+    "ERLANG": [
+      "Functional",
+      "Concurrency",
+      "Fault Tolerance",
+      "Systems",
+      "Telecommunications"
+    ],
+    "Dart": [
+      "Static Typing",
+      "Mobile Development (Flutter)",
+      "Web Development (Frontend)"
+    ],
+    "PureScript": [
+      "Functional",
+      "Static Typing",
+      "Compiles to JS"
+    ],
+    "ELM": [
+      "Functional",
+      "Static Typing",
+      "Compiles to JS",
+      "Frontend",
+      "Reliability"
+    ],
+    "Perl": [
+      "Scripting",
+      "Automation",
+      "Text Processing"
+    ],
+    "Ruby": [
+      "Scripting",
+      "Automation",
+      "OOP",
+      "Web Backend (Rails)"
+    ],
+    "Lua": [
+      "Scripting",
+      "Embedded",
+      "Game Development",
+      "Extensibility"
+    ],
+    "TCL": [
+      "Scripting",
+      "Automation",
+      "GUI (Tk)"
+    ],
+    "BASH": [
+      "Scripting",
+      "Shell"
+    ],
+    "ZSH": [
+      "Scripting",
+      "Shell"
+    ],
+    "Tcsh": [
+      "Scripting",
+      "Shell"
+    ],
+    "FISH": [
+      "Scripting",
+      "Shell"
+    ],
+    "AWK": [
+      "Scripting",
+      "Text Processing",
+      "Pattern Matching"
+    ],
+    "SED": [
+      "Scripting",
+      "Text Processing",
+      "Stream Editor"
+    ],
+    "EXPECT": [
+      "Scripting",
+      "Automation",
+      "Interactive Programs"
+    ],
+    "AUTOHOTKEY": [
+      "Scripting",
+      "Automation",
+      "Windows"
+    ],
+    "VBSCRIPT": [
+      "Scripting",
+      "Automation",
+      "Windows"
+    ],
+    "AppleScript": [
+      "Scripting",
+      "Automation",
+      "macOS"
+    ],
+    "BATCH": [
+      "Scripting",
+      "Automation",
+      "Windows",
+      "CLI"
+    ],
+    "Red (scripting part)": [
+      "Scripting",
+      "Automation"
+    ],
+    "PowerShell": [
+      "Scripting",
+      "Automation",
+      "Windows",
+      "CLI",
+      "Object-Oriented Shell"
+    ],
+    "R": [
+      "Statistics",
+      "Data Visualization",
+      "Scripting",
+      "Data Analysis"
+    ],
+    "JULIA": [
+      "Performance",
+      "Scientific Computing",
+      "Data Science",
+      "Parallel Computing"
+    ],
+    "MATLAB": [
+      "Mathematics",
+      "Scientific Computing",
+      "Simulation"
+    ],
+    "FORTRAN": [
+      "Performance",
+      "Scientific Computing",
+      "High-Performance Computing"
+    ],
+    "SAS": [
+      "Statistics",
+      "Enterprise",
+      "Business Intelligence"
+    ],
+    "Stata": [
+      "Statistics"
+    ],
+    "SPSS": [
+      "Statistics"
+    ],
+    "Power Query M Formula Language": [
+      "Data Transformation",
+      "Business Intelligence"
+    ],
+    "SQL": [
+      "Relational Database",
+      "Query Language",
+      "Data Management"
+    ],
+    "PL AND SQL": [
+      "Procedural",
+      "Database",
+      "Oracle"
+    ],
+    "T-SQL": [
+      "Procedural",
+      "Database",
+      "Microsoft SQL Server"
+    ],
+    "MongoDB": [
+      "NoSQL",
+      "Database",
+      "Document Database"
+    ],
+    "GRAPHQL": [
+      "API",
+      "Query Language",
+      "Data Description",
+      "Web Development"
+    ],
+    "Makefile": [
+      "Build Automation"
+    ],
+    "CMake": [
+      "Build Automation",
+      "Cross-Platform"
+    ],
+    "Bazel": [
+      "Build Automation",
+      "Large Scale Builds",
+      "Distributed Builds"
+    ],
+    "Ninja": [
+      "Build Automation",
+      "Speed"
+    ],
+    "Ant": [
+      "Build Automation",
+      "Java",
+      "XML Configuration"
+    ],
+    "GRADLE": [
+      "Build Automation",
+      "Java",
+      "Android",
+      "Groovy/Kotlin DSL"
+    ],
+    "Ansible": [
+      "Configuration Management",
+      "Automation",
+      "IT Automation"
+    ],
+    "Chef": [
+      "Configuration Management",
+      "Automation",
+      "Ruby DSL"
+    ],
+    "Puppet": [
+      "Configuration Management",
+      "Automation",
+      "Declarative"
+    ],
+    "Terraform": [
+      "Cloud Infrastructure",
+      "IaC",
+      "Multi-Cloud"
+    ],
+    "Dockerfile": [
+      "Containerization",
+      "Build Systems"
+    ],
+    "Kubernetes YAML": [
+      "Orchestration",
+      "Configuration"
+    ],
+    "HCL": [
+      "Configuration",
+      "IaC",
+      "Terraform"
+    ],
+    "Rego": [
+      "Policy as Code",
+      "Security"
+    ],
+    "HASKELL": [
+      "Static Typing",
+      "Laziness",
+      "Functional",
+      "Strong Type System"
+    ],
+    "Futhark": [
+      "GPU Computing",
+      "Functional"
+    ],
+    "SCHEME": [
+      "Lisp",
+      "Academic",
+      "Functional"
+    ],
+    "RACKET": [
+      "Lisp",
+      "Educational",
+      "Functional",
+      "Language Creation"
+    ],
+    "Alice (Functional)": [
+      "Standard ML",
+      "Distributed Systems",
+      "Functional"
+    ],
+    "Solidity": [
+      "Ethereum",
+      "Smart Contracts",
+      "Blockchain"
+    ],
+    "Vyper": [
+      "Ethereum",
+      "Smart Contracts",
+      "Pythonic",
+      "Blockchain"
+    ],
+    "Move": [
+      "Smart Contracts",
+      "Blockchain",
+      "Resource Management"
+    ],
+    "Cadence": [
+      "Smart Contracts",
+      "Flow",
+      "Blockchain"
+    ],
+    "LIGO": [
+      "Smart Contracts",
+      "Tezos",
+      "Blockchain",
+      "Multiple Syntaxes"
+    ],
+    "Cairo": [
+      "Smart Contracts",
+      "STARKs",
+      "Blockchain",
+      "Scalability"
+    ],
+    "VERILOG": [
+      "Digital Design",
+      "HDL"
+    ],
+    "VHDL": [
+      "Digital Design",
+      "HDL"
+    ],
+    "SystemVerilog": [
+      "Digital Design",
+      "Verification",
+      "HDL"
+    ],
+    "CHISEL": [
+      "Scala",
+      "Digital Design",
+      "HDL"
+    ],
+    "JSON": [
+      "Serialization",
+      "Web Development",
+      "Data Format"
+    ],
+    "XML": [
+      "Serialization",
+      "Data Format",
+      "Markup"
+    ],
+    "YAML": [
+      "Configuration",
+      "IaC",
+      "Data Format"
+    ],
+    "TOML": [
+      "Configuration",
+      "Data Format"
+    ],
+    "INI": [
+      "Configuration",
+      "Data Format"
+    ],
+    "PROLOG": [
+      "AI",
+      "Logic Programming",
+      "Declarative"
+    ],
+    "Mercury": [
+      "Performance",
+      "Logic Programming"
+    ],
+    "Coq": [
+      "Proof Assistant",
+      "Formal Verification",
+      "Academic"
+    ],
+    "Agda": [
+      "Proof Assistant",
+      "Dependent Types",
+      "Academic"
+    ],
+    "Idris": [
+      "Proof Assistant",
+      "Dependent Types",
+      "Functional",
+      "Academic"
+    ],
+    "Scratch": [
+      "Visual Programming",
+      "Educational",
+      "Beginner-Friendly"
+    ],
+    "Blockly": [
+      "Visual Programming",
+      "Educational",
+      "Beginner-Friendly"
+    ],
+    "Logo": [
+      "Educational",
+      "Visual Programming",
+      "Turtle Graphics"
+    ],
+    "Alice (3D Programming Environment)": [
+      "Visual Programming",
+      "3D",
+      "Educational"
+    ],
+    "Handlebars": [
+      "Web Frontend",
+      "Web Backend",
+      "Templating"
+    ],
+    "JINJA": [
+      "Web Backend",
+      "Python",
+      "Templating"
+    ],
+    "LIQUID": [
+      "E-commerce",
+      "Templating"
+    ],
+    "SMARTY": [
+      "PHP",
+      "Templating"
+    ],
+    "EJS": [
+      "JavaScript",
+      "Templating"
+    ],
+    "HAML": [
+      "Ruby",
+      "Templating"
+    ],
+    "Pug": [
+      "Node.js",
+      "Templating"
+    ],
+    "Befunge": [
+      "Esoteric",
+      "2D Programming"
+    ],
+    "Brainfuck": [
+      "Esoteric",
+      "Minimalist"
+    ],
+    "Whitespace": [
+      "Esoteric",
+      "Invisible Code"
+    ],
+    "Piet": [
+      "Esoteric",
+      "Artistic Programming"
+    ],
+    "LOLCODE": [
+      "Esoteric",
+      "Humor"
+    ],
+    "DOTNET": [
+      "Platform",
+      "Microsoft"
+    ],
+    "F#": [
+      "Functional",
+      "Static Typing",
+      ".NET"
+    ]
+  },
+  "abstraction_level_map": {
+    "Ada": "HIGH",
+    "Agda": "HIGH",
+    "Alice (3D Programming Environment)": "HIGH",
+    "Alice (Functional)": "HIGH",
+    "Ant": "HIGH",
+    "Ansible": "HIGH",
+    "APEXNET": "HIGH",
+    "AppleScript": "HIGH",
+    "AWK": "HIGH",
+    "Bazel": "HIGH",
+    "Blockly": "HIGH",
+    "Cadence": "HIGH",
+    "Chef": "HIGH",
+    "CHISEL": "HIGH",
+    "CMake": "HIGH",
+    "COBOL": "HIGH",
+    "Coq": "HIGH",
+    "CRYSTAL": "HIGH",
+    "CSS": "HIGH",
+    "DART": "HIGH",
+    "DOTNET": "HIGH",
+    "EJS": "HIGH",
+    "ELM": "HIGH",
+    "Elixir": "HIGH",
+    "ERLANG": "HIGH",
+    "EXPECT": "HIGH",
+    "F#": "HIGH",
+    "FISH": "HIGH",
+    "FORTRAN": "HIGH",
+    "Futhark": "HIGH",
+    "GRADLE": "HIGH",
+    "GRAPHQL": "HIGH",
+    "HAML": "HIGH",
+    "Handlebars": "HIGH",
+    "HASKELL": "HIGH",
+    "HCL": "HIGH",
+    "HTML": "HIGH",
+    "Idris": "HIGH",
+    "INI": "HIGH",
+    "JAVA": "HIGH",
+    "JAVASCRIPT": "HIGH",
+    "JINJA": "HIGH",
+    "JSON": "HIGH",
+    "JSX": "HIGH",
+    "JULIA": "HIGH",
+    "KOTLIN": "HIGH",
+    "Kubernetes YAML": "HIGH",
+    "LIGO": "HIGH",
+    "LIQUID": "HIGH",
+    "Lisp": "HIGH",
+    "Logo": "HIGH",
+    "LOLCODE": "HIGH",
+    "Makefile": "HIGH",
+    "MATLAB": "HIGH",
+    "Mercury": "HIGH",
+    "MongoDB": "HIGH",
+    "OCaml": "HIGH",
+    "Pascal": "HIGH",
+    "PERL": "HIGH",
+    "PHP": "HIGH",
+    "PL AND SQL": "HIGH",
+    "Pony": "HIGH",
+    "PowerShell": "HIGH",
+    "PROLOG": "HIGH",
+    "Pug": "HIGH",
+    "Puppet": "HIGH",
+    "PURESCRIPT": "HIGH",
+    "PYTHON": "HIGH",
+    "Power Query M Formula Language": "HIGH",
+    "R": "HIGH",
+    "RACKET": "HIGH",
+    "RAILS": "HIGH",
+    "REACT": "HIGH",
+    "Red(scripting part)": "HIGH",
+    "Rego": "HIGH",
+    "SAS": "HIGH",
+    "SCHEME": "HIGH",
+    "Scratch": "HIGH",
+    "SED": "HIGH",
+    "SMARTY": "HIGH",
+    "Solidity": "HIGH",
+    "SPSS": "HIGH",
+    "SQL": "HIGH",
+    "Stata": "HIGH",
+    "SWIFT": "HIGH",
+    "TCL": "HIGH",
+    "T-SQL": "HIGH",
+    "Tcsh": "HIGH",
+    "Terraform": "HIGH",
+    "TOML": "HIGH",
+    "TYPESCRIPT": "HIGH",
+    "AUTOHOTKEY": "HIGH",
+    "VBSCRIPT": "HIGH",
+    "Vyper": "HIGH",
+    "XML": "HIGH",
+    "YAML": "HIGH",
+    "ZSH": "HIGH",
+    "V": "HIGH",
+    "C": "MEDIUM",
+    "C++": "MEDIUM",
+    "Cairo": "MEDIUM",
+    "D": "MEDIUM",
+    "Embedded C": "MEDIUM",
+    "GO": "MEDIUM",
+    "Move": "MEDIUM",
+    "NIM": "MEDIUM",
+    "Ninja": "MEDIUM",
+    "Rust": "MEDIUM",
+    "SystemVerilog": "MEDIUM",
+    "VERILOG": "MEDIUM",
+    "VHDL": "MEDIUM",
+    "Red(core)": "MEDIUM",
+    "ARM Assembly": "LOW",
+    "x86 Assembly": "LOW",
+    "BATCH": "LOW",
+    "Befunge": "LOW",
+    "Brainfuck": "LOW",
+    "MIPS Assembly": "LOW",
+    "Piet": "LOW",
+    "Whitespace": "LOW",
+    "ZIG": "LOW"
+  },
+  "guidance": {
+    "Python": {
+      "performance_tier": "medium",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "oop",
+        "scripting",
+        "functional"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "web_backend",
+        "data_science",
+        "scripting",
+        "automation",
+        "ai/ml"
+      ]
+    },
+    "JavaScript": {
+      "performance_tier": "medium",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "scripting",
+        "oop_prototype",
+        "functional"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "web_frontend",
+        "web_backend",
+        "mobile_development_(via_frameworks)",
+        "tooling"
+      ]
+    },
+    "Rust": {
+      "performance_tier": "very_high",
+      "learning_curve": "hard",
+      "ecosystem_maturity": "growing",
+      "primary_paradigms": [
+        "systems",
+        "functional",
+        "concurrency"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "systems_programming",
+        "web_backend_(high_performance)",
+        "command_line_tools",
+        "performance-critical_applications"
+      ]
+    },
+    "Java": {
+      "performance_tier": "high",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "oop"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "enterprise_applications",
+        "android_development",
+        "web_backend",
+        "large_scale_applications"
+      ]
+    },
+    "C++": {
+      "performance_tier": "very_high",
+      "learning_curve": "very_hard",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "oop",
+        "generic",
+        "procedural"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "game_development",
+        "high_performance_computing",
+        "systems_programming",
+        "resource-constrained_systems"
+      ]
+    },
+    "Go": {
+      "performance_tier": "high",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "concurrency",
+        "procedural"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "networking",
+        "cloud_services",
+        "command_line_tools",
+        "distributed_systems"
+      ]
+    },
+    "C#": {
+      "performance_tier": "high",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "oop"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "enterprise_applications",
+        "windows_development",
+        "game_development_(unity)",
+        "web_backend_(asp.net)"
+      ]
+    },
+    "C": {
+      "performance_tier": "very_high",
+      "learning_curve": "hard",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "procedural"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "systems_programming",
+        "embedded",
+        "operating_systems",
+        "performance-critical_applications"
+      ]
+    },
+    "Swift": {
+      "performance_tier": "high",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "oop",
+        "functional"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "ios_development",
+        "macos_development",
+        "apple_ecosystem"
+      ]
+    },
+    "Kotlin": {
+      "performance_tier": "high",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "oop",
+        "functional"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "android_development",
+        "backend_development",
+        "cross_platform",
+        "mobile_development"
+      ]
+    },
+    "PHP": {
+      "performance_tier": "medium",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "scripting",
+        "oop"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "web_backend",
+        "server-side_scripting"
+      ]
+    },
+    "Ruby": {
+      "performance_tier": "low",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "oop",
+        "scripting"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "web_backend_(rails)",
+        "scripting",
+        "automation"
+      ]
+    },
+    "TypeScript": {
+      "performance_tier": "medium",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "oop",
+        "functional"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "web_frontend",
+        "web_backend",
+        "large_javascript_projects"
+      ]
+    },
+    "HTML": {
+      "performance_tier": "n/a",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "markup"
+      ],
+      "typing_system": "n/a",
+      "ideal_for": [
+        "web_structure",
+        "content_definition"
+      ]
+    },
+    "CSS": {
+      "performance_tier": "n/a",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "styling"
+      ],
+      "typing_system": "n/a",
+      "ideal_for": [
+        "web_styling",
+        "ui_presentation"
+      ]
+    },
+    "SQL": {
+      "performance_tier": "n/a",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "declarative"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "database_querying",
+        "data_analysis",
+        "data_management"
+      ]
+    },
+    "R": {
+      "performance_tier": "low",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "functional",
+        "scripting"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "statistical_analysis",
+        "data_visualization",
+        "data_science"
+      ]
+    },
+    "JULIA": {
+      "performance_tier": "high",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "growing",
+      "primary_paradigms": [
+        "multiple"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "scientific_computing",
+        "data_science",
+        "high_performance_computing"
+      ]
+    },
+    "HASKELL": {
+      "performance_tier": "high",
+      "learning_curve": "very_hard",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "functional"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "academic_research",
+        "high_assurance_systems",
+        "functional_programming"
+      ]
+    },
+    "ERLANG": {
+      "performance_tier": "high",
+      "learning_curve": "hard",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "functional",
+        "concurrency"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "highly_concurrent_systems",
+        "telecommunications",
+        "fault_tolerance"
+      ]
+    },
+    "Elixir": {
+      "performance_tier": "high",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "growing",
+      "primary_paradigms": [
+        "functional",
+        "concurrency"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "web_backend",
+        "scalable_systems",
+        "real-time_applications"
+      ]
+    },
+    "Dart": {
+      "performance_tier": "high",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "oop"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "mobile_development_(flutter)",
+        "web_development",
+        "cross_platform"
+      ]
+    },
+    "COBOL": {
+      "performance_tier": "medium",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "legacy",
+      "primary_paradigms": [
+        "procedural"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "business_applications",
+        "mainframe_systems"
+      ]
+    },
+    "Pascal": {
+      "performance_tier": "medium",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "legacy",
+      "primary_paradigms": [
+        "procedural",
+        "structured"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "educational_purposes",
+        "structured_programming"
+      ]
+    },
+    "OCaml": {
+      "performance_tier": "high",
+      "learning_curve": "hard",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "functional",
+        "imperative"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "systems_programming",
+        "compilers",
+        "functional_programming"
+      ]
+    },
+    "Lisp": {
+      "performance_tier": "variable",
+      "learning_curve": "hard",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "functional",
+        "metaprogramming"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "academic_research",
+        "ai_early",
+        "metaprogramming"
+      ]
+    },
+    "V": {
+      "performance_tier": "high",
+      "learning_curve": "easy",
+      "ecosystem_maturity": "nascent",
+      "primary_paradigms": [
+        "procedural",
+        "systems"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        "systems_programming",
+        "web_backend",
+        "command_line_tools"
+      ]
+    },
+    "PowerShell": {
+      "performance_tier": "medium",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "scripting",
+        "oop"
+      ],
+      "typing_system": "dynamic",
+      "ideal_for": [
+        "windows_automation",
+        "system_administration",
+        "cloud_management"
+      ]
+    },
+    "F#": {
+      "performance_tier": "high",
+      "learning_curve": "medium",
+      "ecosystem_maturity": "mature",
+      "primary_paradigms": [
+        "functional",
+        "oop"
+      ],
+      "typing_system": "static",
+      "ideal_for": [
+        ".net_applications",
+        "data_science",
+        "functional_programming"
+      ]
+    }
+  },
+  "all_languages_details": {
+    "Ant": {
+      "name": "Ant",
+      "tags": [
+        "High-Level",
+        "Build Automation",
+        "Java",
+        "XML Configuration",
+        "Build Systems",
+        "IaC",
+        "Automation",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Java": {
+      "name": "Java",
+      "tags": [
+        "Static Typing",
+        "Strong Community",
+        "Large Ecosystem",
+        "OOP",
+        "Mobile Development (Android)",
+        "Web Backend",
+        "Enterprise Applications",
+        "Managed",
+        "Productivity",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "oop"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "enterprise_applications",
+          "android_development",
+          "web_backend",
+          "large_scale_applications"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "MATLAB": {
+      "name": "MATLAB",
+      "tags": [
+        "High-Level",
+        "Mathematics",
+        "Scientific Computing",
+        "Simulation"
+      ],
+      "categories": [
+        "PowerShell"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Dart": {
+      "name": "Dart",
+      "tags": [
+        "Static Typing",
+        "Mobile Development (Flutter)",
+        "Web Development (Frontend)",
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "oop"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "mobile_development_(flutter)",
+          "web_development",
+          "cross_platform"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "Stata": {
+      "name": "Stata",
+      "tags": [
+        "High-Level",
+        "Statistics"
+      ],
+      "categories": [
+        "PowerShell"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "PERL": {
+      "name": "PERL",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "SPSS": {
+      "name": "SPSS",
+      "tags": [
+        "High-Level",
+        "Statistics"
+      ],
+      "categories": [
+        "PowerShell"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Futhark": {
+      "name": "Futhark",
+      "tags": [
+        "High-Level",
+        "GPU Computing",
+        "Functional",
+        "Declarative",
+        "Academic"
+      ],
+      "categories": [
+        "Functional Programming (Primarily)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Zig": {
+      "name": "Zig",
+      "tags": [
+        "Systems",
+        "Manual Memory Management",
+        "Low-Level",
+        "Performance",
+        "Low-Level Potential",
+        "Manual Memory Management Focus"
+      ],
+      "categories": [
+        "General Purpose (Systems / Performance Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "EXPECT": {
+      "name": "EXPECT",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Automation",
+        "Interactive Programs"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "APEXNET": {
+      "name": "APEXNET",
+      "tags": [
+        "High-Level",
+        ".NET",
+        "Salesforce",
+        "Enterprise",
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack",
+        "UI",
+        "DotNet",
+        "Managed"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)",
+        ".NET Ecosystem (Platform/Related Frameworks)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Hardware Description & Synthesis": {
+      "name": "Hardware Description & Synthesis",
+      "tags": [],
+      "categories": [
+        "Cairo"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "GRADLE": {
+      "name": "GRADLE",
+      "tags": [
+        "High-Level",
+        "Build Automation",
+        "Java",
+        "Android",
+        "Groovy/Kotlin DSL",
+        "Build Systems",
+        "IaC",
+        "Automation",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "DOTNET": {
+      "name": "DOTNET",
+      "tags": [
+        "High-Level",
+        "Platform",
+        "Microsoft",
+        "DotNet",
+        "Managed",
+        "Enterprise"
+      ],
+      "categories": [
+        ".NET Ecosystem (Platform/Related Frameworks)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "NIM": {
+      "name": "NIM",
+      "tags": [
+        "Medium-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "VBSCRIPT": {
+      "name": "VBSCRIPT",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Automation",
+        "Windows"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "HTML": {
+      "name": "HTML",
+      "tags": [
+        "High-Level",
+        "Markup",
+        "Frontend",
+        "Structure",
+        "Web Standard",
+        "Web Development",
+        "Backend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "n/a",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "markup"
+        ],
+        "typing_system": "n/a",
+        "ideal_for": [
+          "web_structure",
+          "content_definition"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "ZSH": {
+      "name": "ZSH",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Shell"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Scripting & Automation": {
+      "name": "Scripting & Automation",
+      "tags": [],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "PROLOG": {
+      "name": "PROLOG",
+      "tags": [
+        "High-Level",
+        "AI",
+        "Logic Programming",
+        "Declarative"
+      ],
+      "categories": [
+        "GRAPHQL (schema definition part)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "RAILS": {
+      "name": "RAILS",
+      "tags": [
+        "High-Level",
+        "Ruby",
+        "Web Framework",
+        "Backend",
+        "Convention over Configuration",
+        "Web Development",
+        "Frontend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Befunge": {
+      "name": "Befunge",
+      "tags": [
+        "Low-Level",
+        "Esoteric",
+        "2D Programming"
+      ],
+      "categories": [
+        "JSX"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "LOW"
+    },
+    "Cairo": {
+      "name": "Cairo",
+      "tags": [
+        "Medium-Level",
+        "Smart Contracts",
+        "STARKs",
+        "Blockchain",
+        "Scalability"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "REACT": {
+      "name": "REACT",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Go": {
+      "name": "Go",
+      "tags": [
+        "Concurrency",
+        "Static Typing",
+        "Garbage Collection",
+        "Networking",
+        "Systems",
+        "Performance",
+        "Low-Level Potential",
+        "Manual Memory Management Focus"
+      ],
+      "categories": [
+        "General Purpose (Systems / Performance Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "concurrency",
+          "procedural"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "networking",
+          "cloud_services",
+          "command_line_tools",
+          "distributed_systems"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "BATCH": {
+      "name": "BATCH",
+      "tags": [
+        "Low-Level",
+        "Scripting",
+        "Automation",
+        "Windows",
+        "CLI"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "LOW"
+    },
+    "TOML": {
+      "name": "TOML",
+      "tags": [
+        "High-Level",
+        "Configuration",
+        "Data Format"
+      ],
+      "categories": [
+        "CHISEL"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "PHP": {
+      "name": "PHP",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Backend",
+        "Large Ecosystem",
+        "Web Development",
+        "Frontend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)",
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "medium",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "scripting",
+          "oop"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "web_backend",
+          "server-side_scripting"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "INI": {
+      "name": "INI",
+      "tags": [
+        "High-Level",
+        "Configuration",
+        "Data Format"
+      ],
+      "categories": [
+        "CHISEL"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "HAML": {
+      "name": "HAML",
+      "tags": [
+        "High-Level",
+        "Ruby",
+        "Templating"
+      ],
+      "categories": [
+        "Alice (3D Programming Environment)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "SWIFT": {
+      "name": "SWIFT",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "SCHEME": {
+      "name": "SCHEME",
+      "tags": [
+        "High-Level",
+        "Lisp",
+        "Academic",
+        "Functional",
+        "Declarative"
+      ],
+      "categories": [
+        "Functional Programming (Primarily)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Red(scripting part)": {
+      "name": "Red(scripting part)",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "TYPESCRIPT": {
+      "name": "TYPESCRIPT",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Rego": {
+      "name": "Rego",
+      "tags": [
+        "High-Level",
+        "Policy as Code",
+        "Security"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "PowerShell": {
+      "name": "PowerShell",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Automation",
+        "Windows",
+        "CLI",
+        "Object-Oriented Shell"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "medium",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "scripting",
+          "oop"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "windows_automation",
+          "system_administration",
+          "cloud_management"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "SMARTY": {
+      "name": "SMARTY",
+      "tags": [
+        "High-Level",
+        "PHP",
+        "Templating"
+      ],
+      "categories": [
+        "Alice (3D Programming Environment)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "JavaScript": {
+      "name": "JavaScript",
+      "tags": [
+        "Dynamic Typing",
+        "Strong Community",
+        "Large Ecosystem",
+        "Scripting",
+        "Frontend",
+        "Backend",
+        "OOP (Prototype)",
+        "Functional",
+        "Runtime (Node.js, Browser)",
+        "Web Development",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "medium",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "scripting",
+          "oop_prototype",
+          "functional"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "web_frontend",
+          "web_backend",
+          "mobile_development_(via_frameworks)",
+          "tooling"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "C++": {
+      "name": "C++",
+      "tags": [
+        "Medium-Level",
+        "OOP",
+        "Generic",
+        "Game Development",
+        "Manual Memory Management",
+        "Systems",
+        "Performance",
+        "Low-Level Potential",
+        "Manual Memory Management Focus"
+      ],
+      "categories": [
+        "General Purpose (Systems / Performance Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "very_high",
+        "learning_curve": "very_hard",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "oop",
+          "generic",
+          "procedural"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "game_development",
+          "high_performance_computing",
+          "systems_programming",
+          "resource-constrained_systems"
+        ]
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "Scala": {
+      "name": "Scala",
+      "tags": [
+        "Static Typing",
+        "JVM",
+        "Functional",
+        "OOP",
+        "Managed",
+        "Productivity",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Bazel": {
+      "name": "Bazel",
+      "tags": [
+        "High-Level",
+        "Build Automation",
+        "Large Scale Builds",
+        "Distributed Builds",
+        "Build Systems",
+        "IaC",
+        "Automation",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Elixir": {
+      "name": "Elixir",
+      "tags": [
+        "High-Level",
+        "Functional",
+        "Concurrency",
+        "Backend",
+        "Erlang VM",
+        "Web Development (Phoenix)",
+        "Web Development",
+        "Frontend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "growing",
+        "primary_paradigms": [
+          "functional",
+          "concurrency"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "web_backend",
+          "scalable_systems",
+          "real-time_applications"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "PL AND SQL": {
+      "name": "PL AND SQL",
+      "tags": [
+        "High-Level",
+        "Procedural",
+        "Database",
+        "Oracle"
+      ],
+      "categories": [
+        "Power Query M Formula Language"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Kubernetes YAML": {
+      "name": "Kubernetes YAML",
+      "tags": [
+        "High-Level",
+        "Orchestration",
+        "Configuration",
+        "Build Systems",
+        "IaC",
+        "Automation"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "PURESCRIPT": {
+      "name": "PURESCRIPT",
+      "tags": [
+        "High-Level",
+        "Functional",
+        "Declarative",
+        "Academic"
+      ],
+      "categories": [
+        "Functional Programming (Primarily)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Pug": {
+      "name": "Pug",
+      "tags": [
+        "High-Level",
+        "Node.js",
+        "Templating"
+      ],
+      "categories": [
+        "Alice (3D Programming Environment)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "SystemVerilog": {
+      "name": "SystemVerilog",
+      "tags": [
+        "Medium-Level",
+        "Digital Design",
+        "Verification",
+        "HDL"
+      ],
+      "categories": [
+        "Cairo"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "Scratch": {
+      "name": "Scratch",
+      "tags": [
+        "High-Level",
+        "Visual Programming",
+        "Educational",
+        "Beginner-Friendly"
+      ],
+      "categories": [
+        "Idris"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Ansible": {
+      "name": "Ansible",
+      "tags": [
+        "High-Level",
+        "Configuration Management",
+        "Automation",
+        "IT Automation",
+        "Build Systems",
+        "IaC",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "BASH": {
+      "name": "BASH",
+      "tags": [
+        "Scripting",
+        "Shell"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Perl": {
+      "name": "Perl",
+      "tags": [
+        "Scripting",
+        "Automation",
+        "Text Processing"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Logic Programming": {
+      "name": "Logic Programming",
+      "tags": [],
+      "categories": [
+        "GRAPHQL (schema definition part)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Agda": {
+      "name": "Agda",
+      "tags": [
+        "High-Level",
+        "Proof Assistant",
+        "Dependent Types",
+        "Academic"
+      ],
+      "categories": [
+        "Mercury"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "React": {
+      "name": "React",
+      "tags": [
+        "JavaScript",
+        "Frontend",
+        "UI Framework",
+        "Component-Based",
+        "Web Development",
+        "Backend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "LOLCODE": {
+      "name": "LOLCODE",
+      "tags": [
+        "High-Level",
+        "Esoteric",
+        "Humor"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "HCL": {
+      "name": "HCL",
+      "tags": [
+        "High-Level",
+        "Configuration",
+        "IaC",
+        "Terraform",
+        "Build Systems",
+        "Automation"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)",
+        "CHISEL"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Alice (3D Programming Environment)": {
+      "name": "Alice (3D Programming Environment)",
+      "tags": [
+        "High-Level",
+        "Visual Programming",
+        "3D",
+        "Educational"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Data Description / Serialization / Markup": {
+      "name": "Data Description / Serialization / Markup",
+      "tags": [],
+      "categories": [
+        "CHISEL"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Crystal": {
+      "name": "Crystal",
+      "tags": [
+        "Scripting-like Syntax",
+        "Performance",
+        "Garbage Collection",
+        "Systems",
+        "Low-Level Potential",
+        "Manual Memory Management Focus"
+      ],
+      "categories": [
+        "General Purpose (Systems / Performance Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Blockly": {
+      "name": "Blockly",
+      "tags": [
+        "High-Level",
+        "Visual Programming",
+        "Educational",
+        "Beginner-Friendly"
+      ],
+      "categories": [
+        "Idris"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "GO": {
+      "name": "GO",
+      "tags": [
+        "Medium-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "Kotlin": {
+      "name": "Kotlin",
+      "tags": [
+        "Static Typing",
+        "Strong Community",
+        "Large Ecosystem",
+        "OOP",
+        "Functional",
+        "Mobile Development (Android)",
+        "Cross-Platform",
+        "Managed",
+        "Productivity",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "oop",
+          "functional"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "android_development",
+          "backend_development",
+          "cross_platform",
+          "mobile_development"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "T-SQL": {
+      "name": "T-SQL",
+      "tags": [
+        "High-Level",
+        "Procedural",
+        "Database",
+        "Microsoft SQL Server"
+      ],
+      "categories": [
+        "Power Query M Formula Language"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Pony": {
+      "name": "Pony",
+      "tags": [
+        "High-Level",
+        "Concurrency",
+        "Actor Model",
+        "Reference Capabilities",
+        "Managed",
+        "Productivity",
+        "OOP",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Rust": {
+      "name": "Rust",
+      "tags": [
+        "Medium-Level",
+        "Concurrency",
+        "Growing Ecosystem",
+        "Static Typing",
+        "Strong Community",
+        "Manual Memory Management (Borrow Checking)",
+        "Systems",
+        "Performance",
+        "Low-Level Potential",
+        "Manual Memory Management Focus"
+      ],
+      "categories": [
+        "General Purpose (Systems / Performance Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "very_high",
+        "learning_curve": "hard",
+        "ecosystem_maturity": "growing",
+        "primary_paradigms": [
+          "systems",
+          "functional",
+          "concurrency"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "systems_programming",
+          "web_backend_(high_performance)",
+          "command_line_tools",
+          "performance-critical_applications"
+        ]
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "XML": {
+      "name": "XML",
+      "tags": [
+        "High-Level",
+        "Serialization",
+        "Data Format",
+        "Markup"
+      ],
+      "categories": [
+        "CHISEL"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Brainfuck": {
+      "name": "Brainfuck",
+      "tags": [
+        "Low-Level",
+        "Esoteric",
+        "Minimalist"
+      ],
+      "categories": [
+        "JSX"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "LOW"
+    },
+    "Alice (Functional)": {
+      "name": "Alice (Functional)",
+      "tags": [
+        "High-Level",
+        "Standard ML",
+        "Distributed Systems",
+        "Functional"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Vyper": {
+      "name": "Vyper",
+      "tags": [
+        "High-Level",
+        "Ethereum",
+        "Smart Contracts",
+        "Pythonic",
+        "Blockchain"
+      ],
+      "categories": [
+        "F#"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Idris": {
+      "name": "Idris",
+      "tags": [
+        "High-Level",
+        "Proof Assistant",
+        "Dependent Types",
+        "Functional",
+        "Academic"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "FISH": {
+      "name": "FISH",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Shell"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Database Interaction & Query Languages": {
+      "name": "Database Interaction & Query Languages",
+      "tags": [],
+      "categories": [
+        "Power Query M Formula Language"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Coq": {
+      "name": "Coq",
+      "tags": [
+        "High-Level",
+        "Proof Assistant",
+        "Formal Verification",
+        "Academic"
+      ],
+      "categories": [
+        "Mercury"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Python": {
+      "name": "Python",
+      "tags": [
+        "Dynamic Typing",
+        "Strong Community",
+        "Large Ecosystem",
+        "Scripting",
+        "Data Science",
+        "OOP",
+        "Functional",
+        "AI/ML",
+        "Managed",
+        "Productivity",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)",
+        "ELM",
+        "PowerShell"
+      ],
+      "guidance": {
+        "performance_tier": "medium",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "oop",
+          "scripting",
+          "functional"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "web_backend",
+          "data_science",
+          "scripting",
+          "automation",
+          "ai/ml"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "AppleScript": {
+      "name": "AppleScript",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Automation",
+        "macOS"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Ninja": {
+      "name": "Ninja",
+      "tags": [
+        "Medium-Level",
+        "Build Automation",
+        "Speed",
+        "Build Systems",
+        "IaC",
+        "Automation",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "Cadence": {
+      "name": "Cadence",
+      "tags": [
+        "High-Level",
+        "Smart Contracts",
+        "Flow",
+        "Blockchain"
+      ],
+      "categories": [
+        "F#"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Mercury": {
+      "name": "Mercury",
+      "tags": [
+        "High-Level",
+        "Performance",
+        "Logic Programming"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Templating Languages": {
+      "name": "Templating Languages",
+      "tags": [],
+      "categories": [
+        "Alice (3D Programming Environment)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "JSX": {
+      "name": "JSX",
+      "tags": [
+        "High-Level",
+        "React",
+        "Templating",
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Dockerfile": {
+      "name": "Dockerfile",
+      "tags": [
+        "Containerization",
+        "Build Systems",
+        "IaC",
+        "Automation",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Terraform": {
+      "name": "Terraform",
+      "tags": [
+        "High-Level",
+        "Cloud Infrastructure",
+        "IaC",
+        "Multi-Cloud",
+        "Build Systems",
+        "Automation",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "C#": {
+      "name": "C#",
+      "tags": [
+        "Static Typing",
+        "Strong Community",
+        "Large Ecosystem",
+        "OOP",
+        "Game Development (Unity)",
+        "Web Backend (ASP.NET)",
+        "Windows Development",
+        "Managed",
+        "Productivity",
+        "Garbage Collection",
+        "DotNet",
+        "Enterprise"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)",
+        ".NET Ecosystem (Platform/Related Frameworks)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "oop"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "enterprise_applications",
+          "windows_development",
+          "game_development_(unity)",
+          "web_backend_(asp.net)"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "VERILOG": {
+      "name": "VERILOG",
+      "tags": [
+        "Medium-Level",
+        "Digital Design",
+        "HDL"
+      ],
+      "categories": [
+        "Cairo"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "Logo": {
+      "name": "Logo",
+      "tags": [
+        "High-Level",
+        "Educational",
+        "Visual Programming",
+        "Turtle Graphics"
+      ],
+      "categories": [
+        "Idris"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Lua": {
+      "name": "Lua",
+      "tags": [
+        "Scripting",
+        "Embedded",
+        "Game Development",
+        "Extensibility"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "JULIA": {
+      "name": "JULIA",
+      "tags": [
+        "High-Level",
+        "Performance",
+        "Scientific Computing",
+        "Data Science",
+        "Parallel Computing"
+      ],
+      "categories": [
+        "PowerShell"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "growing",
+        "primary_paradigms": [
+          "multiple"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "scientific_computing",
+          "data_science",
+          "high_performance_computing"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Puppet": {
+      "name": "Puppet",
+      "tags": [
+        "High-Level",
+        "Configuration Management",
+        "Automation",
+        "Declarative",
+        "Build Systems",
+        "IaC",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Ada": {
+      "name": "Ada",
+      "tags": [
+        "High-Level",
+        "Systems",
+        "High Integrity"
+      ],
+      "categories": [
+        "Red (core)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Red(core)": {
+      "name": "Red(core)",
+      "tags": [
+        "Medium-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "DART": {
+      "name": "DART",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "COBOL": {
+      "name": "COBOL",
+      "tags": [
+        "High-Level",
+        "Business",
+        "Legacy",
+        "Managed",
+        "Productivity",
+        "OOP",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "medium",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "legacy",
+        "primary_paradigms": [
+          "procedural"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "business_applications",
+          "mainframe_systems"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "YAML": {
+      "name": "YAML",
+      "tags": [
+        "High-Level",
+        "Configuration",
+        "IaC",
+        "Data Format"
+      ],
+      "categories": [
+        "CHISEL"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Visual & Educational Programming": {
+      "name": "Visual & Educational Programming",
+      "tags": [],
+      "categories": [
+        "Idris"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "HASKELL": {
+      "name": "HASKELL",
+      "tags": [
+        "High-Level",
+        "Static Typing",
+        "Laziness",
+        "Functional",
+        "Strong Type System",
+        "Declarative",
+        "Academic"
+      ],
+      "categories": [
+        "Functional Programming (Primarily)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "very_hard",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "functional"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "academic_research",
+          "high_assurance_systems",
+          "functional_programming"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "ERLANG": {
+      "name": "ERLANG",
+      "tags": [
+        "High-Level",
+        "Functional",
+        "Concurrency",
+        "Fault Tolerance",
+        "Systems",
+        "Telecommunications",
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "hard",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "functional",
+          "concurrency"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "highly_concurrent_systems",
+          "telecommunications",
+          "fault_tolerance"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "x86 Assembly": {
+      "name": "x86 Assembly",
+      "tags": [
+        "Low-Level",
+        "Assembly",
+        "Performance"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "LOW"
+    },
+    "Solidity": {
+      "name": "Solidity",
+      "tags": [
+        "High-Level",
+        "Ethereum",
+        "Smart Contracts",
+        "Blockchain"
+      ],
+      "categories": [
+        "F#"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Handlebars": {
+      "name": "Handlebars",
+      "tags": [
+        "High-Level",
+        "Web Frontend",
+        "Web Backend",
+        "Templating"
+      ],
+      "categories": [
+        "Alice (3D Programming Environment)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Makefile": {
+      "name": "Makefile",
+      "tags": [
+        "High-Level",
+        "Build Automation",
+        "Build Systems",
+        "IaC",
+        "Automation",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Piet": {
+      "name": "Piet",
+      "tags": [
+        "Low-Level",
+        "Esoteric",
+        "Artistic Programming"
+      ],
+      "categories": [
+        "JSX"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "LOW"
+    },
+    "JAVA": {
+      "name": "JAVA",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "C": {
+      "name": "C",
+      "tags": [
+        "Medium-Level",
+        "Procedural",
+        "Manual Memory Management",
+        "Systems",
+        "Performance",
+        "Low-Level Potential",
+        "Manual Memory Management Focus"
+      ],
+      "categories": [
+        "General Purpose (Systems / Performance Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "very_high",
+        "learning_curve": "hard",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "procedural"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "systems_programming",
+          "embedded",
+          "operating_systems",
+          "performance-critical_applications"
+        ]
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "ELM": {
+      "name": "ELM",
+      "tags": [
+        "High-Level",
+        "Functional",
+        "Static Typing",
+        "Compiles to JS",
+        "Frontend",
+        "Reliability",
+        "Declarative",
+        "Academic"
+      ],
+      "categories": [
+        "Functional Programming (Primarily)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "EJS": {
+      "name": "EJS",
+      "tags": [
+        "High-Level",
+        "JavaScript",
+        "Templating"
+      ],
+      "categories": [
+        "Alice (3D Programming Environment)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "PYTHON": {
+      "name": "PYTHON",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "OCaml": {
+      "name": "OCaml",
+      "tags": [
+        "High-Level",
+        "Functional",
+        "Systems",
+        "Managed",
+        "Productivity",
+        "OOP",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "hard",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "functional",
+          "imperative"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "systems_programming",
+          "compilers",
+          "functional_programming"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "PureScript": {
+      "name": "PureScript",
+      "tags": [
+        "Functional",
+        "Static Typing",
+        "Compiles to JS",
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "LIQUID": {
+      "name": "LIQUID",
+      "tags": [
+        "High-Level",
+        "E-commerce",
+        "Templating"
+      ],
+      "categories": [
+        "Alice (3D Programming Environment)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Proof Assistants & Dependent Types": {
+      "name": "Proof Assistants & Dependent Types",
+      "tags": [],
+      "categories": [
+        "Mercury"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Swift": {
+      "name": "Swift",
+      "tags": [
+        "Static Typing",
+        "Strong Community",
+        "Large Ecosystem",
+        "OOP",
+        "Functional",
+        "Mobile Development (iOS)",
+        "Desktop Development",
+        "Managed",
+        "Productivity",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "oop",
+          "functional"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "ios_development",
+          "macos_development",
+          "apple_ecosystem"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "LIGO": {
+      "name": "LIGO",
+      "tags": [
+        "High-Level",
+        "Smart Contracts",
+        "Tezos",
+        "Blockchain",
+        "Multiple Syntaxes"
+      ],
+      "categories": [
+        "F#"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Pascal": {
+      "name": "Pascal",
+      "tags": [
+        "High-Level",
+        "Educational",
+        "Structured",
+        "Managed",
+        "Productivity",
+        "OOP",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "medium",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "legacy",
+        "primary_paradigms": [
+          "procedural",
+          "structured"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "educational_purposes",
+          "structured_programming"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "CHISEL": {
+      "name": "CHISEL",
+      "tags": [
+        "High-Level",
+        "Scala",
+        "Digital Design",
+        "HDL"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "JAVASCRIPT": {
+      "name": "JAVASCRIPT",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "TCL": {
+      "name": "TCL",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Automation",
+        "GUI (Tk)"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Nim": {
+      "name": "Nim",
+      "tags": [
+        "Systems",
+        "Scripting-like Syntax",
+        "Performance",
+        "Garbage Collection",
+        "Low-Level Potential",
+        "Manual Memory Management Focus"
+      ],
+      "categories": [
+        "General Purpose (Systems / Performance Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Tcsh": {
+      "name": "Tcsh",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Shell"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "F#": {
+      "name": "F#",
+      "tags": [
+        "High-Level",
+        "Functional",
+        "Static Typing",
+        ".NET",
+        "DotNet",
+        "Managed",
+        "Enterprise"
+      ],
+      "categories": [
+        ".NET Ecosystem (Platform/Related Frameworks)"
+      ],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "functional",
+          "oop"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          ".net_applications",
+          "data_science",
+          "functional_programming"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "CSS": {
+      "name": "CSS",
+      "tags": [
+        "High-Level",
+        "Styling",
+        "Frontend",
+        "Web Standard",
+        "Web Development",
+        "Backend",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "n/a",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "styling"
+        ],
+        "typing_system": "n/a",
+        "ideal_for": [
+          "web_styling",
+          "ui_presentation"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Lisp": {
+      "name": "Lisp",
+      "tags": [
+        "High-Level",
+        "Functional",
+        "Metaprogramming",
+        "Symbolic",
+        "Managed",
+        "Productivity",
+        "OOP",
+        "Garbage Collection"
+      ],
+      "categories": [
+        "General Purpose (Managed / Productivity Focus)"
+      ],
+      "guidance": {
+        "performance_tier": "variable",
+        "learning_curve": "hard",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "functional",
+          "metaprogramming"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "academic_research",
+          "ai_early",
+          "metaprogramming"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "R": {
+      "name": "R",
+      "tags": [
+        "High-Level",
+        "Statistics",
+        "Data Visualization",
+        "Scripting",
+        "Data Analysis"
+      ],
+      "categories": [
+        "PowerShell"
+      ],
+      "guidance": {
+        "performance_tier": "low",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "functional",
+          "scripting"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "statistical_analysis",
+          "data_visualization",
+          "data_science"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Ruby": {
+      "name": "Ruby",
+      "tags": [
+        "Scripting",
+        "Automation",
+        "OOP",
+        "Web Backend (Rails)"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "low",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "oop",
+          "scripting"
+        ],
+        "typing_system": "dynamic",
+        "ideal_for": [
+          "web_backend_(rails)",
+          "scripting",
+          "automation"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "AWK": {
+      "name": "AWK",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Text Processing",
+        "Pattern Matching"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "KOTLIN": {
+      "name": "KOTLIN",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "SAS": {
+      "name": "SAS",
+      "tags": [
+        "High-Level",
+        "Statistics",
+        "Enterprise",
+        "Business Intelligence"
+      ],
+      "categories": [
+        "PowerShell"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "ARM Assembly": {
+      "name": "ARM Assembly",
+      "tags": [
+        "Low-Level",
+        "Assembly",
+        "Embedded",
+        "Performance"
+      ],
+      "categories": [
+        "Red (core)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "LOW"
+    },
+    "CRYSTAL": {
+      "name": "CRYSTAL",
+      "tags": [
+        "High-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "JSON": {
+      "name": "JSON",
+      "tags": [
+        "High-Level",
+        "Serialization",
+        "Web Development",
+        "Data Format"
+      ],
+      "categories": [
+        "CHISEL"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "SQL": {
+      "name": "SQL",
+      "tags": [
+        "High-Level",
+        "Relational Database",
+        "Query Language",
+        "Data Management"
+      ],
+      "categories": [
+        "Power Query M Formula Language"
+      ],
+      "guidance": {
+        "performance_tier": "n/a",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "declarative"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "database_querying",
+          "data_analysis",
+          "data_management"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "VHDL": {
+      "name": "VHDL",
+      "tags": [
+        "Medium-Level",
+        "Digital Design",
+        "HDL"
+      ],
+      "categories": [
+        "Cairo"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "SED": {
+      "name": "SED",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Text Processing",
+        "Stream Editor"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "V": {
+      "name": "V",
+      "tags": [
+        "High-Level",
+        "Systems",
+        "Simplicity",
+        "Compilation"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "high",
+        "learning_curve": "easy",
+        "ecosystem_maturity": "nascent",
+        "primary_paradigms": [
+          "procedural",
+          "systems"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "systems_programming",
+          "web_backend",
+          "command_line_tools"
+        ]
+      },
+      "abstraction_level": "HIGH"
+    },
+    "AUTOHOTKEY": {
+      "name": "AUTOHOTKEY",
+      "tags": [
+        "High-Level",
+        "Scripting",
+        "Automation",
+        "Windows"
+      ],
+      "categories": [
+        "ELM"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "D": {
+      "name": "D",
+      "tags": [
+        "Medium-Level",
+        "Systems",
+        "Garbage Collection",
+        "Manual Memory Management (Optional)"
+      ],
+      "categories": [
+        "Red (core)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "TypeScript": {
+      "name": "TypeScript",
+      "tags": [
+        "Static Typing",
+        "JavaScript Superset",
+        "Frontend",
+        "Backend",
+        "Large Projects",
+        "Web Development",
+        "Fullstack",
+        "UI"
+      ],
+      "categories": [
+        "Web Development (Frontend, Backend, Fullstack, UI)"
+      ],
+      "guidance": {
+        "performance_tier": "medium",
+        "learning_curve": "medium",
+        "ecosystem_maturity": "mature",
+        "primary_paradigms": [
+          "oop",
+          "functional"
+        ],
+        "typing_system": "static",
+        "ideal_for": [
+          "web_frontend",
+          "web_backend",
+          "large_javascript_projects"
+        ]
+      },
+      "abstraction_level": "unknown"
+    },
+    "RACKET": {
+      "name": "RACKET",
+      "tags": [
+        "High-Level",
+        "Lisp",
+        "Educational",
+        "Functional",
+        "Language Creation",
+        "Declarative",
+        "Academic"
+      ],
+      "categories": [
+        "Functional Programming (Primarily)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "JINJA": {
+      "name": "JINJA",
+      "tags": [
+        "High-Level",
+        "Web Backend",
+        "Python",
+        "Templating"
+      ],
+      "categories": [
+        "Alice (3D Programming Environment)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Chef": {
+      "name": "Chef",
+      "tags": [
+        "High-Level",
+        "Configuration Management",
+        "Automation",
+        "Ruby DSL",
+        "Build Systems",
+        "IaC",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Smart Contract Development": {
+      "name": "Smart Contract Development",
+      "tags": [],
+      "categories": [
+        "F#"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Power Query M Formula Language": {
+      "name": "Power Query M Formula Language",
+      "tags": [
+        "High-Level",
+        "Data Transformation",
+        "Business Intelligence"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Move": {
+      "name": "Move",
+      "tags": [
+        "Medium-Level",
+        "Smart Contracts",
+        "Blockchain",
+        "Resource Management"
+      ],
+      "categories": [
+        "F#"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "Whitespace": {
+      "name": "Whitespace",
+      "tags": [
+        "Low-Level",
+        "Esoteric",
+        "Invisible Code"
+      ],
+      "categories": [
+        "JSX"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "LOW"
+    },
+    "GRAPHQL": {
+      "name": "GRAPHQL",
+      "tags": [
+        "High-Level",
+        "API",
+        "Query Language",
+        "Data Description",
+        "Web Development"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "FORTRAN": {
+      "name": "FORTRAN",
+      "tags": [
+        "High-Level",
+        "Performance",
+        "Scientific Computing",
+        "High-Performance Computing"
+      ],
+      "categories": [
+        "PowerShell"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "MongoDB": {
+      "name": "MongoDB",
+      "tags": [
+        "High-Level",
+        "NoSQL",
+        "Database",
+        "Document Database"
+      ],
+      "categories": [
+        "Power Query M Formula Language"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    },
+    "Embedded C": {
+      "name": "Embedded C",
+      "tags": [
+        "Medium-Level",
+        "Systems",
+        "Embedded",
+        "Manual Memory Management",
+        "Low-Level"
+      ],
+      "categories": [
+        "Red (core)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "MEDIUM"
+    },
+    "MIPS Assembly": {
+      "name": "MIPS Assembly",
+      "tags": [
+        "Low-Level",
+        "Assembly",
+        "Performance"
+      ],
+      "categories": [
+        "Red (core)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "LOW"
+    },
+    "ZIG": {
+      "name": "ZIG",
+      "tags": [
+        "Low-Level"
+      ],
+      "categories": [],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "LOW"
+    },
+    "Esoteric Languages": {
+      "name": "Esoteric Languages",
+      "tags": [],
+      "categories": [
+        "JSX"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "Data Analysis & Scientific Computing": {
+      "name": "Data Analysis & Scientific Computing",
+      "tags": [],
+      "categories": [
+        "PowerShell"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "unknown"
+    },
+    "CMake": {
+      "name": "CMake",
+      "tags": [
+        "High-Level",
+        "Build Automation",
+        "Cross-Platform",
+        "Build Systems",
+        "IaC",
+        "Automation",
+        "Configuration"
+      ],
+      "categories": [
+        "Build Systems & Infrastructure as Code (IaC)"
+      ],
+      "guidance": {
+        "performance_tier": "unknown",
+        "learning_curve": "unknown",
+        "ecosystem_maturity": "unknown",
+        "primary_paradigms": [],
+        "typing_system": "unknown",
+        "ideal_for": []
+      },
+      "abstraction_level": "HIGH"
+    }
+  },
+  "utility_category_mapping": {
+    "\ud83d\udcbe Storage & File Tools": {
+      "Best Language Category for UX": "General Purpose (Managed / Productivity Focus)",
+      "Why": "Languages like C#, Java, Python can build stable, user-friendly apps with great GUI frameworks (WPF, Swing, Tkinter). Easier to handle errors and friendly UI."
+    },
+    "\ud83d\udee1\ufe0f Security & Protection": {
+      "Best Language Category for UX": "General Purpose (Managed / Productivity Focus)",
+      "Why": "Managed languages help reduce bugs; C#/.NET or Java apps often offer solid UIs and robust error handling."
+    },
+    "\ud83d\ude80 Speed & Performance": {
+      "Best Language Category for UX": "General Purpose (Managed / Productivity Focus)",
+      "Why": "Although performance matters, many apps use managed languages to balance speed with UI friendliness and error resilience."
+    },
+    "\ud83c\udf10 Internet & Network": {
+      "Best Language Category for UX": "Scripting & Automation",
+      "Why": "Tools written in Python, PowerShell often have easy interfaces or CLI with good error messages; scripting enables quick fixes and scripts for users."
+    },
+    "\ud83c\udfa7 Sound, Video & Display": {
+      "Best Language Category for UX": "General Purpose (Managed / Productivity Focus)",
+      "Why": "UI-heavy media apps in C#, Java or Swift often deliver smooth UX with rich controls and fewer crashes."
+    },
+    "\ud83d\udda8\ufe0f Devices & Printers": {
+      "Best Language Category for UX": "General Purpose (Managed / Productivity Focus)",
+      "Why": "Device management apps benefit from managed environments with good UI and driver support."
+    },
+    "\ud83d\udee0\ufe0f System Settings & Maintenance": {
+      "Best Language Category for UX": "General Purpose (Managed / Productivity Focus)",
+      "Why": "Apps like Control Panel and Backup use managed languages for easy UI and stability."
+    },
+    "\ud83d\uddc2\ufe0f Developer & Advanced Tools": {
+      "Best Language Category for UX": "Scripting & Automation",
+      "Why": "Developer tools and CLI utilities often use scripting languages for flexibility and quick usability."
+    },
+    "\ud83d\udcc5 Everyday Tools": {
+      "Best Language Category for UX": "Visual & Educational Programming",
+      "Why": "Simple tools with great UX and accessibility often built with C# (WPF/WinForms), Swift, or Python (Tkinter) \u2014 easy to maintain and intuitive."
+    }
+  },
+  "keyword_to_utility_map": {
+    "storage": "\ud83d\udcbe Storage & File Tools",
+    "file": "\ud83d\udcbe Storage & File Tools",
+    "backup": "\ud83d\udcbe Storage & File Tools",
+    "archive": "\ud83d\udcbe Storage & File Tools",
+    "disk": "\ud83d\udcbe Storage & File Tools",
+    "drive": "\ud83d\udcbe Storage & File Tools",
+    "explorer": "\ud83d\udcbe Storage & File Tools",
+    "manager": "\ud83d\udcbe Storage & File Tools",
+    "synchronization": "\ud83d\udcbe Storage & File Tools",
+    "security": "\ud83d\udee1\ufe0f Security & Protection",
+    "protection": "\ud83d\udee1\ufe0f Security & Protection",
+    "antivirus": "\ud83d\udee1\ufe0f Security & Protection",
+    "firewall": "\ud83d\udee1\ufe0f Security & Protection",
+    "encryption": "\ud83d\udee1\ufe0f Security & Protection",
+    "malware": "\ud83d\udee1\ufe0f Security & Protection",
+    "virus": "\ud83d\udee1\ufe0f Security & Protection",
+    "privacy": "\ud83d\udee1\ufe0f Security & Protection",
+    "defender": "\ud83d\udee1\ufe0f Security & Protection",
+    "performance": "\ud83d\ude80 Speed & Performance",
+    "speed": "\ud83d\ude80 Speed & Performance",
+    "benchmark": "\ud83d\ude80 Speed & Performance",
+    "optimizer": "\ud83d\ude80 Speed & Performance",
+    "profiler": "\ud83d\ude80 Speed & Performance",
+    "tuning": "\ud83d\ude80 Speed & Performance",
+    "internet": "\ud83c\udf10 Internet & Network",
+    "network": "\ud83c\udf10 Internet & Network",
+    "browser": "\ud83c\udf10 Internet & Network",
+    "download": "\ud83c\udf10 Internet & Network",
+    "upload": "\ud83c\udf10 Internet & Network",
+    "client": "\ud83c\udf10 Internet & Network",
+    "server": "\ud83c\udf10 Internet & Network",
+    "chat": "\ud83c\udf10 Internet & Network",
+    "social": "\ud83c\udf10 Internet & Network",
+    "web": "\ud83c\udf10 Internet & Network",
+    "communication": "\ud83c\udf10 Internet & Network",
+    "messenger": "\ud83c\udf10 Internet & Network",
+    "email": "\ud83c\udf10 Internet & Network",
+    "ftp": "\ud83c\udf10 Internet & Network",
+    "p2p": "\ud83c\udf10 Internet & Network",
+    "sound": "\ud83c\udfa7 Sound, Video & Display",
+    "audio": "\ud83c\udfa7 Sound, Video & Display",
+    "music": "\ud83c\udfa7 Sound, Video & Display",
+    "video": "\ud83c\udfa7 Sound, Video & Display",
+    "player": "\ud83c\udfa7 Sound, Video & Display",
+    "editor": "\ud83c\udfa7 Sound, Video & Display",
+    "display": "\ud83c\udfa7 Sound, Video & Display",
+    "image": "\ud83c\udfa7 Sound, Video & Display",
+    "graphics": "\ud83c\udfa7 Sound, Video & Display",
+    "media": "\ud83c\udfa7 Sound, Video & Display",
+    "recorder": "\ud83c\udfa7 Sound, Video & Display",
+    "viewer": "\ud83c\udfa7 Sound, Video & Display",
+    "gallery": "\ud83c\udfa7 Sound, Video & Display",
+    "photo": "\ud83c\udfa7 Sound, Video & Display",
+    "podcast": "\ud83c\udfa7 Sound, Video & Display",
+    "dj": "\ud83c\udfa7 Sound, Video & Display",
+    "mixer": "\ud83c\udfa7 Sound, Video & Display",
+    "synthesizer": "\ud83c\udfa7 Sound, Video & Display",
+    "device": "\ud83d\udda8\ufe0f Devices & Printers",
+    "printer": "\ud83d\udda8\ufe0f Devices & Printers",
+    "driver": "\ud83d\udda8\ufe0f Devices & Printers",
+    "hardware": "\ud83d\udda8\ufe0f Devices & Printers",
+    "scan": "\ud83d\udda8\ufe0f Devices & Printers",
+    "scanner": "\ud83d\udda8\ufe0f Devices & Printers",
+    "peripheral": "\ud83d\udda8\ufe0f Devices & Printers",
+    "usb": "\ud83d\udda8\ufe0f Devices & Printers",
+    "system": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "settings": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "maintenance": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "utility": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "control panel": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "registry": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "cleaner": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "tweaker": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "configuration": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "task manager": "\ud83d\udee0\ufe0f System Settings & Maintenance",
+    "developer": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "advanced": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "ide": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "compiler": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "debugger": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "code": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "tool": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "cli": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "sdk": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "api": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "scripting": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "automation": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "hex editor": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "version control": "\ud83d\uddc2\ufe0f Developer & Advanced Tools",
+    "everyday": "\ud83d\udcc5 Everyday Tools",
+    "calculator": "\ud83d\udcc5 Everyday Tools",
+    "calendar": "\ud83d\udcc5 Everyday Tools",
+    "notes": "\ud83d\udcc5 Everyday Tools",
+    "organizer": "\ud83d\udcc5 Everyday Tools",
+    "todo": "\ud83d\udcc5 Everyday Tools",
+    "reminder": "\ud83d\udcc5 Everyday Tools",
+    "clock": "\ud83d\udcc5 Everyday Tools",
+    "timer": "\ud83d\udcc5 Everyday Tools",
+    "alarm": "\ud83d\udcc5 Everyday Tools",
+    "productivity": "\ud83d\udcc5 Everyday Tools",
+    "weather": "\ud83d\udcc5 Everyday Tools",
+    "maps": "\ud83d\udcc5 Everyday Tools",
+    "contacts": "\ud83d\udcc5 Everyday Tools",
+    "notepad": "\ud83d\udcc5 Everyday Tools",
+    "journal": "\ud83d\udcc5 Everyday Tools",
+    "diary": "\ud83d\udcc5 Everyday Tools"
+  }
+}

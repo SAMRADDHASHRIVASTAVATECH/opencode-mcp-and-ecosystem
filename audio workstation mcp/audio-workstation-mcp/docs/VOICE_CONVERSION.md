@@ -1,0 +1,4 @@
+# Voice profiles and genuine conversion
+DSP presets transform the signal with filters/dynamics/modulation. They are not identity conversion. `voice_import_reference` validates, trims silence, normalizes and stores a locally owned reference. That creates reference metadata, not a trained model.
+
+Genuine RVC requires a reviewed runtime compatible with the target Python/CUDA/DirectML environment, HuBERT and pitch-extraction assets, a trained `.pth` model (and optional `.index`), model-license/voice consent, plus measured inference headroom. The included `VoiceConversionEngine` contract defines probe/load/process/unload and requires bounded worker queues and safe model loading. This sandbox has Python 3.13, no Torch/ONNX, no GPU model and no audio endpoint, so activating RVC would be dishonest and is rejected.

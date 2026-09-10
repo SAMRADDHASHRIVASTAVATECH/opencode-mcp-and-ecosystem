@@ -1,0 +1,16 @@
+policy_id: reliability-policy
+name: High Reliability Policy
+version: 1.0.0
+domain: high-reliability
+action: ALLOW
+auth_level: SAFE_EXECUTE
+scope:
+  domain: high-reliability
+conditions:
+- postconditions verified
+- evidence recorded
+- preconditions checked
+- no assumed success
+when: {}
+reason: Success requires verified evidence, not tool return.
+non_override: true

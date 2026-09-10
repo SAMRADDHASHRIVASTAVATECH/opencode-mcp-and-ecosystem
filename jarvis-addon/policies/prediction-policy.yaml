@@ -1,0 +1,15 @@
+policy_id: prediction-policy
+name: Prediction Policy
+version: 1.0.0
+domain: predictive-assistance
+action: ALLOW
+auth_level: RECOMMEND
+scope:
+  domain: predictive-assistance
+conditions:
+- kind=prediction
+- confidence + expiration set
+- never presented as fact or as grant of authority
+when: {}
+reason: Predictions must be labelled, bounded, and never treated as fact or authorization.
+non_override: true

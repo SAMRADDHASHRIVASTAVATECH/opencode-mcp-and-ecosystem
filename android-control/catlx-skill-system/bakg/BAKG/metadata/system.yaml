@@ -1,0 +1,23 @@
+system: BAKG
+full_name: Blender Animation Knowledge Graph
+version: "2.0.0"
+source_document: The Ultimate Blender Animation Knowledge Graph v2.0
+source_compiled: 2026-08
+blender_era: 4.x
+identity: standalone-portable-importable
+depends_on: []
+skill_count: 19
+domain_count: 138
+depth_chapters: 25
+depth_supplements: 18
+production_stages: 34
+modes:
+  - individual-skill
+  - whole-system
+acceptance_criteria:
+  - AC-1 breadth
+  - AC-2 depth
+  - AC-3 variation
+  - AC-4 connectivity
+  - AC-5 ultimate-test
+  - AC-6 completeness-over-brevity

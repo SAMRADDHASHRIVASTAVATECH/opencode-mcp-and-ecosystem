@@ -1,0 +1,24 @@
+contract: recovery
+version: 1.0.0
+schema: schemas/recovery.schema.json
+summary: Standard structure to describe and drive a recovery.
+fields:
+- failure
+- failure_class
+- diagnosis
+- strategy
+- retry_limit
+- alternative
+- rollback
+- verification
+- termination
+- escalation
+strategies:
+- retry
+- alternative_strategy
+- alternative_tool
+- alternative_skill
+- fallback
+- rollback
+- escalate
+- halt

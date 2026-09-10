@@ -1,0 +1,31 @@
+# Capability routing rules. Source: PART II §2.4.2, PART III §3.3-3.4.
+# This is the human/agent-readable view of the CapabilityMap emitted by the Capability Router.
+# The CapabilityMap itself is the JSON object consumed by subsystems (see examples/capability-map.json).
+# Location: /config/capabilities.yaml
+
+# Named capability flags used by each subsystem at init time. Values are chosen from the
+# HardwareProfile by the deterministic Capability Router state machine.
+
+capabilities:
+  agent_count:
+    t0: 1
+    t1: 3
+    t2: 10
+    t3: 50
+  memory_depth_turns:  { t0: 200, t1: 2000, t2: null }   # null = unlimited (vector + graph)
+  workflow_parallelism: { t0: sequential, t1: limited, t2: full }
+  telemetry_sample_rate: { t0: 0.05, t1: 0.25, t2: 1.0 }
+  gui_mode: { t0: cli, t1: minimal_hud, t2: full_electron }
+  ocr_backend: { t0: tesseract_cpu, t1: tesseract_cpu, t2: easyocr }
+  vector_backend: { t0: inmemory, t1: chromadb_local, t2: chromadb_cluster }
+  llm_strategy: { t0: remote_only, t1: remote_primary, t2: local_primary }
+  tts_engine: { t0: pyttsx3, t1: coqui, t2: xtts2 }
+  stt_engine: { t0: vosk_tiny, t1: vosk_large, t2: whisper_large }
+  plugin_sandbox: { t0: process, t1: quota, t2: docker }
+
+# Environment routing triggers (PART III §3.3)
+environment_routing:
+  LOCAL_PROCESS:    { tiers: [0,1,2,3], when: "fast lightweight modules" }
+  LOCAL_SUBPROCESS: { tiers: [1,2,3],   when: "native bindings or CPU load" }
+  LOCAL_CONTAINER:  { tiers: [2,3],     when: "heavy ML / GPU access" }
+  REMOTE_API:       { tiers: [0,1,2,3], when: "local model unavailable" }

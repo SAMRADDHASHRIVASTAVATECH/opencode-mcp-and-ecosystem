@@ -1,0 +1,36 @@
+skill_id: capability-composition
+name: Capability Composition
+version: 1.0.0
+description: Compose multiple capabilities into one workflow, preserving contracts.
+purpose: Compose multiple capabilities into one workflow, preserving contracts.
+inputs: &id001
+- goal
+- capability ids
+outputs: &id002
+- executable plan of capability steps
+preconditions:
+- each capability validated + enabled
+postconditions:
+- plan references only enabled capabilities
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- universal-digital-agency
+tools:
+- capability-lookup
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - every step maps to an enabled capability
+failure_contract:
+  failure_modes:
+  - a referenced capability is disabled
+recovery_contract:
+  strategies:
+  - pick alternative capability
+examples: []
+tests: []
+status: validated

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/mcp.servers.schema.json",
+  "comment": "Register ONE server to expose the OLCAP realtime assistant. Add this "
+             "entry to your EXISTING MCP config - do not overwrite other servers. "
+             "Requires optional extras (audio/screen/stt) to be pip-installed for "
+             "real capture; absent capabilities report UNAVAILABLE.",
+  "mcpServers": {
+    "olcap-realtime-assistant-mcp": {
+      "command": "olcap-realtime-assistant-mcp",
+      "env": {
+        "OLCAP_DEFAULT_MODE": "off",
+        "LM_STUDIO_ENDPOINT": "http://127.0.0.1:1234/v1",
+        "OLCAP_STT_PROVIDER": "faster_whisper",
+        "OLCAP_STT_MODEL": "small",
+        "OLCAP_SCREEN_MONITORING": "false",
+        "OLCAP_CLOUD_PROCESSING": "false"
+      }
+    }
+  }
+}

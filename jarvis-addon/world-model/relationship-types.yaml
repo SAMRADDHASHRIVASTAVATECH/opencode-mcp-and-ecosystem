@@ -1,0 +1,54 @@
+registry: world-relationship-type
+relationships:
+- name: contains
+  from:
+  - folder
+  - project
+  to:
+  - file
+  - task
+  - artifact
+- name: depends_on
+  from: '*'
+  to: '*'
+- name: owns
+  from:
+  - agent
+  - goal
+  to:
+  - task
+  - artifact
+- name: implements
+  from: agent
+  to:
+  - task
+  - goal
+- name: uses
+  from:
+  - agent
+  - skill
+  to:
+  - tool
+  - mcp
+- name: provides
+  from:
+  - mcp
+  - skill
+  to: '*'
+- name: tracks
+  from: agent
+  to:
+  - task
+  - goal
+  - project
+- name: updates
+  from:
+  - agent
+  - skill
+  to: knowledge
+attrs:
+- type
+- source_entity
+- target_entity
+- confidence
+- verification

@@ -1,0 +1,36 @@
+skill_id: tool-selection
+name: Tool Selection
+version: 1.0.0
+description: Choose the best tool for a step given requirements and health.
+purpose: Choose the best tool for a step given requirements and health.
+inputs: &id001
+- task step
+- candidate tools
+outputs: &id002
+- chosen tool
+preconditions:
+- candidates healthy
+postconditions:
+- selection logged
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- universal-digital-agency
+tools:
+- tool-performance
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - chosen tool supports the operation
+failure_contract:
+  failure_modes:
+  - none fit
+recovery_contract:
+  strategies:
+  - alternative
+examples: []
+tests: []
+status: validated

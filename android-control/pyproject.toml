@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "android-control"
+version = "1.0.0"
+description = "Universal multi-Android agent control: ADB, wireless, UI, vision-fallback, files, apps, multi-device orchestration"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Universal Android Control" }]
+keywords = ["android", "adb", "scrcpy", "agent", "automation", "multi-device", "skill"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: Microsoft :: Windows",
+  "Topic :: System :: Emulators",
+  "Intended Audience :: Developers",
+]
+# No hard runtime dependency on any Android SDK; adb/scrcpy are host binaries.
+dependencies = []
+
+[project.optional-dependencies]
+# For screenshot *inspection/UI* only when using an external vision backend;
+# otherwise nothing extra is needed.
+ocr = ["pytesseract"]
+
+[project.scripts]
+android-control = "android_control.__main__:main"
+android-control-mcp = "android_control.mcp:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,35 @@
+skill_id: configuration-validation
+name: Configuration Validation
+version: 1.0.0
+description: Validate configuration against schema and policy.
+purpose: Validate configuration against schema and policy.
+inputs: &id001
+- config
+outputs: &id002
+- verdict
+preconditions: []
+postconditions:
+- none
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- self-maintenance
+tools:
+- schema-validate
+- policy-check
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - schema+policy valid
+failure_contract:
+  failure_modes:
+  - invalid
+recovery_contract:
+  strategies:
+  - rollback to known-good
+examples: []
+tests: []
+status: validated

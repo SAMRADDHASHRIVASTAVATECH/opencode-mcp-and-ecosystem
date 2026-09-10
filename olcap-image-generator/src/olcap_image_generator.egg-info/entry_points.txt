@@ -1,0 +1,2 @@
+[console_scripts]
+olcap-image-generator = olcap_image_gen.server:main

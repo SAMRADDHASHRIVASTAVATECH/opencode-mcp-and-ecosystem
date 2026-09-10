@@ -1,0 +1,19 @@
+{
+  "device_name": "OLCAP Phone",
+  "mcp_enabled": true,
+  "remote_access": false,
+  "ai_calls_enabled": false,
+  "auto_answer_enabled": false,
+  "default_voice_provider": "simulated",
+  "default_sim": "system",
+  "max_call_duration_seconds": 900,
+  "record_calls": false,
+  "store_transcripts": true,
+  "backend": "simulated",
+  "destination_allowlist": "+919900000001",
+  "destination_denylist": "",
+  "caller_allowlist": "",
+  "caller_denylist": "",
+  "audit_enabled": true,
+  "mcp_token": ""
+}

@@ -1,0 +1,68 @@
+import { randomUUID } from 'node:crypto';
+import { digest } from '../approval/engine.js';
+const safe = (s) => { if (!/^[\w .:@+\-\\/{}]+$/.test(s) || s.includes('..'))
+    throw Error('INVALID_INPUT'); return s; };
+export function plan(op, ps) {
+    const p = ps.find(x => x.id === op.platform && x.state === 'AVAILABLE');
+    if (!p || !p.executable)
+        throw Error('PLATFORM_NOT_FOUND');
+    const vm = safe(op.vm);
+    let argv = [];
+    const a = op.action;
+    if (op.context === 'HOST') {
+        if (p.id === 'virtualbox') {
+            const m = { start: ['startvm', vm, '--type', String(op.parameters.headless === false ? 'gui' : 'headless')], shutdown: ['controlvm', vm, 'acpipowerbutton'], poweroff: ['controlvm', vm, 'poweroff'], reset: ['controlvm', vm, 'reset'], pause: ['controlvm', vm, 'pause'], resume: ['controlvm', vm, 'resume'], save: ['controlvm', vm, 'savestate'], snapshot_create: ['snapshot', vm, 'take', safe(String(op.parameters.name))], snapshot_restore: ['snapshot', vm, 'restore', safe(String(op.parameters.name))], snapshot_delete: ['snapshot', vm, 'delete', safe(String(op.parameters.name))], snapshot_list: ['snapshot', vm, 'list', '--machinereadable'], clone: ['clonevm', vm, '--name', safe(String(op.parameters.name)), '--register'] };
+            argv = [p.executable, ...(m[a] ?? [])];
+            if (argv.length === 1)
+                throw Error('UNSUPPORTED_OPERATION');
+        }
+        else if (p.id === 'wsl') {
+            const m = { start: ['--distribution', vm, '--exec', 'true'], shutdown: ['--terminate', vm], export: ['--export', vm, safe(String(op.parameters.output))], import: ['--import', vm, safe(String(op.parameters.installLocation)), safe(String(op.parameters.input))], delete: ['--unregister', vm] };
+            argv = [p.executable, ...(m[a] ?? [])];
+            if (argv.length === 1)
+                throw Error('UNSUPPORTED_OPERATION');
+        }
+        else if (p.id === 'vmware') {
+            const cfg = safe(String(op.parameters.configPath ?? vm));
+            const m = { start: ['start', cfg, op.parameters.gui ? 'gui' : 'nogui'], shutdown: ['stop', cfg, 'soft'], poweroff: ['stop', cfg, 'hard'], pause: ['suspend', cfg, 'soft'], reset: ['reset', cfg, 'soft'], snapshot_create: ['snapshot', cfg, safe(String(op.parameters.name))], snapshot_restore: ['revertToSnapshot', cfg, safe(String(op.parameters.name))], snapshot_delete: ['deleteSnapshot', cfg, safe(String(op.parameters.name))], snapshot_list: ['listSnapshots', cfg] };
+            argv = [p.executable, ...(m[a] ?? [])];
+            if (argv.length === 1)
+                throw Error('UNSUPPORTED_OPERATION');
+        }
+        else if (p.id === 'libvirt') {
+            const m = { start: ['start', vm], shutdown: ['shutdown', vm], poweroff: ['destroy', vm], reset: ['reset', vm], pause: ['suspend', vm], resume: ['resume', vm], snapshot_create: ['snapshot-create-as', vm, safe(String(op.parameters.name)), '--atomic'], snapshot_restore: ['snapshot-revert', vm, safe(String(op.parameters.name))], snapshot_delete: ['snapshot-delete', vm, safe(String(op.parameters.name))], snapshot_list: ['snapshot-list', vm] };
+            argv = [p.executable, ...(m[a] ?? [])];
+            if (argv.length === 1)
+                throw Error('UNSUPPORTED_OPERATION');
+        }
+        else if (p.id === 'hyperv') {
+            const q = JSON.stringify(vm);
+            const name = JSON.stringify(String(op.parameters.name ?? ''));
+            const scripts = { start: `Start-VM -Name ${q}`, shutdown: `Stop-VM -Name ${q}`, poweroff: `Stop-VM -Name ${q} -TurnOff`, reset: `Restart-VM -Name ${q} -Force`, pause: `Suspend-VM -Name ${q}`, resume: `Resume-VM -Name ${q}`, snapshot_create: `Checkpoint-VM -Name ${q} -SnapshotName ${name}`, snapshot_restore: `Restore-VMCheckpoint -VMName ${q} -Name ${name} -Confirm:$false`, snapshot_delete: `Remove-VMCheckpoint -VMName ${q} -Name ${name} -Confirm:$false`, snapshot_list: `Get-VMCheckpoint -VMName ${q}|Select Name,Id,CreationTime|ConvertTo-Json` };
+            if (!scripts[a])
+                throw Error('UNSUPPORTED_OPERATION');
+            argv = [p.executable, '-NoProfile', '-NonInteractive', '-Command', scripts[a]];
+        }
+    }
+    else {
+        const mech = String(op.parameters.mechanism);
+        const command = op.parameters.command;
+        if (!Array.isArray(command) || !command.every(x => typeof x === 'string' && x.length < 4096))
+            throw Error('INVALID_INPUT: command must be argv array');
+        if (mech === 'wsl' && p.id === 'wsl')
+            argv = [p.executable, '--distribution', vm, '--exec', ...command];
+        else if (mech === 'ssh') {
+            const host = safe(String(op.parameters.host)), user = safe(String(op.parameters.user)), key = op.parameters.identityFile ? ['-i', safe(String(op.parameters.identityFile))] : [];
+            argv = ['ssh', '-o', 'BatchMode=yes', '-o', 'StrictHostKeyChecking=yes', '-o', 'ConnectTimeout=10', ...key, `${user}@${host}`, '--', ...command];
+        }
+        else if (mech === 'vbox-guestcontrol' && p.id === 'virtualbox') {
+            const user = safe(String(op.parameters.user)), pf = safe(String(op.parameters.passwordFile));
+            argv = [p.executable, 'guestcontrol', vm, 'run', '--username', user, '--passwordfile', pf, '--exe', command[0], '--', ...command];
+        }
+        else
+            throw Error('GUEST_CONTROL_UNAVAILABLE');
+    }
+    const unsigned = { ...op, id: randomUUID(), argv, mechanism: op.context === 'HOST' ? p.id : String(op.parameters.mechanism), verification: op.context === 'HOST' ? ['re-list VM state', 'check guest readiness separately'] : ['exit code', 'stdout/stderr', 'operation-specific postcondition'], createdAt: Date.now() };
+    return { ...unsigned, digest: digest(unsigned) };
+}
+//# sourceMappingURL=planner.js.map

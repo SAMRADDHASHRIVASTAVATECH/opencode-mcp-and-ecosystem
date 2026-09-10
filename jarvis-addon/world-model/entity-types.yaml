@@ -1,0 +1,30 @@
+registry: world-entity-type
+entities:
+- application
+- window
+- process
+- file
+- folder
+- project
+- repository
+- document
+- browser_state
+- task
+- goal
+- agent
+- skill
+- mcp
+- tool
+- model
+- service
+- artifact
+- conversation
+- event
+- knowledge
+attributes_common:
+- id
+- type
+- state
+- last_observed
+- confidence
+- sources

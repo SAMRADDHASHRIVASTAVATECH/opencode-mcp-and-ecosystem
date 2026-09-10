@@ -1,0 +1,35 @@
+skill_id: mcp-discovery
+name: Mcp Discovery
+version: 1.0.0
+description: Discover installed MCP servers/resources.
+purpose: Discover installed MCP servers/resources.
+inputs: &id001
+- filters
+outputs: &id002
+- mcp list
+preconditions:
+- read-only
+postconditions:
+- none
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- mcp-list
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - results from mcp registry
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - empty
+examples: []
+tests: []
+status: validated

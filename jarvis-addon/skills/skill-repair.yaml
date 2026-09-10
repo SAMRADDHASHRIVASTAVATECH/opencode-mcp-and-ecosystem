@@ -1,0 +1,37 @@
+skill_id: skill-repair
+name: Skill Repair
+version: 1.0.0
+description: Repair a failing skill by diagnosing and patching within policy.
+purpose: Repair a failing skill by diagnosing and patching within policy.
+inputs: &id001
+- skill id
+- symptom
+outputs: &id002
+- repaired skill or rollback
+preconditions:
+- fault isolated
+postconditions:
+- skill re-tested
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- self-maintenance
+tools:
+- skill-diff
+- rollback
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - skill passes tests after repair
+failure_contract:
+  failure_modes:
+  - repair worsens
+recovery_contract:
+  strategies:
+  - rollback to last known-good version
+examples: []
+tests: []
+status: validated

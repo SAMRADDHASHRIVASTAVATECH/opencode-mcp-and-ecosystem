@@ -1,0 +1,18 @@
+mcp_id: project-mcp
+name: project-mcp
+version: 1.0.0
+description: project management
+capabilities:
+- project-management
+tools:
+- project-store
+resources:
+- projects://*
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: project-mcp.health
+  interval_s: 60
+dependencies: []
+tests: []

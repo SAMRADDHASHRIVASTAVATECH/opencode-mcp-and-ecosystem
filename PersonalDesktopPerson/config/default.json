@@ -1,0 +1,25 @@
+{
+  "data_dir": "runtime",
+  "cognitive_hz": 2.0,
+  "avatar_host": "127.0.0.1",
+  "avatar_port": 8765,
+  "avatar_enabled": true,
+  "provider_url": "",
+  "provider_model": "",
+  "provider_key_env": "PDP_API_KEY",
+  "provider_timeout": 60,
+  "retention_days": 365,
+  "store_dialogue": true,
+  "quiet_hours": [
+    23,
+    7
+  ],
+  "computer_use_server": "open_computer_use",
+  "conservative": true,
+  "desktop_sensor_enabled": false,
+  "screen_change_enabled": false,
+  "accessibility_enabled": true,
+  "desktop_poll_seconds": 1.0,
+  "meaningful_change_threshold": 0.08,
+  "semantic_environment_reasoning": true
+}

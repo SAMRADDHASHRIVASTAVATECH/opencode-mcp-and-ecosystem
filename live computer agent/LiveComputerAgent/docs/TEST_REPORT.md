@@ -1,0 +1,4 @@
+# Test report — 10 September 2026
+Environment: Arena Linux sandbox, Python 3.11.8. Results: 15 passed, 1 skipped. Tested synthetic persistent capture, active-window state, PNG export, session start/pause/resume/stop, input sequencing/release, coordinate guards, high-level element click, pause guard, emergency cleanup, goals, missing-element recovery, memory, no-planner autonomous stop, controlled observe→act→screen-change verification, MCP registration (34 tools), real in-process FastMCP handshake and lifecycle calls. Built wheel successfully and listed 34 tools from the live FastMCP server.
+
+Skipped: intentionally gated real Windows Notepad acceptance test. This sandbox has no Windows desktop, Win32, DXGI, UIA, mouse, or keyboard to physically test. Run with `LCA_RUN_WINDOWS_LIVE=1` on an authorized Windows desktop. No claim is made that hardware-dependent tests ran here.

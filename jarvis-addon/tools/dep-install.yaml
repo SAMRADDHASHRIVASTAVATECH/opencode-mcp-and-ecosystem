@@ -1,0 +1,14 @@
+tool_id: dep-install
+name: dep-install
+version: 1.0.0
+description: install/repair a dependency
+inputs: []
+outputs: []
+permissions:
+  auth_level: SAFE_EXECUTE
+provider: host-adapter
+verification:
+  needs_evidence: true
+failure_behavior: typed failure
+health:
+  checkable: true

@@ -1,0 +1,12 @@
+[
+  {"type":"cover","title":"Universal PDF Demo Report","subtitle":"Generated from a content template","author":"Universal PDF System","date":"2026-09-06","organization":"Arena"},
+  {"type":"heading","text":"1. Overview","level":1},
+  {"type":"para","text":"This report was produced by the pdf-create skill from a JSON content template. It demonstrates **headings**, lists, tables and page breaks."},
+  {"type":"heading","text":"2. Metrics","level":2},
+  {"type":"table","rows":[["Metric","Value","Status"],["Uptime","99.9%","OK"],["Latency","42 ms","OK"],["Errors","0.2%","Watch"]]},
+  {"type":"heading","text":"3. Actions","level":1},
+  {"type":"list","items":["Review uptime quarterly","Monitor error rate","Publish monthly summary"],"ordered":true},
+  {"type":"pagebreak"},
+  {"type":"heading","text":"4. Appendix","level":1},
+  {"type":"para","text":"Additional reference material appears on its own page."}
+]

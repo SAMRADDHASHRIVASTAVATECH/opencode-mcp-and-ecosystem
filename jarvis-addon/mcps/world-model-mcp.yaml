@@ -1,0 +1,25 @@
+mcp_id: world-model-mcp
+name: world-model-mcp
+version: 1.0.0
+description: unified world model + memory + events
+capabilities:
+- digital-world-model
+- multimodal-fusion
+- real-time-conversation
+tools:
+- world-state
+- memory-store
+- event-bus
+- observation-fuse
+resources:
+- world://state
+- memory://*
+- events://*
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: world-model-mcp.health
+  interval_s: 60
+dependencies: []
+tests: []

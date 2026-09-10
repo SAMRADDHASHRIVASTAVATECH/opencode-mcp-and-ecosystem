@@ -1,0 +1,22 @@
+contract: coordination
+version: 1.0.0
+schema: schemas/result.schema.json
+summary: Multi-agent coordination primitives and rules.
+primitives:
+- agent registration
+- agent discovery
+- delegation
+- ownership
+- locks
+- leases
+- handoffs
+- shared state
+- conflict detection
+- conflict resolution
+- result merging
+- cancellation
+- timeouts
+rules:
+- single owner per lease
+- no conflicting writes without lock
+- timeouts bound every lease

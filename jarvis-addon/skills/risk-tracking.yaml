@@ -1,0 +1,34 @@
+skill_id: risk-tracking
+name: Risk Tracking
+version: 1.0.0
+description: Register/update risks and blockers.
+purpose: Register/update risks and blockers.
+inputs: &id001
+- risk
+outputs: &id002
+- risk log
+preconditions: []
+postconditions:
+- risk stored
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- project-management
+tools:
+- project-store
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - severity present
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - no-op
+examples: []
+tests: []
+status: validated

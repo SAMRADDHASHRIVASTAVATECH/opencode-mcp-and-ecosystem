@@ -1,0 +1,35 @@
+skill_id: decision-analysis
+name: Decision Analysis
+version: 1.0.0
+description: Structure options/evidence/risks into a decision analysis.
+purpose: Structure options/evidence/risks into a decision analysis.
+inputs: &id001
+- options + constraints
+outputs: &id002
+- decision analysis
+preconditions:
+- evidence gathered
+postconditions:
+- decision or recommendation
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- decision-support
+tools:
+- options-model
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - options + evidence captured
+failure_contract:
+  failure_modes:
+  - missing constraints
+recovery_contract:
+  strategies:
+  - ask
+examples: []
+tests: []
+status: validated

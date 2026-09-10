@@ -1,0 +1,22 @@
+agent_id: evaluator
+name: Evaluator
+version: 1.0.0
+role: evaluator
+purpose: Evaluate results/metrics.
+responsibilities:
+- Evaluate results/metrics.
+allowed_skills:
+- self-evaluation
+- tool-performance
+required_capabilities:
+- self-evaluation
+expected_inputs:
+- evaluator task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

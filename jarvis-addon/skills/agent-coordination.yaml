@@ -1,0 +1,35 @@
+skill_id: agent-coordination
+name: Agent Coordination
+version: 1.0.0
+description: Coordinate agents on shared state with locks/leases.
+purpose: Coordinate agents on shared state with locks/leases.
+inputs: &id001
+- coordination request
+outputs: &id002
+- coordinated outcome
+preconditions:
+- shared state consistent
+postconditions:
+- conflicts resolved
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- multi-agent-coordination
+tools:
+- lock-service
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - no conflicting writes
+failure_contract:
+  failure_modes:
+  - conflict
+recovery_contract:
+  strategies:
+  - conflict-resolution
+examples: []
+tests: []
+status: validated

@@ -1,0 +1,25 @@
+agent_id: observer
+name: Observer
+version: 1.0.0
+role: observer
+purpose: Capture observations from modalities/screen/events.
+responsibilities:
+- Capture observations from modalities/screen/events.
+allowed_skills:
+- event-management
+- screen-understanding
+- multimodal-context
+- proactive-assistance
+required_capabilities:
+- digital-world-model
+- multimodal-fusion
+expected_inputs:
+- observer task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

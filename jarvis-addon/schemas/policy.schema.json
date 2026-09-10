@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Policy definition",
+  "type": "object",
+  "required": [
+    "policy_id",
+    "name",
+    "version",
+    "domain",
+    "action",
+    "auth_level",
+    "scope",
+    "reason",
+    "non_override"
+  ],
+  "properties": {
+    "policy_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "ALLOW",
+        "ALLOW_WITH_CONDITIONS",
+        "REQUIRE_APPROVAL",
+        "DENY",
+        "ESCALATE"
+      ]
+    },
+    "auth_level": {
+      "type": "string",
+      "enum": [
+        "OBSERVE",
+        "RECOMMEND",
+        "SAFE_EXECUTE",
+        "AUTHORIZED_AUTONOMOUS",
+        "EXPLICIT_APPROVAL",
+        "DENIED"
+      ]
+    },
+    "scope": {
+      "type": "object"
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "when": {
+      "type": "object"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "non_override": {
+      "type": "boolean",
+      "const": true
+    }
+  }
+}

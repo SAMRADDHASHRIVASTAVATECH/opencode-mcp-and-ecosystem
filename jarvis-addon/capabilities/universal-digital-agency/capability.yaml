@@ -1,0 +1,29 @@
+capability_id: universal-digital-agency
+name: Universal Digital Agency
+version: 1.0.0
+description: 'Composition layer: NL request->goal->capability discovery->skill selection->tool
+  selection->plan->execute->verify->recover->complete.'
+area: universal-digital-agency
+skills:
+- capability-composition
+- tool-selection
+- tool-routing
+- planning
+- verification
+policies:
+- agency-policy
+schemas:
+- goal
+- result
+- context
+contracts:
+- agency-contract
+- result-contract
+events:
+- GOAL_CREATED
+- TASK_COMPLETED
+agents:
+- orchestrator
+authorization:
+  auth_level: AUTHORIZED_AUTONOMOUS
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

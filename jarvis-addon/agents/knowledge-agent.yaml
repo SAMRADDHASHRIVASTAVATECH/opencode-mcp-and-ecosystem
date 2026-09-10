@@ -1,0 +1,23 @@
+agent_id: knowledge-agent
+name: Knowledge Agent
+version: 1.0.0
+role: knowledge-agent
+purpose: Keep knowledge fresh/validated.
+responsibilities:
+- Keep knowledge fresh/validated.
+allowed_skills:
+- knowledge-validation
+- knowledge-update
+- research
+required_capabilities:
+- knowledge-updating
+expected_inputs:
+- knowledge-agent task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

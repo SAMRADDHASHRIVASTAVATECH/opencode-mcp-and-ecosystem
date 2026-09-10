@@ -1,0 +1,9 @@
+contract: skill
+version: 1.0.0
+schema: schemas/skill.schema.json
+summary: Every skill ships execution/verification/failure/recovery contracts.
+sub_contracts:
+- execution_contract
+- verification_contract
+- failure_contract
+- recovery_contract

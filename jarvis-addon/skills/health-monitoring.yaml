@@ -1,0 +1,36 @@
+skill_id: health-monitoring
+name: Health Monitoring
+version: 1.0.0
+description: Continuously observe health of skills/mcps/tools/services.
+purpose: Continuously observe health of skills/mcps/tools/services.
+inputs: &id001
+- interval
+- scope
+outputs: &id002
+- health stream
+preconditions:
+- read-only
+postconditions:
+- none
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- self-maintenance
+tools:
+- health-monitor
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - metric timestamps
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - no-op
+examples: []
+tests: []
+status: validated

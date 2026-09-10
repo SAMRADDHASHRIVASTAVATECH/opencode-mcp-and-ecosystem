@@ -1,0 +1,35 @@
+skill_id: workflow-optimization
+name: Workflow Optimization
+version: 1.0.0
+description: Propose a workflow-level improvement from observed inefficiency.
+purpose: Propose a workflow-level improvement from observed inefficiency.
+inputs: &id001
+- observation
+outputs: &id002
+- improvement proposal
+preconditions:
+- read-only analysis
+postconditions:
+- proposal not applied without test
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- self-improvement
+tools:
+- metrics-read
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - improvement testable against baseline
+failure_contract:
+  failure_modes:
+  - not enough data
+recovery_contract:
+  strategies:
+  - defer
+examples: []
+tests: []
+status: validated

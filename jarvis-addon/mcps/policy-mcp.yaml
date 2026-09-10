@@ -1,0 +1,20 @@
+mcp_id: policy-mcp
+name: policy-mcp
+version: 1.0.0
+description: policy decisions + authorization
+capabilities:
+- high-reliability
+tools:
+- policy-check
+- configuration-validation
+resources:
+- policy://*
+- auth://*
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: policy-mcp.health
+  interval_s: 60
+dependencies: []
+tests: []

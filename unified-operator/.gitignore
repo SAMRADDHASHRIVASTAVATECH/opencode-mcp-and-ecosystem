@@ -1,0 +1,15 @@
+# Credentials & local state
+.env
+*.json
+!examples/mcp-servers.json
+!*.example
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+state/
+operator.db
+*.log
+.pytest_cache/

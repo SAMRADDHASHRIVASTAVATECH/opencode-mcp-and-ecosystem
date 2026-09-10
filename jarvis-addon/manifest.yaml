@@ -1,0 +1,31 @@
+manifest_version: 1.0.0
+package:
+  id: jarvis-addon-ops-core
+  name: JARVIS Add-On Package (Operational Capabilities Core)
+  version: 1.0.0
+  type: EXTENSION
+purpose: Self-contained, importable extension layer for an existing JARVIS. Purely
+  additive.
+relationship:
+  integration: existing JARVIS + THIS PACKAGE = expanded JARVIS
+  additive_only: true
+  never_replace: true
+  never_overwrite: true
+  never_delete: true
+  does_not_require_host: true
+  does_not_assume_host: true
+conflict_resolution: detect -> compare -> reuse -> map -> extend
+policy_non_override: Every skill/policy/agent either adds checks or requires strictly
+  stricter ones; never weakens a stricter existing host policy.
+contents:
+  capabilities: 20
+  skills: 80
+  policies: 27
+  agents: 21
+  mcps: 15
+  tools: 44
+  events: 30
+  schemas: 19
+  contracts: 15
+reference: See docs/ for architecture, contract list, and the section-40 acceptance
+  audit.

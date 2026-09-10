@@ -1,0 +1,35 @@
+skill_id: project-management
+name: Project Management
+version: 1.0.0
+description: Maintain project/milestone/task/risk/decision state.
+purpose: Maintain project/milestone/task/risk/decision state.
+inputs: &id001
+- update
+outputs: &id002
+- project state
+preconditions:
+- project exists
+postconditions:
+- persisted + versioned
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- project-management
+tools:
+- project-store
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - readback
+failure_contract:
+  failure_modes:
+  - schema invalid
+recovery_contract:
+  strategies:
+  - reject with detail
+examples: []
+tests: []
+status: validated

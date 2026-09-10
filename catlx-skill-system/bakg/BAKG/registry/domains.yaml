@@ -1,0 +1,1109 @@
+# BAKG Domain Register
+source: Ultimate Blender Animation Knowledge Graph v2.0
+blender: 4.x
+count: 138
+domains:
+  - id: D01
+    slug: story-script
+    name: Story & Script
+    status: SIT
+    skill: preproduction
+    definition: "Narrative structure, beats, dialogue, pacing"
+    prerequisites: [idea]
+    feeds: [boarding, editing]
+  - id: D02
+    slug: worldbuilding-lore
+    name: Worldbuilding & Lore
+    status: SIT
+    skill: preproduction
+    definition: "Setting, rules, climate, culture, magic/tech systems"
+    prerequisites: [idea]
+    feeds: [design, environment]
+  - id: D03
+    slug: character-concept
+    name: Character Concept
+    status: SIT
+    skill: character-design
+    definition: "Personality, role, abilities, movement style"
+    prerequisites: [story]
+    feeds: [design, rig, acting]
+  - id: D04
+    slug: character-design
+    name: Character Design
+    status: REQ
+    skill: character-design
+    definition: "Look, silhouette, shape language, palette"
+    prerequisites: [concept, refs]
+    feeds: [modeling, rigging]
+  - id: D05
+    slug: creature-design
+    name: Creature Design
+    status: SIT
+    skill: character-design
+    definition: "Non-human anatomy logic, believability, biomechanics"
+    prerequisites: [concept, refs]
+    feeds: [creature-modeling]
+  - id: D06
+    slug: ai-concept
+    name: AI Concept Development
+    status: OPT
+    skill: character-design
+    definition: "SD/SDXL/LoRA/ControlNet exploration for concepts"
+    prerequisites: [design-sketches]
+    feeds: [character-sheets]
+  - id: D07
+    slug: reference-development
+    name: Reference Development
+    status: REQ
+    skill: character-design
+    definition: "Photo/video/anatomy reference collection & study"
+    prerequisites: [idea]
+    feeds: [all-visual]
+  - id: D08
+    slug: character-sheets
+    name: Character Sheets
+    status: SIT
+    skill: character-design
+    definition: "Turnarounds, expressions, proportions, callouts"
+    prerequisites: [design]
+    feeds: [modeling, rig, anim]
+  - id: D09
+    slug: storyboarding
+    name: Storyboarding
+    status: SIT
+    skill: preproduction
+    definition: "Shot-by-shot framing and staging drawings"
+    prerequisites: [story, world]
+    feeds: [animatic]
+  - id: D10
+    slug: animatics
+    name: Animatics
+    status: SIT
+    skill: preproduction
+    definition: "Timed storyboard cut to audio"
+    prerequisites: [storyboard]
+    feeds: [previs, shot-list]
+  - id: D11
+    slug: previsualization
+    name: Previsualization
+    status: SIT
+    skill: preproduction
+    definition: "3D camera layout with stand-ins"
+    prerequisites: [animatic, blockout]
+    feeds: [blockout, layout]
+  - id: D12
+    slug: motion-reference
+    name: Motion Reference
+    status: SIT
+    skill: preproduction
+    definition: "Filmed reference for gait/action/acting"
+    prerequisites: [animatic]
+    feeds: [animation]
+  - id: D13
+    slug: blender-fundamentals
+    name: Blender Fundamentals
+    status: REQ
+    skill: blender-foundations
+    definition: "UI, navigation, selection, transforms, modes"
+    prerequisites: []
+    feeds: [everything]
+  - id: D14
+    slug: 3d-planning
+    name: 3D Planning
+    status: REQ
+    skill: blender-foundations
+    definition: "Scale, units, budgets, asset/shot breakdown"
+    prerequisites: [animatic]
+    feeds: [blockout, pipeline]
+  - id: D15
+    slug: scene-organization
+    name: Scene Organization
+    status: REQ
+    skill: blender-foundations
+    definition: "Collections, naming, scenes, view layers, links"
+    prerequisites: [fundamentals]
+    feeds: [all-production]
+  - id: D16
+    slug: blockout
+    name: Blockout
+    status: REQ
+    skill: blender-foundations
+    definition: "Proxy geometry, layout, proportion validation"
+    prerequisites: [planning]
+    feeds: [modeling, previs]
+  - id: D17
+    slug: organic-modeling
+    name: Organic Modeling
+    status: SIT
+    skill: modeling
+    definition: "Smooth, curved, living forms via subdiv/box modeling"
+    prerequisites: [fundamentals]
+    feeds: [character, creature]
+  - id: D18
+    slug: hard-surface-modeling
+    name: Hard-Surface Modeling
+    status: SIT
+    skill: modeling
+    definition: "Mechanical, angular, manufactured forms"
+    prerequisites: [fundamentals]
+    feeds: [props, robots, armor]
+  - id: D19
+    slug: character-modeling
+    name: Character Modeling
+    status: REQ
+    skill: modeling
+    definition: "Human/humanoid base geometry, topology"
+    prerequisites: [design, anatomy]
+    feeds: [rig, texturing]
+  - id: D20
+    slug: creature-modeling
+    name: Creature Modeling
+    status: SIT
+    skill: modeling
+    definition: "Original/non-human geometry from creature design"
+    prerequisites: [design, anatomy]
+    feeds: [rig, texturing]
+  - id: D21
+    slug: anatomy
+    name: Anatomy
+    status: SIT
+    skill: sculpting-anatomy
+    definition: "Skeleton/muscle/fat logic; proportions"
+    prerequisites: [reference]
+    feeds: [modeling, sculpting]
+  - id: D22
+    slug: sculpting
+    name: Sculpting
+    status: SIT
+    skill: sculpting-anatomy
+    definition: "High-poly detail: primary→secondary→tertiary"
+    prerequisites: [modeling, anatomy]
+    feeds: [retopology]
+  - id: D23
+    slug: retopology
+    name: Retopology
+    status: SIT
+    skill: modeling
+    definition: "Clean low-poly cage from sculpt"
+    prerequisites: [sculpting]
+    feeds: [rig, uv]
+  - id: D24
+    slug: topology
+    name: Topology
+    status: REQ
+    skill: modeling
+    definition: "Edge flow for deformation, loops, poles, density"
+    prerequisites: [modeling]
+    feeds: [rig, deformation]
+  - id: D25
+    slug: uv-mapping
+    name: UV Mapping
+    status: REQ
+    skill: lookdev
+    definition: "3D→2D unwrap, seams, islands, packing"
+    prerequisites: [model]
+    feeds: [texturing]
+  - id: D26
+    slug: texture-creation
+    name: Texture Creation
+    status: SIT
+    skill: lookdev
+    definition: "Image textures: painted, photo, generated"
+    prerequisites: [uv]
+    feeds: [materials]
+  - id: D27
+    slug: texture-painting
+    name: Texture Painting
+    status: OPT
+    skill: lookdev
+    definition: "Direct 3D/2D painting of maps"
+    prerequisites: [uv]
+    feeds: [materials]
+  - id: D28
+    slug: texture-baking
+    name: Texture Baking
+    status: OPT
+    skill: lookdev
+    definition: "Detail transfer high→low, map baking"
+    prerequisites: [high-poly, uv]
+    feeds: [materials, perf]
+  - id: D29
+    slug: procedural-texturing
+    name: Procedural Texturing
+    status: OPT
+    skill: lookdev
+    definition: "Node-based, resolution-independent textures"
+    prerequisites: [shaders]
+    feeds: [materials]
+  - id: D30
+    slug: materials
+    name: Materials
+    status: REQ
+    skill: lookdev
+    definition: "Surface properties: color, roughness, metalness"
+    prerequisites: [textures, shaders]
+    feeds: [rendering]
+  - id: D31
+    slug: shaders
+    name: Shaders
+    status: REQ
+    skill: lookdev
+    definition: "Node graphs; Principled BSDF; custom shading"
+    prerequisites: [materials]
+    feeds: [materials, render]
+  - id: D32
+    slug: skin
+    name: Skin
+    status: SIT
+    skill: lookdev
+    definition: "SSS, pore detail, tint maps, wet/dry"
+    prerequisites: [shaders, textures]
+    feeds: [character-lookdev]
+  - id: D33
+    slug: eyes
+    name: Eyes
+    status: SIT
+    skill: lookdev
+    definition: "Cornea, iris, sclera, refraction, caustics"
+    prerequisites: [shaders]
+    feeds: [character-lookdev]
+  - id: D34
+    slug: teeth
+    name: Teeth
+    status: SIT
+    skill: lookdev
+    definition: "Enamel/dentin shading, translucency"
+    prerequisites: [shaders]
+    feeds: [character-lookdev]
+  - id: D35
+    slug: tongue
+    name: Tongue
+    status: SIT
+    skill: lookdev
+    definition: "Wet organic translucency, form"
+    prerequisites: [shaders]
+    feeds: [facial-work]
+  - id: D36
+    slug: nails-claws
+    name: Nails / Claws
+    status: SIT
+    skill: lookdev
+    definition: "Keratin shading, hardness, subsurface"
+    prerequisites: [shaders]
+    feeds: [creature-lookdev]
+  - id: D37
+    slug: clothing
+    name: Clothing
+    status: SIT
+    skill: costume-groom
+    definition: "Garment construction, patterns, panels, seams"
+    prerequisites: [character-model]
+    feeds: [rig, sim]
+  - id: D38
+    slug: cloth-construction
+    name: Cloth Construction
+    status: SIT
+    skill: costume-groom
+    definition: "Garment modeling techniques (tailoring in 3D)"
+    prerequisites: [clothing]
+    feeds: [cloth-sim]
+  - id: D39
+    slug: cloth-simulation
+    name: Cloth Simulation
+    status: SIT
+    skill: costume-groom
+    definition: "Cloth physics, collision, pinning, caching"
+    prerequisites: [cloth-construction]
+    feeds: [animation]
+  - id: D40
+    slug: accessories
+    name: Accessories
+    status: SIT
+    skill: costume-groom
+    definition: "Belts, straps, jewelry, gear"
+    prerequisites: [design]
+    feeds: [rig, sim]
+  - id: D41
+    slug: armor
+    name: Armor
+    status: SIT
+    skill: costume-groom
+    definition: "Rigid plates on flexible base, weight logic"
+    prerequisites: [design, hard-surface]
+    feeds: [rig, animation]
+  - id: D42
+    slug: props
+    name: Props
+    status: SIT
+    skill: costume-groom
+    definition: "Held/handled objects, interaction design"
+    prerequisites: [design]
+    feeds: [rig, animation]
+  - id: D43
+    slug: hair
+    name: Hair
+    status: SIT
+    skill: costume-groom
+    definition: "Curves-based hair, grooming, materials"
+    prerequisites: [model]
+    feeds: [hair-dynamics]
+  - id: D44
+    slug: fur
+    name: Fur
+    status: SIT
+    skill: costume-groom
+    definition: "High-density short hair; procedural/curves"
+    prerequisites: [model]
+    feeds: [hair-dynamics]
+  - id: D45
+    slug: feathers
+    name: Feathers
+    status: SIT
+    skill: costume-groom
+    definition: "Feather construction, layering, flight surfaces"
+    prerequisites: [creature-design]
+    feeds: [rig, sim]
+  - id: D46
+    slug: grooming
+    name: Grooming
+    status: SIT
+    skill: costume-groom
+    definition: "Guides, clumps, styling workflow"
+    prerequisites: [hair, fur]
+    feeds: [hair-dynamics, render]
+  - id: D47
+    slug: hair-dynamics
+    name: Hair Dynamics
+    status: SIT
+    skill: costume-groom
+    definition: "Simulation of hair/fur/feather motion"
+    prerequisites: [groom]
+    feeds: [animation, render]
+  - id: D48
+    slug: rigging
+    name: Rigging
+    status: REQ
+    skill: rigging
+    definition: "Control systems, hierarchy, constraints"
+    prerequisites: [model, topology]
+    feeds: [animation]
+  - id: D49
+    slug: skeleton-design
+    name: Skeleton Design
+    status: REQ
+    skill: rigging
+    definition: "Joint placement, bone orientation, naming"
+    prerequisites: [rigging]
+    feeds: [skinning]
+  - id: D50
+    slug: bone-systems
+    name: Bone Systems
+    status: REQ
+    skill: rigging
+    definition: "Bone types: deforming, control, mechanical"
+    prerequisites: [skeleton]
+    feeds: [deformation]
+  - id: D51
+    slug: ik
+    name: IK
+    status: SIT
+    skill: rigging
+    definition: "Inverse kinematics for limbs"
+    prerequisites: [bones]
+    feeds: [limb-controls]
+  - id: D52
+    slug: fk
+    name: FK
+    status: REQ
+    skill: rigging
+    definition: "Forward kinematics, natural arcs"
+    prerequisites: [bones]
+    feeds: [limb-controls]
+  - id: D53
+    slug: constraints
+    name: Constraints
+    status: REQ
+    skill: rigging
+    definition: "Copy/limit/track/transform constraints"
+    prerequisites: [rigging]
+    feeds: [all-rigs]
+  - id: D54
+    slug: drivers
+    name: Drivers
+    status: ADV
+    skill: rigging
+    definition: "Scripted/baked value automation"
+    prerequisites: [constraints]
+    feeds: [facial, mechanical]
+  - id: D55
+    slug: controllers
+    name: Controllers
+    status: REQ
+    skill: rigging
+    definition: "Control bones, custom shapes, UX"
+    prerequisites: [rigging]
+    feeds: [animation]
+  - id: D56
+    slug: weight-painting
+    name: Weight Painting
+    status: REQ
+    skill: rigging
+    definition: "Vertex weights, paint workflow, auto weights"
+    prerequisites: [skeleton]
+    feeds: [skinning]
+  - id: D57
+    slug: skinning
+    name: Skinning
+    status: REQ
+    skill: rigging
+    definition: "Binding mesh to skeleton; weights & envelopes"
+    prerequisites: [rigging]
+    feeds: [deformation]
+  - id: D58
+    slug: deformation
+    name: Deformation
+    status: REQ
+    skill: rigging
+    definition: "How mesh bends; joint correction needs"
+    prerequisites: [skinning]
+    feeds: [animation]
+  - id: D59
+    slug: corrective-shapes
+    name: Corrective Shapes
+    status: ADV
+    skill: rigging
+    definition: "Shape-key / bone-driven fixes for deformations"
+    prerequisites: [deformation]
+    feeds: [polish]
+  - id: D60
+    slug: facial-rigging
+    name: Facial Rigging
+    status: SIT
+    skill: rigging
+    definition: "Face controls: jaw, brows, eyes, lips, blendshapes"
+    prerequisites: [rigging]
+    feeds: [facial-animation]
+  - id: D61
+    slug: facial-animation
+    name: Facial Animation
+    status: SIT
+    skill: animation
+    definition: "Expressions, micro-motion, eye darts"
+    prerequisites: [facial-rig]
+    feeds: [acting]
+  - id: D62
+    slug: lip-sync
+    name: Lip Sync
+    status: SIT
+    skill: animation
+    definition: "Mouth shapes, visemes, phoneme timing"
+    prerequisites: [facial-rig]
+    feeds: [dialogue]
+  - id: D63
+    slug: eye-systems
+    name: Eye Systems
+    status: SIT
+    skill: rigging
+    definition: "Gaze, focus, blink, pupil; the soul of acting"
+    prerequisites: [facial-rig]
+    feeds: [facial-animation]
+  - id: D64
+    slug: character-animation
+    name: Character Animation
+    status: REQ
+    skill: animation
+    definition: "Full performance pipeline (blocking→polish)"
+    prerequisites: [rig]
+    feeds: [shot-production]
+  - id: D65
+    slug: animation-principles
+    name: Animation Principles
+    status: REQ
+    skill: animation
+    definition: "The 12 principles + modern extensions"
+    prerequisites: [fundamentals]
+    feeds: [all-animation]
+  - id: D66
+    slug: locomotion
+    name: Locomotion
+    status: REQ
+    skill: animation
+    definition: "Walks/runs/gait mechanics"
+    prerequisites: [principles]
+    feeds: [creature, character]
+  - id: D67
+    slug: human-movement
+    name: Human Movement
+    status: SIT
+    skill: animation
+    definition: "Human biomechanics, weight, balance"
+    prerequisites: [locomotion]
+    feeds: [acting]
+  - id: D68
+    slug: animal-movement
+    name: Animal Movement
+    status: SIT
+    skill: animation
+    definition: "Quadruped/bird/reptile gaits"
+    prerequisites: [locomotion]
+    feeds: [creature-animation]
+  - id: D69
+    slug: creature-movement
+    name: Creature Movement
+    status: SIT
+    skill: animation
+    definition: "Original anatomy → invented-but-believable motion"
+    prerequisites: [locomotion, design]
+    feeds: [creature-animation]
+  - id: D70
+    slug: quadruped-animation
+    name: Quadruped Animation
+    status: SIT
+    skill: animation
+    definition: "4-legged gaits, spine undulation"
+    prerequisites: [animal-movement]
+    feeds: [creature-animation]
+  - id: D71
+    slug: multi-legged-creatures
+    name: Multi-Legged Creatures
+    status: SIT
+    skill: animation
+    definition: "6/8+ leg gaits, tripod/stability logic"
+    prerequisites: [creature-movement]
+    feeds: [creature-animation]
+  - id: D72
+    slug: flying-creatures
+    name: Flying Creatures
+    status: SIT
+    skill: animation
+    definition: "Wings, flight physics illusion, takeoff/land"
+    prerequisites: [animal, creature]
+    feeds: [creature-animation]
+  - id: D73
+    slug: swimming-creatures
+    name: Swimming Creatures
+    status: SIT
+    skill: animation
+    definition: "Fluid body motion, drag, undulation"
+    prerequisites: [creature-movement]
+    feeds: [creature-animation]
+  - id: D74
+    slug: fighting
+    name: Fighting
+    status: SIT
+    skill: animation
+    definition: "Combat choreography, impact, anticipation"
+    prerequisites: [acting, timing]
+    feeds: [action-shots]
+  - id: D75
+    slug: acting
+    name: Acting
+    status: SIT
+    skill: animation
+    definition: "Performance, intent, emotion through body"
+    prerequisites: [principles]
+    feeds: [character-animation]
+  - id: D76
+    slug: physical-acting
+    name: Physical Acting
+    status: SIT
+    skill: animation
+    definition: "Weight, force, momentum readability"
+    prerequisites: [acting]
+    feeds: [character-animation]
+  - id: D77
+    slug: secondary-animation
+    name: Secondary Animation
+    status: SIT
+    skill: animation
+    definition: "Follow-through, overlap, cloth/hair response"
+    prerequisites: [animation]
+    feeds: [polish]
+  - id: D78
+    slug: animation-polish
+    name: Animation Polish
+    status: OPT
+    skill: animation
+    definition: "Splining refinement, arcs, spacing cleanup"
+    prerequisites: [animation]
+    feeds: [final-animation]
+  - id: D79
+    slug: environment-creation
+    name: Environment Creation
+    status: SIT
+    skill: environment
+    definition: "Full environments from blockout to detail"
+    prerequisites: [world, blockout]
+    feeds: [rendering]
+  - id: D80
+    slug: terrain
+    name: Terrain
+    status: SIT
+    skill: environment
+    definition: "Ground forms: sculpting, displacement, heightmaps"
+    prerequisites: [environment]
+    feeds: [environment]
+  - id: D81
+    slug: architecture
+    name: Architecture
+    status: SIT
+    skill: environment
+    definition: "Buildings, structures, hard-surface env assets"
+    prerequisites: [hard-surface]
+    feeds: [environment]
+  - id: D82
+    slug: nature
+    name: Nature
+    status: SIT
+    skill: environment
+    definition: "Vegetation, rocks, water bodies, organic env"
+    prerequisites: [geometry-nodes]
+    feeds: [environment]
+  - id: D83
+    slug: world-building
+    name: World Building / Set Dressing
+    status: SIT
+    skill: environment
+    definition: "Environmental storytelling, set dressing"
+    prerequisites: [worldbuilding]
+    feeds: [environment]
+  - id: D84
+    slug: props-assets
+    name: Props & Assets
+    status: SIT
+    skill: environment
+    definition: "Reusable asset systems, asset browser"
+    prerequisites: [design]
+    feeds: [all-shots]
+  - id: D85
+    slug: geometry-nodes
+    name: Geometry Nodes
+    status: SIT
+    skill: environment
+    definition: "Procedural modeling/instancing/scattering"
+    prerequisites: [fundamentals]
+    feeds: [env, vfx, anim]
+  - id: D86
+    slug: procedural-systems
+    name: Procedural Systems
+    status: SIT
+    skill: environment
+    definition: "Parameterized generators, node groups"
+    prerequisites: [geometry-nodes]
+    feeds: [env, vfx]
+  - id: D87
+    slug: particles
+    name: Particles
+    status: SIT
+    skill: simulation
+    definition: "Particle systems, emitters, point scattering"
+    prerequisites: [fundamentals]
+    feeds: [vfx, groom]
+  - id: D88
+    slug: physics
+    name: Physics
+    status: SIT
+    skill: simulation
+    definition: "Core physics sim infrastructure"
+    prerequisites: [fundamentals]
+    feeds: [sims]
+  - id: D89
+    slug: rigid-bodies
+    name: Rigid Bodies
+    status: SIT
+    skill: simulation
+    definition: "Hard object collisions, destruction"
+    prerequisites: [physics]
+    feeds: [vfx]
+  - id: D90
+    slug: soft-bodies
+    name: Soft Bodies
+    status: SIT
+    skill: simulation
+    definition: "Squishy deformable objects"
+    prerequisites: [physics]
+    feeds: [vfx]
+  - id: D91
+    slug: cloth-physics
+    name: Cloth Physics
+    status: SIT
+    skill: simulation
+    definition: "Fabric sim (see also D39)"
+    prerequisites: [physics]
+    feeds: [clothing]
+  - id: D92
+    slug: hair-physics
+    name: Hair Physics
+    status: SIT
+    skill: simulation
+    definition: "Strand dynamics (see also D47)"
+    prerequisites: [physics]
+    feeds: [groom]
+  - id: D93
+    slug: fluids
+    name: Fluids
+    status: SIT
+    skill: simulation
+    definition: "Liquid simulation (Mantaflow)"
+    prerequisites: [physics]
+    feeds: [vfx, water]
+  - id: D94
+    slug: water
+    name: Water
+    status: SIT
+    skill: simulation
+    definition: "Ocean, puddles, splashes, foam"
+    prerequisites: [fluids]
+    feeds: [environment]
+  - id: D95
+    slug: smoke
+    name: Smoke
+    status: SIT
+    skill: simulation
+    definition: "Smoke sim, pyro, billowing"
+    prerequisites: [physics]
+    feeds: [vfx]
+  - id: D96
+    slug: fire
+    name: Fire
+    status: SIT
+    skill: simulation
+    definition: "Fire sim, flames, ignition"
+    prerequisites: [physics]
+    feeds: [vfx]
+  - id: D97
+    slug: destruction
+    name: Destruction
+    status: SIT
+    skill: simulation
+    definition: "Fracture, rigid body breaks"
+    prerequisites: [rigid-bodies]
+    feeds: [vfx]
+  - id: D98
+    slug: debris
+    name: Debris
+    status: SIT
+    skill: simulation
+    definition: "Chunks, dust, secondary fragments"
+    prerequisites: [destruction]
+    feeds: [vfx]
+  - id: D99
+    slug: environmental-simulation
+    name: Environmental Simulation
+    status: SIT
+    skill: simulation
+    definition: "Weather, rain, leaves, ambient motion"
+    prerequisites: [sims]
+    feeds: [environment]
+  - id: D100
+    slug: vfx
+    name: VFX
+    status: SIT
+    skill: vfx
+    definition: "Effects design: impacts, energy, elementals"
+    prerequisites: [sims, particles]
+    feeds: [compositing]
+  - id: D101
+    slug: magic-energy
+    name: Magic / Energy Effects
+    status: SIT
+    skill: vfx
+    definition: "Glows, trails, arcs, runes, auras"
+    prerequisites: [vfx]
+    feeds: [compositing]
+  - id: D102
+    slug: camera
+    name: Camera
+    status: REQ
+    skill: cinematography
+    definition: "Camera object, lens, sensor, depth of field"
+    prerequisites: [fundamentals]
+    feeds: [cinematography]
+  - id: D103
+    slug: cinematography
+    name: Cinematography
+    status: REQ
+    skill: cinematography
+    definition: "Shot language, coverage, continuity"
+    prerequisites: [camera]
+    feeds: [editing]
+  - id: D104
+    slug: composition
+    name: Composition
+    status: REQ
+    skill: cinematography
+    definition: "Framing, balance, focal point, rule of thirds"
+    prerequisites: [camera]
+    feeds: [shot-design]
+  - id: D105
+    slug: lens-perspective
+    name: Lens & Perspective
+    status: SIT
+    skill: cinematography
+    definition: "Focal length, distortion, perspective logic"
+    prerequisites: [camera]
+    feeds: [shot-design]
+  - id: D106
+    slug: shot-design
+    name: Shot Design
+    status: SIT
+    skill: cinematography
+    definition: "Shot sizes, angles, staging per story beat"
+    prerequisites: [cinematography]
+    feeds: [storyboard, lighting]
+  - id: D107
+    slug: camera-movement
+    name: Camera Movement
+    status: SIT
+    skill: cinematography
+    definition: "Dolly, crane, handheld, shake; motivated moves"
+    prerequisites: [camera]
+    feeds: [shot-design]
+  - id: D108
+    slug: lighting
+    name: Lighting
+    status: REQ
+    skill: lighting
+    definition: "Light setup, mood, key/fill/rim, color temp"
+    prerequisites: [camera, scene]
+    feeds: [rendering]
+  - id: D109
+    slug: shadows
+    name: Shadows
+    status: REQ
+    skill: lighting
+    definition: "Shadow design, softness, contact, raytraced"
+    prerequisites: [lighting]
+    feeds: [rendering]
+  - id: D110
+    slug: atmosphere
+    name: Atmosphere
+    status: SIT
+    skill: lighting
+    definition: "Fog, haze, depth cues, aerial perspective"
+    prerequisites: [lighting]
+    feeds: [rendering]
+  - id: D111
+    slug: volumetrics
+    name: Volumetrics
+    status: SIT
+    skill: lighting
+    definition: "Volumetric light shafts, fog volumes"
+    prerequisites: [lighting]
+    feeds: [rendering]
+  - id: D112
+    slug: rendering
+    name: Rendering
+    status: REQ
+    skill: render-comp
+    definition: "Image generation, engines, settings"
+    prerequisites: [materials, lighting]
+    feeds: [compositing]
+  - id: D113
+    slug: render-engines
+    name: Render Engines
+    status: REQ
+    skill: render-comp
+    definition: "Cycles, EEVEE, Workbench: choice & tradeoffs"
+    prerequisites: [rendering]
+    feeds: [render-settings]
+  - id: D114
+    slug: render-optimization
+    name: Render Optimization
+    status: REQ
+    skill: render-comp
+    definition: "Samples, denoise, batching, memory control"
+    prerequisites: [rendering]
+    feeds: [production]
+  - id: D115
+    slug: render-passes
+    name: Render Passes
+    status: SIT
+    skill: render-comp
+    definition: "Split render into passes for compositing"
+    prerequisites: [rendering]
+    feeds: [compositing]
+  - id: D116
+    slug: aovs
+    name: AOVs
+    status: ADV
+    skill: render-comp
+    definition: "Arbitrary output variables, custom data"
+    prerequisites: [rendering]
+    feeds: [compositing]
+  - id: D117
+    slug: compositing
+    name: Compositing
+    status: REQ
+    skill: render-comp
+    definition: "Node compositor: passes, masks, color, effects"
+    prerequisites: [rendering]
+    feeds: [final-image]
+  - id: D118
+    slug: color-correction
+    name: Color Correction
+    status: REQ
+    skill: render-comp
+    definition: "Exposure, contrast, balance fixes"
+    prerequisites: [compositing]
+    feeds: [grading]
+  - id: D119
+    slug: color-grading
+    name: Color Grading
+    status: SIT
+    skill: render-comp
+    definition: "Look development: LUTs, film emulation, mood"
+    prerequisites: [color-correction]
+    feeds: [final-image]
+  - id: D120
+    slug: editing
+    name: Editing
+    status: REQ
+    skill: production-finishing
+    definition: "VSE/EDL: cutting, pacing, transitions"
+    prerequisites: [shots]
+    feeds: [final-film]
+  - id: D121
+    slug: shot-management
+    name: Shot Management
+    status: SIT
+    skill: production-finishing
+    definition: "Shot naming, states, tracking, render queue"
+    prerequisites: [pipeline]
+    feeds: [production]
+  - id: D122
+    slug: asset-management
+    name: Asset Management
+    status: SIT
+    skill: production-finishing
+    definition: "Asset browser, libraries, reuse, linking"
+    prerequisites: [pipeline]
+    feeds: [production]
+  - id: D123
+    slug: file-organization
+    name: File Organization
+    status: REQ
+    skill: production-finishing
+    definition: "Folder conventions, naming, linked files"
+    prerequisites: [pipeline]
+    feeds: [production]
+  - id: D124
+    slug: versioning
+    name: Versioning
+    status: REQ
+    skill: production-finishing
+    definition: "Save versions, incrementing, backups"
+    prerequisites: [file-organization]
+    feeds: [production]
+  - id: D125
+    slug: production-pipeline
+    name: Production Pipeline
+    status: REQ
+    skill: production-finishing
+    definition: "People/workflow ordering, dependencies"
+    prerequisites: [all]
+    feeds: [production]
+  - id: D126
+    slug: performance-optimization
+    name: Performance Optimization
+    status: REQ
+    skill: production-finishing
+    definition: "Viewport/render performance strategy"
+    prerequisites: [pipeline]
+    feeds: [production]
+  - id: D127
+    slug: quality-control
+    name: Quality Control
+    status: REQ
+    skill: production-finishing
+    definition: "Reviews, checks, error catching"
+    prerequisites: [everything]
+    feeds: [final-output]
+  - id: D128
+    slug: final-output
+    name: Final Output
+    status: REQ
+    skill: production-finishing
+    definition: "Deliverable formats, codecs, masters"
+    prerequisites: [editing]
+    feeds: [delivery]
+  - id: D129
+    slug: archiving
+    name: Archiving
+    status: SIT
+    skill: production-finishing
+    definition: "Long-term storage of project + assets"
+    prerequisites: [final-output]
+    feeds: [preservation]
+  - id: D130
+    slug: grease-pencil
+    name: Grease Pencil / 2D Animation
+    status: OPT
+    skill: grease-pencil
+    definition: "2D drawing, storyboard, and hybrid 2D-3D inside Blender"
+    prerequisites: []
+    feeds: [boarding, hybrid]
+  - id: D131
+    slug: motion-capture
+    name: Motion Capture
+    status: ADV
+    skill: rigging
+    definition: "MoCap data, retargeting, cleanup"
+    prerequisites: []
+    feeds: [animation]
+  - id: D132
+    slug: match-moving
+    name: Match Moving
+    status: ADV
+    skill: cinematography
+    definition: "Camera tracking for live-action integration"
+    prerequisites: []
+    feeds: [compositing]
+  - id: D133
+    slug: sound-music
+    name: Sound & Music Design
+    status: SIT
+    skill: production-finishing
+    definition: "Audio for timing, emotion, and final sync"
+    prerequisites: []
+    feeds: [editing]
+  - id: D134
+    slug: asset-libraries-addons
+    name: Asset Libraries & Add-ons
+    status: OPT
+    skill: production-finishing
+    definition: "BlenderKit, add-ons, community systems"
+    prerequisites: []
+    feeds: [production]
+  - id: D135
+    slug: character-base-meshes
+    name: Character Base Meshes
+    status: OPT
+    skill: modeling
+    definition: "Base human/creature models as starting points"
+    prerequisites: []
+    feeds: [modeling, rigging]
+  - id: D136
+    slug: render-farm
+    name: Render Farm & Distributed Rendering
+    status: ADV
+    skill: render-comp
+    definition: "Network rendering, render management"
+    prerequisites: []
+    feeds: [rendering]
+  - id: D137
+    slug: realtime-interactive
+    name: Real-time & Interactive
+    status: SIT
+    skill: production-finishing
+    definition: "EEVEE real-time pipelines, game/interactive output"
+    prerequisites: []
+    feeds: [export]
+  - id: D138
+    slug: style-guides
+    name: Style Guides & Art Direction
+    status: SIT
+    skill: character-design
+    definition: "The visual ruleset that keeps a production coherent"
+    prerequisites: []
+    feeds: [all-visual]

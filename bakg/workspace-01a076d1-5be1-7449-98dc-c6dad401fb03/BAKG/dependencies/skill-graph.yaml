@@ -1,0 +1,85 @@
+# BAKG skill dependency graph
+# kinds: needs | drives | affects | constrains | feedback | delegates
+
+system: BAKG
+nodes:
+  - bakg-orchestrator
+  - decision-engine
+  - preproduction
+  - character-design
+  - blender-foundations
+  - modeling
+  - sculpting-anatomy
+  - lookdev
+  - costume-groom
+  - rigging
+  - animation
+  - environment
+  - simulation
+  - vfx
+  - cinematography
+  - lighting
+  - render-comp
+  - production-finishing
+  - grease-pencil
+
+edges:
+  - {from: bakg-orchestrator, to: decision-engine, kind: delegates}
+  - {from: bakg-orchestrator, to: ALL, kind: routes}
+
+  - {from: preproduction, to: character-design, kind: drives}
+  - {from: preproduction, to: cinematography, kind: constrains}
+  - {from: preproduction, to: blender-foundations, kind: drives}
+  - {from: preproduction, to: grease-pencil, kind: delegates}
+
+  - {from: character-design, to: modeling, kind: drives}
+  - {from: character-design, to: sculpting-anatomy, kind: drives}
+  - {from: character-design, to: lookdev, kind: constrains}
+  - {from: character-design, to: costume-groom, kind: drives}
+  - {from: character-design, to: animation, kind: constrains}
+
+  - {from: blender-foundations, to: modeling, kind: needs}
+  - {from: blender-foundations, to: environment, kind: needs}
+  - {from: blender-foundations, to: production-finishing, kind: drives}
+
+  - {from: modeling, to: sculpting-anatomy, kind: feedback}
+  - {from: modeling, to: lookdev, kind: drives}
+  - {from: modeling, to: rigging, kind: needs}
+  - {from: sculpting-anatomy, to: modeling, kind: drives}
+
+  - {from: lookdev, to: lighting, kind: affects}
+  - {from: lookdev, to: render-comp, kind: needs}
+
+  - {from: costume-groom, to: rigging, kind: needs}
+  - {from: costume-groom, to: simulation, kind: delegates}
+  - {from: costume-groom, to: animation, kind: affects}
+
+  - {from: rigging, to: animation, kind: drives}
+  - {from: rigging, to: modeling, kind: feedback}
+
+  - {from: animation, to: rigging, kind: feedback}
+  - {from: animation, to: simulation, kind: drives}
+  - {from: animation, to: cinematography, kind: affects}
+
+  - {from: environment, to: lighting, kind: drives}
+  - {from: environment, to: simulation, kind: affects}
+  - {from: environment, to: cinematography, kind: constrains}
+
+  - {from: simulation, to: vfx, kind: drives}
+  - {from: simulation, to: render-comp, kind: affects}
+
+  - {from: vfx, to: render-comp, kind: needs}
+  - {from: vfx, to: lighting, kind: affects}
+
+  - {from: cinematography, to: lighting, kind: drives}
+  - {from: cinematography, to: animation, kind: constrains}
+
+  - {from: lighting, to: render-comp, kind: drives}
+
+  - {from: render-comp, to: production-finishing, kind: drives}
+  - {from: render-comp, to: lighting, kind: feedback}
+  - {from: render-comp, to: lookdev, kind: feedback}
+
+  - {from: production-finishing, to: ALL, kind: constrains}
+  - {from: grease-pencil, to: preproduction, kind: drives}
+  - {from: grease-pencil, to: render-comp, kind: needs}

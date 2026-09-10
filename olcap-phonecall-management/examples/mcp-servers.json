@@ -1,0 +1,18 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/mcp.servers.schema.json",
+  "comment": "Register ONE server to expose OLCAP phone control to OpenCode/Claude. "
+             "Run with a real Android bridge backend for live phone state, or "
+             "simulated backend for a safe demo. See docs/mcp-opencode.md.",
+  "mcpServers": {
+    "olcap-phonecall-management": {
+      "command": "olcap-phonecall-management",
+      "env": {
+        "OLCAP_BACKEND": "simulated",
+        "OLCAP_DEFAULT_SIM": "system",
+        "OLCAP_AI_CALLS_ENABLED": "false",
+        "OLCAP_AUTO_ANSWER_ENABLED": "false",
+        "OLCAP_VOICE_PROVIDER": "simulated"
+      }
+    }
+  }
+}

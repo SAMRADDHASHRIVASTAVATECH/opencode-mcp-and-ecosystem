@@ -1,0 +1,15 @@
+policy_id: memory-policy
+name: Memory & World Model Policy
+version: 1.0.0
+domain: digital-world-model
+action: ALLOW_WITH_CONDITIONS
+auth_level: SAFE_EXECUTE
+scope:
+  domain: digital-world-model
+conditions:
+- every item has source/timestamp/confidence
+- verification_status present
+- scope-limited reads/writes
+when: {}
+reason: Memory writes carry provenance and respect scopes.
+non_override: true

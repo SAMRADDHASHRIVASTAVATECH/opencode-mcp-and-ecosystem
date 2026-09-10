@@ -1,0 +1,20 @@
+{
+  "device_name": "OLCAP Realtime",
+  "default_mode": "off",
+  "audio": { "device_id": -1, "sample_rate": 16000, "channels": 1,
+             "vad_enabled": true, "chunk_ms": 100 },
+  "screen": { "monitoring": false, "active_window_only": true,
+              "selected_region_only": false, "capture_interval_s": 2.0,
+              "cloud_vision": false, "record_screenshots": false,
+              "ignored_applications": ["password_manager", "banking_app"] },
+  "stt": { "provider": "faster_whisper", "model": "small", "device": "auto",
+           "compute_type": "int8", "vad_filter": true },
+  "reasoning": { "provider": "lmstudio", "endpoint": "http://127.0.0.1:1234/v1",
+                 "model": "", "context_window": 8192, "streaming": true,
+                 "fallbacks": [] },
+  "tts": { "provider": "none", "voice": "" },
+  "privacy": { "store_transcripts": true, "store_summaries": true,
+               "record_screenshots": false, "cloud_processing": false,
+               "retention_days": 30 },
+  "security": { "remote_access": false, "mcp_token": "" }
+}

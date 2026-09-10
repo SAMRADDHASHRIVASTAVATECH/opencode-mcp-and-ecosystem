@@ -1,0 +1,26 @@
+# credentials & local state
+*.env
+!config/olcap.env.example
+config/olcap.json
+.mcp_token
+~/.olcap/
+olcap.db
+state/
+
+# python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# android / gradle
+android/.gradle/
+android/local.properties
+android/**/build/
+android/.idea/
+*.apk
+*.aab
+
+# logs
+*.log

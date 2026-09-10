@@ -1,0 +1,35 @@
+skill_id: memory-management
+name: Memory Management
+version: 1.0.0
+description: Store/retrieve across memory types under contracts.
+purpose: Store/retrieve across memory types under contracts.
+inputs: &id001
+- write/read
+outputs: &id002
+- memory
+preconditions:
+- authorized memory scope
+postconditions:
+- indexed with source/timestamp/confidence
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- digital-world-model
+tools:
+- memory-store
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - readback consistent
+failure_contract:
+  failure_modes:
+  - backend down
+recovery_contract:
+  strategies:
+  - ephemeral degrade
+examples: []
+tests: []
+status: validated

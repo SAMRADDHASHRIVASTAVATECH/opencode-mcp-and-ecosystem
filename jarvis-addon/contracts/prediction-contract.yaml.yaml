@@ -1,0 +1,12 @@
+contract: prediction
+version: 1.0.0
+schema: schemas/prediction.schema.json
+summary: Prediction is distinct from fact and from authorization.
+fields:
+- prediction
+- confidence
+- evidence
+- timestamp
+- expiration
+- kind=prediction
+rule: Predictions must never be presented as established facts or as grants of authority.

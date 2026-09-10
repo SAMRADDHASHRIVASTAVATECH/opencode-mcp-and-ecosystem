@@ -1,0 +1,10 @@
+import path from 'node:path';
+import os from 'node:os';
+export function loadConfig(env = process.env) { const mode = (env.N8N_MODE ?? 'offline'); if (!['online', 'offline', 'local'].includes(mode))
+    throw new Error('N8N_MODE must be online, offline, or local'); const baseUrl = env.N8N_BASE_URL?.replace(/\/$/, ''); if (mode === 'online' && !baseUrl && !env.N8N_OFFICIAL_MCP_URL)
+    throw new Error('ONLINE mode requires N8N_BASE_URL or N8N_OFFICIAL_MCP_URL'); return { mode, baseUrl, apiKey: env.N8N_API_KEY, officialMcpUrl: env.N8N_OFFICIAL_MCP_URL, officialMcpToken: env.N8N_MCP_TOKEN, offlineDir: path.resolve(env.N8N_OFFLINE_DIR ?? path.join(process.cwd(), 'n8n-artifacts')), allowInsecureLocalhost: env.N8N_ALLOW_INSECURE_LOCALHOST === 'true', approvalTtlMs: Number(env.N8N_APPROVAL_TTL_MS ?? 60000), timeoutMs: Number(env.N8N_TIMEOUT_MS ?? 30000), auditFile: path.resolve(env.N8N_AUDIT_FILE ?? path.join(os.homedir(), '.n8n-full-mcp', 'audit.jsonl')) }; }
+export function assertEndpoint(c) { if (!c.baseUrl)
+    return; if (c.baseUrl.startsWith('https://'))
+    return; const u = new URL(c.baseUrl); if (c.allowInsecureLocalhost && ['localhost', '127.0.0.1', '::1'].includes(u.hostname))
+    return; throw new Error('Refusing non-HTTPS n8n endpoint; only explicit localhost exception is supported'); }
+//# sourceMappingURL=config.js.map

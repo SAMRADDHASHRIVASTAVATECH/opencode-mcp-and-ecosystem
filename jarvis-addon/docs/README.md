@@ -1,0 +1,106 @@
+# JARVIS Add-On Package — Operational Capabilities Core
+
+Version **1.0.0** · Extension package (type **TYPE_EXTENSION**, mode **ADDITIVE**)
+
+> **Relationship:** `existing JARVIS + THIS PACKAGE = expanded JARVIS`
+
+This is a **self-contained, importable extension layer** for an existing JARVIS.
+It is purely additive. It ships real, reusable definitions — capability areas,
+skills, policies, agents, MCPs, tools, events, schemas and contracts — plus a
+small framework-independent runtime library that validates its own definitions
+and drives its own lifecycle state machines.
+
+## Guiding constraints
+
+* **Additive only.** Nothing in this package replaces, overwrites, deletes or
+  modifies an existing JARVIS component. Conflicts resolve by
+  `detect → compare → reuse → map → extend` (see `import-metadata.yaml`).
+* **Host-independent.** No JARVIS / OpenCode / Claude / any AI host is assumed
+  to exist or is required. Host-specific bindings (STT/TTS/GUI/OS) exist only
+  as *contracts*, never as dependencies.
+* **Policy non-override.** Every skill/policy/agent adds checks or requires
+  strictly stricter ones; nothing ever weakens a stricter existing host policy.
+* **Reversible.** Everything added carries rollback metadata
+  (`rollback-metadata.yaml`) so an importer can remove it cleanly.
+
+## Package layout
+
+```
+manifest.yaml            aggregate package manifest + additive contents
+import-metadata.yaml     TYPE_EXTENSION / MODE_ADDITIVE + prohibitions
+rollback-metadata.yaml   reversible-add rollback scheme
+capabilities/<20 areas>/ capability definitions (one dir per capability area)
+skills/                  64 skill definitions (universal skill schema)
+policies/                27 machine-readable policies (non-override)
+agents/                  21 agent roles
+mcps/                    10 real-boundary MCP extension definitions
+tools/                   44 tool contracts
+events/                  30 event definitions
+schemas/                 19 JSON Schemas
+contracts/               15 cross-cutting contracts
+orchestration/           universal-agency + task-execution workflows, goals
+memory/                  memory-type registry + store contract
+world-model/             entity & relationship type registries
+registries/              discovery indexes per kind
+src/jarvis_addon/        runtime library (result, policy, lifecycle, …)
+build/                   data-driven generators (emit.py, gen_index.py)
+docs/                    this README, architecture, contracts, integration, audit
+```
+
+## The 20 capability areas
+
+1. Proactive Assistance
+2. Long-Horizon Autonomy
+3. Autonomous Failure Recovery
+4. Autonomous Self-Maintenance
+5. Autonomous Capability Creation
+6. Unified Digital-World Model
+7. Deep Multimodal Fusion
+8. Universal GUI
+9. Advanced Project Management
+10. Multi-Agent Coordination
+11. Real-Time Conversation
+12. Continuous Knowledge Updating
+13. Self-Evaluation
+14. Predictive Assistance
+15. General Reasoning Support
+16. Decision Support
+17. High Reliability
+18. Controlled Self-Improvement
+19. Persistent Authorized Goals
+20. Universal Digital Agency
+
+Each area directory (`capabilities/<area>/capability.yaml`) declares which
+skills, policies, schemas, contracts, events, agents and authorization level
+deliver it. The registry (`registry.inventory()` / `registries/*`) can enumerate
+exactly what a receiver gets.
+
+## Runtime library (`src/jarvis_addon`)
+
+Pure, framework-independent helpers reused by hosts and by the package's own
+audit tooling:
+
+| Module | Purpose |
+|--------|---------|
+| `result.py`   | Universal Result / Verification / Evidence (§17, §18) |
+| `policy.py`   | Authorization ladder + policy-action decision engine, most-restrictive + host strict-override (§9–§12) |
+| `lifecycle.py`| Capability (§24), maintenance (§25), generation (§26) state machines |
+| `recovery.py` | Failure classes, classify, choose strategy (§3, §19) |
+| `generator.py`| Capability creation pipeline MISSING→…→REGISTERED + safe gate + rollback (§5, §26) |
+| `schemautil.py`| YAML/JSON load + schema validate (jsonschema optional) |
+| `registry.py` | Package discovery / inventory (acceptance §40) |
+| `audit.py`    | Placeholder scan (§35) + required-field audit (§40) |
+
+## Verify
+
+```bash
+python - <<'PY'
+import sys; sys.path.insert(0,'src')
+from jarvis_addon import registry, audit
+print(registry.inventory("."))           # what the package ships
+print("placeholders:", audit.scan_placeholders("."))
+PY
+```
+
+See `docs/INTEGRATION.md` for how a compatible host imports this package and
+`docs/ACCEPTANCE.md` for the §40 acceptance audit.

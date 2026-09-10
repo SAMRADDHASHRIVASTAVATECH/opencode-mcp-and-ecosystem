@@ -1,0 +1,12 @@
+policy_id: self-improvement-contract
+name: Self-Improvement Contract
+version: 1.0.0
+domain: self-improvement
+action: ALLOW
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: self-improvement
+conditions: []
+when: {}
+reason: Workflow improvement loop metadata.
+non_override: true

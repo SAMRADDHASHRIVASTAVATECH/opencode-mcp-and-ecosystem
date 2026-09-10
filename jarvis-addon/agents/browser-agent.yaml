@@ -1,0 +1,23 @@
+agent_id: browser-agent
+name: Browser Agent
+version: 1.0.0
+role: browser-agent
+purpose: Browse/act in a browser within policy.
+responsibilities:
+- Browse/act in a browser within policy.
+allowed_skills:
+- gui-operation
+- research
+required_capabilities:
+- universal-gui
+- knowledge-updating
+expected_inputs:
+- browser-agent task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

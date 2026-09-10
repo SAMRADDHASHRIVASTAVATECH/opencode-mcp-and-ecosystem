@@ -1,0 +1,26 @@
+mcp_id: registry-mcp
+name: registry-mcp
+version: 1.0.0
+description: capability/skill/tool/mcp/agent registries
+capabilities:
+- capability-creation
+- high-reliability
+tools:
+- registry-list
+- registry-search
+- registry-register
+- capability-lookup
+resources:
+- registry://capabilities
+- registry://skills
+- registry://tools
+- registry://mcps
+- registry://agents
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: registry-mcp.health
+  interval_s: 60
+dependencies: []
+tests: []

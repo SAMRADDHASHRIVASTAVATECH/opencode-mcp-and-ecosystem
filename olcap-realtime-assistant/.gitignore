@@ -1,0 +1,25 @@
+# credentials & local state
+.env
+*.env
+!config/.env.example
+config/*.json
+!config/assistant.example.json
+.mcp_token
+~/.olcap-realtime/
+state/
+
+# python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+*.db
+
+# logs / screenshots
+*.log
+screenshots/
+
+# audio / media artifacts
+*.wav
+*.mp3

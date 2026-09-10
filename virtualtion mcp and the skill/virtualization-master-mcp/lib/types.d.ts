@@ -1,0 +1,53 @@
+export type Platform = 'virtualbox' | 'hyperv' | 'vmware' | 'libvirt' | 'wsl';
+export interface PlatformInfo {
+    id: Platform;
+    state: 'AVAILABLE' | 'AVAILABLE_WITH_CONFIGURATION' | 'NOT_DETECTED';
+    executable?: string;
+    version?: string;
+    capabilities: string[];
+    guestControl: string[];
+    notes: string[];
+}
+export interface VM {
+    id: string;
+    name: string;
+    platform: Platform;
+    state: string;
+    os?: string;
+    cpus?: number;
+    memoryMB?: number;
+    configPath?: string;
+    guestControl: string[];
+    snapshots: boolean;
+    raw?: unknown;
+}
+export interface Operation {
+    context: 'HOST' | 'GUEST';
+    platform: Platform;
+    vm: string;
+    action: string;
+    parameters: Record<string, unknown>;
+    files: string[];
+    resourceChanges: string[];
+    persistentEffects: string[];
+    potentialDataLoss: string[];
+    risk: 'change' | 'destructive' | 'execute';
+}
+export interface Plan extends Operation {
+    id: string;
+    argv: string[];
+    mechanism: string;
+    verification: string[];
+    digest: string;
+    createdAt: number;
+}
+export interface Result {
+    ok: boolean;
+    code?: number;
+    stdout?: string;
+    stderr?: string;
+    durationMs?: number;
+    context: 'HOST' | 'GUEST';
+    vm: string;
+    mechanism: string;
+}

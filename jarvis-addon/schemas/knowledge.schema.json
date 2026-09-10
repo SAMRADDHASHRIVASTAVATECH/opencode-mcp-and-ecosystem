@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Knowledge item",
+  "type": "object",
+  "required": [
+    "knowledge_id",
+    "statement",
+    "source",
+    "timestamp",
+    "confidence",
+    "validity",
+    "history"
+  ],
+  "properties": {
+    "knowledge_id": {
+      "type": "string"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "validity": {
+      "type": "string"
+    },
+    "expiration": {
+      "type": "string"
+    },
+    "staleness": {
+      "type": "string"
+    },
+    "contradictions": {
+      "type": "array"
+    },
+    "history": {
+      "type": "array"
+    }
+  }
+}

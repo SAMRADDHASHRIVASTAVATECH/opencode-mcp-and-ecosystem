@@ -1,0 +1,14 @@
+note: 'Persistent authorized goals live here. Schema: schemas/goal.schema.json. Lifecycle
+  MISSING..ENABLED (capability) + goal lifecycle.'
+fields:
+- goal_id
+- name
+- authorization
+- priority
+- milestones
+- dependencies
+- checkpoint
+- next_action
+- stop_condition
+- escalation_condition
+- verification_state

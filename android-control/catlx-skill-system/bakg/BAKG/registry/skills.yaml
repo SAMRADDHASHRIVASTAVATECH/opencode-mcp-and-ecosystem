@@ -1,0 +1,119 @@
+# BAKG Skill Registry
+system: BAKG
+version: 2.0.0
+skill_count: 19
+skills:
+  - id: bakg-orchestrator
+    path: skills/bakg-orchestrator/SKILL.md
+    description: "Whole-system router, Ultimate Test navigation, project-type journeys, skill firing"
+    group: system
+    orchestrator: true
+    domains: [all]
+  - id: decision-engine
+    path: skills/decision-engine/SKILL.md
+    description: "Choice libraries and decision trees for every major fork"
+    group: system
+    orchestrator: true
+    domains: [all]
+  - id: preproduction
+    path: skills/preproduction/SKILL.md
+    description: "Story, world, boarding, animatic, previs, motion reference"
+    group: creative
+    orchestrator: false
+    domains: [D01, D02, D09, D10, D11, D12]
+  - id: character-design
+    path: skills/character-design/SKILL.md
+    description: "Concept, design, creature design, sheets, reference, AI concept, style guides"
+    group: creative
+    orchestrator: false
+    domains: [D03, D04, D05, D06, D07, D08, D138]
+  - id: blender-foundations
+    path: skills/blender-foundations/SKILL.md
+    description: "UI, data model, 3D planning, scene organization, blockout"
+    group: foundation
+    orchestrator: false
+    domains: [D13, D14, D15, D16]
+  - id: modeling
+    path: skills/modeling/SKILL.md
+    description: "Organic, hard-surface, character, creature modeling, retopo, topology"
+    group: geometry
+    orchestrator: false
+    domains: [D17, D18, D19, D20, D23, D24, D135]
+  - id: sculpting-anatomy
+    path: skills/sculpting-anatomy/SKILL.md
+    description: "Anatomy, proportions libraries, sculpting craft"
+    group: geometry
+    orchestrator: false
+    domains: [D21, D22]
+  - id: lookdev
+    path: skills/lookdev/SKILL.md
+    description: "UV, textures, materials, shaders, organic lookdev, NPR"
+    group: shading
+    orchestrator: false
+    domains: [D25, D26, D27, D28, D29, D30, D31, D32, D33, D34, D35, D36]
+  - id: costume-groom
+    path: skills/costume-groom/SKILL.md
+    description: "Clothing, cloth construction/sim, armor, accessories, hair, fur, feathers"
+    group: groom
+    orchestrator: false
+    domains: [D37, D38, D39, D40, D41, D42, D43, D44, D45, D46, D47]
+  - id: rigging
+    path: skills/rigging/SKILL.md
+    description: "Skeleton, IK/FK, constraints, drivers, skinning, deformation, facial rig, mocap"
+    group: puppet
+    orchestrator: false
+    domains: [D48, D49, D50, D51, D52, D53, D54, D55, D56, D57, D58, D59, D60, D63, D131]
+  - id: animation
+    path: skills/animation/SKILL.md
+    description: "Principles, locomotion, creatures, acting, facial animation, lip sync, polish"
+    group: performance
+    orchestrator: false
+    domains: [D61, D62, D64, D65, D66, D67, D68, D69, D70, D71, D72, D73, D74, D75, D76, D77, D78]
+  - id: environment
+    path: skills/environment/SKILL.md
+    description: "Terrain, architecture, nature, set dressing, geometry nodes, procedural worlds"
+    group: world
+    orchestrator: false
+    domains: [D79, D80, D81, D82, D83, D84, D85, D86]
+  - id: simulation
+    path: skills/simulation/SKILL.md
+    description: "Physics infrastructure, rigid/soft, cloth, hair, fluids, fire/smoke, destruction, weather"
+    group: sim
+    orchestrator: false
+    domains: [D87, D88, D89, D90, D91, D92, D93, D94, D95, D96, D97, D98, D99]
+  - id: vfx
+    path: skills/vfx/SKILL.md
+    description: "Layered effects, impacts, magic, energy, particles-as-design"
+    group: effects
+    orchestrator: false
+    domains: [D100, D101]
+  - id: cinematography
+    path: skills/cinematography/SKILL.md
+    description: "Camera, composition, lens, shot design, camera movement, match move"
+    group: image
+    orchestrator: false
+    domains: [D102, D103, D104, D105, D106, D107, D132]
+  - id: lighting
+    path: skills/lighting/SKILL.md
+    description: "Key/fill/rim, shadows, atmosphere, volumetrics, mood recipes"
+    group: image
+    orchestrator: false
+    domains: [D108, D109, D110, D111]
+  - id: render-comp
+    path: skills/render-comp/SKILL.md
+    description: "Engines, settings, passes, AOVs, compositing, color correction/grading"
+    group: image
+    orchestrator: false
+    domains: [D112, D113, D114, D115, D116, D117, D118, D119, D136]
+  - id: production-finishing
+    path: skills/production-finishing/SKILL.md
+    description: "Editing, sound, shot/asset/file ops, pipeline, QC, output, archive, optimization, realtime"
+    group: ops
+    orchestrator: false
+    domains: [D120, D121, D122, D123, D124, D125, D126, D127, D128, D129, D133, D134, D137]
+  - id: grease-pencil
+    path: skills/grease-pencil/SKILL.md
+    description: "Grease Pencil 3, 2D animation, hybrid 2D-3D"
+    group: hybrid
+    orchestrator: false
+    domains: [D130]

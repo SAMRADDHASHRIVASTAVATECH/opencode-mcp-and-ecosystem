@@ -1,0 +1,36 @@
+skill_id: agent-delegation
+name: Agent Delegation
+version: 1.0.0
+description: Delegate a task to a registered agent with ownership + lease.
+purpose: Delegate a task to a registered agent with ownership + lease.
+inputs: &id001
+- task
+- agent id
+outputs: &id002
+- handoff/lease
+preconditions:
+- agent registered + capable
+postconditions:
+- ownership/lease recorded
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- multi-agent-coordination
+tools:
+- agent-registry
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - no double ownership
+failure_contract:
+  failure_modes:
+  - agent busy
+recovery_contract:
+  strategies:
+  - queue
+examples: []
+tests: []
+status: validated

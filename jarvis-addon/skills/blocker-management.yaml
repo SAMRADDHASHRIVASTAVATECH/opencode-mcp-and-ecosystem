@@ -1,0 +1,34 @@
+skill_id: blocker-management
+name: Blocker Management
+version: 1.0.0
+description: Track and escalate blockers.
+purpose: Track and escalate blockers.
+inputs: &id001
+- blocker
+outputs: &id002
+- escalated/recorded
+preconditions: []
+postconditions:
+- blocker surfaced to owner
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- project-management
+tools:
+- project-store
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - owner notified
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - queue
+examples: []
+tests: []
+status: validated

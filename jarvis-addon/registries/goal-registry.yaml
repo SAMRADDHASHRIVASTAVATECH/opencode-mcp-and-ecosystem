@@ -1,0 +1,4 @@
+kind: goal
+type: authorized persistent goals
+entries:
+- see orchestration/goals/ for the persistent-goal lifecycle and goal records

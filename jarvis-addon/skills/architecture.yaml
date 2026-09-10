@@ -1,0 +1,40 @@
+skill_id: architecture
+name: Architecture
+version: 1.0.0
+description: Chooses module boundaries, data flow, and failure handling for new or
+  existing software. Use after requirements and tech selection, before large implementation.
+purpose: Chooses module boundaries, data flow, and failure handling for new or existing
+  software. Use after requirements and tech selection, before large implementation.
+inputs:
+- task description
+outputs:
+- completed work package
+preconditions:
+- request maps to capability
+postconditions:
+- work verified
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- software-engineering
+tools:
+- se_mcp.tools
+- mcp-routing
+execution_contract:
+  inputs:
+  - task description
+  outputs:
+  - completed work package
+verification_contract:
+  checks:
+  - result.perform_verification()
+failure_contract:
+  failure_modes:
+  - unverified result
+recovery_contract:
+  strategies:
+  - classify/retry/rollback
+examples: []
+tests: []
+status: registered

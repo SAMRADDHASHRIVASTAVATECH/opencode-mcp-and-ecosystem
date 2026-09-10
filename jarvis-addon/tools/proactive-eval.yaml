@@ -1,0 +1,14 @@
+tool_id: proactive-eval
+name: proactive-eval
+version: 1.0.0
+description: evaluate relevance/urgency/confidence
+inputs: []
+outputs: []
+permissions:
+  auth_level: SAFE_EXECUTE
+provider: host-adapter
+verification:
+  needs_evidence: true
+failure_behavior: typed failure
+health:
+  checkable: true

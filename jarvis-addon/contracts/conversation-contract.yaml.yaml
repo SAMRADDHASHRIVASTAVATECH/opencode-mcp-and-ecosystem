@@ -1,0 +1,14 @@
+contract: conversation
+version: 1.0.0
+summary: Real-time conversation contract (host-independent of STT/TTS).
+fields:
+- session
+- turn
+- interruption
+- barge_in
+- cancel
+- background_task_interaction
+- context_continuity
+- partial_input
+- partial_output
+note: STT/TTS are host adapters behind the GUI/Voice adapter interfaces.

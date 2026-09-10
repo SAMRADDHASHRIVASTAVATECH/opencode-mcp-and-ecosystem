@@ -1,0 +1,35 @@
+skill_id: skill-discovery
+name: Skill Discovery
+version: 1.0.0
+description: Find an existing skill by id/synonym to avoid duplication.
+purpose: Find an existing skill by id/synonym to avoid duplication.
+inputs: &id001
+- query
+outputs: &id002
+- matching skill ids
+preconditions:
+- read-only
+postconditions:
+- no mutation
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- registry-search
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - results reference registry
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - return empty
+examples: []
+tests: []
+status: validated

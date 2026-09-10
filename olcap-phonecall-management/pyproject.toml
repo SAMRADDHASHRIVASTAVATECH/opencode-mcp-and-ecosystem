@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "olcap-phonecall-management"
+version = "1.0.0"
+description = "Unified phone-call control plane (Android + MCP) for OLCAP. Exposes structured phone.* tools to OpenClaw/OpenCode."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0",
+    "pydantic>=2",
+]
+
+[project.scripts]
+olcap-phonecall-management = "olcap.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

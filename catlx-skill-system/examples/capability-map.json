@@ -1,0 +1,16 @@
+{
+  "//": "Example CapabilityMap emitted by the Capability Router for a T1 Mid-Range machine.",
+  "//source": "PART II §2.4.2 — Capability Routing Decision Tree",
+  "tier": 1,
+  "max_concurrent_agents": 3,
+  "memory_depth_turns": 2000,
+  "workflow_parallelism": "limited",
+  "telemetry_sample_rate": 0.25,
+  "ocr_backend": "tesseract_cpu",
+  "vector_backend": "chromadb_local",
+  "llm_strategy": "remote_primary",
+  "tts_engine": "coqui",
+  "stt_engine": "vosk_large",
+  "gui_mode": "minimal_hud",
+  "plugin_sandbox": "quota"
+}

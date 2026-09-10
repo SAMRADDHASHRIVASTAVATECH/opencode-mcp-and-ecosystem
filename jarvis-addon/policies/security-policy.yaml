@@ -1,0 +1,15 @@
+policy_id: security-policy
+name: Security & Authorization Policy
+version: 1.0.0
+domain: security
+action: DENY
+auth_level: DENIED
+scope:
+  domain: security
+conditions:
+- never weaken host security
+- sensitive operations require EXPLICIT_APPROVAL
+- this policy is NON_OVERRIDE (additive only)
+when: {}
+reason: Baseline hard rule. Nothing may weaken stricter existing security.
+non_override: true

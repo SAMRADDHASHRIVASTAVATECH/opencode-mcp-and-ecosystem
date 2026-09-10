@@ -1,0 +1,26 @@
+capability_id: persistent-goals
+name: Persistent Authorized Goals
+version: 1.0.0
+description: Goal registry/authorization/priority/milestones/dependencies/checkpoint/next
+  action/stop+escalation/verification state.
+area: persistent-goals
+skills:
+- goal-management
+- checkpointing
+- resume
+policies:
+- persistent-goal-policy
+schemas:
+- goal
+contracts:
+- goal-contract
+events:
+- GOAL_CREATED
+- GOAL_BLOCKED
+- GOAL_COMPLETED
+agents:
+- orchestrator
+- planner
+authorization:
+  auth_level: AUTHORIZED_AUTONOMOUS
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

@@ -1,0 +1,35 @@
+skill_id: tool-health
+name: Tool Health
+version: 1.0.0
+description: Check whether a tool is present/healthy.
+purpose: Check whether a tool is present/healthy.
+inputs: &id001
+- tool ids
+outputs: &id002
+- health report
+preconditions:
+- read-only
+postconditions:
+- none
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- self-maintenance
+tools:
+- tool-health
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - report contains status
+failure_contract:
+  failure_modes:
+  - probe unavailable
+recovery_contract:
+  strategies:
+  - mark unknown
+examples: []
+tests: []
+status: validated

@@ -1,0 +1,21 @@
+agent_id: policy-agent
+name: Policy Agent
+version: 1.0.0
+role: policy-agent
+purpose: Interpret policy for operations.
+responsibilities:
+- Interpret policy for operations.
+allowed_skills:
+- configuration-validation
+required_capabilities:
+- high-reliability
+expected_inputs:
+- policy-agent task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

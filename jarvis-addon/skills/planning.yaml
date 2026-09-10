@@ -1,0 +1,35 @@
+skill_id: planning
+name: Planning
+version: 1.0.0
+description: Decompose a goal into an ordered, verifiable plan.
+purpose: Decompose a goal into an ordered, verifiable plan.
+inputs: &id001
+- goal
+outputs: &id002
+- plan
+preconditions:
+- goal authorized
+postconditions:
+- plan checkpoints defined
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- general-reasoning
+tools:
+- goal-decompose
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - every step has verification + failure handler
+failure_contract:
+  failure_modes:
+  - goal underspecified
+recovery_contract:
+  strategies:
+  - ask for clarification
+examples: []
+tests: []
+status: validated

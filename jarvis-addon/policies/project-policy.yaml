@@ -1,0 +1,14 @@
+policy_id: project-policy
+name: Project Management Policy
+version: 1.0.0
+domain: project-management
+action: ALLOW
+auth_level: SAFE_EXECUTE
+scope:
+  domain: project-management
+conditions:
+- read/write project store
+- never delete user project data without explicit action
+when: {}
+reason: Project state maintenance is non-destructive and additive.
+non_override: true

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "personal_desktop_person": {
+      "type": "local",
+      "command": [
+        "/home/user/PersonalDesktopPerson/.venv/bin/python",
+        "-m",
+        "personal_desktop_person"
+      ],
+      "environment": {
+        "PDP_CONFIG": "/home/user/PersonalDesktopPerson/config/default.json"
+      },
+      "enabled": true,
+      "timeout": 30000
+    },
+    "open_computer_use": {
+      "type": "local",
+      "command": [
+        "open-computer-use",
+        "mcp"
+      ],
+      "enabled": false,
+      "timeout": 30000
+    }
+  },
+  "instructions": [
+    "/home/user/PersonalDesktopPerson/skills/SKILL.md"
+  ]
+}

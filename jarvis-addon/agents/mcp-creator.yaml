@@ -1,0 +1,24 @@
+agent_id: mcp-creator
+name: Mcp Creator
+version: 1.0.0
+role: mcp-creator
+purpose: Author/version MCP definitions.
+responsibilities:
+- Author/version MCP definitions.
+allowed_skills:
+- mcp-creation
+- mcp-validation
+- mcp-registration
+- mcp-versioning
+required_capabilities:
+- capability-creation
+expected_inputs:
+- mcp-creator task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

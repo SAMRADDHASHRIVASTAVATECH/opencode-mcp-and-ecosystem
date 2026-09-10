@@ -1,0 +1,35 @@
+skill_id: goal-management
+name: Goal Management
+version: 1.0.0
+description: Create/update/complete authorized persistent goals.
+purpose: Create/update/complete authorized persistent goals.
+inputs: &id001
+- goal
+outputs: &id002
+- goal record
+preconditions:
+- goal authorized
+postconditions:
+- goal persisted + checkpointed
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- persistent-goals
+tools:
+- goal-store
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - goal persisted with authorized flag
+failure_contract:
+  failure_modes:
+  - unauthorized
+recovery_contract:
+  strategies:
+  - require approval
+examples: []
+tests: []
+status: validated

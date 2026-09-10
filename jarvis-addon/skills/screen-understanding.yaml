@@ -1,0 +1,35 @@
+skill_id: screen-understanding
+name: Screen Understanding
+version: 1.0.0
+description: Identify application/window/UI elements from a screen image.
+purpose: Identify application/window/UI elements from a screen image.
+inputs: &id001
+- screenshot
+outputs: &id002
+- semantic UI map
+preconditions:
+- observe permission
+postconditions:
+- read-only
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- universal-gui
+tools:
+- screen-observe
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - elements mapped to coords
+failure_contract:
+  failure_modes:
+  - cannot identify
+recovery_contract:
+  strategies:
+  - report coordinates-only
+examples: []
+tests: []
+status: validated

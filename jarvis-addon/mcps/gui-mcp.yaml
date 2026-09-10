@@ -1,0 +1,20 @@
+mcp_id: gui-mcp
+name: gui-mcp
+version: 1.0.0
+description: universal GUI observation + operation
+capabilities:
+- universal-gui
+- multimodal-fusion
+tools:
+- screen-observe
+- gui-act
+resources:
+- screen://current
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: gui-mcp.health
+  interval_s: 60
+dependencies: []
+tests: []

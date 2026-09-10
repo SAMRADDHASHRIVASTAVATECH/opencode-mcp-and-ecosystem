@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "self-improvement-engine"
+version = "1.0.0"
+description = "Deterministic, auditable experience-memory self-improvement engine (record/reflect/learn/retrieve/consolidate)."
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+selfimprove = "selfimprove.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

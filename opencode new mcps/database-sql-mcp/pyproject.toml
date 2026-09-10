@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "database-sql-mcp"
+version = "1.0.0"
+description = "Standalone MCP server for SQL databases (SQLite, PostgreSQL, MySQL, SQL Server, DuckDB)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "mcp>=1.2.0",
+  "sqlalchemy>=2.0.0",
+  "sqlparse>=0.5.0",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg2-binary>=2.9"]
+mysql = ["pymysql>=1.1"]
+mssql = ["pymssql>=2.2"]
+duckdb = ["duckdb>=1.0"]
+odbc = ["pyodbc>=5.0"]
+dev = ["pytest>=7.0", "duckdb>=1.0"]
+all = ["psycopg2-binary>=2.9", "pymysql>=1.1", "pymssql>=2.2", "duckdb>=1.0"]
+
+[project.scripts]
+database-sql-mcp = "database_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Recovery contract",
+  "type": "object",
+  "required": [
+    "failure",
+    "failure_class",
+    "diagnosis",
+    "strategy",
+    "retry_limit",
+    "alternative",
+    "rollback",
+    "verification",
+    "termination",
+    "escalation"
+  ],
+  "properties": {
+    "failure": {
+      "type": "object"
+    },
+    "failure_class": {
+      "type": "string"
+    },
+    "diagnosis": {
+      "type": "string"
+    },
+    "strategy": {
+      "type": "string",
+      "enum": [
+        "retry",
+        "alternative_strategy",
+        "alternative_tool",
+        "alternative_skill",
+        "fallback",
+        "rollback",
+        "escalate",
+        "halt"
+      ]
+    },
+    "retry_limit": {
+      "type": "integer"
+    },
+    "alternative": {
+      "type": "string"
+    },
+    "rollback": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "object"
+    },
+    "termination": {
+      "type": "string"
+    },
+    "escalation": {
+      "type": "string"
+    }
+  }
+}

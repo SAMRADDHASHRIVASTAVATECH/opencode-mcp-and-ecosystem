@@ -1,0 +1,17 @@
+policy_id: capability-creation-policy
+name: Capability Creation Policy
+version: 1.0.0
+domain: capability-creation
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: capability-creation
+conditions:
+- gap detection read-only
+- candidate sandboxed + tested before registration
+- registration only after validation
+- never registers unvalidated code
+- respect generated-code policy
+when: {}
+reason: Generating capabilities is powerful; gate behind validation + sandboxing.
+non_override: true

@@ -1,0 +1,18 @@
+policy_id: self-improvement-policy
+name: Self-Improvement Policy
+version: 1.0.0
+domain: self-improvement
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: self-improvement
+conditions:
+- only workflow-level improvements
+- A/B tested + compared before promote
+- regressions rollback
+- never modifies core authorization/security policy
+- separate workflow-improvement from security-policy
+when: {}
+reason: Workflow self-improvement allowed; core security/authorization never changed
+  by self-improvement.
+non_override: true

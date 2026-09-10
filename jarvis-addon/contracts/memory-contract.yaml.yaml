@@ -1,0 +1,21 @@
+contract: memory
+version: 1.0.0
+schema: schemas/memory.schema.json
+summary: Backend-independent memory data contract.
+types:
+- short_term
+- episodic
+- semantic
+- procedural
+- project
+- failure
+- tool_performance
+- preference
+fields:
+- memory_id
+- memory_type
+- content
+- source
+- timestamp
+- confidence
+note: Backend (vector/DB/etc.) is a host adapter; the contract is portable.

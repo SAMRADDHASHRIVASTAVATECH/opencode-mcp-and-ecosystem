@@ -1,0 +1,35 @@
+skill_id: recovery
+name: Recovery
+version: 1.0.0
+description: Apply a chosen recovery strategy within limits.
+purpose: Apply a chosen recovery strategy within limits.
+inputs: &id001
+- recovery plan
+outputs: &id002
+- outcome
+preconditions:
+- plan approved within policy
+postconditions:
+- state re-verified
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- failure-recovery
+tools:
+- recovery-run
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - post recovery verification passed
+failure_contract:
+  failure_modes:
+  - recovery exhausted
+recovery_contract:
+  strategies:
+  - escalate
+examples: []
+tests: []
+status: validated

@@ -1,0 +1,17 @@
+policy_id: recovery-policy
+name: Recovery Policy
+version: 1.0.0
+domain: failure-recovery
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: failure-recovery
+conditions:
+- bounded retry limit
+- no silent auth retry (escalate instead)
+- rollback recorded
+- post-recovery verification required
+when: {}
+reason: Automatic retries and bounded recovery allowed; never retry auth/security
+  failures silently.
+non_override: true

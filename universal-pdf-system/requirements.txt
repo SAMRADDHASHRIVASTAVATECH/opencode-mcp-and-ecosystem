@@ -1,0 +1,7 @@
+# Core dependencies for the Universal PDF System.
+# See DEPENDENCIES.md for optional enhancements (OCR, DOCX, XLSX, pytest).
+pymupdf>=1.24
+reportlab>=4.0
+pypdf>=4.0
+pdfplumber>=0.11
+pillow>=10.0

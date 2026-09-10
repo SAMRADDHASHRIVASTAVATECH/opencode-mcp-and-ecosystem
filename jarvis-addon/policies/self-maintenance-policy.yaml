@@ -1,0 +1,16 @@
+policy_id: self-maintenance-policy
+name: Self-Maintenance Policy
+version: 1.0.0
+domain: self-maintenance
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: self-maintenance
+conditions:
+- repairs limited to components owned by this package unless approved
+- revertible; rollback available
+- tests required before and after
+- never weaken security
+when: {}
+reason: Maintenance/repair of package-managed components allowed within scope.
+non_override: true

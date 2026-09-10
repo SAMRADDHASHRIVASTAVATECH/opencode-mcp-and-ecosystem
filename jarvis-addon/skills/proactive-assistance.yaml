@@ -1,0 +1,37 @@
+skill_id: proactive-assistance
+name: Proactive Assistance
+version: 1.0.0
+description: Detect a useful situation and produce a suggestion (never executes autonomously
+  by default).
+purpose: Detect a useful situation and produce a suggestion (never executes autonomously
+  by default).
+inputs: &id001
+- event/context
+outputs: &id002
+- suggestion + relevance/urgency/confidence
+preconditions:
+- user-set proactive permission
+postconditions:
+- only recommend unless authorized
+permissions:
+  auth_level: RECOMMEND
+dependencies: []
+required_capabilities:
+- proactive-assistance
+tools:
+- proactive-eval
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - suggestion is recommendation not action
+failure_contract:
+  failure_modes:
+  - low confidence
+recovery_contract:
+  strategies:
+  - withhold suggestion
+examples: []
+tests: []
+status: validated

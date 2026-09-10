@@ -1,0 +1,9 @@
+event: KNOWLEDGE_UPDATED
+version: 1.0.0
+schema: contracts/event-contract.yaml
+description: Emitted when knowledge updated.
+payload_ref:
+  source: string
+  timestamp: iso8601
+  confidence: 0..1
+  entity_id: string

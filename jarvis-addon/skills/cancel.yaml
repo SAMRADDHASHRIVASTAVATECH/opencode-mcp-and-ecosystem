@@ -1,0 +1,35 @@
+skill_id: cancel
+name: Cancel
+version: 1.0.0
+description: Cancel a running task within stop conditions.
+purpose: Cancel a running task within stop conditions.
+inputs: &id001
+- task id
+outputs: &id002
+- cancelled
+preconditions:
+- cancel authorized
+postconditions:
+- task stopped, resources freed
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- real-time-conversation
+tools:
+- task-cancel
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - no side effects left inconsistent
+failure_contract:
+  failure_modes:
+  - cannot stop
+recovery_contract:
+  strategies:
+  - escalate
+examples: []
+tests: []
+status: validated

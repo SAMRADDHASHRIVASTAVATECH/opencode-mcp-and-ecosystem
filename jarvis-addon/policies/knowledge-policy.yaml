@@ -1,0 +1,16 @@
+policy_id: knowledge-policy
+name: Knowledge Updating Policy
+version: 1.0.0
+domain: knowledge-updating
+action: ALLOW_WITH_CONDITIONS
+auth_level: SAFE_EXECUTE
+scope:
+  domain: knowledge-updating
+conditions:
+- every item sourced + timestamped
+- confidence reflects agreement
+- old version retained
+- external fetch obeys research policy
+when: {}
+reason: Knowledge changes must be sourced, validated and versioned.
+non_override: true

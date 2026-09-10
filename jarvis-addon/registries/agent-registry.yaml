@@ -1,0 +1,23 @@
+kind: agent
+entries:
+- browser-agent
+- capability-creator
+- coder
+- evaluator
+- gui-agent
+- knowledge-agent
+- maintenance-agent
+- mcp-creator
+- memory-agent
+- observer
+- optimizer
+- orchestrator
+- planner
+- policy-agent
+- project-manager
+- recovery-agent
+- researcher
+- security-agent
+- skill-creator
+- tester
+- verifier

@@ -1,0 +1,980 @@
+{
+  "schema": "universal.visual-disciplines/1",
+  "common_workflow": [
+    "brief",
+    "research",
+    "divergent concepts",
+    "selection",
+    "editable development",
+    "discipline QA",
+    "revision",
+    "preflight",
+    "delivery",
+    "archive"
+  ],
+  "disciplines": {
+    "fine_art": {
+      "name": "Fine art and traditional media",
+      "subdisciplines": [
+        "drawing",
+        "painting",
+        "printmaking",
+        "sculpture",
+        "mixed media"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "reference board",
+        "studies",
+        "editable master",
+        "reproduction"
+      ],
+      "capability_packs": [
+        "raster-photo",
+        "vector-typography",
+        "fabrication-output"
+      ],
+      "review_gates": [
+        "material behavior",
+        "physical execution",
+        "conservation"
+      ]
+    },
+    "illustration": {
+      "name": "Illustration",
+      "subdisciplines": [
+        "editorial",
+        "publishing",
+        "scientific",
+        "medical",
+        "botanical",
+        "advertising"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "thumbnails",
+        "approved rough",
+        "color study",
+        "layered master",
+        "publication exports"
+      ],
+      "capability_packs": [
+        "raster-photo",
+        "vector-typography",
+        "color-vfx"
+      ],
+      "review_gates": [
+        "subject expert review for scientific or medical claims"
+      ]
+    },
+    "concept_art": {
+      "name": "Concept art and visual development",
+      "subdisciplines": [
+        "character",
+        "creature",
+        "environment",
+        "prop",
+        "vehicle",
+        "costume",
+        "worldbuilding"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "silhouettes",
+        "turnarounds",
+        "callouts",
+        "keyframes",
+        "style bible"
+      ],
+      "capability_packs": [
+        "raster-photo",
+        "three-d-usd",
+        "generation-restoration"
+      ],
+      "review_gates": [
+        "continuity",
+        "rights",
+        "production feasibility"
+      ]
+    },
+    "graphic_design": {
+      "name": "Graphic and communication design",
+      "subdisciplines": [
+        "identity",
+        "branding",
+        "editorial",
+        "campaign",
+        "packaging",
+        "signage",
+        "information design"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "strategy",
+        "concepts",
+        "identity system",
+        "templates",
+        "guidelines",
+        "production files"
+      ],
+      "capability_packs": [
+        "vector-typography",
+        "color-vfx",
+        "raster-photo"
+      ],
+      "review_gates": [
+        "truthful communication",
+        "font and image rights",
+        "prepress"
+      ]
+    },
+    "type_design": {
+      "name": "Typography, lettering and type design",
+      "subdisciplines": [
+        "lettering",
+        "calligraphy",
+        "typeface",
+        "multiscript typography"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "glyph set",
+        "spacing and kerning",
+        "proofs",
+        "font binaries",
+        "specimen"
+      ],
+      "capability_packs": [
+        "vector-typography"
+      ],
+      "review_gates": [
+        "language expert review",
+        "font licensing",
+        "missing glyphs"
+      ]
+    },
+    "photography": {
+      "name": "Photography and image manipulation",
+      "subdisciplines": [
+        "portrait",
+        "product",
+        "fashion",
+        "architecture",
+        "documentary",
+        "restoration",
+        "compositing"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "shot list",
+        "RAW archive",
+        "selects",
+        "nondestructive master",
+        "proofed exports"
+      ],
+      "capability_packs": [
+        "raster-photo",
+        "color-vfx",
+        "detection-segmentation"
+      ],
+      "review_gates": [
+        "consent",
+        "editorial truth",
+        "color-managed output"
+      ]
+    },
+    "animation": {
+      "name": "Animation and motion design",
+      "subdisciplines": [
+        "2D",
+        "3D",
+        "stop motion",
+        "motion graphics",
+        "kinetic typography"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "storyboard",
+        "animatic",
+        "design pack",
+        "animation master",
+        "rendered deliverables"
+      ],
+      "capability_packs": [
+        "video-animation",
+        "three-d-usd",
+        "vector-typography"
+      ],
+      "review_gates": [
+        "timing continuity",
+        "audio and footage rights"
+      ]
+    },
+    "film_vfx": {
+      "name": "Film, cinematic design, VFX and virtual production",
+      "subdisciplines": [
+        "storyboard",
+        "previs",
+        "matchmove",
+        "roto",
+        "compositing",
+        "virtual production"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "shot plan",
+        "plates and metadata",
+        "shot assets",
+        "comps",
+        "review movies",
+        "finals"
+      ],
+      "capability_packs": [
+        "video-animation",
+        "color-vfx",
+        "three-d-usd",
+        "detection-segmentation"
+      ],
+      "review_gates": [
+        "asset integrity",
+        "camera/lens data",
+        "final color and QC"
+      ]
+    },
+    "3d_art": {
+      "name": "3D art, sculpting, materials and rendering",
+      "subdisciplines": [
+        "modeling",
+        "sculpting",
+        "retopology",
+        "lookdev",
+        "rigging",
+        "lighting",
+        "rendering"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "editable scene",
+        "meshes",
+        "textures",
+        "materials",
+        "renders",
+        "turntables"
+      ],
+      "capability_packs": [
+        "three-d-usd",
+        "color-vfx",
+        "generation-restoration"
+      ],
+      "review_gates": [
+        "topology",
+        "scale",
+        "conversion loss",
+        "license"
+      ]
+    },
+    "game_art": {
+      "name": "Game art and interactive worlds",
+      "subdisciplines": [
+        "environment",
+        "character",
+        "technical art",
+        "VFX",
+        "UI",
+        "lighting",
+        "level art"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "source assets",
+        "engine assets",
+        "LODs",
+        "collision",
+        "materials",
+        "performance report"
+      ],
+      "capability_packs": [
+        "game-engine",
+        "three-d-usd",
+        "vector-typography"
+      ],
+      "review_gates": [
+        "platform budgets",
+        "gameplay readability",
+        "engine validation"
+      ]
+    },
+    "architecture": {
+      "name": "Architecture, BIM and architectural visualization",
+      "subdisciplines": [
+        "programming",
+        "schematic design",
+        "design development",
+        "documentation",
+        "visualization"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "program",
+        "plans",
+        "elevations",
+        "sections",
+        "BIM model",
+        "schedules",
+        "renders",
+        "drawing set"
+      ],
+      "capability_packs": [
+        "cad-bim",
+        "three-d-usd",
+        "architecture-gis"
+      ],
+      "review_gates": [
+        "licensed architect",
+        "codes",
+        "structure",
+        "MEP",
+        "fire and life safety"
+      ]
+    },
+    "interior_design": {
+      "name": "Interior, spatial, exhibition and home design",
+      "subdisciplines": [
+        "residential",
+        "commercial",
+        "retail",
+        "hospitality",
+        "exhibition",
+        "stage"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "space plans",
+        "RCPs",
+        "elevations",
+        "finish and furniture schedules",
+        "renders",
+        "installation documents"
+      ],
+      "capability_packs": [
+        "cad-bim",
+        "three-d-usd",
+        "architecture-gis"
+      ],
+      "review_gates": [
+        "building and accessibility review",
+        "procurement accuracy"
+      ]
+    },
+    "landscape": {
+      "name": "Landscape, urban and environmental design",
+      "subdisciplines": [
+        "site planning",
+        "planting",
+        "public realm",
+        "urban design",
+        "visual impact"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "site inventory",
+        "analysis maps",
+        "master plan",
+        "grading and planting drawings",
+        "viewsheds",
+        "visualizations"
+      ],
+      "capability_packs": [
+        "architecture-gis",
+        "cad-bim",
+        "three-d-usd"
+      ],
+      "review_gates": [
+        "licensed review",
+        "ecology",
+        "drainage",
+        "codes",
+        "public safety"
+      ]
+    },
+    "industrial_design": {
+      "name": "Product and industrial design",
+      "subdisciplines": [
+        "consumer product",
+        "furniture",
+        "medical product",
+        "appliance",
+        "service-system"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "research",
+        "concept sketches",
+        "CAD",
+        "CMF",
+        "prototype",
+        "technical drawings",
+        "production package"
+      ],
+      "capability_packs": [
+        "cad-bim",
+        "three-d-usd",
+        "fabrication-output"
+      ],
+      "review_gates": [
+        "engineering",
+        "ergonomics",
+        "manufacturability",
+        "product safety"
+      ]
+    },
+    "fashion": {
+      "name": "Fashion, textile, costume and wearable design",
+      "subdisciplines": [
+        "apparel",
+        "couture",
+        "costume",
+        "footwear",
+        "accessories",
+        "surface pattern"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "mood board",
+        "fashion illustrations",
+        "technical flats",
+        "patterns",
+        "tech pack",
+        "samples",
+        "lookbook"
+      ],
+      "capability_packs": [
+        "vector-typography",
+        "three-d-usd",
+        "fabrication-output"
+      ],
+      "review_gates": [
+        "fit",
+        "measurements",
+        "material behavior",
+        "production review"
+      ]
+    },
+    "transportation": {
+      "name": "Transportation and mobility design",
+      "subdisciplines": [
+        "automotive",
+        "marine",
+        "aerospace",
+        "public mobility"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "package study",
+        "concepts",
+        "orthographics",
+        "surfaces",
+        "CMF",
+        "renders",
+        "prototype data"
+      ],
+      "capability_packs": [
+        "cad-bim",
+        "three-d-usd"
+      ],
+      "review_gates": [
+        "engineering",
+        "ergonomics",
+        "aerodynamics",
+        "homologation",
+        "safety"
+      ]
+    },
+    "engineering_visualization": {
+      "name": "Engineering visualization and technical drawing",
+      "subdisciplines": [
+        "mechanical",
+        "electrical",
+        "civil",
+        "process",
+        "scientific",
+        "medical",
+        "patent"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "orthographics",
+        "sections",
+        "exploded views",
+        "schematics",
+        "diagrams",
+        "animations"
+      ],
+      "capability_packs": [
+        "cad-bim",
+        "vector-typography",
+        "classical-cv"
+      ],
+      "review_gates": [
+        "no inferred safety-critical values",
+        "domain standard review"
+      ]
+    },
+    "ui_ux": {
+      "name": "UI, UX, service and interaction design",
+      "subdisciplines": [
+        "research",
+        "information architecture",
+        "interaction",
+        "visual UI",
+        "design systems",
+        "service design"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "research findings",
+        "flows",
+        "wireframes",
+        "prototype",
+        "design system",
+        "usability report",
+        "handoff"
+      ],
+      "capability_packs": [
+        "ui-ux",
+        "vector-typography",
+        "raster-photo"
+      ],
+      "review_gates": [
+        "real user research",
+        "accessibility",
+        "privacy",
+        "developer validation"
+      ]
+    },
+    "data_visualization": {
+      "name": "Data and information visualization",
+      "subdisciplines": [
+        "charts",
+        "dashboards",
+        "maps",
+        "scientific visualization",
+        "data art"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "data audit",
+        "encoding design",
+        "annotated visuals",
+        "interactive or static outputs"
+      ],
+      "capability_packs": [
+        "vector-typography",
+        "architecture-gis",
+        "ui-ux"
+      ],
+      "review_gates": [
+        "truthful scales",
+        "uncertainty",
+        "source provenance",
+        "accessibility"
+      ]
+    },
+    "emerging_media": {
+      "name": "Creative coding and emerging media",
+      "subdisciplines": [
+        "generative art",
+        "AR",
+        "VR",
+        "XR",
+        "projection",
+        "installation",
+        "digital twin"
+      ],
+      "workflow": [
+        "brief",
+        "research",
+        "divergent concepts",
+        "selection",
+        "editable development",
+        "discipline QA",
+        "revision",
+        "preflight",
+        "delivery",
+        "archive"
+      ],
+      "deliverables": [
+        "system design",
+        "prototype",
+        "runtime assets",
+        "calibration",
+        "deployment plan",
+        "documentation"
+      ],
+      "capability_packs": [
+        "procedural",
+        "game-engine",
+        "video-animation",
+        "three-d-usd"
+      ],
+      "review_gates": [
+        "physical setup",
+        "runtime safety",
+        "privacy",
+        "hardware validation"
+      ]
+    }
+  },
+  "capability_packs": {
+    "raster-photo": [
+      "decode",
+      "encode",
+      "transform",
+      "composite",
+      "retouch",
+      "RAW",
+      "HDR",
+      "quality"
+    ],
+    "color-vfx": [
+      "ICC",
+      "OCIO",
+      "ACES",
+      "EXR",
+      "LUT",
+      "soft-proof",
+      "composite"
+    ],
+    "vector-typography": [
+      "SVG",
+      "paths",
+      "booleans",
+      "layout",
+      "fonts",
+      "shaping",
+      "PDF"
+    ],
+    "classical-cv": [
+      "features",
+      "contours",
+      "registration",
+      "calibration",
+      "tracking",
+      "measurement"
+    ],
+    "ocr-document": [
+      "OCR",
+      "layout",
+      "tables",
+      "reading-order",
+      "searchable PDF"
+    ],
+    "video-animation": [
+      "probe",
+      "transcode",
+      "timeline",
+      "frames",
+      "stabilize",
+      "quality metrics"
+    ],
+    "ml-inference": [
+      "ONNX",
+      "CPU",
+      "CUDA",
+      "DirectML",
+      "OpenVINO",
+      "CoreML",
+      "QNN"
+    ],
+    "detection-segmentation": [
+      "detection",
+      "segmentation",
+      "pose",
+      "depth",
+      "tracking",
+      "embeddings"
+    ],
+    "generation-restoration": [
+      "generate",
+      "inpaint",
+      "outpaint",
+      "control",
+      "upscale",
+      "restore"
+    ],
+    "three-d-usd": [
+      "mesh",
+      "scene",
+      "USD",
+      "MaterialX",
+      "UV",
+      "rig",
+      "simulate",
+      "render"
+    ],
+    "cad-bim": [
+      "CAD",
+      "BIM",
+      "IFC",
+      "STEP",
+      "parametric geometry",
+      "drawings"
+    ],
+    "architecture-gis": [
+      "terrain",
+      "GIS",
+      "site",
+      "sun",
+      "viewshed",
+      "environmental analysis"
+    ],
+    "ui-ux": [
+      "flows",
+      "wireframes",
+      "prototypes",
+      "design tokens",
+      "visual diff",
+      "accessibility"
+    ],
+    "game-engine": [
+      "engine assets",
+      "shaders",
+      "LOD",
+      "collision",
+      "lightmaps",
+      "profiling"
+    ],
+    "procedural": [
+      "patterns",
+      "fields",
+      "grammars",
+      "particles",
+      "generative geometry"
+    ],
+    "fabrication-output": [
+      "templates",
+      "nesting",
+      "toolpath planning",
+      "print",
+      "cut",
+      "prototype"
+    ],
+    "creative-apps": [
+      "native API",
+      "plugin",
+      "script",
+      "CLI",
+      "accessibility",
+      "GUI fallback"
+    ]
+  }
+}

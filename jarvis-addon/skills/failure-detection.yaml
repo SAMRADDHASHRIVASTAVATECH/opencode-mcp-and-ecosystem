@@ -1,0 +1,36 @@
+skill_id: failure-detection
+name: Failure Detection
+version: 1.0.0
+description: Detect that an operation failed or produced an unverified result.
+purpose: Detect that an operation failed or produced an unverified result.
+inputs: &id001
+- operation
+- result
+outputs: &id002
+- failure signal
+preconditions:
+- postconditions checkable
+postconditions:
+- none
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- failure-recovery
+tools:
+- verify-postcondition
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - signal backed by evidence
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - no-op
+examples: []
+tests: []
+status: validated

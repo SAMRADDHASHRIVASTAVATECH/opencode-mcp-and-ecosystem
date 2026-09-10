@@ -1,0 +1,12 @@
+policy_id: maintenance-lifecycle
+name: Self-Maintenance Lifecycle
+version: 1.0.0
+domain: self-maintenance
+action: ALLOW
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: self-maintenance
+conditions: []
+when: {}
+reason: Defines HEALTHY->DEGRADED->DIAGNOSTIC->REPAIRING->TESTING->VERIFIED->HEALTHY.
+non_override: true

@@ -1,0 +1,32 @@
+skill_id: mcp-versioning
+name: Mcp Versioning
+version: 1.0.0
+description: Version an MCP definition.
+purpose: Version an MCP definition.
+inputs: &id001
+- mcp
+outputs: &id002
+- version record
+preconditions: []
+postconditions:
+- versioned
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- version-bump
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks: []
+failure_contract:
+  failure_modes: []
+recovery_contract:
+  strategies:
+  - no-op
+examples: []
+tests: []
+status: validated

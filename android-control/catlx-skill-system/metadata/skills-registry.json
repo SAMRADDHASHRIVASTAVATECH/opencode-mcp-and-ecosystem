@@ -1,0 +1,840 @@
+{
+  "manifest_version": 1,
+  "name": "CATLX Universal AI Operating System skill ecosystem",
+  "description": "Windows-only, USB-free: ability-compiled skill ecosystem derived from CATLX_Universal_AI_OS_Specification.pdf",
+  "target_runtime": "OpenCode (SKILL.md, skill tool)",
+  "root_skill": "catlx",
+  "skill_count": 39,
+  "skills": [
+    {
+      "id": "bakg",
+      "name": "bakg",
+      "relative_path": "skills/bakg",
+      "skill_path": "skills/bakg/SKILL.md",
+      "description": "Blender Animation Knowledge Graph — complete standalone ecosystem for imagining, designing, modeling, sculpting, lookdev, rigging, animating, simulating, and finishing any character/creature/world/film in Blender 4.x. Use when user wants to build/model/rig/animate/render a character, creature, animation, short film, world, grease-pencil, or asks blender, modeling, sculpting, topology, UV, materials, hair, cloth, rigging, animation, simulation, VFX, cinematography, lighting, render, compositing. Routes to 19 BAKG skills via bakg-orchestrator.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "",
+      "subsystem": "",
+      "skill_type": "",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": ""
+    },
+    {
+      "id": "catlx",
+      "name": "catlx",
+      "relative_path": "skills/catlx",
+      "skill_path": "skills/catlx/SKILL.md",
+      "description": "ROOT gateway for the CATLX Universal AI Operating System skill ecosystem. Load this first for any task about CATLX architecture, design, runtime, or deployment. It routes to the correct subsystem skill, drives automatic skill-to-skill delegation, and enforces progressive context loading. Use proactively when the user references CATLX, an AI OS, voice-first automation, hardware adaptation, memory architecture, workflow engine, security, or any of its subsystem capabilities.",
+      "capabilities": [],
+      "aliases": [
+        "catlx",
+        "catlx os",
+        "root",
+        "entry point",
+        "gateway"
+      ],
+      "category": "gateway",
+      "subsystem": "CATLX_RUNTIME",
+      "skill_type": "router",
+      "depends_on": [
+        "all subsystem skills (routed",
+        "not eagerly loaded)"
+      ],
+      "version": "1.0.0",
+      "source": "CATLX_Master_Architecture_Specification (all parts)"
+    },
+    {
+      "id": "catlx-ai-provider",
+      "name": "catlx-ai-provider",
+      "relative_path": "skills/catlx-ai-provider",
+      "skill_path": "skills/catlx-ai-provider/SKILL.md",
+      "description": "Handles the CATLX AI provider architecture: the Provider Abstraction Layer (PAL), current and future providers, provider routing and failover protocol, the cost optimization router, and local LLM integration (llama.cpp/vLLM with OpenAI-compatible API). Use when the user asks about which AI provider CATLX uses, provider failover, routing policies, the cost router, local models, embeddings, or how AI inference is abstracted.",
+      "capabilities": [
+        "ai-provider-routing"
+      ],
+      "aliases": [
+        "ai provider",
+        "llm",
+        "model",
+        "inference",
+        "embeddings",
+        "provider routing",
+        "failover",
+        "local model",
+        "pal"
+      ],
+      "category": "architecture",
+      "subsystem": "AI_Provider_Layer",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-capability-routing"
+      ],
+      "version": "1.0.0",
+      "source": "PART VIII §8.1-8.5"
+    },
+    {
+      "id": "catlx-capability-routing",
+      "name": "catlx-capability-routing",
+      "relative_path": "skills/catlx-capability-routing",
+      "skill_path": "skills/catlx-capability-routing/SKILL.md",
+      "description": "Handles CATLX capability and environment routing: where a module's work executes (LOCAL_PROCESS, LOCAL_SUBPROCESS, LOCAL_CONTAINER, REMOTE_API), transparent capability fallback chains (e.g. speech-to-text), adaptive runtime evolution, file-backed registries, and live GUI synchronization over the WebSocket bus. Use when the user asks how CATLX picks an execution environment, routes a capability request, falls back when a module is unavailable, or how runtime state syncs to the GUI.",
+      "capabilities": [
+        "capability-environment-routing"
+      ],
+      "aliases": [
+        "capability routing",
+        "environment routing",
+        "routing",
+        "fallback",
+        "execution environment",
+        "registries",
+        "config routing"
+      ],
+      "category": "architecture",
+      "subsystem": "Core_Runtime",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-hardware-adaptation"
+      ],
+      "version": "1.0.0",
+      "source": "PART III §3.3-3.7"
+    },
+    {
+      "id": "catlx-desktop-control",
+      "name": "catlx-desktop-control",
+      "relative_path": "skills/catlx-desktop-control",
+      "skill_path": "skills/catlx-desktop-control/SKILL.md",
+      "description": "Handles the CATLX Desktop Control Engine: mouse control, keyboard synthesis, window management, file operations, browser automation (Playwright/Puppeteer), application automation (UIAutomation/COM-WMI/OCR), multi-monitor support, the overlay HUD, and native notifications. Use when the user asks how CATLX moves the mouse, types, reads windows, manages files, automates browsers or apps, handles multiple monitors, or shows HUD/notifications.",
+      "capabilities": [
+        "desktop-automation"
+      ],
+      "aliases": [
+        "desktop control",
+        "mouse",
+        "keyboard",
+        "window management",
+        "file ops",
+        "browser automation",
+        "app automation",
+        "automate"
+      ],
+      "category": "interface",
+      "subsystem": "Desktop_Control_Engine",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-electron-shell",
+        "catlx-security"
+      ],
+      "version": "1.0.0",
+      "source": "PART V §5.1-5.4, 5.6-5.11"
+    },
+    {
+      "id": "catlx-docker",
+      "name": "catlx-docker",
+      "relative_path": "skills/catlx-docker",
+      "skill_path": "skills/catlx-docker/SKILL.md",
+      "description": "Handles the CATLX Docker architecture: the container strategy, core service containers, Docker Compose configuration with overrides, portable/relocatable volumes relative to CATLX_ROOT, offline mode, Docker Swarm/Kubernetes for enterprise, and Docker recovery or service degradation. Use when the user asks about CATLX Docker/containers, the Compose file, GPU containers, offline containers, relocatable volumes, Swarm/Kubernetes, or container health/restart.",
+      "capabilities": [
+        "container-deployment"
+      ],
+      "aliases": [
+        "docker",
+        "containers",
+        "compose",
+        "containerized",
+        "gpu containers",
+        "swarm",
+        "kubernetes"
+      ],
+      "category": "infrastructure",
+      "subsystem": "Docker_Layer",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-hardware-adaptation"
+      ],
+      "version": "1.0.0",
+      "source": "PART XIV §14.1-14.7"
+    },
+    {
+      "id": "catlx-electron-shell",
+      "name": "catlx-electron-shell",
+      "relative_path": "skills/catlx-electron-shell",
+      "skill_path": "skills/catlx-electron-shell/SKILL.md",
+      "description": "Handles the CATLX Electron OS Shell: an OS-layer interface (not a normal app window), the multi-window window roles (main, HUD overlay, command palette, notification toasts, focus mode), the Ctrl+Space command palette with fuse.js fuzzy search, multi-window persistence, the always-on tray runtime, typed IPC security via contextBridge, and workspace persistence. Use when the user asks about the CATLX shell, windows, HUD, command palette, tray, IPC security, or workspace restoration.",
+      "capabilities": [
+        "os-shell"
+      ],
+      "aliases": [
+        "shell",
+        "gui",
+        "electron",
+        "command palette",
+        "tray",
+        "hud",
+        "windows",
+        "workspace persistence"
+      ],
+      "category": "interface",
+      "subsystem": "Electron_OS_Shell",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-capability-routing",
+        "catlx-telemetry"
+      ],
+      "version": "1.0.0",
+      "source": "PART XII §12.1-12.7"
+    },
+    {
+      "id": "catlx-hardware-adaptation",
+      "name": "catlx-hardware-adaptation",
+      "relative_path": "skills/catlx-hardware-adaptation",
+      "skill_path": "skills/catlx-hardware-adaptation/SKILL.md",
+      "description": "Handles CATLX hardware adaptation: hardware tier detection (T0/T1/T2/T3), the capability matrix, the boot-time hardware scan, the Capability Router state machine that emits the CapabilityMap, and runtime re-adaptation when resources change. Use when the user asks about hardware tiers, capability scaling, the 50ms boot scan, CapabilityMap fields, adaptive reconfiguration, or how CATLX picks OCR/STT/TTS/LLM backends per hardware.",
+      "capabilities": [
+        "hardware-adaptation"
+      ],
+      "aliases": [
+        "hardware",
+        "hardware adaptation",
+        "tier detection",
+        "capability matrix",
+        "hardware profile",
+        "boot scan",
+        "adaptive runtime",
+        "capability map"
+      ],
+      "category": "architecture",
+      "subsystem": "Core_Runtime",
+      "skill_type": "",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "PART II §2.1-2.5"
+    },
+    {
+      "id": "catlx-memory",
+      "name": "catlx-memory",
+      "relative_path": "skills/catlx-memory",
+      "skill_path": "skills/catlx-memory/SKILL.md",
+      "description": "Handles the CATLX memory architecture: episodic, semantic, workspace, and knowledge-graph memory stores, the Memory Broker as the single access point, the coherence protocol, memory compression, RAG-based retrieval optimization, and long-term persistence/portability. Use when the user asks about CATLX memory, remembering conversations, facts/preferences, workspace state, knowledge graphs, conflict resolution between memories, or how memory feeds AI calls.",
+      "capabilities": [
+        "memory-management"
+      ],
+      "aliases": [
+        "memory",
+        "remember",
+        "recall",
+        "facts",
+        "preferences",
+        "knowledge graph",
+        "memory broker",
+        "rag"
+      ],
+      "category": "architecture",
+      "subsystem": "Memory_Architecture",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-ai-provider"
+      ],
+      "version": "1.0.0",
+      "source": "PART VII §7.1-7.11"
+    },
+    {
+      "id": "catlx-orchestrator",
+      "name": "catlx-orchestrator",
+      "relative_path": "skills/catlx-orchestrator",
+      "skill_path": "skills/catlx-orchestrator/SKILL.md",
+      "description": "UNIVERSAL ORCHESTRATOR — the automatic front door to the entire CATLX skill ecosystem. Activate this once and then just ask in plain English: explain X, fix a problem, deploy/build/configure something, analyze what is wrong, etc. It understands the request, routes to the right CATLX subsystem skill from the skill registry / capability index, then lets that skill auto-delegate recursively and synthesizes the final result. Use proactively for any request that does NOT already name a specific skill, or when the user says 'activate universal orchestrator', 'help me solve', 'why is X failing', 'what is wrong', 'analyze this'.",
+      "capabilities": [
+        "universal-routing"
+      ],
+      "aliases": [
+        "universal orchestrator",
+        "orchestrator",
+        "auto router",
+        "global entry",
+        "universal mode"
+      ],
+      "category": "orchestrator",
+      "subsystem": "CATLX_RUNTIME",
+      "skill_type": "orchestrator",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "Derived meta-skill over all CATLX parts (routes the canonical system; it is NOT a copy of the source)"
+    },
+    {
+      "id": "catlx-plugin-ecosystem",
+      "name": "catlx-plugin-ecosystem",
+      "relative_path": "skills/catlx-plugin-ecosystem",
+      "skill_path": "skills/catlx-plugin-ecosystem/SKILL.md",
+      "description": "Handles the CATLX plugin ecosystem: the plugin runtime (worker threads / Docker), signed plugin security with capability grants, the @catlx/plugin-sdk, the Plugin Marketplace, hot reload, and version management with deterministic dependency resolution (PnP-style) and API compatibility shims. Use when the user asks about CATLX plugins, writing/installing a plugin, the Plugin SDK, marketplace, hot reload, plugin signing/security, or plugin dependency resolution.",
+      "capabilities": [
+        "plugin-ecosystem"
+      ],
+      "aliases": [
+        "plugins",
+        "plugin",
+        "plugin sdk",
+        "marketplace",
+        "extensions",
+        "hot reload"
+      ],
+      "category": "architecture",
+      "subsystem": "Plugin_Runtime",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-silexis-modules",
+        "catlx-security",
+        "catlx-electron-shell",
+        "catlx-docker"
+      ],
+      "version": "1.0.0",
+      "source": "PART XIII §13.1-13.7"
+    },
+    {
+      "id": "catlx-portability",
+      "name": "catlx-portability",
+      "relative_path": "skills/catlx-portability",
+      "skill_path": "skills/catlx-portability/SKILL.md",
+      "description": "Handles CATLX portability: the portability mandate, the CATLX_ROOT relative-path architecture, bundled Node runtime, database portability, portable external NVMe SSD configuration (portable mode), and machine-agnostic identity. USB flash-drive scenarios are excluded. Use when the user asks how CATLX runs identically from an internal drive or external SSD, how paths stay relative, how it's portable across machines, or about cross-machine identity.",
+      "capabilities": [
+        "portability"
+      ],
+      "aliases": [
+        "portability",
+        "portable",
+        "portable mode",
+        "relative paths",
+        "cross-machine",
+        "identity"
+      ],
+      "category": "architecture",
+      "subsystem": "Portability",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-hardware-adaptation"
+      ],
+      "version": "1.0.0",
+      "source": "PART XV §15.1-15.6 (USB removed)"
+    },
+    {
+      "id": "catlx-recovery",
+      "name": "catlx-recovery",
+      "relative_path": "skills/catlx-recovery",
+      "skill_path": "skills/catlx-recovery/SKILL.md",
+      "description": "Handles the CATLX recovery architecture: crash recovery via the PID lockfile, Safe Mode, Recovery Mode, checkpoint integrity verification and restoration, and the full recovery coverage matrix (process crash, power loss, corruption, provider failover, container crash, plugin corruption, OOM, vector index corruption, config corruption). Use when the user asks about CATLX crash recovery, safe mode, recovery mode, restoring a workflow from a checkpoint, or how CATLX recovers from failures.",
+      "capabilities": [
+        "recovery"
+      ],
+      "aliases": [
+        "recovery",
+        "crash",
+        "safe mode",
+        "checkpoint restore",
+        "resilience",
+        "restore",
+        "troubleshoot"
+      ],
+      "category": "resilience",
+      "subsystem": "Recovery",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-ai-provider",
+        "catlx-memory",
+        "catlx-security",
+        "catlx-docker"
+      ],
+      "version": "1.0.0",
+      "source": "PART XVI §16.1-16.5"
+    },
+    {
+      "id": "catlx-runtime-lifecycle",
+      "name": "catlx-runtime-lifecycle",
+      "relative_path": "skills/catlx-runtime-lifecycle",
+      "skill_path": "skills/catlx-runtime-lifecycle/SKILL.md",
+      "description": "Handles the CATLX runtime lifecycle sequences: the full boot sequence, the detailed voice-command lifecycle, the workflow lifecycle, the plugin lifecycle, and the recovery lifecycle, each as ordered step sequences. Use when the user asks about CATLX startup/boot order, what happens on wake word, how a workflow runs step by step, how a plugin is installed/uninstalled, or the recovery sequence.",
+      "capabilities": [
+        "lifecycle-sequences"
+      ],
+      "aliases": [
+        "lifecycle",
+        "boot",
+        "startup",
+        "runtime sequences",
+        "initialize",
+        "boot sequence"
+      ],
+      "category": "lifecycle",
+      "subsystem": "Runtime_Lifecycle",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-recovery",
+        "catlx-voice-pipeline",
+        "catlx-workflow-engine",
+        "catlx-plugin-ecosystem",
+        "catlx-electron-shell",
+        "catlx-security"
+      ],
+      "version": "1.0.0",
+      "source": "PART XVIII §18.1-18.5"
+    },
+    {
+      "id": "catlx-screen-understanding",
+      "name": "catlx-screen-understanding",
+      "relative_path": "skills/catlx-screen-understanding",
+      "skill_path": "skills/catlx-screen-understanding/SKILL.md",
+      "description": "Handles CATLX OCR and screen understanding: tier-scaled OCR backends (Tesseract, EasyOCR, PaddleOCR), post-processing to classify UI elements and detect their state, spatial relationship extraction, and the ScreenModel JSON that lets the Workflow Engine act without hardcoded coordinates. Use when the user asks about OCR, reading the screen, screen models, UI element classification, or how CATLX understands what's on screen.",
+      "capabilities": [
+        "screen-understanding"
+      ],
+      "aliases": [
+        "ocr",
+        "screen reading",
+        "screen understanding",
+        "screen model",
+        "screenshot",
+        "vision"
+      ],
+      "category": "interface",
+      "subsystem": "Desktop_Control_Engine",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-hardware-adaptation",
+        "catlx-security"
+      ],
+      "version": "1.0.0",
+      "source": "PART V §5.5"
+    },
+    {
+      "id": "catlx-security",
+      "name": "catlx-security",
+      "relative_path": "skills/catlx-security",
+      "skill_path": "skills/catlx-security/SKILL.md",
+      "description": "Handles the CATLX security architecture: least-privilege model, the credential vault (DPAPI on Windows), Windows Credential Manager integration, the permission router, the capability firewall (AppContainer + Windows Filtering Platform), the runtime sandbox, audit logs, risk detection, and safe/recovery modes. Use when the user asks about CATLX security, credentials, permissions, sandboxing, audit logging, risk detection, safe mode, or how CATLX protects privileged operations.",
+      "capabilities": [
+        "security-enforcement"
+      ],
+      "aliases": [
+        "security",
+        "credentials",
+        "authentication",
+        "permissions",
+        "sandbox",
+        "audit",
+        "risk",
+        "vault",
+        "safe mode"
+      ],
+      "category": "security",
+      "subsystem": "Security_Layer",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-docker"
+      ],
+      "version": "1.0.0",
+      "source": "PART X §10.1-10.9"
+    },
+    {
+      "id": "catlx-silexis-modules",
+      "name": "catlx-silexis-modules",
+      "relative_path": "skills/catlx-silexis-modules",
+      "skill_path": "skills/catlx-silexis-modules/SKILL.md",
+      "description": "Handles the SILEXIS module system in CATLX: module extraction, analysis, building, packaging, and the file-backed module registry (SQLite, REST on localhost:7700). Covers module manifests, capability declarations, dependency graphs, checksums, and usage across build artifacts. Use when the user asks about modules, the module registry, module lifecycle, manifest/API-contract validation, packaging, or how a capability becomes an independently versioned module.",
+      "capabilities": [
+        "module-lifecycle"
+      ],
+      "aliases": [
+        "modules",
+        "module system",
+        "module registry",
+        "module lifecycle",
+        "silexis",
+        "capability tokens",
+        "packaging"
+      ],
+      "category": "architecture",
+      "subsystem": "SILEXIS_Module_System",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-capability-routing"
+      ],
+      "version": "1.0.0",
+      "source": "PART III §3.1-3.2"
+    },
+    {
+      "id": "catlx-telemetry",
+      "name": "catlx-telemetry",
+      "relative_path": "skills/catlx-telemetry",
+      "skill_path": "skills/catlx-telemetry/SKILL.md",
+      "description": "Handles CATLX telemetry and observability: distributed tracing with a root Trace ID and spans, cross-subsystem correlation, causal lineage, the metrics collector, DuckDB storage, profiling, and the observability dashboard (or the catlx telemetry report CLI on T0). Use when the user asks about CATLX logging, tracing, metrics, profiling, observability, the dashboard, 'why did CATLX do X', or how CATLX reconstructs an execution tree.",
+      "capabilities": [
+        "telemetry-observability"
+      ],
+      "aliases": [
+        "telemetry",
+        "tracing",
+        "metrics",
+        "observability",
+        "logging",
+        "profiling",
+        "monitoring",
+        "dashboard"
+      ],
+      "category": "observability",
+      "subsystem": "Telemetry_System",
+      "skill_type": "",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "PART XI §11.1-11.7"
+    },
+    {
+      "id": "catlx-voice-pipeline",
+      "name": "catlx-voice-pipeline",
+      "relative_path": "skills/catlx-voice-pipeline",
+      "skill_path": "skills/catlx-voice-pipeline/SKILL.md",
+      "description": "Handles the CATLX voice-first interface: the 10-stage voice processing pipeline (wake word, audio capture, STT, context injection, NLU/intent, clarification, planning, execution, feedback, memory write), wake word configuration, the continuous conversational context window, and real-time streamed TTS. Use when the user asks about voice commands, wake words, speech-to-text, NLU intents, disambiguation, TTS, or how voice is the primary interface.",
+      "capabilities": [
+        "voice-processing"
+      ],
+      "aliases": [
+        "voice",
+        "speech",
+        "wake word",
+        "stt",
+        "tts",
+        "nlu",
+        "intent",
+        "voice-first",
+        "voice commands"
+      ],
+      "category": "interface",
+      "subsystem": "Voice_Pipeline",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-ai-provider",
+        "catlx-memory",
+        "catlx-capability-routing"
+      ],
+      "version": "1.0.0",
+      "source": "PART IV §4.1-4.6"
+    },
+    {
+      "id": "catlx-workflow-engine",
+      "name": "catlx-workflow-engine",
+      "relative_path": "skills/catlx-workflow-engine",
+      "skill_path": "skills/catlx-workflow-engine/SKILL.md",
+      "description": "Handles the CATLX Workflow Engine: the DAG execution model, the four scheduling modes (immediate/deferred/event/background), checkpointing, replay, rollback, multi-layer recovery and resilience, state machines, and the YAML workflow definition DSL. Use when the user asks about CATLX workflows, running tasks in steps, scheduling, checkpoint/resume, replaying/rolling back a run, or defining a workflow in YAML.",
+      "capabilities": [
+        "workflow-execution"
+      ],
+      "aliases": [
+        "workflow",
+        "dag",
+        "scheduling",
+        "task runner",
+        "pipeline",
+        "checkpoints",
+        "replay",
+        "rollback",
+        "automation"
+      ],
+      "category": "architecture",
+      "subsystem": "Workflow_Engine",
+      "skill_type": "",
+      "depends_on": [
+        "catlx-capability-routing",
+        "catlx-ai-provider",
+        "catlx-memory",
+        "catlx-security"
+      ],
+      "version": "1.0.0",
+      "source": "PART IX §9.1-9.9"
+    },
+    {
+      "id": "repo2skill",
+      "name": "repo2skill",
+      "relative_path": "skills/repo2skill",
+      "skill_path": "skills/repo2skill/SKILL.md",
+      "description": "Convert GitHub/GitLab/Gitee repositories into comprehensive OpenCode Skills using embedded LLM calls with multiple mirrors and rate limit handling",
+      "capabilities": [],
+      "aliases": [],
+      "category": "",
+      "subsystem": "",
+      "skill_type": "",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": ""
+    },
+    {
+      "id": "antigravity-last-resort",
+      "name": "antigravity-last-resort",
+      "relative_path": "skills/antigravity-last-resort",
+      "skill_path": "skills/antigravity-last-resort/SKILL.md",
+      "description": "",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "architecture",
+      "name": "architecture",
+      "relative_path": "skills/architecture",
+      "skill_path": "skills/architecture/SKILL.md",
+      "description": "Chooses module boundaries, data flow, and failure handling for new or existing software. Use after requirements and tech selection, before large implementation.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "catlx-jarvis-bridge",
+      "name": "catlx-jarvis-bridge",
+      "relative_path": "skills/catlx-jarvis-bridge",
+      "skill_path": "skills/catlx-jarvis-bridge/SKILL.md",
+      "description": "\"Bridge between CATLX and JARVIS systems — routes requests between the two orchestrators based on intent classification, capability availability, and authorization laddens. Ensures additive compatibility and never weakens existing policies.\"",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "cli-applications",
+      "name": "cli-applications",
+      "relative_path": "skills/cli-applications",
+      "skill_path": "skills/cli-applications/SKILL.md",
+      "description": "Designs command-line tools with stable exit codes and tests. Use when building CLIs in Python, Node, C, Go, Rust, or Java.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "debugging",
+      "name": "debugging",
+      "relative_path": "skills/debugging",
+      "skill_path": "skills/debugging/SKILL.md",
+      "description": "Diagnoses build, test, and runtime failures. Use when commands fail, tests go red, or the user pastes a stack trace.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "desktop-applications",
+      "name": "desktop-applications",
+      "relative_path": "skills/desktop-applications",
+      "skill_path": "skills/desktop-applications/SKILL.md",
+      "description": "Builds local desktop UIs. Use for tkinter or when the user wants a desktop app. Native Windows admin is a different MCP.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "implementation",
+      "name": "implementation",
+      "relative_path": "skills/implementation",
+      "skill_path": "skills/implementation/SKILL.md",
+      "description": "How to change and create code professionally in this ecosystem. Use when writing or editing application source after a plan exists.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "libraries-and-apis",
+      "name": "libraries-and-apis",
+      "relative_path": "skills/libraries-and-apis",
+      "skill_path": "skills/libraries-and-apis/SKILL.md",
+      "description": "Builds reusable libraries and HTTP services with explicit public APIs. Use when the deliverable is a package or backend, not a full product UI.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "mcp-routing",
+      "name": "mcp-routing",
+      "relative_path": "skills/mcp-routing",
+      "skill_path": "skills/mcp-routing/SKILL.md",
+      "description": "Chooses which existing specialist MCP and which software-engineering tools to use. Use at the start of any engineering task and whenever work crosses documents, SQL, Windows, Android, or general code.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "performance",
+      "name": "performance",
+      "relative_path": "skills/performance",
+      "skill_path": "skills/performance/SKILL.md",
+      "description": "Investigates slowness with measurement first. Use when the user reports performance problems or asks to optimize.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "release-engineering",
+      "name": "release-engineering",
+      "relative_path": "skills/release-engineering",
+      "skill_path": "skills/release-engineering/SKILL.md",
+      "description": "Packages, versions, and verifies software for delivery. Use when the user asks to ship, release, produce artifacts, or write install instructions.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "requirements-analysis",
+      "name": "requirements-analysis",
+      "relative_path": "skills/requirements-analysis",
+      "skill_path": "skills/requirements-analysis/SKILL.md",
+      "description": "Turns a vague \"build this\" request into testable requirements. Use before architecture or scaffolding whenever scope is unclear or the user named an application without constraints.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "security",
+      "name": "security",
+      "relative_path": "skills/security",
+      "skill_path": "skills/security/SKILL.md",
+      "description": "Applies secure-by-default engineering checks. Use before release, when handling auth/secrets, or after se_security_audit findings.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "software-engineering",
+      "name": "software-engineering",
+      "relative_path": "skills/software-engineering",
+      "skill_path": "skills/software-engineering/SKILL.md",
+      "description": "Orchestrates a one-person software team workflow from request to verified delivery. Use when the user asks to build, maintain, debug, or ship any application, library, API, CLI, desktop, or service — and before writing code.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "structure-and-sdlc",
+      "name": "structure-and-sdlc",
+      "relative_path": "skills/structure-and-sdlc",
+      "skill_path": "skills/structure-and-sdlc/SKILL.md",
+      "description": "Turns ASCII file trees and the 21-phase SDLC catalog into real project layouts. Use when the user pastes a tree, wants boilerplate folders, or asks for an SDLC blueprint by audience and project type.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "technology-selection",
+      "name": "technology-selection",
+      "relative_path": "skills/technology-selection",
+      "skill_path": "skills/technology-selection/SKILL.md",
+      "description": "Selects language, framework, and build system from host capabilities and requirements. Use before se_create_project or adding dependencies. Avoids MERN-default and fashion-driven stacks.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "testing",
+      "name": "testing",
+      "relative_path": "skills/testing",
+      "skill_path": "skills/testing/SKILL.md",
+      "description": "Plans and runs tests for software in this ecosystem. Use when adding features, fixing bugs, or before declaring work done.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    },
+    {
+      "id": "web-applications",
+      "name": "web-applications",
+      "relative_path": "skills/web-applications",
+      "skill_path": "skills/web-applications/SKILL.md",
+      "description": "Builds websites and HTTP backends without defaulting to MERN. Use for static sites, HTML/CSS/JS, Express, FastAPI, or Flask work.",
+      "capabilities": [],
+      "aliases": [],
+      "category": "software-engineering-specialist",
+      "subsystem": "",
+      "skill_type": "specialist",
+      "depends_on": [],
+      "version": "1.0.0",
+      "source": "opencode new mcps"
+    }
+  ]
+}

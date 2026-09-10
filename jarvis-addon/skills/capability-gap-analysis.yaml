@@ -1,0 +1,38 @@
+skill_id: capability-gap-analysis
+name: Capability Gap Analysis
+version: 1.0.0
+description: Determine whether a requested outcome is supported by an existing capability
+  or is a genuine gap.
+purpose: Determine whether a requested outcome is supported by an existing capability
+  or is a genuine gap.
+inputs: &id001
+- desired outcome
+outputs: &id002
+- gap report (present/missing, evidence)
+preconditions:
+- capability registry readable
+postconditions:
+- read-only
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- registry-search
+- registry-list
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - result includes present flag and matching evidence
+failure_contract:
+  failure_modes:
+  - cannot enumerate
+recovery_contract:
+  strategies:
+  - require explicit list
+examples: []
+tests: []
+status: validated

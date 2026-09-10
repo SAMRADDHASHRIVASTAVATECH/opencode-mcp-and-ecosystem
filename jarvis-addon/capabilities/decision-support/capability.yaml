@@ -1,0 +1,21 @@
+capability_id: decision-support
+name: Decision Support
+version: 1.0.0
+description: Schemas for options/evidence/assumptions/constraints/risks/tradeoffs/expected
+  outcomes/confidence/decision.
+area: decision-support
+skills:
+- decision-analysis
+policies:
+- decision-policy
+schemas:
+- decision
+contracts:
+- decision-contract
+events:
+- TASK_UPDATED
+agents:
+- planner
+authorization:
+  auth_level: SAFE_EXECUTE
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

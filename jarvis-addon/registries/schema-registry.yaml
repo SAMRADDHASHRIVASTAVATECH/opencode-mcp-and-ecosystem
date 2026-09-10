@@ -1,0 +1,21 @@
+kind: schema
+entries:
+- agent.schema.json
+- capability.schema.json
+- context.schema.json
+- decision.schema.json
+- definitions.json
+- event.schema.json
+- goal.schema.json
+- knowledge.schema.json
+- mcp.schema.json
+- memory.schema.json
+- observation.schema.json
+- policy.schema.json
+- prediction.schema.json
+- recovery.schema.json
+- result.schema.json
+- skill.schema.json
+- tool.schema.json
+- verification.schema.json
+- worldmodel.schema.json

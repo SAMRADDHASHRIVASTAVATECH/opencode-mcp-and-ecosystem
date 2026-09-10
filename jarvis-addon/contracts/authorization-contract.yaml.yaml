@@ -1,0 +1,19 @@
+contract: authorization
+version: 1.0.0
+schema: schemas/definitions.json
+summary: Authorization ladder used package-wide.
+levels:
+- OBSERVE
+- RECOMMEND
+- SAFE_EXECUTE
+- AUTHORIZED_AUTONOMOUS
+- EXPLICIT_APPROVAL
+- DENIED
+policy_actions:
+- ALLOW
+- ALLOW_WITH_CONDITIONS
+- REQUIRE_APPROVAL
+- DENY
+- ESCALATE
+rule: Every new skill/capability declares its authorization requirement.
+non_override: This package never weakens a stricter existing policy.

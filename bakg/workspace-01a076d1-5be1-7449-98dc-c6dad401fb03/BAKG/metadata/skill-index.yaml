@@ -1,0 +1,9 @@
+# Generated skill index — see registry/skills.yaml for canonical list
+index_of: BAKG/skills
+format: one-folder-per-skill
+required_file: SKILL.md
+frontmatter_required:
+  - name
+  - description
+  - system
+  - version

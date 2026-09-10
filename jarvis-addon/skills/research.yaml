@@ -1,0 +1,35 @@
+skill_id: research
+name: Research
+version: 1.0.0
+description: Gather and cite information from authorized sources.
+purpose: Gather and cite information from authorized sources.
+inputs: &id001
+- question
+outputs: &id002
+- findings
+preconditions:
+- read-only + source policy
+postconditions:
+- sources recorded
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- knowledge-updating
+tools:
+- web-search
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - each claim has source
+failure_contract:
+  failure_modes:
+  - no source
+recovery_contract:
+  strategies:
+  - report gap
+examples: []
+tests: []
+status: validated

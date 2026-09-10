@@ -1,0 +1,22 @@
+agent_id: security-agent
+name: Security Agent
+version: 1.0.0
+role: security-agent
+purpose: Enforce authorization + non-override; sensitive ops.
+responsibilities:
+- Enforce authorization + non-override; sensitive ops.
+allowed_skills:
+- configuration-validation
+- capability-validation
+required_capabilities:
+- high-reliability
+expected_inputs:
+- security-agent task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

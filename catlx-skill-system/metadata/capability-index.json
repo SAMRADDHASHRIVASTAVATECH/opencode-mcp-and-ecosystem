@@ -1,0 +1,1942 @@
+{
+  "manifest_version": 1,
+  "name": "CATLX capability index (deterministic routing core)",
+  "purpose": "Map natural-language intents to CATLX skills so a small model can route without scanning the whole ecosystem.",
+  "note": "This is a view over the canonical skill registry, NOT a second knowledge base.",
+  "routing_data": [
+    "metadata/skills-registry.json",
+    "metadata/dependency-graph.json"
+  ],
+  "intent_to_skills": {
+    "deploy": [
+      "catlx-docker",
+      "catlx-workflow-engine",
+      "catlx-capability-routing",
+      "catlx-portability"
+    ],
+    "deployment": [
+      "catlx-docker",
+      "catlx-workflow-engine",
+      "catlx-capability-routing",
+      "catlx-portability"
+    ],
+    "deployment failing": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-docker",
+      "catlx-capability-routing",
+      "catlx-security"
+    ],
+    "deployment is failing": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-docker",
+      "catlx-capability-routing",
+      "catlx-security"
+    ],
+    "deployment failure": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-docker",
+      "catlx-capability-routing",
+      "catlx-security"
+    ],
+    "deployment keeps failing": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-docker",
+      "catlx-capability-routing",
+      "catlx-security"
+    ],
+    "diagnose deployment": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-docker",
+      "catlx-capability-routing",
+      "catlx-security"
+    ],
+    "deployment troubleshooting": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-docker",
+      "catlx-capability-routing",
+      "catlx-security"
+    ],
+    "deployment credentials": [
+      "catlx-security",
+      "catlx-docker",
+      "catlx-recovery"
+    ],
+    "deployment credentials not working": [
+      "catlx-security",
+      "catlx-docker",
+      "catlx-recovery"
+    ],
+    "credentials not working": [
+      "catlx-security",
+      "catlx-recovery"
+    ],
+    "credentials dont work": [
+      "catlx-security",
+      "catlx-recovery"
+    ],
+    "what is wrong": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-capability-routing",
+      "catlx-security"
+    ],
+    "whats wrong": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-capability-routing",
+      "catlx-security"
+    ],
+    "why does": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-security"
+    ],
+    "release application": [
+      "catlx-docker",
+      "catlx-workflow-engine",
+      "catlx-portability"
+    ],
+    "deployment is broken": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-docker",
+      "catlx-capability-routing"
+    ],
+    "release": [
+      "catlx-docker",
+      "catlx-workflow-engine",
+      "catlx-portability"
+    ],
+    "publish": [
+      "catlx-plugin-ecosystem",
+      "catlx-docker",
+      "catlx-silexis-modules"
+    ],
+    "configure": [
+      "catlx-capability-routing",
+      "catlx-hardware-adaptation",
+      "catlx-security"
+    ],
+    "configuration": [
+      "catlx-capability-routing",
+      "catlx-hardware-adaptation",
+      "catlx-security"
+    ],
+    "authenticate": [
+      "catlx-security"
+    ],
+    "authentication": [
+      "catlx-security"
+    ],
+    "credential": [
+      "catlx-security"
+    ],
+    "login": [
+      "catlx-security"
+    ],
+    "permission": [
+      "catlx-security"
+    ],
+    "authorize": [
+      "catlx-security"
+    ],
+    "debug": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-security",
+      "catlx-workflow-engine",
+      "catlx-capability-routing"
+    ],
+    "troubleshoot": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-capability-routing",
+      "catlx-workflow-engine"
+    ],
+    "why is it failing": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-security",
+      "catlx-capability-routing"
+    ],
+    "fix this problem": [
+      "catlx-recovery",
+      "catlx-telemetry",
+      "catlx-security",
+      "catlx-capability-routing"
+    ],
+    "test": [
+      "catlx-workflow-engine",
+      "catlx-security"
+    ],
+    "validate": [
+      "catlx-workflow-engine",
+      "catlx-security",
+      "catlx-capability-routing"
+    ],
+    "security": [
+      "catlx-security",
+      "catlx-plugin-ecosystem",
+      "catlx-docker"
+    ],
+    "sandbox": [
+      "catlx-security",
+      "catlx-plugin-ecosystem",
+      "catlx-docker"
+    ],
+    "memory": [
+      "catlx-memory"
+    ],
+    "remember": [
+      "catlx-memory"
+    ],
+    "recall": [
+      "catlx-memory"
+    ],
+    "facts": [
+      "catlx-memory"
+    ],
+    "knowledge graph": [
+      "catlx-memory"
+    ],
+    "voice": [
+      "catlx-voice-pipeline"
+    ],
+    "speech": [
+      "catlx-voice-pipeline"
+    ],
+    "wake word": [
+      "catlx-voice-pipeline"
+    ],
+    "speak": [
+      "catlx-voice-pipeline"
+    ],
+    "automate": [
+      "catlx-desktop-control",
+      "catlx-workflow-engine",
+      "catlx-screen-understanding"
+    ],
+    "mouse": [
+      "catlx-desktop-control"
+    ],
+    "keyboard": [
+      "catlx-desktop-control"
+    ],
+    "window": [
+      "catlx-desktop-control",
+      "catlx-electron-shell"
+    ],
+    "files": [
+      "catlx-desktop-control"
+    ],
+    "browser": [
+      "catlx-desktop-control"
+    ],
+    "screen": [
+      "catlx-screen-understanding",
+      "catlx-desktop-control"
+    ],
+    "ocr": [
+      "catlx-screen-understanding"
+    ],
+    "clipboard": [
+      "catlx-desktop-control"
+    ],
+    "build": [
+      "catlx-silexis-modules",
+      "catlx-plugin-ecosystem",
+      "catlx-workflow-engine"
+    ],
+    "package": [
+      "catlx-silexis-modules",
+      "catlx-plugin-ecosystem"
+    ],
+    "module": [
+      "catlx-silexis-modules"
+    ],
+    "plugin": [
+      "catlx-plugin-ecosystem"
+    ],
+    "container": [
+      "catlx-docker",
+      "catlx-capability-routing"
+    ],
+    "docker": [
+      "catlx-docker",
+      "catlx-capability-routing"
+    ],
+    "compose": [
+      "catlx-docker"
+    ],
+    "monitor": [
+      "catlx-telemetry",
+      "catlx-electron-shell"
+    ],
+    "telemetry": [
+      "catlx-telemetry"
+    ],
+    "metrics": [
+      "catlx-telemetry"
+    ],
+    "log": [
+      "catlx-telemetry"
+    ],
+    "profile": [
+      "catlx-telemetry"
+    ],
+    "shell": [
+      "catlx-electron-shell"
+    ],
+    "gui": [
+      "catlx-electron-shell"
+    ],
+    "palette": [
+      "catlx-electron-shell"
+    ],
+    "tray": [
+      "catlx-electron-shell"
+    ],
+    "crash": [
+      "catlx-recovery",
+      "catlx-runtime-lifecycle"
+    ],
+    "recover": [
+      "catlx-recovery"
+    ],
+    "restore": [
+      "catlx-recovery",
+      "catlx-memory"
+    ],
+    "checkpoint": [
+      "catlx-workflow-engine",
+      "catlx-recovery"
+    ],
+    "workflow": [
+      "catlx-workflow-engine"
+    ],
+    "schedule": [
+      "catlx-workflow-engine"
+    ],
+    "pipeline": [
+      "catlx-workflow-engine",
+      "catlx-voice-pipeline"
+    ],
+    "llm": [
+      "catlx-ai-provider"
+    ],
+    "model": [
+      "catlx-ai-provider",
+      "catlx-hardware-adaptation"
+    ],
+    "inference": [
+      "catlx-ai-provider"
+    ],
+    "embedding": [
+      "catlx-ai-provider",
+      "catlx-memory"
+    ],
+    "hardware": [
+      "catlx-hardware-adaptation"
+    ],
+    "tier": [
+      "catlx-hardware-adaptation"
+    ],
+    "path": [
+      "catlx-portability"
+    ],
+    "portable": [
+      "catlx-portability"
+    ],
+    "identity": [
+      "catlx-portability",
+      "catlx-security"
+    ],
+    "boot": [
+      "catlx-runtime-lifecycle",
+      "catlx-hardware-adaptation"
+    ],
+    "startup": [
+      "catlx-runtime-lifecycle",
+      "catlx-recovery"
+    ],
+    "lifecycle": [
+      "catlx-runtime-lifecycle"
+    ],
+    "route": [
+      "catlx-capability-routing"
+    ],
+    "fallback": [
+      "catlx-capability-routing",
+      "catlx-ai-provider"
+    ],
+    "offline": [
+      "catlx-docker",
+      "catlx-ai-provider",
+      "catlx-capability-routing"
+    ],
+    "sql query": [
+      "database-sql",
+      "software-engineering"
+    ],
+    "run a sql query": [
+      "database-sql",
+      "software-engineering"
+    ],
+    "query the database": [
+      "database-sql",
+      "software-engineering"
+    ],
+    "database data": [
+      "database-sql",
+      "software-engineering"
+    ],
+    "read a database": [
+      "database-sql",
+      "software-engineering"
+    ],
+    "execute sql": [
+      "database-sql",
+      "software-engineering"
+    ],
+    "select from table": [
+      "database-sql",
+      "software-engineering"
+    ],
+    "create word document": [
+      "office-documents",
+      "web-applications"
+    ],
+    "edit a docx": [
+      "office-documents",
+      "web-applications"
+    ],
+    "docx": [
+      "office-documents"
+    ],
+    "word file": [
+      "office-documents"
+    ],
+    "excel file": [
+      "office-documents"
+    ],
+    "xlsx": [
+      "office-documents"
+    ],
+    "conversion document": [
+      "office-documents"
+    ],
+    "powerpoint": [
+      "office-documents"
+    ],
+    "pptx": [
+      "office-documents"
+    ],
+    "convert pdf to word": [
+      "office-documents",
+      "web-applications"
+    ],
+    "android app": [
+      "android-development"
+    ],
+    "android development": [
+      "android-development"
+    ],
+    "android gradle": [
+      "android-development"
+    ],
+    "android manifest": [
+      "android-development"
+    ],
+    "run android mcp": [
+      "android-development"
+    ],
+    "windows printer": [
+      "windows-system"
+    ],
+    "windows system": [
+      "windows-system"
+    ],
+    "windows service": [
+      "windows-system"
+    ],
+    "windows process": [
+      "windows-system"
+    ],
+    "system info windows": [
+      "windows-system"
+    ],
+    "software engineering": [
+      "software-engineering"
+    ],
+    "sdlc": [
+      "software-engineering",
+      "structure-and-sdlc"
+    ],
+    "agile": [
+      "software-engineering",
+      "structure-and-sdlc"
+    ],
+    "software lifecycle": [
+      "software-engineering",
+      "structure-and-sdlc"
+    ],
+    "ascii tree": [
+      "software-engineering",
+      "structure-and-sdlc"
+    ],
+    "file tree": [
+      "software-engineering"
+    ],
+    "mcp routing": [
+      "mcp-routing"
+    ],
+    "route mcp": [
+      "mcp-routing"
+    ],
+    "mcp ecosystem": [
+      "mcp-routing"
+    ],
+    "debug code": [
+      "debugging",
+      "software-engineering"
+    ],
+    "debugging session": [
+      "debugging"
+    ],
+    "test software": [
+      "testing",
+      "software-engineering"
+    ],
+    "unit test": [
+      "testing",
+      "software-engineering"
+    ],
+    "requirements analysis": [
+      "requirements-analysis"
+    ],
+    "technology selection": [
+      "technology-selection",
+      "software-engineering"
+    ],
+    "cli application": [
+      "cli-applications",
+      "software-engineering"
+    ],
+    "desktop application": [
+      "desktop-applications",
+      "software-engineering"
+    ],
+    "web application": [
+      "web-applications",
+      "software-engineering"
+    ],
+    "libraries and apis": [
+      "libraries-and-apis",
+      "software-engineering"
+    ],
+    "release engineering": [
+      "release-engineering",
+      "software-engineering"
+    ],
+    "performance optimization": [
+      "performance",
+      "software-engineering"
+    ],
+    "security audit": [
+      "security",
+      "software-engineering"
+    ],
+    "implementation plan": [
+      "implementation",
+      "software-engineering"
+    ],
+    "software architecture": [
+      "architecture",
+      "software-engineering"
+    ]
+  },
+  "capability_to_skill": {
+    "route a catlx request": [
+      "catlx"
+    ],
+    "enter the skill system": [
+      "catlx"
+    ],
+    "get a subsystem overview": [
+      "catlx"
+    ],
+    "detect hardware tier": [
+      "catlx-hardware-adaptation"
+    ],
+    "read the capability matrix": [
+      "catlx-hardware-adaptation"
+    ],
+    "run the boot hardware scan": [
+      "catlx-hardware-adaptation"
+    ],
+    "get the capability map": [
+      "catlx-hardware-adaptation"
+    ],
+    "reconfigure for available hardware": [
+      "catlx-hardware-adaptation"
+    ],
+    "pick ocr/stt/tts/llm/vector backend per tier": [
+      "catlx-hardware-adaptation"
+    ],
+    "adapt to a weak or strong machine": [
+      "catlx-hardware-adaptation"
+    ],
+    "manage modules": [
+      "catlx-silexis-modules"
+    ],
+    "extract a module": [
+      "catlx-silexis-modules"
+    ],
+    "analyze a module": [
+      "catlx-silexis-modules"
+    ],
+    "build a module": [
+      "catlx-silexis-modules"
+    ],
+    "package a module": [
+      "catlx-silexis-modules"
+    ],
+    "query the module registry": [
+      "catlx-silexis-modules"
+    ],
+    "read a module manifest": [
+      "catlx-silexis-modules"
+    ],
+    "understand capability tokens": [
+      "catlx-silexis-modules"
+    ],
+    "version and dependency-graph a module": [
+      "catlx-silexis-modules"
+    ],
+    "route a capability request": [
+      "catlx-capability-routing"
+    ],
+    "choose an execution environment": [
+      "catlx-capability-routing"
+    ],
+    "build a fallback chain": [
+      "catlx-capability-routing"
+    ],
+    "where does this run": [
+      "catlx-capability-routing"
+    ],
+    "file-backed registries": [
+      "catlx-capability-routing"
+    ],
+    "live gui sync": [
+      "catlx-capability-routing"
+    ],
+    "adaptive runtime evolution": [
+      "catlx-capability-routing"
+    ],
+    "config routing": [
+      "catlx-capability-routing"
+    ],
+    "voice command": [
+      "catlx-voice-pipeline"
+    ],
+    "set a wake word": [
+      "catlx-voice-pipeline"
+    ],
+    "speech to text": [
+      "catlx-voice-pipeline"
+    ],
+    "nlu intent parsing": [
+      "catlx-voice-pipeline"
+    ],
+    "clarify an ambiguous command": [
+      "catlx-voice-pipeline"
+    ],
+    "text to speech": [
+      "catlx-voice-pipeline"
+    ],
+    "conversation context": [
+      "catlx-voice-pipeline"
+    ],
+    "voice pipeline stages": [
+      "catlx-voice-pipeline"
+    ],
+    "control the mouse": [
+      "catlx-desktop-control"
+    ],
+    "type keyboard input": [
+      "catlx-desktop-control"
+    ],
+    "manage windows": [
+      "catlx-desktop-control"
+    ],
+    "operate on files": [
+      "catlx-desktop-control"
+    ],
+    "automate a browser": [
+      "catlx-desktop-control"
+    ],
+    "automate an application": [
+      "catlx-desktop-control"
+    ],
+    "multi-monitor control": [
+      "catlx-desktop-control"
+    ],
+    "overlay hud": [
+      "catlx-desktop-control"
+    ],
+    "native notifications": [
+      "catlx-desktop-control"
+    ],
+    "run ocr": [
+      "catlx-screen-understanding"
+    ],
+    "read the screen": [
+      "catlx-screen-understanding"
+    ],
+    "detect ui elements": [
+      "catlx-screen-understanding"
+    ],
+    "extract a screen model": [
+      "catlx-screen-understanding"
+    ],
+    "understand a screenshot": [
+      "catlx-screen-understanding"
+    ],
+    "find a button/field/link": [
+      "catlx-screen-understanding"
+    ],
+    "remember events": [
+      "catlx-memory"
+    ],
+    "store facts and preferences": [
+      "catlx-memory"
+    ],
+    "recall a past interaction": [
+      "catlx-memory"
+    ],
+    "workspace state": [
+      "catlx-memory"
+    ],
+    "knowledge graph query": [
+      "catlx-memory"
+    ],
+    "resolve conflicting memories": [
+      "catlx-memory"
+    ],
+    "compress memory": [
+      "catlx-memory"
+    ],
+    "retrieve context for ai (rag)": [
+      "catlx-memory"
+    ],
+    "run ai inference": [
+      "catlx-ai-provider"
+    ],
+    "call an llm": [
+      "catlx-ai-provider"
+    ],
+    "route between providers": [
+      "catlx-ai-provider"
+    ],
+    "failover between providers": [
+      "catlx-ai-provider"
+    ],
+    "cost-optimize a call": [
+      "catlx-ai-provider"
+    ],
+    "host a local llm": [
+      "catlx-ai-provider"
+    ],
+    "generate embeddings": [
+      "catlx-ai-provider"
+    ],
+    "choose a model for the tier": [
+      "catlx-ai-provider"
+    ],
+    "run a workflow": [
+      "catlx-workflow-engine"
+    ],
+    "schedule a task": [
+      "catlx-workflow-engine"
+    ],
+    "execute a dag": [
+      "catlx-workflow-engine"
+    ],
+    "checkpoint a run": [
+      "catlx-workflow-engine"
+    ],
+    "replay a run": [
+      "catlx-workflow-engine"
+    ],
+    "roll back a run": [
+      "catlx-workflow-engine"
+    ],
+    "define a state machine": [
+      "catlx-workflow-engine"
+    ],
+    "write a workflow in yaml": [
+      "catlx-workflow-engine"
+    ],
+    "store credentials": [
+      "catlx-security"
+    ],
+    "manage permissions": [
+      "catlx-security"
+    ],
+    "enforce least privilege": [
+      "catlx-security"
+    ],
+    "sandbox a plugin": [
+      "catlx-security"
+    ],
+    "audit actions": [
+      "catlx-security"
+    ],
+    "detect risk": [
+      "catlx-security"
+    ],
+    "enter safe mode": [
+      "catlx-recovery",
+      "catlx-security"
+    ],
+    "read the credential vault": [
+      "catlx-security"
+    ],
+    "authentication / authorization": [
+      "catlx-security"
+    ],
+    "trace an operation": [
+      "catlx-telemetry"
+    ],
+    "record metrics": [
+      "catlx-telemetry"
+    ],
+    "view observability dashboard": [
+      "catlx-telemetry"
+    ],
+    "profile slow code": [
+      "catlx-telemetry"
+    ],
+    "query causal lineage": [
+      "catlx-telemetry"
+    ],
+    "why did catlx do x": [
+      "catlx-telemetry"
+    ],
+    "read a telemetry report": [
+      "catlx-telemetry"
+    ],
+    "open the command palette": [
+      "catlx-electron-shell"
+    ],
+    "manage shell windows": [
+      "catlx-electron-shell"
+    ],
+    "configure the hud": [
+      "catlx-electron-shell"
+    ],
+    "use the tray": [
+      "catlx-electron-shell"
+    ],
+    "secure inter-process communication": [
+      "catlx-electron-shell"
+    ],
+    "persist workspace state": [
+      "catlx-electron-shell"
+    ],
+    "install a plugin": [
+      "catlx-plugin-ecosystem"
+    ],
+    "write a plugin": [
+      "catlx-plugin-ecosystem"
+    ],
+    "use the plugin sdk": [
+      "catlx-plugin-ecosystem"
+    ],
+    "publish to the marketplace": [
+      "catlx-plugin-ecosystem"
+    ],
+    "hot reload a plugin": [
+      "catlx-plugin-ecosystem"
+    ],
+    "resolve plugin dependencies": [
+      "catlx-plugin-ecosystem"
+    ],
+    "run a container service": [
+      "catlx-docker"
+    ],
+    "deploy with compose": [
+      "catlx-docker"
+    ],
+    "use gpu containers": [
+      "catlx-docker"
+    ],
+    "make volumes relocatable": [
+      "catlx-docker"
+    ],
+    "use offline containers": [
+      "catlx-docker"
+    ],
+    "docker swarm / kubernetes": [
+      "catlx-docker"
+    ],
+    "degrade gracefully": [
+      "catlx-docker"
+    ],
+    "install portably": [
+      "catlx-portability"
+    ],
+    "resolve relative paths": [
+      "catlx-portability"
+    ],
+    "bundle node runtime": [
+      "catlx-portability"
+    ],
+    "run from an external ssd": [
+      "catlx-portability"
+    ],
+    "cross-machine identity": [
+      "catlx-portability"
+    ],
+    "move the install without reconfiguration": [
+      "catlx-portability"
+    ],
+    "recover from a crash": [
+      "catlx-recovery"
+    ],
+    "restore a checkpoint": [
+      "catlx-recovery"
+    ],
+    "recovery matrix": [
+      "catlx-recovery"
+    ],
+    "troubleshoot startup": [
+      "catlx-recovery"
+    ],
+    "resume an interrupted workflow": [
+      "catlx-recovery"
+    ],
+    "explain boot order": [
+      "catlx-runtime-lifecycle"
+    ],
+    "trace the voice lifecycle": [
+      "catlx-runtime-lifecycle"
+    ],
+    "trace the workflow lifecycle": [
+      "catlx-runtime-lifecycle"
+    ],
+    "trace the plugin lifecycle": [
+      "catlx-runtime-lifecycle"
+    ],
+    "trace the recovery lifecycle": [
+      "catlx-runtime-lifecycle"
+    ],
+    "initialize the runtime": [
+      "catlx-runtime-lifecycle"
+    ],
+    "route to database mcp": [
+      "database-sql"
+    ],
+    "route to office mcp": [
+      "office-documents"
+    ],
+    "route to android mcp": [
+      "android-development"
+    ],
+    "route to windows mcp": [
+      "windows-system"
+    ],
+    "route to software engineering mcp": [
+      "software-engineering"
+    ],
+    "launch software engineering skill": [
+      "software-engineering"
+    ],
+    "launch mcp routing skill": [
+      "mcp-routing"
+    ]
+  },
+  "match_strategy": "1) Exact request match in intent_to_skills wins. 2) Else score every intent key by how many of its tokens appear in the request (token overlap), preferring longer keys that fully appear; pick the highest score. 3) If a request contains a diagnostic word (failing, broken, diagnose, why, wrong, debug, troubleshoot), bias toward recovery/telemetry-capable intents over pure deployment/config intents. 4) Else fall back to capability_to_skill phrase overlap. 5) Translate the chosen skill id via skills[].delegates_to / depends_on for deeper traversal.",
+  "skills": [
+    {
+      "id": "bakg",
+      "name": "bakg",
+      "skill_type": "",
+      "description": "Blender Animation Knowledge Graph — complete standalone ecosystem for imagining, designing, modeling, sculpting, lookdev, rigging, animating, simulating, and finishing any character/creature/world/film in Blender 4.x. Use when user wants to build/model/rig/animate/render a character, creature, animation, short film, world, grease-pencil, or asks blender, modeling, sculpting, topology, UV, materials, hair, cloth, rigging, animation, simulation, VFX, cinematography, lighting, render, compositing. Routes to 19 BAKG skills via bakg-orchestrator.",
+      "capabilities": [],
+      "aliases": [],
+      "depends_on": [],
+      "delegates_to": [],
+      "references": [],
+      "workflows": [],
+      "source": "",
+      "routing_hint": ""
+    },
+    {
+      "id": "catlx",
+      "name": "catlx",
+      "skill_type": "router",
+      "description": "ROOT gateway for the CATLX Universal AI Operating System skill ecosystem. Load this first for any task about CATLX architecture, design, runtime, or deployment. It routes to the correct subsystem skill, drives automatic skill-to-skill delegation, and enforces progressive context loading. Use proactively when the user references CATLX, an AI OS, voice-first automation, hardware adaptation, memory architecture, workflow engine, security, or any of its subsystem capabilities.",
+      "capabilities": [
+        "route a CATLX request",
+        "enter the skill system",
+        "get a subsystem overview"
+      ],
+      "aliases": [
+        "catlx",
+        "catlx os",
+        "root",
+        "entry point",
+        "gateway"
+      ],
+      "depends_on": [
+        "all subsystem skills (routed",
+        "not eagerly loaded)"
+      ],
+      "delegates_to": [],
+      "references": [
+        "concepts/pillars-and-mandates.md",
+        "rules/architectural-rules.md"
+      ],
+      "workflows": [],
+      "source": "CATLX_Master_Architecture_Specification (all parts)",
+      "routing_hint": "Generic/first entry. Route to a subsystem; prefer the most specific skill."
+    },
+    {
+      "id": "catlx-ai-provider",
+      "name": "catlx-ai-provider",
+      "skill_type": "",
+      "description": "Handles the CATLX AI provider architecture: the Provider Abstraction Layer (PAL), current and future providers, provider routing and failover protocol, the cost optimization router, and local LLM integration (llama.cpp/vLLM with OpenAI-compatible API). Use when the user asks about which AI provider CATLX uses, provider failover, routing policies, the cost router, local models, embeddings, or how AI inference is abstracted.",
+      "capabilities": [
+        "run ai inference",
+        "call an llm",
+        "route between providers",
+        "failover between providers",
+        "cost-optimize a call",
+        "host a local llm",
+        "generate embeddings",
+        "choose a model for the tier"
+      ],
+      "aliases": [
+        "ai provider",
+        "llm",
+        "model",
+        "inference",
+        "embeddings",
+        "provider routing",
+        "failover",
+        "local model",
+        "pal"
+      ],
+      "depends_on": [
+        "catlx-capability-routing"
+      ],
+      "delegates_to": [
+        "catlx-capability-routing",
+        "catlx-docker",
+        "catlx-hardware-adaptation",
+        "catlx-memory",
+        "catlx-security"
+      ],
+      "references": [
+        "references/ai-provider.md",
+        "references/memory-architecture.md",
+        "references/hardware-adaptation.md"
+      ],
+      "workflows": [],
+      "source": "PART VIII §8.1-8.5",
+      "routing_hint": "AI inference, providers, routing/failover, cost, local models."
+    },
+    {
+      "id": "catlx-capability-routing",
+      "name": "catlx-capability-routing",
+      "skill_type": "",
+      "description": "Handles CATLX capability and environment routing: where a module's work executes (LOCAL_PROCESS, LOCAL_SUBPROCESS, LOCAL_CONTAINER, REMOTE_API), transparent capability fallback chains (e.g. speech-to-text), adaptive runtime evolution, file-backed registries, and live GUI synchronization over the WebSocket bus. Use when the user asks how CATLX picks an execution environment, routes a capability request, falls back when a module is unavailable, or how runtime state syncs to the GUI.",
+      "capabilities": [
+        "route a capability request",
+        "choose an execution environment",
+        "build a fallback chain",
+        "where does this run",
+        "file-backed registries",
+        "live gui sync",
+        "adaptive runtime evolution",
+        "config routing"
+      ],
+      "aliases": [
+        "capability routing",
+        "environment routing",
+        "routing",
+        "fallback",
+        "execution environment",
+        "registries",
+        "config routing"
+      ],
+      "depends_on": [
+        "catlx-hardware-adaptation"
+      ],
+      "delegates_to": [
+        "catlx-docker",
+        "catlx-electron-shell",
+        "catlx-hardware-adaptation",
+        "catlx-plugin-ecosystem",
+        "catlx-silexis-modules"
+      ],
+      "references": [
+        "references/silexis-and-routing.md",
+        "references/data-registries.md",
+        "references/hardware-adaptation.md",
+        "rules/windows-rules.md"
+      ],
+      "workflows": [],
+      "source": "PART III §3.3-3.7",
+      "routing_hint": "Where/how a capability runs, fallbacks, registries, runtime routing rules."
+    },
+    {
+      "id": "catlx-desktop-control",
+      "name": "catlx-desktop-control",
+      "skill_type": "",
+      "description": "Handles the CATLX Desktop Control Engine: mouse control, keyboard synthesis, window management, file operations, browser automation (Playwright/Puppeteer), application automation (UIAutomation/COM-WMI/OCR), multi-monitor support, the overlay HUD, and native notifications. Use when the user asks how CATLX moves the mouse, types, reads windows, manages files, automates browsers or apps, handles multiple monitors, or shows HUD/notifications.",
+      "capabilities": [
+        "control the mouse",
+        "type keyboard input",
+        "manage windows",
+        "operate on files",
+        "automate a browser",
+        "automate an application",
+        "multi-monitor control",
+        "overlay hud",
+        "native notifications"
+      ],
+      "aliases": [
+        "desktop control",
+        "mouse",
+        "keyboard",
+        "window management",
+        "file ops",
+        "browser automation",
+        "app automation",
+        "automate"
+      ],
+      "depends_on": [
+        "catlx-electron-shell",
+        "catlx-security"
+      ],
+      "delegates_to": [
+        "catlx-capability-routing",
+        "catlx-electron-shell",
+        "catlx-screen-understanding",
+        "catlx-security",
+        "catlx-workflow-engine"
+      ],
+      "references": [
+        "references/desktop-control.md",
+        "references/screen-understanding.md",
+        "rules/windows-rules.md",
+        "references/security.md"
+      ],
+      "workflows": [],
+      "source": "PART V §5.1-5.4, 5.6-5.11",
+      "routing_hint": "Any 'do something on the desktop' mouse/keyboard/window/file/browser/app action."
+    },
+    {
+      "id": "catlx-docker",
+      "name": "catlx-docker",
+      "skill_type": "",
+      "description": "Handles the CATLX Docker architecture: the container strategy, core service containers, Docker Compose configuration with overrides, portable/relocatable volumes relative to CATLX_ROOT, offline mode, Docker Swarm/Kubernetes for enterprise, and Docker recovery or service degradation. Use when the user asks about CATLX Docker/containers, the Compose file, GPU containers, offline containers, relocatable volumes, Swarm/Kubernetes, or container health/restart.",
+      "capabilities": [
+        "run a container service",
+        "deploy with compose",
+        "use gpu containers",
+        "make volumes relocatable",
+        "use offline containers",
+        "docker swarm / kubernetes",
+        "degrade gracefully"
+      ],
+      "aliases": [
+        "docker",
+        "containers",
+        "compose",
+        "containerized",
+        "gpu containers",
+        "swarm",
+        "kubernetes"
+      ],
+      "depends_on": [
+        "catlx-hardware-adaptation"
+      ],
+      "delegates_to": [
+        "catlx-capability-routing",
+        "catlx-portability",
+        "catlx-recovery",
+        "catlx-security",
+        "catlx-silexis-modules"
+      ],
+      "references": [
+        "references/docker.md",
+        "rules/windows-rules.md",
+        "references/portability.md",
+        "references/data-registries.md"
+      ],
+      "workflows": [],
+      "source": "PART XIV §14.1-14.7",
+      "routing_hint": "Containers/Docker, Compose, relocatable volumes, offline, Swarm/K8s."
+    },
+    {
+      "id": "catlx-electron-shell",
+      "name": "catlx-electron-shell",
+      "skill_type": "",
+      "description": "Handles the CATLX Electron OS Shell: an OS-layer interface (not a normal app window), the multi-window window roles (main, HUD overlay, command palette, notification toasts, focus mode), the Ctrl+Space command palette with fuse.js fuzzy search, multi-window persistence, the always-on tray runtime, typed IPC security via contextBridge, and workspace persistence. Use when the user asks about the CATLX shell, windows, HUD, command palette, tray, IPC security, or workspace restoration.",
+      "capabilities": [
+        "open the command palette",
+        "manage shell windows",
+        "configure the hud",
+        "use the tray",
+        "secure inter-process communication",
+        "persist workspace state"
+      ],
+      "aliases": [
+        "shell",
+        "gui",
+        "electron",
+        "command palette",
+        "tray",
+        "hud",
+        "windows",
+        "workspace persistence"
+      ],
+      "depends_on": [
+        "catlx-capability-routing",
+        "catlx-telemetry"
+      ],
+      "delegates_to": [
+        "catlx-capability-routing",
+        "catlx-desktop-control",
+        "catlx-hardware-adaptation",
+        "catlx-memory",
+        "catlx-telemetry"
+      ],
+      "references": [
+        "references/electron-shell.md",
+        "rules/windows-rules.md",
+        "references/data-registries.md",
+        "references/hardware-adaptation.md"
+      ],
+      "workflows": [],
+      "source": "PART XII §12.1-12.7",
+      "routing_hint": "The shell/GUI: windows, palette, HUD, tray, IPC, workspace persistence."
+    },
+    {
+      "id": "catlx-hardware-adaptation",
+      "name": "catlx-hardware-adaptation",
+      "skill_type": "",
+      "description": "Handles CATLX hardware adaptation: hardware tier detection (T0/T1/T2/T3), the capability matrix, the boot-time hardware scan, the Capability Router state machine that emits the CapabilityMap, and runtime re-adaptation when resources change. Use when the user asks about hardware tiers, capability scaling, the 50ms boot scan, CapabilityMap fields, adaptive reconfiguration, or how CATLX picks OCR/STT/TTS/LLM backends per hardware.",
+      "capabilities": [
+        "detect hardware tier",
+        "read the capability matrix",
+        "run the boot hardware scan",
+        "get the capability map",
+        "reconfigure for available hardware",
+        "pick ocr/stt/tts/llm/vector backend per tier",
+        "adapt to a weak or strong machine"
+      ],
+      "aliases": [
+        "hardware",
+        "hardware adaptation",
+        "tier detection",
+        "capability matrix",
+        "hardware profile",
+        "boot scan",
+        "adaptive runtime",
+        "capability map"
+      ],
+      "depends_on": [],
+      "delegates_to": [
+        "catlx-capability-routing"
+      ],
+      "references": [
+        "references/hardware-adaptation.md",
+        "references/component-tree.md",
+        "references/folder-structure.md",
+        "rules/architectural-rules.md"
+      ],
+      "workflows": [],
+      "source": "PART II §2.1-2.5",
+      "routing_hint": "Any hardware/tier/capability-map or 'runs on any machine' question."
+    },
+    {
+      "id": "catlx-memory",
+      "name": "catlx-memory",
+      "skill_type": "",
+      "description": "Handles the CATLX memory architecture: episodic, semantic, workspace, and knowledge-graph memory stores, the Memory Broker as the single access point, the coherence protocol, memory compression, RAG-based retrieval optimization, and long-term persistence/portability. Use when the user asks about CATLX memory, remembering conversations, facts/preferences, workspace state, knowledge graphs, conflict resolution between memories, or how memory feeds AI calls.",
+      "capabilities": [
+        "remember events",
+        "store facts and preferences",
+        "recall a past interaction",
+        "workspace state",
+        "knowledge graph query",
+        "resolve conflicting memories",
+        "compress memory",
+        "retrieve context for ai (rag)"
+      ],
+      "aliases": [
+        "memory",
+        "remember",
+        "recall",
+        "facts",
+        "preferences",
+        "knowledge graph",
+        "memory broker",
+        "rag"
+      ],
+      "depends_on": [
+        "catlx-ai-provider"
+      ],
+      "delegates_to": [
+        "catlx-ai-provider",
+        "catlx-hardware-adaptation",
+        "catlx-portability",
+        "catlx-workflow-engine"
+      ],
+      "references": [
+        "references/memory-architecture.md",
+        "references/data-registries.md",
+        "rules/architectural-rules.md"
+      ],
+      "workflows": [],
+      "source": "PART VII §7.1-7.11",
+      "routing_hint": "Memory, remembering, facts/preferences, knowledge graph, RAG."
+    },
+    {
+      "id": "catlx-orchestrator",
+      "name": "catlx-orchestrator",
+      "skill_type": "orchestrator",
+      "description": "UNIVERSAL ORCHESTRATOR — the automatic front door to the entire CATLX skill ecosystem. Activate this once and then just ask in plain English: explain X, fix a problem, deploy/build/configure something, analyze what is wrong, etc. It understands the request, routes to the right CATLX subsystem skill from the skill registry / capability index, then lets that skill auto-delegate recursively and synthesizes the final result. Use proactively for any request that does NOT already name a specific skill, or when the user says 'activate universal orchestrator', 'help me solve', 'why is X failing', 'what is wrong', 'analyze this'.",
+      "capabilities": [],
+      "aliases": [
+        "universal orchestrator",
+        "orchestrator",
+        "auto router",
+        "global entry",
+        "universal mode"
+      ],
+      "depends_on": [],
+      "delegates_to": [
+        "bakg",
+        "catlx-ai-provider",
+        "catlx-capability-routing",
+        "catlx-desktop-control",
+        "catlx-docker",
+        "catlx-electron-shell",
+        "catlx-hardware-adaptation",
+        "catlx-memory",
+        "catlx-plugin-ecosystem",
+        "catlx-portability",
+        "catlx-recovery",
+        "catlx-runtime-lifecycle",
+        "catlx-screen-understanding",
+        "catlx-security",
+        "catlx-silexis-modules",
+        "catlx-telemetry",
+        "catlx-voice-pipeline",
+        "catlx-workflow-engine",
+        "repo2skill"
+      ],
+      "references": [],
+      "workflows": [],
+      "source": "Derived meta-skill over all CATLX parts (routes the canonical system; it is NOT a copy of the source)",
+      "routing_hint": ""
+    },
+    {
+      "id": "catlx-plugin-ecosystem",
+      "name": "catlx-plugin-ecosystem",
+      "skill_type": "",
+      "description": "Handles the CATLX plugin ecosystem: the plugin runtime (worker threads / Docker), signed plugin security with capability grants, the @catlx/plugin-sdk, the Plugin Marketplace, hot reload, and version management with deterministic dependency resolution (PnP-style) and API compatibility shims. Use when the user asks about CATLX plugins, writing/installing a plugin, the Plugin SDK, marketplace, hot reload, plugin signing/security, or plugin dependency resolution.",
+      "capabilities": [
+        "install a plugin",
+        "write a plugin",
+        "use the plugin sdk",
+        "publish to the marketplace",
+        "hot reload a plugin",
+        "resolve plugin dependencies"
+      ],
+      "aliases": [
+        "plugins",
+        "plugin",
+        "plugin sdk",
+        "marketplace",
+        "extensions",
+        "hot reload"
+      ],
+      "depends_on": [
+        "catlx-silexis-modules",
+        "catlx-security",
+        "catlx-electron-shell",
+        "catlx-docker"
+      ],
+      "delegates_to": [
+        "catlx-capability-routing",
+        "catlx-docker",
+        "catlx-electron-shell",
+        "catlx-security",
+        "catlx-silexis-modules"
+      ],
+      "references": [
+        "references/plugin-ecosystem.md",
+        "references/security.md",
+        "references/folder-structure.md",
+        "references/data-registries.md"
+      ],
+      "workflows": [],
+      "source": "PART XIII §13.1-13.7",
+      "routing_hint": "Plugins, SDK, marketplace, hot reload, plugin dependency resolution."
+    },
+    {
+      "id": "catlx-portability",
+      "name": "catlx-portability",
+      "skill_type": "",
+      "description": "Handles CATLX portability: the portability mandate, the CATLX_ROOT relative-path architecture, bundled Node runtime, database portability, portable external NVMe SSD configuration (portable mode), and machine-agnostic identity. USB flash-drive scenarios are excluded. Use when the user asks how CATLX runs identically from an internal drive or external SSD, how paths stay relative, how it's portable across machines, or about cross-machine identity.",
+      "capabilities": [
+        "install portably",
+        "resolve relative paths",
+        "bundle node runtime",
+        "run from an external ssd",
+        "cross-machine identity",
+        "move the install without reconfiguration"
+      ],
+      "aliases": [
+        "portability",
+        "portable",
+        "portable mode",
+        "relative paths",
+        "cross-machine",
+        "identity"
+      ],
+      "depends_on": [
+        "catlx-hardware-adaptation"
+      ],
+      "delegates_to": [
+        "catlx-capability-routing",
+        "catlx-docker",
+        "catlx-hardware-adaptation",
+        "catlx-memory"
+      ],
+      "references": [
+        "references/portability.md",
+        "references/folder-structure.md",
+        "rules/windows-rules.md",
+        "rules/architectural-rules.md"
+      ],
+      "workflows": [],
+      "source": "PART XV §15.1-15.6 (USB removed)",
+      "routing_hint": "Portability, relative paths, portable mode, cross-machine identity."
+    },
+    {
+      "id": "catlx-recovery",
+      "name": "catlx-recovery",
+      "skill_type": "",
+      "description": "Handles the CATLX recovery architecture: crash recovery via the PID lockfile, Safe Mode, Recovery Mode, checkpoint integrity verification and restoration, and the full recovery coverage matrix (process crash, power loss, corruption, provider failover, container crash, plugin corruption, OOM, vector index corruption, config corruption). Use when the user asks about CATLX crash recovery, safe mode, recovery mode, restoring a workflow from a checkpoint, or how CATLX recovers from failures.",
+      "capabilities": [
+        "recover from a crash",
+        "enter safe mode",
+        "restore a checkpoint",
+        "recovery matrix",
+        "troubleshoot startup",
+        "resume an interrupted workflow"
+      ],
+      "aliases": [
+        "recovery",
+        "crash",
+        "safe mode",
+        "checkpoint restore",
+        "resilience",
+        "restore",
+        "troubleshoot"
+      ],
+      "depends_on": [
+        "catlx-ai-provider",
+        "catlx-memory",
+        "catlx-security",
+        "catlx-docker"
+      ],
+      "delegates_to": [
+        "catlx-ai-provider",
+        "catlx-docker",
+        "catlx-memory",
+        "catlx-security",
+        "catlx-workflow-engine"
+      ],
+      "references": [
+        "references/recovery.md",
+        "references/runtime-lifecycle.md",
+        "references/data-registries.md",
+        "rules/architectural-rules.md"
+      ],
+      "workflows": [],
+      "source": "PART XVI §16.1-16.5",
+      "routing_hint": "Crash recovery, safe/recovery mode, checkpoint restore, resilience."
+    },
+    {
+      "id": "catlx-runtime-lifecycle",
+      "name": "catlx-runtime-lifecycle",
+      "skill_type": "",
+      "description": "Handles the CATLX runtime lifecycle sequences: the full boot sequence, the detailed voice-command lifecycle, the workflow lifecycle, the plugin lifecycle, and the recovery lifecycle, each as ordered step sequences. Use when the user asks about CATLX startup/boot order, what happens on wake word, how a workflow runs step by step, how a plugin is installed/uninstalled, or the recovery sequence.",
+      "capabilities": [
+        "explain boot order",
+        "trace the voice lifecycle",
+        "trace the workflow lifecycle",
+        "trace the plugin lifecycle",
+        "trace the recovery lifecycle",
+        "initialize the runtime"
+      ],
+      "aliases": [
+        "lifecycle",
+        "boot",
+        "startup",
+        "runtime sequences",
+        "initialize",
+        "boot sequence"
+      ],
+      "depends_on": [
+        "catlx-recovery",
+        "catlx-voice-pipeline",
+        "catlx-workflow-engine",
+        "catlx-plugin-ecosystem",
+        "catlx-electron-shell",
+        "catlx-security"
+      ],
+      "delegates_to": [
+        "catlx-capability-routing",
+        "catlx-electron-shell",
+        "catlx-hardware-adaptation",
+        "catlx-plugin-ecosystem",
+        "catlx-recovery",
+        "catlx-security",
+        "catlx-voice-pipeline",
+        "catlx-workflow-engine"
+      ],
+      "references": [
+        "references/runtime-lifecycle.md",
+        "references/recovery.md",
+        "references/workflow-engine.md",
+        "references/voice-pipeline.md",
+        "references/plugin-ecosystem.md",
+        "references/data-registries.md"
+      ],
+      "workflows": [],
+      "source": "PART XVIII §18.1-18.5",
+      "routing_hint": "Ordered runtime sequences: boot, voice, workflow, plugin, recovery."
+    },
+    {
+      "id": "catlx-screen-understanding",
+      "name": "catlx-screen-understanding",
+      "skill_type": "",
+      "description": "Handles CATLX OCR and screen understanding: tier-scaled OCR backends (Tesseract, EasyOCR, PaddleOCR), post-processing to classify UI elements and detect their state, spatial relationship extraction, and the ScreenModel JSON that lets the Workflow Engine act without hardcoded coordinates. Use when the user asks about OCR, reading the screen, screen models, UI element classification, or how CATLX understands what's on screen.",
+      "capabilities": [
+        "run ocr",
+        "read the screen",
+        "detect ui elements",
+        "extract a screen model",
+        "understand a screenshot",
+        "find a button/field/link"
+      ],
+      "aliases": [
+        "ocr",
+        "screen reading",
+        "screen understanding",
+        "screen model",
+        "screenshot",
+        "vision"
+      ],
+      "depends_on": [
+        "catlx-hardware-adaptation",
+        "catlx-security"
+      ],
+      "delegates_to": [
+        "catlx-capability-routing",
+        "catlx-desktop-control",
+        "catlx-docker",
+        "catlx-hardware-adaptation",
+        "catlx-security"
+      ],
+      "references": [
+        "references/screen-understanding.md",
+        "references/desktop-control.md",
+        "references/hardware-adaptation.md",
+        "references/security.md"
+      ],
+      "workflows": [],
+      "source": "PART V §5.5",
+      "routing_hint": "OCR, screen content, UI-element/screen model extraction."
+    },
+    {
+      "id": "catlx-security",
+      "name": "catlx-security",
+      "skill_type": "",
+      "description": "Handles the CATLX security architecture: least-privilege model, the credential vault (DPAPI on Windows), Windows Credential Manager integration, the permission router, the capability firewall (AppContainer + Windows Filtering Platform), the runtime sandbox, audit logs, risk detection, and safe/recovery modes. Use when the user asks about CATLX security, credentials, permissions, sandboxing, audit logging, risk detection, safe mode, or how CATLX protects privileged operations.",
+      "capabilities": [
+        "store credentials",
+        "manage permissions",
+        "enforce least privilege",
+        "sandbox a plugin",
+        "audit actions",
+        "detect risk",
+        "enter safe mode",
+        "read the credential vault",
+        "authentication / authorization"
+      ],
+      "aliases": [
+        "security",
+        "credentials",
+        "authentication",
+        "permissions",
+        "sandbox",
+        "audit",
+        "risk",
+        "vault",
+        "safe mode"
+      ],
+      "depends_on": [
+        "catlx-docker"
+      ],
+      "delegates_to": [
+        "catlx-docker",
+        "catlx-hardware-adaptation",
+        "catlx-plugin-ecosystem",
+        "catlx-recovery",
+        "catlx-telemetry"
+      ],
+      "references": [
+        "references/security.md",
+        "rules/windows-rules.md",
+        "references/data-registries.md",
+        "rules/architectural-rules.md"
+      ],
+      "workflows": [],
+      "source": "PART X §10.1-10.9",
+      "routing_hint": "Credentials, permissions, sandboxing, audit, risk, safe/recovery mode."
+    },
+    {
+      "id": "catlx-silexis-modules",
+      "name": "catlx-silexis-modules",
+      "skill_type": "",
+      "description": "Handles the SILEXIS module system in CATLX: module extraction, analysis, building, packaging, and the file-backed module registry (SQLite, REST on localhost:7700). Covers module manifests, capability declarations, dependency graphs, checksums, and usage across build artifacts. Use when the user asks about modules, the module registry, module lifecycle, manifest/API-contract validation, packaging, or how a capability becomes an independently versioned module.",
+      "capabilities": [
+        "manage modules",
+        "extract a module",
+        "analyze a module",
+        "build a module",
+        "package a module",
+        "query the module registry",
+        "read a module manifest",
+        "understand capability tokens",
+        "version and dependency-graph a module"
+      ],
+      "aliases": [
+        "modules",
+        "module system",
+        "module registry",
+        "module lifecycle",
+        "silexis",
+        "capability tokens",
+        "packaging"
+      ],
+      "depends_on": [
+        "catlx-capability-routing"
+      ],
+      "delegates_to": [
+        "catlx-capability-routing",
+        "catlx-docker",
+        "catlx-plugin-ecosystem"
+      ],
+      "references": [
+        "references/silexis-and-routing.md",
+        "references/folder-structure.md",
+        "references/data-registries.md"
+      ],
+      "workflows": [],
+      "source": "PART III §3.1-3.2",
+      "routing_hint": "Modules, module registry, manifests, packaging, SILEXIS."
+    },
+    {
+      "id": "catlx-telemetry",
+      "name": "catlx-telemetry",
+      "skill_type": "",
+      "description": "Handles CATLX telemetry and observability: distributed tracing with a root Trace ID and spans, cross-subsystem correlation, causal lineage, the metrics collector, DuckDB storage, profiling, and the observability dashboard (or the catlx telemetry report CLI on T0). Use when the user asks about CATLX logging, tracing, metrics, profiling, observability, the dashboard, 'why did CATLX do X', or how CATLX reconstructs an execution tree.",
+      "capabilities": [
+        "trace an operation",
+        "record metrics",
+        "view observability dashboard",
+        "profile slow code",
+        "query causal lineage",
+        "why did catlx do x",
+        "read a telemetry report"
+      ],
+      "aliases": [
+        "telemetry",
+        "tracing",
+        "metrics",
+        "observability",
+        "logging",
+        "profiling",
+        "monitoring",
+        "dashboard"
+      ],
+      "depends_on": [],
+      "delegates_to": [
+        "catlx-ai-provider",
+        "catlx-electron-shell",
+        "catlx-hardware-adaptation",
+        "catlx-workflow-engine"
+      ],
+      "references": [
+        "references/telemetry.md",
+        "references/data-registries.md",
+        "references/hardware-adaptation.md"
+      ],
+      "workflows": [],
+      "source": "PART XI §11.1-11.7",
+      "routing_hint": "Tracing, metrics, profiling, lineage, observability."
+    },
+    {
+      "id": "catlx-voice-pipeline",
+      "name": "catlx-voice-pipeline",
+      "skill_type": "",
+      "description": "Handles the CATLX voice-first interface: the 10-stage voice processing pipeline (wake word, audio capture, STT, context injection, NLU/intent, clarification, planning, execution, feedback, memory write), wake word configuration, the continuous conversational context window, and real-time streamed TTS. Use when the user asks about voice commands, wake words, speech-to-text, NLU intents, disambiguation, TTS, or how voice is the primary interface.",
+      "capabilities": [
+        "voice command",
+        "set a wake word",
+        "speech to text",
+        "nlu intent parsing",
+        "clarify an ambiguous command",
+        "text to speech",
+        "conversation context",
+        "voice pipeline stages"
+      ],
+      "aliases": [
+        "voice",
+        "speech",
+        "wake word",
+        "stt",
+        "tts",
+        "nlu",
+        "intent",
+        "voice-first",
+        "voice commands"
+      ],
+      "depends_on": [
+        "catlx-ai-provider",
+        "catlx-memory",
+        "catlx-capability-routing"
+      ],
+      "delegates_to": [
+        "catlx-ai-provider",
+        "catlx-capability-routing",
+        "catlx-desktop-control",
+        "catlx-memory",
+        "catlx-workflow-engine"
+      ],
+      "references": [
+        "references/voice-pipeline.md",
+        "references/runtime-lifecycle.md",
+        "references/hardware-adaptation.md"
+      ],
+      "workflows": [],
+      "source": "PART IV §4.1-4.6",
+      "routing_hint": "Voice/speech/wake-word/STT/NLU/TTS/interaction lifecycle."
+    },
+    {
+      "id": "catlx-workflow-engine",
+      "name": "catlx-workflow-engine",
+      "skill_type": "",
+      "description": "Handles the CATLX Workflow Engine: the DAG execution model, the four scheduling modes (immediate/deferred/event/background), checkpointing, replay, rollback, multi-layer recovery and resilience, state machines, and the YAML workflow definition DSL. Use when the user asks about CATLX workflows, running tasks in steps, scheduling, checkpoint/resume, replaying/rolling back a run, or defining a workflow in YAML.",
+      "capabilities": [
+        "run a workflow",
+        "schedule a task",
+        "execute a dag",
+        "checkpoint a run",
+        "replay a run",
+        "roll back a run",
+        "define a state machine",
+        "write a workflow in yaml"
+      ],
+      "aliases": [
+        "workflow",
+        "dag",
+        "scheduling",
+        "task runner",
+        "pipeline",
+        "checkpoints",
+        "replay",
+        "rollback",
+        "automation"
+      ],
+      "depends_on": [
+        "catlx-capability-routing",
+        "catlx-ai-provider",
+        "catlx-memory",
+        "catlx-security"
+      ],
+      "delegates_to": [
+        "catlx-ai-provider",
+        "catlx-capability-routing",
+        "catlx-desktop-control",
+        "catlx-docker",
+        "catlx-memory",
+        "catlx-recovery",
+        "catlx-security",
+        "catlx-telemetry"
+      ],
+      "references": [
+        "references/workflow-engine.md",
+        "references/runtime-lifecycle.md",
+        "references/data-registries.md"
+      ],
+      "workflows": [
+        "workflows/summarize-clipboard.yaml"
+      ],
+      "source": "PART IX §9.1-9.9",
+      "routing_hint": "Multi-step tasks, scheduling, checkpoint/replay/rollback, workflow YAML."
+    },
+    {
+      "id": "repo2skill",
+      "name": "repo2skill",
+      "skill_type": "",
+      "description": "Convert GitHub/GitLab/Gitee repositories into comprehensive OpenCode Skills using embedded LLM calls with multiple mirrors and rate limit handling",
+      "capabilities": [],
+      "aliases": [],
+      "depends_on": [],
+      "delegates_to": [],
+      "references": [],
+      "workflows": [],
+      "source": "",
+      "routing_hint": ""
+    },
+    {
+      "id": "architecture",
+      "name": "architecture",
+      "skill_type": "specialist",
+      "description": "Chooses module boundaries, data flow, and failure handling for new or existing software. Use after requirements and tech selection, before large implementation."
+    },
+    {
+      "id": "cli-applications",
+      "name": "cli-applications",
+      "skill_type": "specialist",
+      "description": "Designs command-line tools with stable exit codes and tests. Use when building CLIs in Python, Node, C, Go, Rust, or Java."
+    },
+    {
+      "id": "debugging",
+      "name": "debugging",
+      "skill_type": "specialist",
+      "description": "Diagnoses build, test, and runtime failures. Use when commands fail, tests go red, or the user pastes a stack trace."
+    },
+    {
+      "id": "desktop-applications",
+      "name": "desktop-applications",
+      "skill_type": "specialist",
+      "description": "Builds local desktop UIs. Use for tkinter or when the user wants a desktop app. Native Windows admin is a different MCP."
+    },
+    {
+      "id": "implementation",
+      "name": "implementation",
+      "skill_type": "specialist",
+      "description": "How to change and create code professionally in this ecosystem. Use when writing or editing application source after a plan exists."
+    },
+    {
+      "id": "libraries-and-apis",
+      "name": "libraries-and-apis",
+      "skill_type": "specialist",
+      "description": "Builds reusable libraries and HTTP services with explicit public APIs. Use when the deliverable is a package or backend, not a full product UI."
+    },
+    {
+      "id": "mcp-routing",
+      "name": "mcp-routing",
+      "skill_type": "specialist",
+      "description": "Chooses which existing specialist MCP and which software-engineering tools to use. Use at the start of any engineering task and whenever work crosses documents, SQL, Windows, Android, or general code."
+    },
+    {
+      "id": "performance",
+      "name": "performance",
+      "skill_type": "specialist",
+      "description": "Investigates slowness with measurement first. Use when the user reports performance problems or asks to optimize."
+    },
+    {
+      "id": "release-engineering",
+      "name": "release-engineering",
+      "skill_type": "specialist",
+      "description": "Packages, versions, and verifies software for delivery. Use when the user asks to ship, release, produce artifacts, or write install instructions."
+    },
+    {
+      "id": "requirements-analysis",
+      "name": "requirements-analysis",
+      "skill_type": "specialist",
+      "description": "Turns a vague \"build this\" request into testable requirements. Use before architecture or scaffolding whenever scope is unclear or the user named an application without constraints."
+    },
+    {
+      "id": "security",
+      "name": "security",
+      "skill_type": "specialist",
+      "description": "Applies secure-by-default engineering checks. Use before release, when handling auth/secrets, or after se_security_audit findings."
+    },
+    {
+      "id": "software-engineering",
+      "name": "software-engineering",
+      "skill_type": "specialist",
+      "description": "Orchestrates a one-person software team workflow from request to verified delivery. Use when the user asks to build, maintain, debug, or ship any application, library, API, CLI, desktop, or service — and before writing code."
+    },
+    {
+      "id": "structure-and-sdlc",
+      "name": "structure-and-sdlc",
+      "skill_type": "specialist",
+      "description": "Turns ASCII file trees and the 21-phase SDLC catalog into real project layouts. Use when the user pastes a tree, wants boilerplate folders, or asks for an SDLC blueprint by audience and project type."
+    },
+    {
+      "id": "technology-selection",
+      "name": "technology-selection",
+      "skill_type": "specialist",
+      "description": "Selects language, framework, and build system from host capabilities and requirements. Use before se_create_project or adding dependencies. Avoids MERN-default and fashion-driven stacks."
+    },
+    {
+      "id": "testing",
+      "name": "testing",
+      "skill_type": "specialist",
+      "description": "Plans and runs tests for software in this ecosystem. Use when adding features, fixing bugs, or before declaring work done."
+    },
+    {
+      "id": "web-applications",
+      "name": "web-applications",
+      "skill_type": "specialist",
+      "description": "Builds websites and HTTP backends without defaulting to MERN. Use for static sites, HTML/CSS/JS, Express, FastAPI, or Flask work."
+    },
+    {
+      "id": "database-sql",
+      "name": "database-sql",
+      "skill_type": "specialist",
+      "description": ""
+    },
+    {
+      "id": "office-documents",
+      "name": "office-documents",
+      "skill_type": "specialist",
+      "description": ""
+    },
+    {
+      "id": "android-development",
+      "name": "android-development",
+      "skill_type": "specialist",
+      "description": ""
+    },
+    {
+      "id": "windows-system",
+      "name": "windows-system",
+      "skill_type": "specialist",
+      "description": ""
+    }
+  ]
+}

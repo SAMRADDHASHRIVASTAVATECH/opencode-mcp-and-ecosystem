@@ -1,0 +1,1245 @@
+{
+  "nodes": [
+    {
+      "id": "bakg",
+      "name": "bakg",
+      "type": "skill",
+      "path": "skills/bakg/SKILL.md",
+      "description": "Blender Animation Knowledge Graph — complete standalone ecosystem for imagining, designing, modeling, sculpting, lookdev, rigging, animating, simulating, and finishing any character/creature/world/film in Blender 4.x. Use when user wants to build/model/rig/animate/render a character, creature, animation, short film, world, grease-pencil, or asks blender, modeling, sculpting, topology, UV, materials, hair, cloth, rigging, animation, simulation, VFX, cinematography, lighting, render, compositing. Routes to 19 BAKG skills via bakg-orchestrator."
+    },
+    {
+      "id": "catlx",
+      "name": "catlx",
+      "type": "root",
+      "path": "skills/catlx/SKILL.md",
+      "description": "ROOT gateway for the CATLX Universal AI Operating System skill ecosystem. Load this first for any task about CATLX architecture, design, runtime, or deployment. It routes to the correct subsystem skill, drives automatic skill-to-skill delegation, and enforces progressive context loading. Use proactively when the user references CATLX, an AI OS, voice-first automation, hardware adaptation, memory architecture, workflow engine, security, or any of its subsystem capabilities."
+    },
+    {
+      "id": "catlx-ai-provider",
+      "name": "catlx-ai-provider",
+      "type": "skill",
+      "path": "skills/catlx-ai-provider/SKILL.md",
+      "description": "Handles the CATLX AI provider architecture: the Provider Abstraction Layer (PAL), current and future providers, provider routing and failover protocol, the cost optimization router, and local LLM integration (llama.cpp/vLLM with OpenAI-compatible API). Use when the user asks about which AI provider CATLX uses, provider failover, routing policies, the cost router, local models, embeddings, or how AI inference is abstracted."
+    },
+    {
+      "id": "catlx-capability-routing",
+      "name": "catlx-capability-routing",
+      "type": "skill",
+      "path": "skills/catlx-capability-routing/SKILL.md",
+      "description": "Handles CATLX capability and environment routing: where a module's work executes (LOCAL_PROCESS, LOCAL_SUBPROCESS, LOCAL_CONTAINER, REMOTE_API), transparent capability fallback chains (e.g. speech-to-text), adaptive runtime evolution, file-backed registries, and live GUI synchronization over the WebSocket bus. Use when the user asks how CATLX picks an execution environment, routes a capability request, falls back when a module is unavailable, or how runtime state syncs to the GUI."
+    },
+    {
+      "id": "catlx-desktop-control",
+      "name": "catlx-desktop-control",
+      "type": "skill",
+      "path": "skills/catlx-desktop-control/SKILL.md",
+      "description": "Handles the CATLX Desktop Control Engine: mouse control, keyboard synthesis, window management, file operations, browser automation (Playwright/Puppeteer), application automation (UIAutomation/COM-WMI/OCR), multi-monitor support, the overlay HUD, and native notifications. Use when the user asks how CATLX moves the mouse, types, reads windows, manages files, automates browsers or apps, handles multiple monitors, or shows HUD/notifications."
+    },
+    {
+      "id": "catlx-docker",
+      "name": "catlx-docker",
+      "type": "skill",
+      "path": "skills/catlx-docker/SKILL.md",
+      "description": "Handles the CATLX Docker architecture: the container strategy, core service containers, Docker Compose configuration with overrides, portable/relocatable volumes relative to CATLX_ROOT, offline mode, Docker Swarm/Kubernetes for enterprise, and Docker recovery or service degradation. Use when the user asks about CATLX Docker/containers, the Compose file, GPU containers, offline containers, relocatable volumes, Swarm/Kubernetes, or container health/restart."
+    },
+    {
+      "id": "catlx-electron-shell",
+      "name": "catlx-electron-shell",
+      "type": "skill",
+      "path": "skills/catlx-electron-shell/SKILL.md",
+      "description": "Handles the CATLX Electron OS Shell: an OS-layer interface (not a normal app window), the multi-window window roles (main, HUD overlay, command palette, notification toasts, focus mode), the Ctrl+Space command palette with fuse.js fuzzy search, multi-window persistence, the always-on tray runtime, typed IPC security via contextBridge, and workspace persistence. Use when the user asks about the CATLX shell, windows, HUD, command palette, tray, IPC security, or workspace restoration."
+    },
+    {
+      "id": "catlx-hardware-adaptation",
+      "name": "catlx-hardware-adaptation",
+      "type": "skill",
+      "path": "skills/catlx-hardware-adaptation/SKILL.md",
+      "description": "Handles CATLX hardware adaptation: hardware tier detection (T0/T1/T2/T3), the capability matrix, the boot-time hardware scan, the Capability Router state machine that emits the CapabilityMap, and runtime re-adaptation when resources change. Use when the user asks about hardware tiers, capability scaling, the 50ms boot scan, CapabilityMap fields, adaptive reconfiguration, or how CATLX picks OCR/STT/TTS/LLM backends per hardware."
+    },
+    {
+      "id": "catlx-memory",
+      "name": "catlx-memory",
+      "type": "skill",
+      "path": "skills/catlx-memory/SKILL.md",
+      "description": "Handles the CATLX memory architecture: episodic, semantic, workspace, and knowledge-graph memory stores, the Memory Broker as the single access point, the coherence protocol, memory compression, RAG-based retrieval optimization, and long-term persistence/portability. Use when the user asks about CATLX memory, remembering conversations, facts/preferences, workspace state, knowledge graphs, conflict resolution between memories, or how memory feeds AI calls."
+    },
+    {
+      "id": "catlx-orchestrator",
+      "name": "catlx-orchestrator",
+      "type": "skill",
+      "path": "skills/catlx-orchestrator/SKILL.md",
+      "description": "UNIVERSAL ORCHESTRATOR — the automatic front door to the entire CATLX skill ecosystem. Activate this once and then just ask in plain English: explain X, fix a problem, deploy/build/configure something, analyze what is wrong, etc. It understands the request, routes to the right CATLX subsystem skill from the skill registry / capability index, then lets that skill auto-delegate recursively and synthesizes the final result. Use proactively for any request that does NOT already name a specific skill, or when the user says 'activate universal orchestrator', 'help me solve', 'why is X failing', 'what is wrong', 'analyze this'."
+    },
+    {
+      "id": "catlx-plugin-ecosystem",
+      "name": "catlx-plugin-ecosystem",
+      "type": "skill",
+      "path": "skills/catlx-plugin-ecosystem/SKILL.md",
+      "description": "Handles the CATLX plugin ecosystem: the plugin runtime (worker threads / Docker), signed plugin security with capability grants, the @catlx/plugin-sdk, the Plugin Marketplace, hot reload, and version management with deterministic dependency resolution (PnP-style) and API compatibility shims. Use when the user asks about CATLX plugins, writing/installing a plugin, the Plugin SDK, marketplace, hot reload, plugin signing/security, or plugin dependency resolution."
+    },
+    {
+      "id": "catlx-portability",
+      "name": "catlx-portability",
+      "type": "skill",
+      "path": "skills/catlx-portability/SKILL.md",
+      "description": "Handles CATLX portability: the portability mandate, the CATLX_ROOT relative-path architecture, bundled Node runtime, database portability, portable external NVMe SSD configuration (portable mode), and machine-agnostic identity. USB flash-drive scenarios are excluded. Use when the user asks how CATLX runs identically from an internal drive or external SSD, how paths stay relative, how it's portable across machines, or about cross-machine identity."
+    },
+    {
+      "id": "catlx-recovery",
+      "name": "catlx-recovery",
+      "type": "skill",
+      "path": "skills/catlx-recovery/SKILL.md",
+      "description": "Handles the CATLX recovery architecture: crash recovery via the PID lockfile, Safe Mode, Recovery Mode, checkpoint integrity verification and restoration, and the full recovery coverage matrix (process crash, power loss, corruption, provider failover, container crash, plugin corruption, OOM, vector index corruption, config corruption). Use when the user asks about CATLX crash recovery, safe mode, recovery mode, restoring a workflow from a checkpoint, or how CATLX recovers from failures."
+    },
+    {
+      "id": "catlx-runtime-lifecycle",
+      "name": "catlx-runtime-lifecycle",
+      "type": "skill",
+      "path": "skills/catlx-runtime-lifecycle/SKILL.md",
+      "description": "Handles the CATLX runtime lifecycle sequences: the full boot sequence, the detailed voice-command lifecycle, the workflow lifecycle, the plugin lifecycle, and the recovery lifecycle, each as ordered step sequences. Use when the user asks about CATLX startup/boot order, what happens on wake word, how a workflow runs step by step, how a plugin is installed/uninstalled, or the recovery sequence."
+    },
+    {
+      "id": "catlx-screen-understanding",
+      "name": "catlx-screen-understanding",
+      "type": "skill",
+      "path": "skills/catlx-screen-understanding/SKILL.md",
+      "description": "Handles CATLX OCR and screen understanding: tier-scaled OCR backends (Tesseract, EasyOCR, PaddleOCR), post-processing to classify UI elements and detect their state, spatial relationship extraction, and the ScreenModel JSON that lets the Workflow Engine act without hardcoded coordinates. Use when the user asks about OCR, reading the screen, screen models, UI element classification, or how CATLX understands what's on screen."
+    },
+    {
+      "id": "catlx-security",
+      "name": "catlx-security",
+      "type": "skill",
+      "path": "skills/catlx-security/SKILL.md",
+      "description": "Handles the CATLX security architecture: least-privilege model, the credential vault (DPAPI on Windows), Windows Credential Manager integration, the permission router, the capability firewall (AppContainer + Windows Filtering Platform), the runtime sandbox, audit logs, risk detection, and safe/recovery modes. Use when the user asks about CATLX security, credentials, permissions, sandboxing, audit logging, risk detection, safe mode, or how CATLX protects privileged operations."
+    },
+    {
+      "id": "catlx-silexis-modules",
+      "name": "catlx-silexis-modules",
+      "type": "skill",
+      "path": "skills/catlx-silexis-modules/SKILL.md",
+      "description": "Handles the SILEXIS module system in CATLX: module extraction, analysis, building, packaging, and the file-backed module registry (SQLite, REST on localhost:7700). Covers module manifests, capability declarations, dependency graphs, checksums, and usage across build artifacts. Use when the user asks about modules, the module registry, module lifecycle, manifest/API-contract validation, packaging, or how a capability becomes an independently versioned module."
+    },
+    {
+      "id": "catlx-telemetry",
+      "name": "catlx-telemetry",
+      "type": "skill",
+      "path": "skills/catlx-telemetry/SKILL.md",
+      "description": "Handles CATLX telemetry and observability: distributed tracing with a root Trace ID and spans, cross-subsystem correlation, causal lineage, the metrics collector, DuckDB storage, profiling, and the observability dashboard (or the catlx telemetry report CLI on T0). Use when the user asks about CATLX logging, tracing, metrics, profiling, observability, the dashboard, 'why did CATLX do X', or how CATLX reconstructs an execution tree."
+    },
+    {
+      "id": "catlx-voice-pipeline",
+      "name": "catlx-voice-pipeline",
+      "type": "skill",
+      "path": "skills/catlx-voice-pipeline/SKILL.md",
+      "description": "Handles the CATLX voice-first interface: the 10-stage voice processing pipeline (wake word, audio capture, STT, context injection, NLU/intent, clarification, planning, execution, feedback, memory write), wake word configuration, the continuous conversational context window, and real-time streamed TTS. Use when the user asks about voice commands, wake words, speech-to-text, NLU intents, disambiguation, TTS, or how voice is the primary interface."
+    },
+    {
+      "id": "catlx-workflow-engine",
+      "name": "catlx-workflow-engine",
+      "type": "skill",
+      "path": "skills/catlx-workflow-engine/SKILL.md",
+      "description": "Handles the CATLX Workflow Engine: the DAG execution model, the four scheduling modes (immediate/deferred/event/background), checkpointing, replay, rollback, multi-layer recovery and resilience, state machines, and the YAML workflow definition DSL. Use when the user asks about CATLX workflows, running tasks in steps, scheduling, checkpoint/resume, replaying/rolling back a run, or defining a workflow in YAML."
+    },
+    {
+      "id": "repo2skill",
+      "name": "repo2skill",
+      "type": "skill",
+      "path": "skills/repo2skill/SKILL.md",
+      "description": "Convert GitHub/GitLab/Gitee repositories into comprehensive OpenCode Skills using embedded LLM calls with multiple mirrors and rate limit handling"
+    },
+    {
+      "id": "architecture",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "cli-applications",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "debugging",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "desktop-applications",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "implementation",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "libraries-and-apis",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "mcp-routing",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "performance",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "release-engineering",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "requirements-analysis",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "security",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "software-engineering",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "structure-and-sdlc",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "technology-selection",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "testing",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "web-applications",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "database-sql",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "office-documents",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "android-development",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    },
+    {
+      "id": "windows-system",
+      "depends_on": [],
+      "delegates_to": [],
+      "capabilities": [],
+      "aliases": [],
+      "version": "1.0.0"
+    }
+  ],
+  "edges": [
+    {
+      "source": "catlx-ai-provider",
+      "target": "catlx-capability-routing",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-ai-provider",
+      "target": "catlx-memory",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-ai-provider",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-ai-provider",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-ai-provider",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-ai-provider",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-capability-routing",
+      "target": "catlx-hardware-adaptation",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-capability-routing",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-capability-routing",
+      "target": "catlx-silexis-modules",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-capability-routing",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-capability-routing",
+      "target": "catlx-electron-shell",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-capability-routing",
+      "target": "catlx-plugin-ecosystem",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-desktop-control",
+      "target": "catlx-electron-shell",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-desktop-control",
+      "target": "catlx-security",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-desktop-control",
+      "target": "catlx-screen-understanding",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-desktop-control",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-desktop-control",
+      "target": "catlx-electron-shell",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-desktop-control",
+      "target": "catlx-workflow-engine",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-desktop-control",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-docker",
+      "target": "catlx-hardware-adaptation",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-docker",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-docker",
+      "target": "catlx-recovery",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-docker",
+      "target": "catlx-portability",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-docker",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-docker",
+      "target": "catlx-silexis-modules",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-electron-shell",
+      "target": "catlx-capability-routing",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-electron-shell",
+      "target": "catlx-telemetry",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-electron-shell",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-electron-shell",
+      "target": "catlx-telemetry",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-electron-shell",
+      "target": "catlx-memory",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-electron-shell",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-electron-shell",
+      "target": "catlx-desktop-control",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-hardware-adaptation",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-hardware-adaptation",
+      "target": "catlx-voice-pipeline",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-hardware-adaptation",
+      "target": "catlx-screen-understanding",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-hardware-adaptation",
+      "target": "catlx-telemetry",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-hardware-adaptation",
+      "target": "catlx-electron-shell",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-hardware-adaptation",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-memory",
+      "target": "catlx-ai-provider",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-memory",
+      "target": "catlx-ai-provider",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-memory",
+      "target": "catlx-workflow-engine",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-memory",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-memory",
+      "target": "catlx-portability",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "bakg",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-ai-provider",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-desktop-control",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-electron-shell",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-memory",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-plugin-ecosystem",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-portability",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-recovery",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-runtime-lifecycle",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-screen-understanding",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-silexis-modules",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-telemetry",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-voice-pipeline",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "catlx-workflow-engine",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "repo2skill",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-plugin-ecosystem",
+      "target": "catlx-silexis-modules",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-plugin-ecosystem",
+      "target": "catlx-security",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-plugin-ecosystem",
+      "target": "catlx-electron-shell",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-plugin-ecosystem",
+      "target": "catlx-docker",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-plugin-ecosystem",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-plugin-ecosystem",
+      "target": "catlx-silexis-modules",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-plugin-ecosystem",
+      "target": "catlx-electron-shell",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-plugin-ecosystem",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-plugin-ecosystem",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-portability",
+      "target": "catlx-hardware-adaptation",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-portability",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-portability",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-portability",
+      "target": "catlx-memory",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-portability",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-recovery",
+      "target": "catlx-ai-provider",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-recovery",
+      "target": "catlx-memory",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-recovery",
+      "target": "catlx-security",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-recovery",
+      "target": "catlx-docker",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-recovery",
+      "target": "catlx-workflow-engine",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-recovery",
+      "target": "catlx-ai-provider",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-recovery",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-recovery",
+      "target": "catlx-memory",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-recovery",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-recovery",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-voice-pipeline",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-workflow-engine",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-plugin-ecosystem",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-electron-shell",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-security",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-voice-pipeline",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-workflow-engine",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-plugin-ecosystem",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-electron-shell",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-recovery",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-runtime-lifecycle",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-screen-understanding",
+      "target": "catlx-hardware-adaptation",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-screen-understanding",
+      "target": "catlx-security",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-screen-understanding",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-screen-understanding",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-screen-understanding",
+      "target": "catlx-desktop-control",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-screen-understanding",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-screen-understanding",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-security",
+      "target": "catlx-docker",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-security",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-security",
+      "target": "catlx-recovery",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-security",
+      "target": "catlx-telemetry",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-security",
+      "target": "catlx-plugin-ecosystem",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-security",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-silexis-modules",
+      "target": "catlx-capability-routing",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-silexis-modules",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-silexis-modules",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-silexis-modules",
+      "target": "catlx-plugin-ecosystem",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-telemetry",
+      "target": "catlx-electron-shell",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-telemetry",
+      "target": "catlx-ai-provider",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-telemetry",
+      "target": "catlx-workflow-engine",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-telemetry",
+      "target": "catlx-hardware-adaptation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-voice-pipeline",
+      "target": "catlx-ai-provider",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-voice-pipeline",
+      "target": "catlx-memory",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-voice-pipeline",
+      "target": "catlx-capability-routing",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-voice-pipeline",
+      "target": "catlx-ai-provider",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-voice-pipeline",
+      "target": "catlx-workflow-engine",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-voice-pipeline",
+      "target": "catlx-memory",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-voice-pipeline",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-voice-pipeline",
+      "target": "catlx-desktop-control",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-capability-routing",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-ai-provider",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-memory",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-security",
+      "kind": "depends_on",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-capability-routing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-ai-provider",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-memory",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-desktop-control",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-docker",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-recovery",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-workflow-engine",
+      "target": "catlx-telemetry",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "software-engineering",
+      "target": "structure-and-sdlc",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "software-engineering",
+      "target": "requirements-analysis",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "software-engineering",
+      "target": "implementation",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "software-engineering",
+      "target": "architecture",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "software-engineering",
+      "target": "debugging",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "software-engineering",
+      "target": "testing",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "software-engineering",
+      "target": "performance",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "software-engineering",
+      "target": "security",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "software-engineering",
+      "target": "release-engineering",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "mcp-routing",
+      "target": "software-engineering",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "database-sql",
+      "target": "software-engineering",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "office-documents",
+      "target": "software-engineering",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "android-development",
+      "target": "software-engineering",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "windows-system",
+      "target": "software-engineering",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    },
+    {
+      "source": "catlx-orchestrator",
+      "target": "software-engineering",
+      "kind": "delegates_to",
+      "cycle_safe": true
+    }
+  ],
+  "note": "Cycle protection: single-pass delegation with an active-chain check; cycles identified in DEPENDENCY-GRAPH.md are bounded/peer relationships, not recursion.",
+  "version": 1
+}

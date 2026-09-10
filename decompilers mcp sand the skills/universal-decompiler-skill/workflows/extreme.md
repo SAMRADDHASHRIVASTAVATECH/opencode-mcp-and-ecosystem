@@ -1,0 +1,2 @@
+# Extreme analysis
+Use only when the user needs maximal recovery and accepts time/storage/tool-install cost. Identify first, install missing high-value format adapters explicitly, invoke cross_validate or universal_decompile depth extreme, retain every independent output, compare structural facts, syntax/compile-check reconstructed projects where practical without executing them, and report irrecoverable information.

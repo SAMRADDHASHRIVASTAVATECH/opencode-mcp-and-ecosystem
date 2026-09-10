@@ -1,0 +1,51 @@
+capability_id: capability-creation
+name: Autonomous Capability Creation
+version: 1.0.0
+description: Detect gaps, research, design, generate, sandbox, test, validate, register,
+  version, activate and roll back new capabilities.
+area: capability-creation
+skills:
+- capability-gap-analysis
+- capability-discovery
+- capability-composition
+- capability-validation
+- capability-registration
+- skill-discovery
+- skill-creation
+- skill-validation
+- skill-registration
+- skill-versioning
+- mcp-discovery
+- mcp-creation
+- mcp-validation
+- mcp-registration
+- mcp-versioning
+policies:
+- capability-creation-policy
+schemas:
+- capability
+- skill
+- mcp
+- tool
+contracts:
+- skill-contract
+- tool-contract
+events:
+- CAPABILITY_DISCOVERED
+- CAPABILITY_CREATED
+- CAPABILITY_UPDATED
+- SKILL_CREATED
+- SKILL_FAILED
+- MCP_CREATED
+- MCP_FAILED
+- BUILD_FAILED
+- BUILD_SUCCEEDED
+agents:
+- capability-creator
+- skill-creator
+- mcp-creator
+- coder
+- tester
+authorization:
+  auth_level: SAFE_EXECUTE
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

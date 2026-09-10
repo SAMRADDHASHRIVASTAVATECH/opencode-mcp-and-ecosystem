@@ -1,0 +1,26 @@
+capability_id: self-improvement
+name: Controlled Self-Improvement
+version: 1.0.0
+description: Observe->identify weakness->propose->create candidate->test->compare->version->promote->rollback;
+  separates workflow improvement from security policy.
+area: self-improvement
+skills:
+- self-improvement
+- workflow-optimization
+- skill-versioning
+policies:
+- self-improvement-policy
+- security-policy
+schemas:
+- memory
+- result
+contracts:
+- self-improvement-contract
+events:
+- MAINTENANCE_REQUIRED
+agents:
+- optimizer
+- evaluator
+authorization:
+  auth_level: AUTHORIZED_AUTONOMOUS
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

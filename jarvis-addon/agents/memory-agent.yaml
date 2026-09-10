@@ -1,0 +1,22 @@
+agent_id: memory-agent
+name: Memory Agent
+version: 1.0.0
+role: memory-agent
+purpose: Manage memory types.
+responsibilities:
+- Manage memory types.
+allowed_skills:
+- memory-management
+- world-state-management
+required_capabilities:
+- digital-world-model
+expected_inputs:
+- memory-agent task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

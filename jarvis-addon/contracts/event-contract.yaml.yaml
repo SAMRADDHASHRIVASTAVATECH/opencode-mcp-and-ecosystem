@@ -1,0 +1,12 @@
+contract: event
+version: 1.0.0
+schema: schemas/event.schema.json
+summary: All events carry provenance payload (source/timestamp/confidence/entity_id).
+payload:
+- source
+- timestamp
+- confidence
+- entity_id
+rules:
+- events are typed (see events/) and additive
+- consumers must not assume ordering across sources

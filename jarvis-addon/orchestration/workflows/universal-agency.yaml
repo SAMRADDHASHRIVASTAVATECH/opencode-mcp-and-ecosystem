@@ -1,0 +1,33 @@
+workflow: universal-agency
+version: 1.0.0
+capability: universal-digital-agency
+steps:
+- step: 1
+  skill: capability-composition
+  desc: NL request -> capability discovery -> goal
+- step: 2
+  skill: goal-management
+  desc: authorize + persist goal
+- step: 3
+  skill: tool-selection
+  desc: choose tools for each stage
+- step: 4
+  skill: planning
+  desc: build verifiable plan
+- step: 5
+  skill: tool-routing
+  desc: route sub-operations
+- step: 6
+  skill: verification
+  desc: verify each completed stage
+- step: 7
+  skill: recovery
+  desc: recover on failure (runtime recovery module)
+- step: 8
+  skill: rollback
+  desc: roll back on non-recoverable
+- step: 9
+  skill: self-evaluation
+  desc: close the loop
+result: universal result (schemas/result.schema.json)
+auth: effective = most restrictive of all composed capabilities

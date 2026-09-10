@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "software-engineering": {
+      "command": "python",
+      "args": ["-m", "se_mcp"],
+      "cwd": "software-engineering-mcp",
+      "env": {
+        "SE_MCP_ROOT": ".",
+        "SE_MCP_ECOSYSTEM": "."
+      }
+    },
+    "office-documents": {
+      "command": "python",
+      "args": ["-m", "office_mcp"],
+      "cwd": "office-documents-mcp"
+    },
+    "database-sql": {
+      "command": "python",
+      "args": ["-m", "database_mcp"],
+      "cwd": "database-sql-mcp"
+    },
+    "windows-system": {
+      "command": "python",
+      "args": ["-m", "windows_mcp"],
+      "cwd": "windows-system-mcp"
+    },
+    "android-development": {
+      "command": "python",
+      "args": ["-m", "android_mcp"],
+      "cwd": "android-development-mcp"
+    }
+  },
+  "skills": {
+    "path": "skills",
+    "orchestrator": "software-engineering"
+  }
+}

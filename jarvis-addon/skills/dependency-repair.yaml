@@ -1,0 +1,36 @@
+skill_id: dependency-repair
+name: Dependency Repair
+version: 1.0.0
+description: Repair a broken/outdated dependency within policy.
+purpose: Repair a broken/outdated dependency within policy.
+inputs: &id001
+- dep issue
+outputs: &id002
+- repaired
+preconditions:
+- issue verified
+postconditions:
+- tests pass
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- self-maintenance
+tools:
+- dep-install
+- rollback
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - post-repair tests green
+failure_contract:
+  failure_modes:
+  - cannot repair
+recovery_contract:
+  strategies:
+  - rollback
+examples: []
+tests: []
+status: validated

@@ -1,0 +1,26 @@
+capability_id: project-management
+name: Advanced Project Management
+version: 1.0.0
+description: Project/milestone/task/dependency/risk/blocker/priority/decision/artifact/progress/checkpoint
+  with lifecycle + persistence.
+area: project-management
+skills:
+- project-management
+- progress-tracking
+- risk-tracking
+- blocker-management
+policies:
+- project-policy
+schemas:
+- goal
+- decision
+contracts:
+- goal-contract
+events:
+- TASK_CREATED
+- GOAL_UPDATED
+agents:
+- project-manager
+authorization:
+  auth_level: AUTHORIZED_AUTONOMOUS
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

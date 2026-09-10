@@ -1,0 +1,22 @@
+{
+  "output_format": "glb",
+  "quality": "balanced",
+  "rig": true,
+  "facial_rig": true,
+  "low_poly": false,
+  "anime": true,
+  "device": "auto",
+  "texture_resolution": 2048,
+  "allow_external_service": false,
+  "external_service": "",
+  "_comment": [
+    "image-to-3d-character skill configuration.",
+    "device: auto | gpu | cpu  (auto detects hardware and picks the safest fit).",
+    "allow_external_service must be true for the skill to ever upload your image",
+    "to an external image-to-3D service. It is disabled by default - images are",
+    "never sent off-machine without this flag.",
+    "Override any tool path (when auto-detection fails) via override_* keys:",
+    "  override_blender, override_python, override_stable_diffusion_dir,",
+    "  override_comfyui_dir, override_inkscape, override_ffmpeg"
+  ]
+}

@@ -1,0 +1,25 @@
+agent_id: maintenance-agent
+name: Maintenance Agent
+version: 1.0.0
+role: maintenance-agent
+purpose: Health, repair, dependency upkeep.
+responsibilities:
+- Health, repair, dependency upkeep.
+allowed_skills:
+- maintenance
+- dependency-repair
+- health-monitoring
+- skill-repair
+- mcp-repair
+required_capabilities:
+- self-maintenance
+expected_inputs:
+- maintenance-agent task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

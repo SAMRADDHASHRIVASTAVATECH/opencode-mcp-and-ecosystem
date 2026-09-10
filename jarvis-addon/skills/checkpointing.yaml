@@ -1,0 +1,35 @@
+skill_id: checkpointing
+name: Checkpointing
+version: 1.0.0
+description: Snapshot progress/resume state at defined checkpoints.
+purpose: Snapshot progress/resume state at defined checkpoints.
+inputs: &id001
+- task state
+outputs: &id002
+- checkpoint
+preconditions:
+- state consistent
+postconditions:
+- resume point recorded
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- long-horizon-autonomy
+tools:
+- checkpoint-store
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - checkpoint restorable
+failure_contract:
+  failure_modes:
+  - state partial
+recovery_contract:
+  strategies:
+  - checkpoint at last good boundary
+examples: []
+tests: []
+status: validated

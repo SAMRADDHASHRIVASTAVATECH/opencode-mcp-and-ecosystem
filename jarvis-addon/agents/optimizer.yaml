@@ -1,0 +1,22 @@
+agent_id: optimizer
+name: Optimizer
+version: 1.0.0
+role: optimizer
+purpose: Propose + promote workflow improvements.
+responsibilities:
+- Propose + promote workflow improvements.
+allowed_skills:
+- workflow-optimization
+- self-improvement
+required_capabilities:
+- self-improvement
+expected_inputs:
+- optimizer task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

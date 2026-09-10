@@ -1,0 +1,25 @@
+rollback_scheme: additive-reversible
+policy: Every component added by this package is registered with inverse metadata
+  so an importer can remove it without touching unrelated JARVIS components.
+default_action: UNREGISTER
+per_component:
+- kind: skill
+  inverse: remove skill registration only; untouched if absent
+- kind: agent
+  inverse: unregister agent; stop delegation
+- kind: mcp
+  inverse: unregister MCP + detach tools/resources
+- kind: tool
+  inverse: remove tool binding
+- kind: policy
+  inverse: remove added policy (never the stricter host baseline)
+- kind: capability
+  inverse: disable + unregister capability
+- kind: event
+  inverse: unsubscribe listener
+- kind: schema
+  inverse: drop schema registration
+- kind: contract
+  inverse: remove contract binding
+restore_source: host last-known-good snapshot; this package never overwrites it
+post_rollback: verify host restored; confirm no unrelated component changed

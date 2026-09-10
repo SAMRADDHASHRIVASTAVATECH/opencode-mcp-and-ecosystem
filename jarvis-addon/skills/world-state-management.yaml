@@ -1,0 +1,35 @@
+skill_id: world-state-management
+name: World State Management
+version: 1.0.0
+description: Maintain the unified world model entities/relationships/state.
+purpose: Maintain the unified world model entities/relationships/state.
+inputs: &id001
+- observation
+outputs: &id002
+- updated world model
+preconditions:
+- observation provenance
+postconditions:
+- state updated with source/confidence
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- digital-world-model
+tools:
+- world-state
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - no lost update conflict
+failure_contract:
+  failure_modes:
+  - conflict
+recovery_contract:
+  strategies:
+  - conflict resolution
+examples: []
+tests: []
+status: validated

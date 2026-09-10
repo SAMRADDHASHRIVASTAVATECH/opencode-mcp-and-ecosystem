@@ -1,0 +1,28 @@
+capability_id: proactive-assistance
+name: Proactive Assistance
+version: 1.0.0
+description: Notice useful situations before being asked; produce recommendations,
+  never unrequested autonomous action.
+area: proactive-assistance
+skills:
+- proactive-assistance
+- skill-discovery
+- tool-discovery
+- memory-management
+policies:
+- proactive-assistance-policy
+schemas:
+- observation
+- context
+contracts:
+- observation-contract
+- context-contract
+events:
+- SCREEN_CHANGED
+- USER_INTERRUPTED
+agents:
+- observer
+- orchestrator
+authorization:
+  auth_level: RECOMMEND
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

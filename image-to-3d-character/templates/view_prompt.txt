@@ -1,0 +1,19 @@
+Character view-generation prompt template
+=========================================
+Replace the {VIEW} tokens below. The goal is identity-CONSISTENT extra views of
+an EXISTING character — never redesigning it. Feed the cleaned front image to
+img2img along with these prompts so features/colours are preserved.
+
+{VIEW}: front | front_3_4 (three-quarter) | side | back
+{SHORT_DESCRIPTION}: 2-4 words describing the character's design identity
+    (e.g. "pink-haired magical girl in a white-and-blue sailor outfit")
+
+---
+Full-body anime {VIEW} reference of the SAME exact character shown in the input
+image ({SHORT_DESCRIPTION}). Reproduce the identical hairstyle, hair color,
+outfit, outfit colors, accessories and facial design. Posed neutrally facing the
+camera as appropriate for a {VIEW} view, standing, arms slightly away from the
+body, feet together. Clean flat background. Consistent lighting. No extra
+characters, no text, no watermark, no logo. Do not add or change any design
+details.
+---

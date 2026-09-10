@@ -1,0 +1,37 @@
+skill_id: verification
+name: Verification
+version: 1.0.0
+description: Verify expected vs observed state with evidence.
+purpose: Verify expected vs observed state with evidence.
+inputs: &id001
+- expected
+- observed
+- method
+outputs: &id002
+- verification result
+preconditions:
+- observable state
+postconditions:
+- evidence recorded
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- high-reliability
+tools:
+- state-observe
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - evidence backs pass
+failure_contract:
+  failure_modes:
+  - tool success but state wrong
+recovery_contract:
+  strategies:
+  - treat as failure
+examples: []
+tests: []
+status: validated

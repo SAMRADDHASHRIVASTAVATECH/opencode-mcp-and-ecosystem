@@ -1,0 +1,18 @@
+[build-system]
+requires=["hatchling>=1.25"]
+build-backend="hatchling.build"
+[project]
+name="personal-desktop-person"
+version="2.1.0"
+description="Persistent local-first digital-person cognitive runtime for OpenCode"
+readme="README.md"
+requires-python=">=3.11"
+license={text="MIT"}
+dependencies=["fastmcp>=3,<5","psutil>=5.9,<8","mss>=9,<11","numpy>=1.26,<3","Pillow>=10,<13"]
+[project.optional-dependencies]
+windows=["pywinauto>=0.6.9"]
+[project.scripts]
+personal-desktop-person="personal_desktop_person.server:main"
+pdp="personal_desktop_person.cli:main"
+[tool.hatch.build.targets.wheel]
+packages=["src/personal_desktop_person"]

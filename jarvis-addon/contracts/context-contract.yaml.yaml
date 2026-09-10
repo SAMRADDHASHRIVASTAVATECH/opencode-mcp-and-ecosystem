@@ -1,0 +1,13 @@
+contract: context
+version: 1.0.0
+schema: schemas/context.schema.json
+summary: Context packet with assembly/prioritization/compression fields.
+fields:
+- assembled_at
+- items
+- priority_order
+- compression_state
+- summary
+rules:
+- item provenance preserved under compression
+- overflow handled by summarization not by dropping evidence silently

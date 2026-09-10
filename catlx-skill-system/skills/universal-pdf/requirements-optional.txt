@@ -1,0 +1,6 @@
+# Optional dependencies (progressive enhancement, auto-detected)
+openpyxl>=3.1            # table -> XLSX export
+python-docx>=1.0         # minimal PDF -> DOCX text import fallback
+ocrmypdf                 # add a searchable text layer over scanned pages
+pytesseract              # OCR page text (needs tesseract binary)
+pytest>=8                # run tests/

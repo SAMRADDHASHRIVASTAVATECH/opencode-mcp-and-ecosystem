@@ -1,0 +1,34 @@
+skill_id: failure-classification
+name: Failure Classification
+version: 1.0.0
+description: Classify a failure into a known class.
+purpose: Classify a failure into a known class.
+inputs: &id001
+- failure
+outputs: &id002
+- class
+preconditions: []
+postconditions:
+- none
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- failure-recovery
+tools:
+- failure-classifier
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - class in known set
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - UNKNOWN class
+examples: []
+tests: []
+status: validated

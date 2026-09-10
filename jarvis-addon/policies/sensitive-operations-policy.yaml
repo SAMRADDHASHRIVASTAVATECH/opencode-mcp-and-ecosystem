@@ -1,0 +1,16 @@
+policy_id: sensitive-operations-policy
+name: Sensitive Operations Policy
+version: 1.0.0
+domain: security
+action: REQUIRE_APPROVAL
+auth_level: EXPLICIT_APPROVAL
+scope:
+  domain: security
+conditions:
+- destructive ops
+- credential/secret access
+- privacy-sensitive capture
+- irreversible changes
+when: {}
+reason: Operations on sensitive data/system areas require explicit approval.
+non_override: true

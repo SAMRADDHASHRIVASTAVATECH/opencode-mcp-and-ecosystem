@@ -1,0 +1,45 @@
+# OLCAP Image Generator - example configuration.
+# Copy to <state_dir>/config.yaml (or ./configs/config.example.yaml is read as a
+# fallback default). Environment variables OLCAP_IMAGE_* override these.
+# The state dir is: $OLCAP_IMAGE_STATE_DIR, else %USERPROFILE%\olcap\image-generator
+# (Windows) or ~/.olcap/image-generator (Linux/macOS).
+
+# ---- quality / generation defaults (offload = quality-first) ----
+generation:
+  default_quality: maximum        # speed | balanced | high | maximum
+  default_width: 1024
+  default_height: 1024
+  default_format: png
+  default_steps: 40
+
+# ---- hardware / offload strategy ----
+hardware:
+  gpu_offload: adaptive
+  cpu_offload: true
+  ram_limit_gb: auto
+  vram_reserve_mb: auto
+
+# ---- runtime / backend ----
+runtime:
+  backend: auto                   # auto | comfyui | diffusers | demo
+  auto_start: false
+  comfyui_host: 127.0.0.1
+  comfyui_port: 8188
+
+# ---- model management ----
+models:
+  preferred_family: auto
+  preferred_quantization: highest_compatible
+  # AUTHORIZATION GATE: real downloads are disabled until you set this true.
+  auto_install_models: false
+  model_download_roots:
+    - huggingface.co
+    - civitai.com
+
+# ---- optional path overrides (defaults live under the state dir) ----
+# paths:
+#   models_dir:  C:\olcap\models
+#   outputs_dir: C:\olcap\outputs
+#   cache_dir:   C:\olcap\cache
+#   workflows_dir: C:\olcap\workflows
+#   logs_dir:    C:\olcap\logs

@@ -1,0 +1,11 @@
+{
+  "mcp": {
+    "live_windows": {
+      "type": "local",
+      "command": ["C:\\ABSOLUTE\\PATH\\LiveComputerAgent\\.venv\\Scripts\\python.exe", "-m", "live_computer_agent"],
+      "environment": {"LCA_CONFIG": "C:\\ABSOLUTE\\PATH\\LiveComputerAgent\\config\\default.json"},
+      "enabled": true,
+      "timeout": 30000
+    }
+  }
+}

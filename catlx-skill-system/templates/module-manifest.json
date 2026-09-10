@@ -1,0 +1,29 @@
+{
+  "//": "SILEXIS module manifest template. Source: PART III §3.2.",
+  "module_id": "catlx.core.memory.episodic",
+  "version": "2.4.1",
+  "name": "episodic",
+  "manifest_version": 1,
+  "capabilities": ["catlx.core.memory.episodic.*"],
+  "dependencies": [
+    { "module_id": "catlx.core.memory.broker", "version_constraint": "^2.0.0" }
+  ],
+  "api": {
+    "contract": "catlx.memory.episodic.v1",
+    "schema_file": "api.schema.json"
+  },
+  "resource_requirements": {
+    "min_tier": 0,
+    "environment": "LOCAL_PROCESS",
+    "cpu_budget_ms": 50,
+    "memory_mb": 64
+  },
+  "security": {
+    "credentials": [],
+    "network_hosts": [],
+    "file_access": ["/data/registries/memory.db"],
+    "subprocesses": false
+  },
+  "install_path": "/modules/installed/memory.episodic",
+  "entry": "index.js"
+}

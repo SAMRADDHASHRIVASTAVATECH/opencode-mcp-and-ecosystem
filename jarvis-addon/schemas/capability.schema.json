@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Capability definition",
+  "type": "object",
+  "required": [
+    "capability_id",
+    "name",
+    "version",
+    "description",
+    "area",
+    "skills",
+    "policies",
+    "schemas",
+    "contracts",
+    "events",
+    "agents",
+    "authorization"
+  ],
+  "properties": {
+    "capability_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "policies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schemas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contracts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "agents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "required": [
+        "auth_level"
+      ],
+      "properties": {
+        "auth_level": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

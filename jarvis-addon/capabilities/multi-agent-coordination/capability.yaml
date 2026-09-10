@@ -1,0 +1,24 @@
+capability_id: multi-agent-coordination
+name: Multi-Agent Coordination
+version: 1.0.0
+description: Registration/discovery/delegation/ownership/locks/leases/handoffs/shared
+  state/conflict handling/merging/cancel/timeouts plus specialist roles.
+area: multi-agent-coordination
+skills:
+- agent-delegation
+- agent-coordination
+- conflict-resolution
+policies:
+- coordination-policy
+schemas:
+- result
+contracts:
+- coordination-contract
+events:
+- TASK_CREATED
+- TASK_COMPLETED
+agents:
+- orchestrator
+authorization:
+  auth_level: SAFE_EXECUTE
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

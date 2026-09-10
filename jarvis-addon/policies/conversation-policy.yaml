@@ -1,0 +1,15 @@
+policy_id: conversation-policy
+name: Conversation Policy
+version: 1.0.0
+domain: real-time-conversation
+action: ALLOW
+auth_level: SAFE_EXECUTE
+scope:
+  domain: real-time-conversation
+conditions:
+- no persistence without consent
+- interruption/barge-in honored
+- context continuity only within session
+when: {}
+reason: Conversation handling is ephemeral and session-scoped.
+non_override: true

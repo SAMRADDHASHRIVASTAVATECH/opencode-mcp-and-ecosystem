@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent definition",
+  "type": "object",
+  "required": [
+    "agent_id",
+    "name",
+    "version",
+    "role",
+    "purpose",
+    "responsibilities",
+    "allowed_skills",
+    "required_capabilities",
+    "expected_inputs",
+    "expected_outputs",
+    "coordination_rules",
+    "permissions"
+  ],
+  "properties": {
+    "agent_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "role": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "responsibilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowed_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coordination_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permissions": {
+      "type": "object",
+      "required": [
+        "auth_level"
+      ],
+      "properties": {
+        "auth_level": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+tool_id: world-state
+name: world-state
+version: 1.0.0
+description: read/update world model
+inputs: []
+outputs: []
+permissions:
+  auth_level: SAFE_EXECUTE
+provider: host-adapter
+verification:
+  needs_evidence: true
+failure_behavior: typed failure
+health:
+  checkable: true

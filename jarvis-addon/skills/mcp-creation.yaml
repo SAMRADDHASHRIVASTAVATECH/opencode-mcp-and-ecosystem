@@ -1,0 +1,35 @@
+skill_id: mcp-creation
+name: Mcp Creation
+version: 1.0.0
+description: Author an MCP extension definition for a real capability boundary.
+purpose: Author an MCP extension definition for a real capability boundary.
+inputs: &id001
+- capability spec
+outputs: &id002
+- mcp definition
+preconditions:
+- capability exists
+postconditions:
+- definition created, not enabled
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- schema-validate
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - schema-valid + non-empty tools/resources
+failure_contract:
+  failure_modes:
+  - no real boundary
+recovery_contract:
+  strategies:
+  - do not emit empty MCP
+examples: []
+tests: []
+status: validated

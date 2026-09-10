@@ -1,0 +1,16 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/mcp.servers.schema.json",
+  "comment": "Register ONE server to expose the whole operator to OpenCode / Claude. "
+             "See docs/setup.md for the env vars. Use 'live' when credentials are "
+             "present, otherwise 'offline' for a safe deterministic demo.",
+  "mcpServers": {
+    "unified-operator-live": {
+      "command": "unified-operator-mcp",
+      "env": { "UNIFIED_OFFLINE": "0" }
+    },
+    "unified-operator-offline": {
+      "command": "unified-operator-mcp",
+      "env": { "UNIFIED_OFFLINE": "1" }
+    }
+  }
+}

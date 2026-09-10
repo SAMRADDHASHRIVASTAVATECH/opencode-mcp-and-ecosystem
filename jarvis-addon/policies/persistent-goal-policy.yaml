@@ -1,0 +1,16 @@
+policy_id: persistent-goal-policy
+name: Persistent Goal Policy
+version: 1.0.0
+domain: persistent-goals
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: persistent-goals
+conditions:
+- goal authorized at creation
+- owner assigned
+- checkpoint + stop + escalation defined
+- approval required to raise scope
+when: {}
+reason: Persistent goals run only when explicitly authorized.
+non_override: true

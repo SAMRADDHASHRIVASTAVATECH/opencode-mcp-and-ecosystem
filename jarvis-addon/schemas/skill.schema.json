@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Universal Skill Schema",
+  "type": "object",
+  "required": ["skill_id","name","version","description","purpose","inputs","outputs","preconditions","postconditions","permissions","required_capabilities","tools","execution_contract","verification_contract","failure_contract","recovery_contract","status"],
+  "properties": {
+    "skill_id": {"type":"string","pattern":"^[a-z0-9][a-z0-9-]*$"},
+    "name": {"type":"string"},
+    "version": {"type":"string","pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "description": {"type":"string"},
+    "purpose": {"type":"string"},
+    "inputs": {"type":"array","items":{"type":"string"}},
+    "outputs": {"type":"array","items":{"type":"string"}},
+    "preconditions": {"type":"array","items":{"type":"string"}},
+    "postconditions": {"type":"array","items":{"type":"string"}},
+    "permissions": {"$ref":"definitions.json#/definitions/permissions"},
+    "dependencies": {"type":"array","items":{"type":"string"}},
+    "required_capabilities": {"type":"array","items":{"type":"string"}},
+    "tools": {"type":"array","items":{"type":"string"}},
+    "execution_contract": {"type":"object"},
+    "verification_contract": {"type":"object","required":["checks"]},
+    "failure_contract": {"type":"object"},
+    "recovery_contract": {"type":"object"},
+    "examples": {"type":"array"},
+    "tests": {"type":"array"},
+    "status": {"type":"string","enum":["discovered","designed","experimental","testing","validated","enabled","degraded","disabled","deprecated"]}
+  }
+}

@@ -1,0 +1,27 @@
+registry: memory-type
+note: 'Memory item type registry (schema: schemas/memory.schema.json). Backend agnostic.'
+types:
+  short_term:
+    ttl: session
+    use: active task scratch
+  episodic:
+    ttl: long
+    use: past experiences/events
+  semantic:
+    ttl: long
+    use: facts/knowledge with source+confidence
+  procedural:
+    ttl: long
+    use: how-to / workflow learnings
+  project:
+    ttl: goal-lifetime
+    use: project/goal state
+  failure:
+    ttl: long
+    use: failure+recovery records for learning
+  tool_performance:
+    ttl: medium
+    use: tool reliability/success metrics
+  preference:
+    ttl: long
+    use: user/operator preferences

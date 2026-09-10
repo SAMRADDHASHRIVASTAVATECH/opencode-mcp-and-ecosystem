@@ -1,0 +1,25 @@
+capability_id: knowledge-updating
+name: Continuous Knowledge Updating
+version: 1.0.0
+description: Knowledge items with source/timestamp/confidence/validity/expiration/staleness/contradiction/history
+  and research skills.
+area: knowledge-updating
+skills:
+- research
+- knowledge-validation
+- knowledge-update
+policies:
+- knowledge-policy
+schemas:
+- knowledge
+contracts:
+- knowledge-contract
+events:
+- KNOWLEDGE_STALE
+- KNOWLEDGE_UPDATED
+agents:
+- knowledge-agent
+- researcher
+authorization:
+  auth_level: SAFE_EXECUTE
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

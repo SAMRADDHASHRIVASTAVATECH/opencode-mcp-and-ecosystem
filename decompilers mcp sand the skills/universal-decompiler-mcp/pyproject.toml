@@ -1,0 +1,15 @@
+[build-system]
+requires=["setuptools>=75"]
+build-backend="setuptools.build_meta"
+[project]
+name="universal-decompiler-mcp"
+version="1.0.0"
+description="Authorized static reverse-engineering orchestration MCP"
+requires-python=">=3.11"
+dependencies=["mcp>=1.28,<2","pydantic>=2.10"]
+[project.scripts]
+universal-decompiler-mcp="universal_decompiler.server:main"
+[tool.setuptools.packages.find]
+where=["src"]
+[tool.setuptools.package-data]
+universal_decompiler=["catalog.json"]

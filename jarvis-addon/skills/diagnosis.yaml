@@ -1,0 +1,35 @@
+skill_id: diagnosis
+name: Diagnosis
+version: 1.0.0
+description: Diagnose root cause before acting.
+purpose: Diagnose root cause before acting.
+inputs: &id001
+- failure class + context
+outputs: &id002
+- diagnosis
+preconditions:
+- read-only introspection
+postconditions:
+- none
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- failure-recovery
+tools:
+- log-read
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - diagnosis consistent with evidence
+failure_contract:
+  failure_modes:
+  - cannot determine
+recovery_contract:
+  strategies:
+  - conservative default
+examples: []
+tests: []
+status: validated

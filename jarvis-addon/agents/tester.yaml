@@ -1,0 +1,22 @@
+agent_id: tester
+name: Tester
+version: 1.0.0
+role: tester
+purpose: Run and author tests.
+responsibilities:
+- Run and author tests.
+allowed_skills:
+- capability-validation
+- skill-validation
+required_capabilities:
+- high-reliability
+expected_inputs:
+- tester task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

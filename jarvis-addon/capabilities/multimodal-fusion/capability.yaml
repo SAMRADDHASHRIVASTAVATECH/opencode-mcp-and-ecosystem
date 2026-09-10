@@ -1,0 +1,23 @@
+capability_id: multimodal-fusion
+name: Deep Multimodal Fusion
+version: 1.0.0
+description: Common observation representation across text/voice/image/screen/video/audio/docs/state
+  so a host can reason across modalities together.
+area: multimodal-fusion
+skills:
+- multimodal-context
+policies:
+- multimodal-policy
+schemas:
+- observation
+contracts:
+- observation-contract
+events:
+- VOICE_INPUT
+- SCREEN_CHANGED
+agents:
+- observer
+- gui-agent
+authorization:
+  auth_level: SAFE_EXECUTE
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

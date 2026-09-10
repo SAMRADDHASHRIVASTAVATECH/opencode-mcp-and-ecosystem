@@ -1,0 +1,23 @@
+agent_id: orchestrator
+name: Orchestrator
+version: 1.0.0
+role: orchestrator
+purpose: Compose capabilities into workflows; route goals to agents.
+responsibilities:
+- Compose capabilities into workflows; route goals to agents.
+allowed_skills:
+- capability-composition
+- planning
+- goal-management
+required_capabilities:
+- universal-digital-agency
+expected_inputs:
+- orchestrator task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

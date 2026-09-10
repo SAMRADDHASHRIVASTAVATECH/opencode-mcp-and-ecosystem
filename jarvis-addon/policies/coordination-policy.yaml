@@ -1,0 +1,17 @@
+policy_id: coordination-policy
+name: Multi-Agent Coordination Policy
+version: 1.0.0
+domain: multi-agent-coordination
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: multi-agent-coordination
+conditions:
+- lease-bound ownership
+- no conflicting writes without lock
+- timeouts enforced
+- conflicts resolved deterministically
+- results merged with provenance
+when: {}
+reason: Agents coordinate via leases/locks to prevent conflicts.
+non_override: true

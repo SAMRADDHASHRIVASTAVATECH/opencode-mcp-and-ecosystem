@@ -1,0 +1,24 @@
+capability_id: universal-gui
+name: Universal GUI
+version: 1.0.0
+description: 'Host-independent GUI: observe screen, identify app/window/element, click/type/key/scroll/drag/select/switch;
+  semantic-first with coordinate fallback.'
+area: universal-gui
+skills:
+- screen-understanding
+- gui-operation
+policies:
+- gui-policy
+schemas:
+- observation
+contracts:
+- gui-interface
+events:
+- SCREEN_CHANGED
+- USER_INTERRUPTED
+agents:
+- gui-agent
+- browser-agent
+authorization:
+  auth_level: AUTHORIZED_AUTONOMOUS
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

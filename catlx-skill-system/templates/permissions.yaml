@@ -1,0 +1,34 @@
+# Default permission grants. Source: PART X §10.4 — Permission Router capability categories.
+# Location: /config/permissions.yaml. Grants are stored at runtime in permissions.db.
+# A module's declared capabilities are checked against these grants at load and at runtime.
+
+capabilities:
+  file-read:
+    scope: per-directory
+    safe_zones: ["/data/", "/workflows/"]
+    default: allow_within_safe_zone
+  file-write-delete:
+    scope: per-directory
+    safe_zones: ["/data/registries", "/data/snapshots", "/workflows/definitions"]
+    default: prompt
+  process-execution:
+    scope: per-module
+    default: prompt
+  network-access:
+    scope: per-domain-allowlist
+    allow_hosts: ["api.google.com", "api.groq.com", "huggingface.co"]
+    default: deny
+  screen-read-ocr:
+    scope: global-toggle
+    per_app_exclusions: ["password-manager", "banking-client"]
+    default: allow
+  input-synthesis:
+    scope: explicit-approval
+    audit_logged: true
+    default: prompt
+  credential-access:
+    scope: per-credential-declaration
+    default: deny
+  plugin-api:
+    scope: namespaced-plugin-tokens
+    default: allow

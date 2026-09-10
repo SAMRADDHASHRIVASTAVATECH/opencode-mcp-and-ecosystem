@@ -1,0 +1,24 @@
+# Source-derived workflow definition template
+# Source: PART IX §9.9 — Workflow Definition Format (YAML DSL), exact example.
+# Location: /workflows/definitions/summarize-clipboard.yaml
+# Note: module identifiers are CATLX namespaces; `input` templating uses {{stepId.output}}.
+
+workflow:
+  id: summarize-clipboard
+  trigger: voice
+  steps:
+    - id: read-clipboard
+      module: catlx.core.desktop.clipboard
+      action: read
+
+    - id: summarize
+      module: catlx.core.ai.complete
+      depends_on: [read-clipboard]
+      input:
+        prompt: 'Summarize this in 3 bullet points: {{read-clipboard.output}}'
+
+    - id: speak-result
+      module: catlx.core.tts
+      depends_on: [summarize]
+      input:
+        text: '{{summarize.output}}'

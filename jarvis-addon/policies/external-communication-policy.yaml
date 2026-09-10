@@ -1,0 +1,15 @@
+policy_id: external-communication-policy
+name: External Communication Policy
+version: 1.0.0
+domain: security
+action: REQUIRE_APPROVAL
+auth_level: EXPLICIT_APPROVAL
+scope:
+  domain: security
+conditions:
+- external sends require EXPLICIT_APPROVAL
+- no silent uploads
+- log every external communication
+when: {}
+reason: Sending data outside the machine is gated.
+non_override: true

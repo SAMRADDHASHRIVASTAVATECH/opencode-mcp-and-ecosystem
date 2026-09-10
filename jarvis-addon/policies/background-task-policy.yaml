@@ -1,0 +1,15 @@
+policy_id: background-task-policy
+name: Background Task Policy
+version: 1.0.0
+domain: long-horizon-autonomy
+action: ALLOW_WITH_CONDITIONS
+auth_level: AUTHORIZED_AUTONOMOUS
+scope:
+  domain: long-horizon-autonomy
+conditions:
+- must be observable via tasks/jobs
+- cancellable
+- no unrequested side effects on live systems
+when: {}
+reason: Background tasks are allowed with explicit authorization and visible status.
+non_override: true

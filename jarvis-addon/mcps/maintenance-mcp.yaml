@@ -1,0 +1,26 @@
+mcp_id: maintenance-mcp
+name: maintenance-mcp
+version: 1.0.0
+description: health/dependency/maintenance/self-improvement
+capabilities:
+- self-maintenance
+- self-improvement
+- self-evaluation
+tools:
+- health-monitor
+- dep-scan
+- dep-install
+- version-bump
+- rollback
+- metrics-read
+resources:
+- health://*
+- metrics://*
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: maintenance-mcp.health
+  interval_s: 60
+dependencies: []
+tests: []

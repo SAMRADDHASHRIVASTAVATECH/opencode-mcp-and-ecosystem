@@ -1,0 +1,23 @@
+[build-system]
+requires=["hatchling>=1.25"]
+build-backend="hatchling.build"
+[project]
+name="live-computer-agent"
+version="1.0.0"
+description="Persistent hybrid-UIA live Windows control runtime and MCP server"
+readme="README.md"
+requires-python=">=3.11"
+license={text="MIT"}
+authors=[{name="Arena.ai Agent Mode"}]
+dependencies=["numpy>=1.26,<3","Pillow>=10,<13","mss>=9,<11","psutil>=5.9,<8","fastmcp>=3,<5"]
+[project.optional-dependencies]
+windows=["pywin32>=306","pywinauto>=0.6.9","pyautogui>=0.9.54","dxcam>=0.3.0","pytesseract>=0.3.13"]
+test=["pytest>=8,<10","pytest-cov>=5,<8","pytest-asyncio>=0.23,<2"]
+[project.scripts]
+live-computer-agent="live_computer_agent.mcp.server:main"
+[tool.hatch.build.targets.wheel]
+packages=["src/live_computer_agent"]
+[tool.pytest.ini_options]
+pythonpath=["src"]
+testpaths=["tests"]
+markers=["windows_live: requires an explicitly authorized interactive Windows desktop"]

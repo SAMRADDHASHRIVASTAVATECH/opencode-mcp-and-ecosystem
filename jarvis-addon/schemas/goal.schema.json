@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Persistent authorized goal",
+  "type": "object",
+  "required": [
+    "goal_id",
+    "name",
+    "description",
+    "authorization",
+    "priority",
+    "status",
+    "owner"
+  ],
+  "properties": {
+    "goal_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "authorization": {
+      "type": "object",
+      "required": [
+        "auth_level"
+      ]
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "milestones": {
+      "type": "array"
+    },
+    "dependencies": {
+      "type": "array"
+    },
+    "checkpoint": {
+      "type": "string"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "stop_condition": {
+      "type": "string"
+    },
+    "escalation_condition": {
+      "type": "string"
+    },
+    "verification_state": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+import_type: TYPE_EXTENSION
+mode: ADDITIVE
+operations:
+- DETECT
+- COMPARE
+- REUSE
+- MAP
+- EXTEND
+prohibited_operations:
+- REPLACE
+- DELETE
+- OVERWRITE
+- MODIFY_EXISTING
+rules:
+- Register only identifiers that do not already exist in the host.
+- 'If an identifier already exists: compare. If identical -> reuse (do not re-register).'
+- If different -> map to a namespaced extended id and extend additively; never replace
+  the host's version.
+- Never delete, overwrite, or replace any existing JARVIS component.
+- This package is inert until explicitly imported by a compatible host.
+- No external JARVIS/OpenCode/Claude host is assumed or required to exist.
+namespace: jarvis_addon

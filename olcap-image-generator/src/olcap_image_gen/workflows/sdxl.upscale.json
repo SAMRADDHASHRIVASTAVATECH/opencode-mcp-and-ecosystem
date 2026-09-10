@@ -1,0 +1,38 @@
+{
+  "#note": "OLCAP upscale template. Uses an ESRGAN/Real-ESRGAN upscale model; set upscale_model_name. {{input_image}} replaced by generated/input image filename.",
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "{{input_image}}"
+    }
+  },
+  "2": {
+    "class_type": "UpscaleModelLoader",
+    "inputs": {
+      "model_name": "real_esrgan_x4plus.safetensors"
+    }
+  },
+  "3": {
+    "class_type": "ImageUpscaleWithModel",
+    "inputs": {
+      "upscale_model": [
+        "2",
+        0
+      ],
+      "image": [
+        "1",
+        0
+      ]
+    }
+  },
+  "4": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "olcap_up",
+      "images": [
+        "3",
+        0
+      ]
+    }
+  }
+}

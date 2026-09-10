@@ -1,0 +1,35 @@
+skill_id: capability-discovery
+name: Capability Discovery
+version: 1.0.0
+description: Discover what capabilities exist locally and remotely without side effects.
+purpose: Discover what capabilities exist locally and remotely without side effects.
+inputs: &id001
+- query or topic
+outputs: &id002
+- matching capability ids + trust info
+preconditions:
+- read-only context
+postconditions:
+- no side effects performed
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- registry-search
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - returned items reference known capability registry ids
+failure_contract:
+  failure_modes:
+  - registry unavailable
+recovery_contract:
+  strategies:
+  - fallback to static manifest
+examples: []
+tests: []
+status: validated

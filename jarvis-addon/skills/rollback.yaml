@@ -1,0 +1,35 @@
+skill_id: rollback
+name: Rollback
+version: 1.0.0
+description: Undo a change to last known-good state.
+purpose: Undo a change to last known-good state.
+inputs: &id001
+- change id
+outputs: &id002
+- rolled back
+preconditions:
+- rollback recorded
+postconditions:
+- prior state restored + verified
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- high-reliability
+tools:
+- state-restore
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - state matches snapshot
+failure_contract:
+  failure_modes:
+  - rollback fails
+recovery_contract:
+  strategies:
+  - escalate
+examples: []
+tests: []
+status: validated

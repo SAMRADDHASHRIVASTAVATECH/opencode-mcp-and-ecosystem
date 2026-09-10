@@ -1,0 +1,17 @@
+{
+  "id": "elite_dangerous_steam_001",
+  "kind": "episodic",
+  "title": "Elite Dangerous Steam integration",
+  "text": "Elite Dangerous (Steam App ID: 359320) referenced in system initialization. Steam protocol link created for game tracking and launch purposes.",
+  "salience": 0.8,
+  "timestamp": "2026-09-07T00:00:00Z",
+  "meta": {
+    "source": "system_init",
+    "protocol": "steam://rungameid/359320",
+    "game": "elite dangerous",
+    "steam_app_id": "359320",
+    "category": "steam_integration"
+  },
+  "embedding": [0.0] * 1536,
+  "tags": ["elite dangerous", "steam", "359320", "space_sim"]
+}

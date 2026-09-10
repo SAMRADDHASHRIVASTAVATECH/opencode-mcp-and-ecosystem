@@ -1,0 +1,22 @@
+agent_id: gui-agent
+name: Gui Agent
+version: 1.0.0
+role: gui-agent
+purpose: Operate GUI by semantics with coordinate fallback.
+responsibilities:
+- Operate GUI by semantics with coordinate fallback.
+allowed_skills:
+- screen-understanding
+- gui-operation
+required_capabilities:
+- universal-gui
+expected_inputs:
+- gui-agent task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

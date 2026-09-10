@@ -1,0 +1,24 @@
+agent_id: project-manager
+name: Project Manager
+version: 1.0.0
+role: project-manager
+purpose: Own project/milestone/risk state.
+responsibilities:
+- Own project/milestone/risk state.
+allowed_skills:
+- project-management
+- progress-tracking
+- risk-tracking
+- blocker-management
+required_capabilities:
+- project-management
+expected_inputs:
+- project-manager task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

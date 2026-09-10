@@ -1,0 +1,35 @@
+skill_id: dependency-analysis
+name: Dependency Analysis
+version: 1.0.0
+description: Analyze dependency graph and detect drift/vulnerability.
+purpose: Analyze dependency graph and detect drift/vulnerability.
+inputs: &id001
+- target
+outputs: &id002
+- analysis
+preconditions:
+- read-only
+postconditions:
+- none
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- self-maintenance
+tools:
+- dep-scan
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - graph complete
+failure_contract:
+  failure_modes:
+  - unreachable registry
+recovery_contract:
+  strategies:
+  - report unknown
+examples: []
+tests: []
+status: validated

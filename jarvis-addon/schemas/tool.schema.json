@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tool contract",
+  "type": "object",
+  "required": [
+    "tool_id",
+    "name",
+    "version",
+    "description",
+    "inputs",
+    "outputs",
+    "permissions",
+    "provider",
+    "verification",
+    "failure_behavior",
+    "health",
+    "dependencies"
+  ],
+  "properties": {
+    "tool_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permissions": {
+      "type": "object"
+    },
+    "dependencies": {
+      "type": "array"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "object"
+    },
+    "failure_behavior": {
+      "type": "string"
+    },
+    "health": {
+      "type": "object"
+    }
+  }
+}

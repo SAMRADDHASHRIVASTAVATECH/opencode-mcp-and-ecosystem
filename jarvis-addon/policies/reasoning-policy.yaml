@@ -1,0 +1,14 @@
+policy_id: reasoning-policy
+name: Reasoning Support Policy
+version: 1.0.0
+domain: general-reasoning
+action: ALLOW
+auth_level: SAFE_EXECUTE
+scope:
+  domain: general-reasoning
+conditions:
+- planning read-only against world
+- verification before execution claims
+when: {}
+reason: Reasoning orchestration is internal and read-mostly.
+non_override: true

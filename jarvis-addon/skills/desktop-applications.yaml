@@ -1,0 +1,40 @@
+skill_id: desktop-applications
+name: Desktop Applications
+version: 1.0.0
+description: Builds local desktop UIs. Use for tkinter or when the user wants a desktop
+  app. Native Windows admin is a different MCP.
+purpose: Builds local desktop UIs. Use for tkinter or when the user wants a desktop
+  app. Native Windows admin is a different MCP.
+inputs:
+- task description
+outputs:
+- completed work package
+preconditions:
+- request maps to capability
+postconditions:
+- work verified
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- software-engineering
+tools:
+- se_mcp.tools
+- mcp-routing
+execution_contract:
+  inputs:
+  - task description
+  outputs:
+  - completed work package
+verification_contract:
+  checks:
+  - result.perform_verification()
+failure_contract:
+  failure_modes:
+  - unverified result
+recovery_contract:
+  strategies:
+  - classify/retry/rollback
+examples: []
+tests: []
+status: registered

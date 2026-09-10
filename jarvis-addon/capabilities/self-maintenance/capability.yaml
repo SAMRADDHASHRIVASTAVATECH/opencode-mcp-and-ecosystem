@@ -1,0 +1,33 @@
+capability_id: self-maintenance
+name: Autonomous Self-Maintenance
+version: 1.0.0
+description: Maintain skills/MCPs/tools/dependencies/schemas/config/services via health->diagnose->repair->test->verify->rollback.
+area: self-maintenance
+skills:
+- maintenance
+- health-monitoring
+- skill-repair
+- mcp-repair
+- tool-health
+- dependency-analysis
+- dependency-repair
+- configuration-validation
+policies:
+- self-maintenance-policy
+schemas:
+- memory
+- recovery
+contracts:
+- maintenance-lifecycle
+events:
+- MAINTENANCE_REQUIRED
+- DEPENDENCY_OUTDATED
+- DEPENDENCY_REPAIRED
+- MCP_RECOVERED
+- TOOL_RECOVERED
+- SKILL_REPAIRED
+agents:
+- maintenance-agent
+authorization:
+  auth_level: AUTHORIZED_AUTONOMOUS
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

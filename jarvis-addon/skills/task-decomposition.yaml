@@ -1,0 +1,34 @@
+skill_id: task-decomposition
+name: Task Decomposition
+version: 1.0.0
+description: Split work into independently verifiable tasks.
+purpose: Split work into independently verifiable tasks.
+inputs: &id001
+- plan step
+outputs: &id002
+- tasks
+preconditions: []
+postconditions:
+- tasks have owners/verification
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- general-reasoning
+tools:
+- planning
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - each task atomic
+failure_contract:
+  failure_modes:
+  - cannot decompose
+recovery_contract:
+  strategies:
+  - keep larger task
+examples: []
+tests: []
+status: validated

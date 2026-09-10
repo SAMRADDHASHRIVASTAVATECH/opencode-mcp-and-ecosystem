@@ -1,0 +1,17 @@
+contract: tool
+version: 1.0.0
+schema: schemas/tool.schema.json
+summary: Standard tool contract; tools declare verification & failure behavior.
+fields:
+- tool_id
+- name
+- description
+- inputs
+- outputs
+- permissions
+- dependencies
+- provider
+- verification
+- failure_behavior
+- health
+- version

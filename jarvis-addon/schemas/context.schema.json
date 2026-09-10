@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Context packet",
+  "type": "object",
+  "required": [
+    "assembled_at",
+    "items",
+    "priority_order",
+    "compression_state"
+  ],
+  "properties": {
+    "assembled_at": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array"
+    },
+    "priority_order": {
+      "type": "array"
+    },
+    "compression_state": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    }
+  }
+}

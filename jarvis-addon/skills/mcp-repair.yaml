@@ -1,0 +1,35 @@
+skill_id: mcp-repair
+name: Mcp Repair
+version: 1.0.0
+description: Repair a broken MCP definition or registration.
+purpose: Repair a broken MCP definition or registration.
+inputs: &id001
+- mcp id
+outputs: &id002
+- repaired/rollback
+preconditions: []
+postconditions:
+- revalidated
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- self-maintenance
+tools:
+- mcp-health
+- rollback
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - health check ok
+failure_contract:
+  failure_modes:
+  - unrepairable
+recovery_contract:
+  strategies:
+  - disable + escalate
+examples: []
+tests: []
+status: validated

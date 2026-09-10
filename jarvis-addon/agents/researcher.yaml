@@ -1,0 +1,22 @@
+agent_id: researcher
+name: Researcher
+version: 1.0.0
+role: researcher
+purpose: Gather cited evidence.
+responsibilities:
+- Gather cited evidence.
+allowed_skills:
+- research
+- knowledge-validation
+required_capabilities:
+- knowledge-updating
+expected_inputs:
+- researcher task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

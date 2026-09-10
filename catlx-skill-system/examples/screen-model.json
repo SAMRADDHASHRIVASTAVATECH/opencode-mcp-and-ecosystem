@@ -1,0 +1,33 @@
+{
+  "//": "Example ScreenModel produced by the OCR + Screen Understanding layer. Source: PART V §5.5.",
+  "//source": "The Screen Understanding layer classifies UI elements, extracts spatial relationships, and detects element state.",
+  "display_index": 0,
+  "captured_at_ms_since_boot": 1234567,
+  "screen_width": 1920,
+  "screen_height": 1080,
+  "elements": [
+    {
+      "type": "button",
+      "label": "Submit",
+      "accessibility_name": "Submit",
+      "bbox": [720, 640, 840, 700],
+      "state": { "enabled": true, "focused": false }
+    },
+    {
+      "type": "input_field",
+      "label": "Email",
+      "accessibility_name": "Email",
+      "bbox": [600, 420, 900, 460],
+      "state": { "enabled": true, "focused": false, "text": "" }
+    },
+    {
+      "type": "link",
+      "label": "Forgot password?",
+      "bbox": [600, 480, 720, 500],
+      "state": { "enabled": true }
+    }
+  ],
+  "relationships": [
+    { "relative_to": "input_field:Email", "direction": "below", "distance_px": 20, "target": "link:Forgot password?" }
+  ]
+}

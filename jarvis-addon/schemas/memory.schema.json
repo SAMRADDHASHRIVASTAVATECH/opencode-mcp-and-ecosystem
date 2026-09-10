@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Memory item",
+  "type": "object",
+  "required": [
+    "memory_id",
+    "memory_type",
+    "content",
+    "source",
+    "timestamp",
+    "confidence"
+  ],
+  "properties": {
+    "memory_id": {
+      "type": "string"
+    },
+    "memory_type": {
+      "type": "string",
+      "enum": [
+        "short_term",
+        "episodic",
+        "semantic",
+        "procedural",
+        "project",
+        "failure",
+        "tool_performance",
+        "preference"
+      ]
+    },
+    "content": {
+      "type": "object"
+    },
+    "source": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "context": {
+      "type": "object"
+    }
+  }
+}

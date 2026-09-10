@@ -1,0 +1,1 @@
+{"mcp":{"media-master":{"type":"local","command":["node","/home/user/media-master-mcp/lib/index.js"],"environment":{"MEDIA_MCP_ROOT":"/home/user/media"}}}}

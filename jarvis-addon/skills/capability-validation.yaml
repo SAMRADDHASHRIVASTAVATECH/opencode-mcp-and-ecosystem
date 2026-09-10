@@ -1,0 +1,36 @@
+skill_id: capability-validation
+name: Capability Validation
+version: 1.0.0
+description: Run validation gates (schema, tests, policy) against a candidate capability.
+purpose: Run validation gates (schema, tests, policy) against a candidate capability.
+inputs: &id001
+- candidate capability
+outputs: &id002
+- validation verdict + evidence
+preconditions:
+- candidate exists
+postconditions:
+- registry untouched until validation passes
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- schema-validate
+- test-runner
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - all checks passed
+failure_contract:
+  failure_modes:
+  - validation check throws
+recovery_contract:
+  strategies:
+  - report precise failing check
+examples: []
+tests: []
+status: validated

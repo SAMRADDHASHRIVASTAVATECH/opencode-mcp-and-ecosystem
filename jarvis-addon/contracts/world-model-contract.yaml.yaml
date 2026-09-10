@@ -1,0 +1,38 @@
+contract: world-model
+version: 1.0.0
+schema: schemas/worldmodel.schema.json
+summary: Shared representation of digital-world entities + relationships + state with
+  provenance.
+entities:
+- application
+- window
+- process
+- file
+- folder
+- project
+- repository
+- document
+- browser_state
+- task
+- goal
+- agent
+- skill
+- mcp
+- tool
+- model
+- service
+- artifact
+- conversation
+- event
+- knowledge
+relationship_attrs:
+- type
+- source_entity
+- target_entity
+- confidence
+- verification
+observation_support:
+- source
+- timestamp
+- confidence
+- verification_status

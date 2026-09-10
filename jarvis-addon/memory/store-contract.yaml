@@ -1,0 +1,19 @@
+contract: memory-store
+version: 1.0.0
+schema: schemas/memory.schema.json
+operations:
+- store
+- retrieve
+- search
+- update
+- expire
+- forget
+guarantees:
+- every item carries source/timestamp/confidence
+- read/write scope-limited by policy
+- no item persisted without consent when flagged sensitive
+provenance:
+- source
+- timestamp
+- confidence
+- verification_status

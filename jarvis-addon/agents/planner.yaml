@@ -1,0 +1,23 @@
+agent_id: planner
+name: Planner
+version: 1.0.0
+role: planner
+purpose: Decompose goals into verifiable plans.
+responsibilities:
+- Decompose goals into verifiable plans.
+allowed_skills:
+- planning
+- task-decomposition
+- decision-analysis
+required_capabilities:
+- general-reasoning
+expected_inputs:
+- planner task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

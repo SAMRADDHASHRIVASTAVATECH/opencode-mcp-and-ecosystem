@@ -1,0 +1,17 @@
+policy_id: gui-policy
+name: GUI Interaction Policy
+version: 1.0.0
+domain: universal-gui
+action: REQUIRE_APPROVAL
+auth_level: EXPLICIT_APPROVAL
+scope:
+  domain: universal-gui
+conditions:
+- observe (screen read) = OBSERVE
+- act = EXPLICIT_APPROVAL unless user grants automation scope
+- verify result after every act
+- coordinate fallback allowed only after semantic failure
+when: {}
+reason: GUI operations can affect live applications; autonomous clicks need approval
+  by default.
+non_override: true

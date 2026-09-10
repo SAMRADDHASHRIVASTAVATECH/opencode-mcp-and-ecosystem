@@ -1,0 +1,15 @@
+policy_id: proactive-assistance-policy
+name: Proactive Assistance Policy
+version: 1.0.0
+domain: proactive-assistance
+action: ALLOW_WITH_CONDITIONS
+auth_level: RECOMMEND
+scope:
+  domain: proactive-assistance
+conditions:
+- must produce a RECOMMEND, not an action, unless separately authorized
+- must include relevance/urgency/confidence/disruption estimates
+- may be suppressed on low confidence
+when: {}
+reason: Proactive suggestions allowed but must not execute autonomously.
+non_override: true

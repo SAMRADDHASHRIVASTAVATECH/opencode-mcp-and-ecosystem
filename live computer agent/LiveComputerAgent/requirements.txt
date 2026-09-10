@@ -1,0 +1,12 @@
+# Core, cross-platform package validation
+numpy>=1.26,<3
+Pillow>=10,<13
+mss>=9,<11
+psutil>=5.9,<8
+fastmcp>=3,<5
+# Windows runtime
+pywin32>=306; platform_system == "Windows"
+pywinauto>=0.6.9; platform_system == "Windows"
+pyautogui>=0.9.54; platform_system == "Windows"
+dxcam>=0.3.0; platform_system == "Windows"
+pytesseract>=0.3.13; platform_system == "Windows"

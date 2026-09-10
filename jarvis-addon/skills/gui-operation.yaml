@@ -1,0 +1,35 @@
+skill_id: gui-operation
+name: Gui Operation
+version: 1.0.0
+description: Perform UI action by semantic target with coordinate fallback.
+purpose: Perform UI action by semantic target with coordinate fallback.
+inputs: &id001
+- action
+outputs: &id002
+- result + verification
+preconditions:
+- gui permission
+postconditions:
+- result verified
+permissions:
+  auth_level: AUTHORIZED_AUTONOMOUS
+dependencies: []
+required_capabilities:
+- universal-gui
+tools:
+- gui-act
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - post-state matches expectation
+failure_contract:
+  failure_modes:
+  - element not found
+recovery_contract:
+  strategies:
+  - reselect/coordinates
+examples: []
+tests: []
+status: validated

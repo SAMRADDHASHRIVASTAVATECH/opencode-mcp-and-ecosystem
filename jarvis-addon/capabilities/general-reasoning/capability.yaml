@@ -1,0 +1,24 @@
+capability_id: general-reasoning
+name: General Reasoning Support
+version: 1.0.0
+description: Reusable orchestration for decomposition/planning/hypothesis/evidence/comparison/tradeoffs/uncertainty/decision/verification.
+area: general-reasoning
+skills:
+- planning
+- task-decomposition
+- decision-analysis
+policies:
+- reasoning-policy
+schemas:
+- decision
+- context
+contracts:
+- decision-contract
+events:
+- GOAL_UPDATED
+agents:
+- planner
+- researcher
+authorization:
+  auth_level: SAFE_EXECUTE
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

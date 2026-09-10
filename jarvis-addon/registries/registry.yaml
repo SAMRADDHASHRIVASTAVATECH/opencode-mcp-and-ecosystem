@@ -1,0 +1,12 @@
+registry: jarvis-addon
+counts:
+  capabilities: 20
+  skills: 64
+  policies: 27
+  agents: 21
+  mcps: 10
+  tools: 44
+  events: 30
+  schemas: 19
+  contracts: 15
+note: See per-kind registries for full ids. Pure additive; see import-metadata.yaml.

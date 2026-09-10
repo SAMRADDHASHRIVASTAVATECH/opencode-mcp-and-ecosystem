@@ -1,0 +1,25 @@
+agent_id: recovery-agent
+name: Recovery Agent
+version: 1.0.0
+role: recovery-agent
+purpose: Classify/diagnose/recover/escalate.
+responsibilities:
+- Classify/diagnose/recover/escalate.
+allowed_skills:
+- failure-classification
+- diagnosis
+- recovery
+- retry
+- rollback
+required_capabilities:
+- failure-recovery
+expected_inputs:
+- recovery-agent task
+expected_outputs:
+- universal result
+coordination_rules:
+- lease-based ownership
+- report via universal result
+- no conflicting writes without lock
+permissions:
+  auth_level: SAFE_EXECUTE

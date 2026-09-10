@@ -1,0 +1,709 @@
+{
+  "nodes": [
+    "pdf-create",
+    "pdf-read",
+    "pdf-inspect",
+    "pdf-extract",
+    "pdf-ocr",
+    "pdf-render",
+    "pdf-vision",
+    "pdf-tables",
+    "pdf-search",
+    "pdf-index",
+    "pdf-chunk",
+    "pdf-summarize",
+    "pdf-qa",
+    "pdf-analyze",
+    "pdf-edit",
+    "pdf-annotate",
+    "pdf-merge",
+    "pdf-split",
+    "pdf-reorder",
+    "pdf-rotate",
+    "pdf-crop",
+    "pdf-scale",
+    "pdf-watermark",
+    "pdf-header-footer",
+    "pdf-metadata",
+    "pdf-bookmarks",
+    "pdf-links",
+    "pdf-forms",
+    "pdf-fill-forms",
+    "pdf-sign",
+    "pdf-encrypt",
+    "pdf-decrypt",
+    "pdf-permissions",
+    "pdf-redact",
+    "pdf-compress",
+    "pdf-optimize",
+    "pdf-repair",
+    "pdf-convert",
+    "pdf-export",
+    "pdf-compare",
+    "pdf-diff",
+    "pdf-images",
+    "pdf-document-state",
+    "pdf-provenance",
+    "pdf-batch",
+    "pdf-validation",
+    "pdf-orchestrate"
+  ],
+  "edges": [
+    {
+      "from": "pdf-create",
+      "to": "pdf-read"
+    },
+    {
+      "from": "pdf-create",
+      "to": "pdf-export"
+    },
+    {
+      "from": "pdf-create",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-create",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-read",
+      "to": "pdf-extract"
+    },
+    {
+      "from": "pdf-read",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-read",
+      "to": "pdf-ocr"
+    },
+    {
+      "from": "pdf-read",
+      "to": "pdf-search"
+    },
+    {
+      "from": "pdf-read",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-inspect",
+      "to": "pdf-read"
+    },
+    {
+      "from": "pdf-inspect",
+      "to": "pdf-validation"
+    },
+    {
+      "from": "pdf-inspect",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-inspect",
+      "to": "pdf-provenance"
+    },
+    {
+      "from": "pdf-extract",
+      "to": "pdf-read"
+    },
+    {
+      "from": "pdf-extract",
+      "to": "pdf-tables"
+    },
+    {
+      "from": "pdf-extract",
+      "to": "pdf-ocr"
+    },
+    {
+      "from": "pdf-extract",
+      "to": "pdf-provenance"
+    },
+    {
+      "from": "pdf-ocr",
+      "to": "pdf-read"
+    },
+    {
+      "from": "pdf-ocr",
+      "to": "pdf-vision"
+    },
+    {
+      "from": "pdf-ocr",
+      "to": "pdf-render"
+    },
+    {
+      "from": "pdf-ocr",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-render",
+      "to": "pdf-ocr"
+    },
+    {
+      "from": "pdf-render",
+      "to": "pdf-vision"
+    },
+    {
+      "from": "pdf-render",
+      "to": "pdf-export"
+    },
+    {
+      "from": "pdf-render",
+      "to": "pdf-compare"
+    },
+    {
+      "from": "pdf-vision",
+      "to": "pdf-ocr"
+    },
+    {
+      "from": "pdf-vision",
+      "to": "pdf-render"
+    },
+    {
+      "from": "pdf-vision",
+      "to": "pdf-extract"
+    },
+    {
+      "from": "pdf-vision",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-tables",
+      "to": "pdf-extract"
+    },
+    {
+      "from": "pdf-tables",
+      "to": "pdf-export"
+    },
+    {
+      "from": "pdf-tables",
+      "to": "pdf-provenance"
+    },
+    {
+      "from": "pdf-tables",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-search",
+      "to": "pdf-index"
+    },
+    {
+      "from": "pdf-search",
+      "to": "pdf-chunk"
+    },
+    {
+      "from": "pdf-search",
+      "to": "pdf-read"
+    },
+    {
+      "from": "pdf-search",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-index",
+      "to": "pdf-search"
+    },
+    {
+      "from": "pdf-index",
+      "to": "pdf-chunk"
+    },
+    {
+      "from": "pdf-index",
+      "to": "pdf-document-state"
+    },
+    {
+      "from": "pdf-index",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-chunk",
+      "to": "pdf-summarize"
+    },
+    {
+      "from": "pdf-chunk",
+      "to": "pdf-qa"
+    },
+    {
+      "from": "pdf-chunk",
+      "to": "pdf-index"
+    },
+    {
+      "from": "pdf-chunk",
+      "to": "pdf-provenance"
+    },
+    {
+      "from": "pdf-summarize",
+      "to": "pdf-chunk"
+    },
+    {
+      "from": "pdf-summarize",
+      "to": "pdf-qa"
+    },
+    {
+      "from": "pdf-summarize",
+      "to": "pdf-search"
+    },
+    {
+      "from": "pdf-summarize",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-qa",
+      "to": "pdf-chunk"
+    },
+    {
+      "from": "pdf-qa",
+      "to": "pdf-search"
+    },
+    {
+      "from": "pdf-qa",
+      "to": "pdf-summarize"
+    },
+    {
+      "from": "pdf-qa",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-analyze",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-analyze",
+      "to": "pdf-ocr"
+    },
+    {
+      "from": "pdf-analyze",
+      "to": "pdf-validation"
+    },
+    {
+      "from": "pdf-analyze",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-edit",
+      "to": "pdf-reorder"
+    },
+    {
+      "from": "pdf-edit",
+      "to": "pdf-split"
+    },
+    {
+      "from": "pdf-edit",
+      "to": "pdf-merge"
+    },
+    {
+      "from": "pdf-edit",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-annotate",
+      "to": "pdf-links"
+    },
+    {
+      "from": "pdf-annotate",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-annotate",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-merge",
+      "to": "pdf-split"
+    },
+    {
+      "from": "pdf-merge",
+      "to": "pdf-reorder"
+    },
+    {
+      "from": "pdf-merge",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-split",
+      "to": "pdf-merge"
+    },
+    {
+      "from": "pdf-split",
+      "to": "pdf-reorder"
+    },
+    {
+      "from": "pdf-split",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-reorder",
+      "to": "pdf-edit"
+    },
+    {
+      "from": "pdf-reorder",
+      "to": "pdf-split"
+    },
+    {
+      "from": "pdf-reorder",
+      "to": "pdf-merge"
+    },
+    {
+      "from": "pdf-reorder",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-rotate",
+      "to": "pdf-reorder"
+    },
+    {
+      "from": "pdf-rotate",
+      "to": "pdf-crop"
+    },
+    {
+      "from": "pdf-rotate",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-crop",
+      "to": "pdf-rotate"
+    },
+    {
+      "from": "pdf-crop",
+      "to": "pdf-scale"
+    },
+    {
+      "from": "pdf-crop",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-scale",
+      "to": "pdf-crop"
+    },
+    {
+      "from": "pdf-scale",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-watermark",
+      "to": "pdf-header-footer"
+    },
+    {
+      "from": "pdf-watermark",
+      "to": "pdf-annotate"
+    },
+    {
+      "from": "pdf-watermark",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-header-footer",
+      "to": "pdf-watermark"
+    },
+    {
+      "from": "pdf-header-footer",
+      "to": "pdf-annotate"
+    },
+    {
+      "from": "pdf-header-footer",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-metadata",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-metadata",
+      "to": "pdf-provenance"
+    },
+    {
+      "from": "pdf-metadata",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-bookmarks",
+      "to": "pdf-links"
+    },
+    {
+      "from": "pdf-bookmarks",
+      "to": "pdf-provenance"
+    },
+    {
+      "from": "pdf-bookmarks",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-links",
+      "to": "pdf-annotate"
+    },
+    {
+      "from": "pdf-links",
+      "to": "pdf-bookmarks"
+    },
+    {
+      "from": "pdf-links",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-forms",
+      "to": "pdf-fill-forms"
+    },
+    {
+      "from": "pdf-forms",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-forms",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-fill-forms",
+      "to": "pdf-forms"
+    },
+    {
+      "from": "pdf-fill-forms",
+      "to": "pdf-sign"
+    },
+    {
+      "from": "pdf-fill-forms",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-sign",
+      "to": "pdf-fill-forms"
+    },
+    {
+      "from": "pdf-sign",
+      "to": "pdf-validation"
+    },
+    {
+      "from": "pdf-sign",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-encrypt",
+      "to": "pdf-decrypt"
+    },
+    {
+      "from": "pdf-encrypt",
+      "to": "pdf-permissions"
+    },
+    {
+      "from": "pdf-encrypt",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-decrypt",
+      "to": "pdf-encrypt"
+    },
+    {
+      "from": "pdf-decrypt",
+      "to": "pdf-permissions"
+    },
+    {
+      "from": "pdf-decrypt",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-permissions",
+      "to": "pdf-encrypt"
+    },
+    {
+      "from": "pdf-permissions",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-permissions",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-redact",
+      "to": "pdf-validation"
+    },
+    {
+      "from": "pdf-redact",
+      "to": "pdf-metadata"
+    },
+    {
+      "from": "pdf-redact",
+      "to": "pdf-provenance"
+    },
+    {
+      "from": "pdf-redact",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-compress",
+      "to": "pdf-optimize"
+    },
+    {
+      "from": "pdf-compress",
+      "to": "pdf-repair"
+    },
+    {
+      "from": "pdf-compress",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-optimize",
+      "to": "pdf-compress"
+    },
+    {
+      "from": "pdf-optimize",
+      "to": "pdf-validation"
+    },
+    {
+      "from": "pdf-optimize",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-repair",
+      "to": "pdf-validation"
+    },
+    {
+      "from": "pdf-repair",
+      "to": "pdf-compress"
+    },
+    {
+      "from": "pdf-repair",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-convert",
+      "to": "pdf-create"
+    },
+    {
+      "from": "pdf-convert",
+      "to": "pdf-export"
+    },
+    {
+      "from": "pdf-convert",
+      "to": "pdf-tables"
+    },
+    {
+      "from": "pdf-convert",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-export",
+      "to": "pdf-convert"
+    },
+    {
+      "from": "pdf-export",
+      "to": "pdf-tables"
+    },
+    {
+      "from": "pdf-export",
+      "to": "pdf-create"
+    },
+    {
+      "from": "pdf-export",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-compare",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-compare",
+      "to": "pdf-validation"
+    },
+    {
+      "from": "pdf-compare",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-diff",
+      "to": "pdf-compare"
+    },
+    {
+      "from": "pdf-diff",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-images",
+      "to": "pdf-render"
+    },
+    {
+      "from": "pdf-images",
+      "to": "pdf-ocr"
+    },
+    {
+      "from": "pdf-images",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-document-state",
+      "to": "pdf-chunk"
+    },
+    {
+      "from": "pdf-document-state",
+      "to": "pdf-index"
+    },
+    {
+      "from": "pdf-document-state",
+      "to": "pdf-provenance"
+    },
+    {
+      "from": "pdf-document-state",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-provenance",
+      "to": "pdf-qa"
+    },
+    {
+      "from": "pdf-provenance",
+      "to": "pdf-search"
+    },
+    {
+      "from": "pdf-provenance",
+      "to": "pdf-document-state"
+    },
+    {
+      "from": "pdf-provenance",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-batch",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-batch",
+      "to": "pdf-document-state"
+    },
+    {
+      "from": "pdf-batch",
+      "to": "pdf-validation"
+    },
+    {
+      "from": "pdf-validation",
+      "to": "pdf-inspect"
+    },
+    {
+      "from": "pdf-validation",
+      "to": "pdf-orchestrate"
+    },
+    {
+      "from": "pdf-validation",
+      "to": "pdf-compare"
+    },
+    {
+      "from": "pdf-orchestrate",
+      "to": "pdf-create"
+    },
+    {
+      "from": "pdf-orchestrate",
+      "to": "pdf-merge"
+    },
+    {
+      "from": "pdf-orchestrate",
+      "to": "pdf-summarize"
+    },
+    {
+      "from": "pdf-orchestrate",
+      "to": "pdf-search"
+    },
+    {
+      "from": "pdf-orchestrate",
+      "to": "pdf-ocr"
+    },
+    {
+      "from": "pdf-orchestrate",
+      "to": "pdf-redact"
+    }
+  ]
+}

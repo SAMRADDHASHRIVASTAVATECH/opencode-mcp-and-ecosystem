@@ -1,0 +1,9 @@
+event: SKILL_CREATED
+version: 1.0.0
+schema: contracts/event-contract.yaml
+description: Emitted when skill created.
+payload_ref:
+  source: string
+  timestamp: iso8601
+  confidence: 0..1
+  entity_id: string

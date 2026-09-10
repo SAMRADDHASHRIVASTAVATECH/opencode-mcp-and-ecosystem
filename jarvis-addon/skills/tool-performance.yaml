@@ -1,0 +1,36 @@
+skill_id: tool-performance
+name: Tool Performance
+version: 1.0.0
+description: Record and query tool performance metrics.
+purpose: Record and query tool performance metrics.
+inputs: &id001
+- tool id
+- window
+outputs: &id002
+- metrics
+preconditions:
+- metrics store readable
+postconditions:
+- none
+permissions:
+  auth_level: OBSERVE
+dependencies: []
+required_capabilities:
+- self-evaluation
+tools:
+- metrics-read
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - latency/confidence present
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - empty
+examples: []
+tests: []
+status: validated

@@ -1,0 +1,32 @@
+capability_id: failure-recovery
+name: Autonomous Failure Recovery
+version: 1.0.0
+description: Detect, classify, diagnose, and recover from failures with retry/alternative/fallback/rollback
+  and escalation.
+area: failure-recovery
+skills:
+- failure-detection
+- failure-classification
+- diagnosis
+- recovery
+- retry
+- rollback
+- verification
+policies:
+- recovery-policy
+schemas:
+- recovery
+- verification
+contracts:
+- recovery-contract
+- verification-contract
+events:
+- TASK_FAILED
+- TOOL_FAILED
+- VERIFICATION_FAILED
+agents:
+- recovery-agent
+- verifier
+authorization:
+  auth_level: AUTHORIZED_AUTONOMOUS
+operational_building_blocks: defined inline (see referenced skills/policies/schemas/contracts/events)

@@ -1,0 +1,35 @@
+skill_id: event-management
+name: Event Management
+version: 1.0.0
+description: Publish/subscribe typed events.
+purpose: Publish/subscribe typed events.
+inputs: &id001
+- event
+outputs: &id002
+- ack
+preconditions:
+- event schema valid
+postconditions:
+- event recorded
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- high-reliability
+tools:
+- event-bus
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - acked
+failure_contract:
+  failure_modes:
+  - bus down
+recovery_contract:
+  strategies:
+  - queue
+examples: []
+tests: []
+status: validated

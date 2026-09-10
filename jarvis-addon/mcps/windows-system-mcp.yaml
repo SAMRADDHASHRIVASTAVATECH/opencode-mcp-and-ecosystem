@@ -1,0 +1,21 @@
+mcp_id: windows-system
+name: windows-system
+version: 1.0.0
+description: Windows system/printers/OS resources MCP
+capabilities:
+- software-engineering
+tools:
+- windows
+- printer
+- system
+- service
+resources:
+- windows-system://tool-list
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: olcap-windows-system.health
+  interval_s: 60
+dependencies: []
+tests: []

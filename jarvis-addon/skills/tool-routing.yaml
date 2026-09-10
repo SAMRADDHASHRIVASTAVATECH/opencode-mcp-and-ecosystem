@@ -1,0 +1,35 @@
+skill_id: tool-routing
+name: Tool Routing
+version: 1.0.0
+description: Route a sub-operation to a capable tool.
+purpose: Route a sub-operation to a capable tool.
+inputs: &id001
+- operation
+outputs: &id002
+- route
+preconditions:
+- tool capable
+postconditions:
+- routed
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- universal-digital-agency
+tools:
+- capability-lookup
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - capability match
+failure_contract:
+  failure_modes:
+  - no route
+recovery_contract:
+  strategies:
+  - escalate
+examples: []
+tests: []
+status: validated

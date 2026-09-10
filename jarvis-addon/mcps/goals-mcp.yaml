@@ -1,0 +1,25 @@
+mcp_id: goals-mcp
+name: goals-mcp
+version: 1.0.0
+description: persistent goals, tasks, checkpoints, long-horizon
+capabilities:
+- persistent-goals
+- long-horizon-autonomy
+tools:
+- goal-store
+- goal-decompose
+- checkpoint-store
+- checkpoint-load
+- task-cancel
+resources:
+- goals://*
+- tasks://*
+- checkpoints://*
+schemas: []
+permissions:
+  auth_level: SAFE_EXECUTE
+health_checks:
+- check: goals-mcp.health
+  interval_s: 60
+dependencies: []
+tests: []

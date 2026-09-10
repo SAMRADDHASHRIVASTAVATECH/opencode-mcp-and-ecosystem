@@ -1,0 +1,35 @@
+skill_id: self-evaluation
+name: Self Evaluation
+version: 1.0.0
+description: Evaluate a task/result against metrics and evidence.
+purpose: Evaluate a task/result against metrics and evidence.
+inputs: &id001
+- task+result
+outputs: &id002
+- evaluation
+preconditions:
+- result + metrics available
+postconditions:
+- evaluation stored
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- self-evaluation
+tools:
+- metrics-read
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - evidence-backed score
+failure_contract:
+  failure_modes:
+  - no baseline
+recovery_contract:
+  strategies:
+  - report uncalibrated
+examples: []
+tests: []
+status: validated

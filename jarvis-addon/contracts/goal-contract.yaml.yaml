@@ -1,0 +1,18 @@
+contract: goal
+version: 1.0.0
+schema: schemas/goal.schema.json
+summary: Persistent authorized goals with checkpoint/resume and explicit stop/escalation
+  conditions.
+fields:
+- goal_id
+- name
+- authorization
+- priority
+- milestones
+- dependencies
+- checkpoint
+- next_action
+- stop_condition
+- escalation_condition
+- verification_state
+rule: Persistent goals must be explicitly authorized.

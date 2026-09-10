@@ -1,0 +1,39 @@
+{
+  "name": "n8n-full-mcp",
+  "version": "0.1.0",
+  "description": "Approval-gated hybrid MCP control layer for n8n",
+  "type": "module",
+  "bin": {
+    "n8n-full-mcp": "lib/index.js"
+  },
+  "exports": "./lib/index.js",
+  "files": [
+    "lib",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node lib/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  },
+  "license": "MIT"
+}

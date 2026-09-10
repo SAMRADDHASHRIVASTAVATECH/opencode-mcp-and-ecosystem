@@ -1,0 +1,4 @@
+# Windows virtual cable and Discord
+A virtual cable exposes paired endpoints. Select the physical microphone as Python input and the cable's playback/render endpoint as Python output. Select the cable's recording/capture endpoint as Discord Input Device. Keep headphones as Discord Output Device unless separately processing incoming call audio.
+
+Match Windows endpoint formats and start at 48 kHz mono for voice. Do not select the same endpoint pair in a way that feeds output back to input. Disable duplicate monitoring to avoid echo. Discord noise suppression/automatic gain may alter soundboard and transformed audio; change those settings only if desired and test calls safely. Use `audio_get_levels` while speaking, then Discord's microphone test. Presence of a virtual endpoint alone does not prove Discord receives processed audio.

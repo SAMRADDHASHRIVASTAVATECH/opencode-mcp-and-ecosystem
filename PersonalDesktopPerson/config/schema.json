@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PADP configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "data_dir": {
+      "type": "string"
+    },
+    "cognitive_hz": {
+      "type": "number",
+      "minimum": 0.1,
+      "maximum": 20
+    },
+    "avatar_host": {
+      "enum": [
+        "127.0.0.1",
+        "localhost"
+      ]
+    },
+    "avatar_port": {
+      "type": "integer",
+      "minimum": 1024,
+      "maximum": 65535
+    },
+    "avatar_enabled": {
+      "type": "boolean"
+    },
+    "provider_url": {
+      "type": "string"
+    },
+    "provider_model": {
+      "type": "string"
+    },
+    "provider_key_env": {
+      "type": "string"
+    },
+    "provider_timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 600
+    },
+    "retention_days": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "store_dialogue": {
+      "type": "boolean"
+    },
+    "quiet_hours": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 23
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "computer_use_server": {
+      "type": "string"
+    },
+    "conservative": {
+      "const": true
+    },
+    "desktop_sensor_enabled": {
+      "type": "boolean"
+    },
+    "screen_change_enabled": {
+      "type": "boolean"
+    },
+    "accessibility_enabled": {
+      "type": "boolean"
+    },
+    "desktop_poll_seconds": {
+      "type": "number",
+      "minimum": 0.1,
+      "maximum": 60
+    },
+    "meaningful_change_threshold": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "semantic_environment_reasoning": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+skill_id: skill-creation
+name: Skill Creation
+version: 1.0.0
+description: Author a new skill definition conforming to the skill schema.
+purpose: Author a new skill definition conforming to the skill schema.
+inputs: &id001
+- skill spec
+outputs: &id002
+- skill definition file
+preconditions:
+- gap confirmed
+postconditions:
+- definition not yet enabled
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- schema-validate
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - schema-valid + required capability exists
+failure_contract:
+  failure_modes:
+  - schema invalid
+recovery_contract:
+  strategies:
+  - report schema errors
+examples: []
+tests: []
+status: validated

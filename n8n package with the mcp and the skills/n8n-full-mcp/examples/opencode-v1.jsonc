@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "n8n-full-mcp": {
+      "type": "local",
+      "command": ["node", "/absolute/path/n8n-full-mcp/lib/index.js"],
+      "enabled": true,
+      "timeout": 30000,
+      "environment": {
+        "N8N_MODE": "offline",
+        "N8N_OFFLINE_DIR": "/absolute/path/n8n-artifacts"
+      }
+    }
+  }
+}

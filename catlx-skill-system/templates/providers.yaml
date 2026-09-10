@@ -1,0 +1,36 @@
+# AI provider routing policy template. Source: PART VIII §8.4, §8.5.
+# Declarative routing; the user can override. All request types flow through the PAL.
+# Location: /config/providers.yaml
+
+routing:
+  # Order matters: index 0 is the primary for each request type.
+  completion:
+    - { provider: google,     timeout_ms: 10000, priority: 100 }
+    - { provider: groq,       timeout_ms: 3000,  priority: 90 }
+    - { provider: local,      timeout_ms: 20000, priority: 80 }   # T1+ only
+  embedding:
+    - { provider: google,     timeout_ms: 10000 }
+    - { provider: local,      timeout_ms: 20000 }
+  stt:
+    - { provider: groq,       timeout_ms: 8000  }
+    - { provider: google,     timeout_ms: 10000 }
+  tts:
+    - { provider: local,      timeout_ms: 5000  }
+
+failover:
+  degraded_cooldown_s: 30
+  completion_timeout_ms: 10000
+  fast_path_timeout_ms: 3000
+  on_all_remote_degraded: local_model        # T1+ ; else queue + notify + retry
+  on_no_local: queue_and_notify
+
+cost:
+  fast_models:   ["groq:llama-3-8b"]         # classification / extraction
+  large_models:  ["google:gemini-pro"]        # reasoning / code / multi-step planning
+  non_latency_critical_strategy: cheapest_meets_quality
+
+local:
+  enabled_on_tier: [1, 2, 3]
+  engine: llama.cpp                            # or vLLM on T2+
+  quantization: { t1: Q4_K_M, t2: Q8_0 }
+  api: localhost                               # OpenAI-compatible serve

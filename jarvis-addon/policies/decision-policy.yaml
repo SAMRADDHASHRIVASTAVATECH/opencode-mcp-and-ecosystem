@@ -1,0 +1,14 @@
+policy_id: decision-policy
+name: Decision Support Policy
+version: 1.0.0
+domain: decision-support
+action: ALLOW
+auth_level: SAFE_EXECUTE
+scope:
+  domain: decision-support
+conditions:
+- options/evidence/constraints explicit
+- decision advisory unless authorized
+when: {}
+reason: Decision analyses are advisory.
+non_override: true

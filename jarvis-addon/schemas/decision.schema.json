@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Decision support",
+  "type": "object",
+  "required": [
+    "options",
+    "evidence",
+    "constraints",
+    "confidence",
+    "decision"
+  ],
+  "properties": {
+    "options": {
+      "type": "array"
+    },
+    "evidence": {
+      "type": "array"
+    },
+    "assumptions": {
+      "type": "array"
+    },
+    "constraints": {
+      "type": "array"
+    },
+    "risks": {
+      "type": "array"
+    },
+    "tradeoffs": {
+      "type": "array"
+    },
+    "expected_outcomes": {
+      "type": "array"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "decision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

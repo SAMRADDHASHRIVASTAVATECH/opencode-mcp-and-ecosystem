@@ -1,0 +1,36 @@
+skill_id: skill-versioning
+name: Skill Versioning
+version: 1.0.0
+description: Create/promote/rollback skill versions with provenance.
+purpose: Create/promote/rollback skill versions with provenance.
+inputs: &id001
+- skill
+- version change
+outputs: &id002
+- version record
+preconditions:
+- source of truth
+postconditions:
+- version bumped
+permissions:
+  auth_level: SAFE_EXECUTE
+dependencies: []
+required_capabilities:
+- capability-creation
+tools:
+- version-bump
+execution_contract:
+  inputs: *id001
+  outputs: *id002
+verification_contract:
+  checks:
+  - version monotonic
+failure_contract:
+  failure_modes:
+  - none
+recovery_contract:
+  strategies:
+  - no-op
+examples: []
+tests: []
+status: validated

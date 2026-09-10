@@ -1,0 +1,24 @@
+{
+  "//": "CATLX plugin package manifest template. Source: PART XIII §13.2-13.3, 13.7.",
+  "name": "my-plugin",
+  "version": "1.0.0",
+  "api_version": "1.0.0",
+  "author": {
+    "name": "developer",
+    "public_key": "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----"
+  },
+  "capabilities": [
+    { "token": "plugin.mytool.file.read", "grant": "per-file" },
+    { "token": "plugin.mytool.network", "grant": "hosts:api.example.com" }
+  ],
+  "dependencies": {},
+  "resource_requirements": {
+    "min_tier": 0,
+    "sandbox": "process",
+    "memory_quota_mb": 128,
+    "cpu_budget_ms": 250,
+    "hard_kill_timeout_ms": 5000
+  },
+  "hot_reload": false,
+  "entry": "index.js"
+}

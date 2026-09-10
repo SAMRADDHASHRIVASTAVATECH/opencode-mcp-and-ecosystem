@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "olcap-realtime-assistant"
+version = "1.0.0"
+description = "OLCAP realtime multimodal assistant (audio + screen + STT + reasoning + TTS) as one MCP server."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0",
+    "pydantic>=2",
+    "httpx>=0.24",
+    "numpy",
+]
+
+[project.optional-dependencies]
+audio = ["sounddevice>=0.4"]
+stt = ["faster-whisper>=1.0"]
+screen = ["mss>=9", "pillow"]
+vision = ["opencv-python-headless"]
+tts = []
+
+[project.scripts]
+olcap-realtime-assistant-mcp = "olcap_realtime.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
