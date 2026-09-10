@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="900" height="60" role="img" aria-label="Animated divider">
+  <title>Animated divider</title>
+  <rect width="900" height="60" fill="#0b1020"/>
+  <g stroke="#1f2a44" stroke-width="2"><path d="M0 30h900"/></g>
+  <g stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M0 30h240" stroke="#22d3ee">
+      <animate attributeName="stroke-dasharray" values="0 240;240 0;0 240" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M660 30h240" stroke="#f472b6">
+      <animate attributeName="stroke-dasharray" values="240 0;0 240;240 0" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g transform="translate(450,30)">
+    <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite"/>
+      <polygon points="0,-12 10,0 0,12 -10,0" fill="#a78bfa"/>
+    </g>
+    <circle r="20" fill="none" stroke="#a78bfa" stroke-opacity="0.5" stroke-width="1">
+      <animate attributeName="r" values="16;26;16" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

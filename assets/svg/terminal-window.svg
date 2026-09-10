@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="Animated terminal window demo">
+  <title>Terminal animation</title>
+  <defs>
+    <clipPath id="win"><rect x="20" y="18" width="860" height="224" rx="12"/></clipPath>
+    <clipPath id="line1"><rect x="38" y="72" width="0" height="20"><animate attributeName="width" values="0;700" dur="1.2s" begin="0.4s" fill="freeze"/></rect></clipPath>
+    <clipPath id="line2"><rect x="38" y="100" width="0" height="20"><animate attributeName="width" values="0;700" dur="1.4s" begin="1.8s" fill="freeze"/></rect></clipPath>
+    <clipPath id="line3"><rect x="38" y="128" width="0" height="20"><animate attributeName="width" values="0;700" dur="1.2s" begin="3.4s" fill="freeze"/></rect></clipPath>
+    <clipPath id="line4"><rect x="38" y="156" width="0" height="20"><animate attributeName="width" values="0;700" dur="1.6s" begin="4.8s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <rect width="900" height="260" fill="#0b1020"/>
+  <g clip-path="url(#win)">
+    <rect x="20" y="18" width="860" height="224" fill="#0f172a"/>
+    <rect x="20" y="18" width="860" height="30" fill="#1e293b"/>
+    <circle cx="44" cy="33" r="6" fill="#ef4444"/><circle cx="64" cy="33" r="6" fill="#f59e0b"/><circle cx="84" cy="33" r="6" fill="#22c55e"/>
+    <text x="450" y="38" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#94a3b8">opencode — mcp bootstrap</text>
+
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14">
+      <text x="38" y="86" clip-path="url(#line1)"><tspan fill="#22d3ee">opencode</tspan><tspan fill="#e2e8f0"> mcp list --transport stdio</tspan></text>
+      <text x="38" y="114" clip-path="url(#line2)"><tspan fill="#94a3b8">✔ 25 servers discovered · 20 python / 3 node · handshake ok</tspan></text>
+      <text x="38" y="142" clip-path="url(#line3)"><tspan fill="#22d3ee">opencode</tspan><tspan fill="#e2e8f0"> skills scan --root ./skills</tspan></text>
+      <text x="38" y="170" clip-path="url(#line4)"><tspan fill="#94a3b8">✔ 61 SKILL.md files · CATLX 24 · BAKG 19 · Universal Artist 18</tspan></text>
+      <text x="38" y="198" fill="#a78bfa">$ destructive tools gated: win_services, win_processes, android_adb<animate attributeName="opacity" values="0;1" dur="0.2s" begin="6.6s" fill="freeze"/></text>
+      <rect x="38" y="212" width="9" height="16" fill="#22d3ee">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+</svg>

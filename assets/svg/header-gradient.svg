@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" aria-label="Animated gradient header">
+  <title>Animated gradient header</title>
+  <defs>
+    <linearGradient id="shift" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee">
+        <animate attributeName="stop-color" values="#22d3ee;#a78bfa;#fb7185;#22d3ee" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#a78bfa">
+        <animate attributeName="stop-color" values="#a78bfa;#fb7185;#34d399;#a78bfa" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#fb7185">
+        <animate attributeName="stop-color" values="#fb7185;#34d399;#22d3ee;#fb7185" dur="9s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="200" fill="url(#shift)"/>
+  <rect width="900" height="200" fill="url(#glow)"/>
+  <rect x="0" y="0" width="900" height="200" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" rx="14"/>
+
+  <g text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" fill="#ffffff">
+    <text x="450" y="96" font-size="42" font-weight="800" letter-spacing="1">OpenCode MCP &amp; Skills Ecosystem</text>
+    <text x="450" y="132" font-size="17" fill="#ffffff" fill-opacity="0.92">25 MCP servers · 61 SKILL.md files · stdio transports · capability-guarded</text>
+  </g>
+
+  <g fill="#ffffff" fill-opacity="0.35">
+    <circle cx="90" cy="40" r="3"><animate attributeName="cy" values="40;170;40" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="810" cy="160" r="4"><animate attributeName="cy" values="160;40;160" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="50" r="2.5"><animate attributeName="cx" values="700;200;700" dur="11s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

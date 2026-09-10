@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" width="640" height="220" role="img" aria-label="3D isometric layer diagram">
+  <title>3D effect</title>
+  <rect width="640" height="220" fill="#0b1020"/>
+  <g transform="translate(320,120)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -10;0 0" dur="3.4s" repeatCount="indefinite"/>
+      <!-- top layer: agents -->
+      <g transform="translate(0,-52)">
+        <polygon points="0,-34 96,-14 0,6 -96,-14" fill="#22d3ee"/>
+        <polygon points="-96,-14 0,6 0,20 -96,0" fill="#0891b2"/>
+        <polygon points="96,-14 0,6 0,20 96,0" fill="#155e75"/>
+        <text y="-10" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#04212b" font-weight="700">AGENTS</text>
+      </g>
+      <!-- middle layer: skills -->
+      <g transform="translate(0,0)">
+        <polygon points="0,-34 96,-14 0,6 -96,-14" fill="#a78bfa"/>
+        <polygon points="-96,-14 0,6 0,20 -96,0" fill="#7c3aed"/>
+        <polygon points="96,-14 0,6 0,20 96,0" fill="#5b21b6"/>
+        <text y="-10" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e1246" font-weight="700">SKILLS · 61</text>
+      </g>
+      <!-- bottom layer: mcp -->
+      <g transform="translate(0,52)">
+        <polygon points="0,-34 96,-14 0,6 -96,-14" fill="#f472b6"/>
+        <polygon points="-96,-14 0,6 0,20 -96,0" fill="#db2777"/>
+        <polygon points="96,-14 0,6 0,20 96,0" fill="#9d174d"/>
+        <text y="-10" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#4c0519" font-weight="700">MCP · 25</text>
+      </g>
+    </g>
+    <!-- orbiting token -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+      <circle cx="150" cy="0" r="7" fill="#facc15">
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  <text x="320" y="206" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#64748b">isometric stack · agents → skills → mcp servers</text>
+</svg>

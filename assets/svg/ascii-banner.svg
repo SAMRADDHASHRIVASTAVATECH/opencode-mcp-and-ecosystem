@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" aria-label="ASCII art animated banner">
+  <title>ASCII animation</title>
+  <rect width="900" height="200" fill="#020409"/>
+  <g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="14" fill="#38bdf8" xml:space="preserve">
+    <text x="40" y="60">
+ ___  ___  ___  ___ ___  _  _ ___    __  __ ___ ___  _  _
+/ _ \| _ \/ __|/ __/ _ \| \| |   \  |  \/  | __/ _ \| \| |
+| (_) |  _/\__ \ (_| (_) | .` | |) | | |\/| | _| (_) | .` |
+ \___/|_|  |___/\___\___/|_|\_|___/  |_|  |_|___\___/|_|\_|
+    </text>
+    <text x="40" y="104" fill="#f472b6">
+[ 25 MCP SERVERS ] [ 61 SKILLS ] [ STDIO ] [ WINDOWS-FIRST ]
+    </text>
+    <text x="40" y="140" fill="#94a3b8">
+booting orchestrator ......................................
+    </text>
+  </g>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#4ade80">
+    <text x="40" y="170">
+      OK
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.55;0.6;0.9;1" dur="4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <rect x="596" y="128" width="9" height="14" fill="#38bdf8">
+    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+  <g fill="#1d4ed8" opacity="0.5">
+    <rect x="0" y="0" width="900" height="200">
+      <animate attributeName="opacity" values="0.18;0.02;0.18" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

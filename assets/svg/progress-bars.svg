@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" width="720" height="200" role="img" aria-label="Animated progress bars for the audit rollout">
+  <title>Progress animations</title>
+  <rect width="720" height="200" fill="#0b1020"/>
+  <g font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif" font-size="13" fill="#cbd5e1">
+    <text x="24" y="46">MCP inventory audited</text>
+    <text x="24" y="92">Skills mapped (SKILL.md)</text>
+    <text x="24" y="138">Least-privilege gating</text>
+    <text x="24" y="184">CI/CD automation</text>
+  </g>
+  <g>
+    <rect x="230" y="34" width="400" height="16" rx="8" fill="#1e293b"/>
+    <rect x="230" y="34" width="0" height="16" rx="8" fill="#22d3ee">
+      <animate attributeName="width" values="0;400;400;0" keyTimes="0;0.35;0.9;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="640" y="47" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#22d3ee">25/25</text>
+
+    <rect x="230" y="80" width="400" height="16" rx="8" fill="#1e293b"/>
+    <rect x="230" y="80" width="0" height="16" rx="8" fill="#a78bfa">
+      <animate attributeName="width" values="0;400;400;0" keyTimes="0;0.4;0.9;1" dur="6s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="640" y="93" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#a78bfa">61/61</text>
+
+    <rect x="230" y="126" width="400" height="16" rx="8" fill="#1e293b"/>
+    <rect x="230" y="126" width="0" height="16" rx="8" fill="#34d399">
+      <animate attributeName="width" values="0;300;300;0" keyTimes="0;0.45;0.9;1" dur="6s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="640" y="139" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#34d399">75%</text>
+
+    <rect x="230" y="172" width="400" height="16" rx="8" fill="#1e293b"/>
+    <rect x="230" y="172" width="0" height="16" rx="8" fill="#f472b6">
+      <animate attributeName="width" values="0;180;180;0" keyTimes="0;0.5;0.9;1" dur="6s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="640" y="185" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#f472b6">45%</text>
+  </g>
+</svg>
